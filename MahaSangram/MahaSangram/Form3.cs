@@ -20,5 +20,12 @@ namespace MahaSangram
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form4 f = new Form4();
+            this.Close();
+            f.Show();
+        }
     }
 }

@@ -19,3 +19,4 @@ C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj
 >>>>>>> origin/master
 C:\Users\Chaitanya\Desktop\sbacsd\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 C:\Users\Chaitanya\Desktop\sbacsd\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form4.resources
