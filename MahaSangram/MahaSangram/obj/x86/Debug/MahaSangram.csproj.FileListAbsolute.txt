@@ -13,3 +13,19 @@ C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MSDatabase.mdf
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MSDatabase_log.ldf
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MSDatabase.mdf
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MSDatabase_log.ldf
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.pdb
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form1.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form2.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form3.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form4.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form5.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form6.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Properties.Resources.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache

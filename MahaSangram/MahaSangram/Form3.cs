@@ -13,7 +13,8 @@ namespace MahaSangram
     {
         private string team1, team2;
 
-        public string getteamname1 {
+        public string getteamname1 
+        {
             get { return team1; }
             set { team1 = value; }
         }
@@ -29,11 +30,7 @@ namespace MahaSangram
             InitializeComponent();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-         
         private void button1_Click(object sender, EventArgs e)
         {
             Form4 f = new Form4();

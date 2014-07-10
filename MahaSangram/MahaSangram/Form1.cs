@@ -47,5 +47,12 @@ namespace MahaSangram
             functions.closeapp(e);
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form6 f = new Form6();
+            f.Show();
+            this.Hide();
+        }
+
      }
 }
