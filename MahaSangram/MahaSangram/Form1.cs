@@ -16,32 +16,29 @@ namespace MahaSangram
             InitializeComponent();
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2=new Form2();
+            Form2 f2 = new Form2();
+            this.Hide();
             f2.Show();
-            this.Close();
-        }
+         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 f = new Form5();
-            f.Close();
+            Form5 f5 = new Form5();
+            this.Hide();
+            f5.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Form5 f1 = new Form5();
-            f1.Hide();
-        }
-
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-
+            Form5 f5 = new Form5();
+            f5.Show();
+            this.Hide();
         }
 
        
-    }
+
+      }
 }
