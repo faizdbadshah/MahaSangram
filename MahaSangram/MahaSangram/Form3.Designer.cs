@@ -98,6 +98,7 @@
             this.Controls.Add(this.checkedListBox1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

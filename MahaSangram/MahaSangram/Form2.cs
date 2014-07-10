@@ -46,8 +46,7 @@ namespace MahaSangram
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            functions.closeapp(e);
         }
-
     }
 }

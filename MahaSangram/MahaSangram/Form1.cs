@@ -25,9 +25,7 @@ namespace MahaSangram
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-            this.Hide();
-            f5.Show();
+            functions.closeapp();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,7 +36,16 @@ namespace MahaSangram
             this.Hide();
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
+        }
 
-      }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            functions.closeapp(e);
+        }
+
+     }
 }
