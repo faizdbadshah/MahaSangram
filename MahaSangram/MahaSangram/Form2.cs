@@ -55,5 +55,10 @@ namespace MahaSangram
         {
             listBox2.Items.Remove(listBox1.SelectedItem);
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox2.Items.Add(listBox1.SelectedItem);
+        }
     }
 }
