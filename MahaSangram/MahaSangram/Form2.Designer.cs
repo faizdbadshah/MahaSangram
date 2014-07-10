@@ -39,7 +39,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "esme sari teams ke nam aane chahie data base se"});
+            "Team 1"});
             this.listBox1.Location = new System.Drawing.Point(151, 178);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(247, 95);
@@ -68,12 +68,11 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Items.AddRange(new object[] {
-            "esme sari team ke nam aane chahie data base se"});
+            "Team 2"});
             this.listBox2.Location = new System.Drawing.Point(483, 178);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(249, 95);
             this.listBox2.TabIndex = 3;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // button1
             // 
