@@ -21,7 +21,7 @@ namespace MahaSangram
             }
         } //end closeapp
 
-        public static void closeapp(params FormClosingEventArgs e)
+        public static void closeapp(FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {

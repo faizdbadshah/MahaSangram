@@ -30,8 +30,8 @@
         {
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.teamname1 = new System.Windows.Forms.Label();
+            this.teamname2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -58,23 +58,23 @@
             this.checkedListBox2.Size = new System.Drawing.Size(456, 94);
             this.checkedListBox2.TabIndex = 1;
             // 
-            // label1
+            // teamname1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Select Playing 11 of Team 1";
+            this.teamname1.AutoSize = true;
+            this.teamname1.Location = new System.Drawing.Point(194, 154);
+            this.teamname1.Name = "teamname1";
+            this.teamname1.Size = new System.Drawing.Size(140, 13);
+            this.teamname1.TabIndex = 2;
+            this.teamname1.Text = "Select Playing 11 of Team 1";
             // 
-            // label2
+            // teamname2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(608, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Select Playing 11 of Team 2";
+            this.teamname2.AutoSize = true;
+            this.teamname2.Location = new System.Drawing.Point(608, 154);
+            this.teamname2.Name = "teamname2";
+            this.teamname2.Size = new System.Drawing.Size(140, 13);
+            this.teamname2.TabIndex = 3;
+            this.teamname2.Text = "Select Playing 11 of Team 2";
             // 
             // button1
             // 
@@ -92,13 +92,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 463);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.teamname2);
+            this.Controls.Add(this.teamname1);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
             this.Name = "Form3";
             this.Text = "Form3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,8 +109,8 @@
 
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label teamname1;
+        private System.Windows.Forms.Label teamname2;
         private System.Windows.Forms.Button button1;
     }
 }

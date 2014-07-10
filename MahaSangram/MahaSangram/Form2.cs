@@ -22,13 +22,6 @@ namespace MahaSangram
             load_teams();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form3 f3 = new Form3();
-            f3.Show();
-            this.Hide();
-        }
-
         private void load_teams() {
             listBox1.Items.Clear();
             listBox2.Items.Clear();
@@ -42,6 +35,15 @@ namespace MahaSangram
                     listBox2.Items.Add(data[1].ToString());
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.getteamname1 = listBox1.Text; // defined in form3
+            f3.getteamname2 = listBox2.Text;
+            f3.Show();
+            this.Hide();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
