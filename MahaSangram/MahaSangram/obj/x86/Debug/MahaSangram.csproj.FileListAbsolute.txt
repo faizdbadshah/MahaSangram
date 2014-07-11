@@ -29,3 +29,4 @@ C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\Mah
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form6.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Properties.Resources.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache
+C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form6.resources
