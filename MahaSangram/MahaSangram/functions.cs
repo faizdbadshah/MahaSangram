@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MahaSangram
 {
@@ -39,6 +40,12 @@ namespace MahaSangram
 
         } //end closeapp overloaded method for formclosing event
 
-        //third function here
+        public static void center_panel(Panel panel, Form form)
+        {
+            panel.Left = (form.ClientSize.Width - panel.Width) / 2;
+            panel.Top = (form.ClientSize.Height - panel.Height) / 2;
+        }
+
+        //fourth function here
     }
 }
