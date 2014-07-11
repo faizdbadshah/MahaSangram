@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dump_label_form1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.back_button_form3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -228,6 +229,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.back_button_form3);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label6);
@@ -239,6 +241,20 @@
             this.panel3.Size = new System.Drawing.Size(844, 279);
             this.panel3.TabIndex = 9;
             this.panel3.Visible = false;
+            // 
+            // back_button_form3
+            // 
+            this.back_button_form3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.back_button_form3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_button_form3.Font = new System.Drawing.Font("Lato", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button_form3.ForeColor = System.Drawing.Color.White;
+            this.back_button_form3.Location = new System.Drawing.Point(316, 235);
+            this.back_button_form3.Name = "back_button_form3";
+            this.back_button_form3.Size = new System.Drawing.Size(48, 44);
+            this.back_button_form3.TabIndex = 13;
+            this.back_button_form3.Text = "<";
+            this.back_button_form3.UseVisualStyleBackColor = false;
+            this.back_button_form3.Click += new System.EventHandler(this.back_button_form3_Click);
             // 
             // label7
             // 
@@ -279,7 +295,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(348, 235);
+            this.button2.Location = new System.Drawing.Point(379, 235);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(149, 44);
             this.button2.TabIndex = 10;
@@ -297,7 +313,7 @@
                 ""});
             this.checkedListBox2.Location = new System.Drawing.Point(472, 104);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(365, 94);
+            this.checkedListBox2.Size = new System.Drawing.Size(365, 84);
             this.checkedListBox2.TabIndex = 6;
             // 
             // checkedListBox1
@@ -311,7 +327,7 @@
                 ""});
             this.checkedListBox1.Location = new System.Drawing.Point(7, 104);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(365, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(365, 84);
             this.checkedListBox1.TabIndex = 5;
             // 
             // Form1
@@ -364,6 +380,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button back_button_form3;
    }
 }
 

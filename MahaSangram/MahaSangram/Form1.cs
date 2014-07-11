@@ -14,11 +14,13 @@ namespace MahaSangram
     {
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
-        private SqlDataReader data;
+        private SqlDataReader teams, players;
 
         public Form1()
         {
             InitializeComponent();
+            connection.Open();
+            query.Connection = connection;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,18 +65,24 @@ namespace MahaSangram
         {
             listBox1.Items.Clear();
             listBox2.Items.Clear();
-            connection.Open();
-            query.Connection = connection;
             query.CommandText = "select * from teams";
-            data = query.ExecuteReader();
-            if (data.HasRows)
+            teams = query.ExecuteReader();
+            if (teams.HasRows)
             {
-                while (data.Read())
+                try
                 {
-                    listBox1.Items.Add(data[1].ToString());
-                    listBox2.Items.Add(data[1].ToString());
+                    while (teams.Read())
+                    {
+                        listBox1.Items.Add(teams[1].ToString());
+                        listBox2.Items.Add(teams[1].ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.Write(e);
                 }
             }
+            teams.Close();
         }
 
         // Form2 or panel2 components defination
@@ -91,8 +99,6 @@ namespace MahaSangram
             }
         }
 
-        
-
         private void button6_Click(object sender, EventArgs e)
         {
             string team1 = listBox1.Text;
@@ -103,17 +109,43 @@ namespace MahaSangram
                 panel3.Visible = true;
                 label6.Text = "Select Playing 11 of " + team1;
                 label5.Text = "Select Playing 11 of " + team2;
+                load_team_players(team1, checkedListBox1);
+                load_team_players(team2, checkedListBox2);
             }
             else MessageBox.Show("Select both the team first!");
         }
 
+        private void load_team_players(string team, CheckedListBox box)
+        {
+            box.Items.Clear();
+            query.CommandText = "select Name from players where Team = '" + team + "'";
+            players = query.ExecuteReader();
+            if (players.HasRows)
+            {
+                try
+                {
+                    while (players.Read())
+                    {
+                        box.Items.Add(players[0].ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.Write(e);
+                }
+            }
+            players.Close();
+        }
+
+        private void back_button_form3_Click(object sender, EventArgs e)
+        {
+            functions.back_panel(panel3, panel2);
+        }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             functions.closeapp(e);
+            connection.Close();
         }
-
-        
-
     }
 }

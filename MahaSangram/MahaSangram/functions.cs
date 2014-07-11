@@ -46,6 +46,11 @@ namespace MahaSangram
             panel.Top = (form.ClientSize.Height - panel.Height) / 2;
         }
 
-        //fourth function here
+        public static void back_panel(Panel source, Panel destination) {
+            source.Hide();
+            destination.Show();
+        }
+        
+        //fifth function here
     }
 }
