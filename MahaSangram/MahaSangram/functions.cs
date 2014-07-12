@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using MetroFramework.Forms;
+using System.Windows.Forms;
 
 namespace MahaSangram
 {
-    static class functions
+    static partial class functions
     {
-        public static void closeapp()
+        public static void closeapp(IWin32Window win)
         {
-            DialogResult close = MessageBox.Show("Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo);
+            dynamic close = MetroFramework.MetroMessageBox.Show(win, "Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            //DialogResult close = MessageBox.Show("Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo);
             if (close == DialogResult.Yes)
             {
                 Application.Exit();
@@ -22,11 +24,12 @@ namespace MahaSangram
             }
         } //end closeapp
 
-        public static void closeapp(FormClosingEventArgs e)
+        public static void closeapp(IWin32Window win, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                dynamic close = MessageBox.Show("Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo);
+                dynamic close = MetroFramework.MetroMessageBox.Show(win, "Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                //dynamic close = MessageBox.Show("Are you sure you want to exit the application?", "Maha Sangram 2014", MessageBoxButtons.YesNo);
                 if (close == DialogResult.Yes)
                 {
                     e.Cancel = false;

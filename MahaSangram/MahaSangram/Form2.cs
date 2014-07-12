@@ -56,7 +56,7 @@ namespace MahaSangram
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            functions.closeapp(e);
+            functions.closeapp(this, e);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

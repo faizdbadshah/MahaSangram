@@ -8,9 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+using MetroFramework.Forms;
+
 namespace MahaSangram
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
@@ -21,6 +23,7 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,7 +61,7 @@ namespace MahaSangram
 
         private void quit_button_form1_Click(object sender, EventArgs e)
         {
-            functions.closeapp();
+            functions.closeapp(this);
         }
 
         private void load_teams()
@@ -144,8 +147,8 @@ namespace MahaSangram
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            functions.closeapp(e);
             connection.Close();
+            functions.closeapp(this, e);
         }
     }
 }

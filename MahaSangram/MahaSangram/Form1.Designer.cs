@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.newmatch_button_form1 = new System.Windows.Forms.Button();
             this.addteam_button_form1 = new System.Windows.Forms.Button();
             this.quit_button_form1 = new System.Windows.Forms.Button();
@@ -117,7 +116,7 @@
             this.panel_form1.Controls.Add(this.newmatch_button_form1);
             this.panel_form1.Controls.Add(this.addteam_button_form1);
             this.panel_form1.Controls.Add(this.statistics_button_form1);
-            this.panel_form1.Location = new System.Drawing.Point(40, 12);
+            this.panel_form1.Location = new System.Drawing.Point(35, 74);
             this.panel_form1.Name = "panel_form1";
             this.panel_form1.Size = new System.Drawing.Size(149, 194);
             this.panel_form1.TabIndex = 4;
@@ -130,7 +129,7 @@
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(259, 12);
+            this.panel2.Location = new System.Drawing.Point(269, 43);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(597, 276);
             this.panel2.TabIndex = 5;
@@ -220,7 +219,7 @@
             // 
             this.dump_label_form1.AutoSize = true;
             this.dump_label_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dump_label_form1.Location = new System.Drawing.Point(77, 209);
+            this.dump_label_form1.Location = new System.Drawing.Point(69, 282);
             this.dump_label_form1.Name = "dump_label_form1";
             this.dump_label_form1.Size = new System.Drawing.Size(66, 25);
             this.dump_label_form1.TabIndex = 8;
@@ -236,7 +235,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(12, 325);
+            this.panel3.Location = new System.Drawing.Point(12, 361);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(844, 279);
             this.panel3.TabIndex = 9;
@@ -334,8 +333,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(878, 740);
             this.Controls.Add(this.panel3);
@@ -343,7 +340,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_form1);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maha Sangram 2014";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -359,7 +355,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Button newmatch_button_form1;
         private System.Windows.Forms.Button addteam_button_form1;
         private System.Windows.Forms.Button quit_button_form1;
