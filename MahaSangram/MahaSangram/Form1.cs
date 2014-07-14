@@ -23,7 +23,7 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,9 +40,6 @@ namespace MahaSangram
             load_teams();
             listBox1.SelectedIndex = 0;
             panel2.Visible = true;
-            /*Form2 f2 = new Form2();
-            this.Hide();
-            f2.Show();*/
         }
 
         private void statistics_button_form1_Click(object sender, EventArgs e)
@@ -61,7 +58,7 @@ namespace MahaSangram
 
         private void quit_button_form1_Click(object sender, EventArgs e)
         {
-            functions.closeapp(this);
+            functions.closeapp(this, connection);
         }
 
         private void load_teams()
@@ -115,7 +112,10 @@ namespace MahaSangram
                 load_team_players(team1, checkedListBox1);
                 load_team_players(team2, checkedListBox2);
             }
-            else MessageBox.Show("Select both the team first!");
+            else
+            {
+                dynamic close = MetroFramework.MetroMessageBox.Show(this, "Select both the team first!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void load_team_players(string team, CheckedListBox box)
@@ -147,8 +147,7 @@ namespace MahaSangram
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            connection.Close();
-            functions.closeapp(this, e);
+            functions.closeapp(this, e, connection);
         }
     }
 }

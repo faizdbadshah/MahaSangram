@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.newmatch_button_form1 = new System.Windows.Forms.Button();
             this.addteam_button_form1 = new System.Windows.Forms.Button();
             this.quit_button_form1 = new System.Windows.Forms.Button();
@@ -113,26 +112,29 @@
             // 
             // panel_form1
             // 
+            this.panel_form1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel_form1.BackColor = System.Drawing.Color.Transparent;
             this.panel_form1.Controls.Add(this.quit_button_form1);
             this.panel_form1.Controls.Add(this.newmatch_button_form1);
             this.panel_form1.Controls.Add(this.addteam_button_form1);
             this.panel_form1.Controls.Add(this.statistics_button_form1);
-            this.panel_form1.Location = new System.Drawing.Point(35, 74);
+            this.panel_form1.Location = new System.Drawing.Point(4, 5);
             this.panel_form1.Name = "panel_form1";
             this.panel_form1.Size = new System.Drawing.Size(149, 194);
             this.panel_form1.TabIndex = 4;
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.listBox2);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(269, 43);
+            this.panel2.Location = new System.Drawing.Point(223, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(597, 276);
+            this.panel2.Size = new System.Drawing.Size(597, 275);
             this.panel2.TabIndex = 5;
             this.panel2.Visible = false;
             // 
@@ -150,7 +152,7 @@
             // listBox2
             // 
             this.listBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listBox2.FormattingEnabled = true;
@@ -160,7 +162,7 @@
             this.listBox2.Location = new System.Drawing.Point(316, 83);
             this.listBox2.Margin = new System.Windows.Forms.Padding(5);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(270, 92);
+            this.listBox2.Size = new System.Drawing.Size(270, 90);
             this.listBox2.TabIndex = 6;
             // 
             // button6
@@ -180,7 +182,7 @@
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listBox1.FormattingEnabled = true;
@@ -190,7 +192,7 @@
             this.listBox1.Location = new System.Drawing.Point(11, 83);
             this.listBox1.Margin = new System.Windows.Forms.Padding(5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(268, 92);
+            this.listBox1.Size = new System.Drawing.Size(268, 90);
             this.listBox1.TabIndex = 5;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -220,7 +222,7 @@
             // 
             this.dump_label_form1.AutoSize = true;
             this.dump_label_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dump_label_form1.Location = new System.Drawing.Point(69, 282);
+            this.dump_label_form1.Location = new System.Drawing.Point(36, 222);
             this.dump_label_form1.Name = "dump_label_form1";
             this.dump_label_form1.Size = new System.Drawing.Size(66, 25);
             this.dump_label_form1.TabIndex = 8;
@@ -236,7 +238,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(12, 361);
+            this.panel3.Location = new System.Drawing.Point(34, 326);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(844, 279);
             this.panel3.TabIndex = 9;
@@ -334,16 +336,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackImage = ((System.Drawing.Image)(resources.GetObject("$this.BackImage")));
-            this.ClientSize = new System.Drawing.Size(878, 740);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackImage = global::MahaSangram.Properties.Resources.background;
+            this.BackMaxSize = 1372;
+            this.ClientSize = new System.Drawing.Size(1378, 780);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dump_label_form1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_form1);
             this.Name = "Form1";
-            this.Style = MetroFramework.MetroColorStyle.White;
+            this.Style = MetroFramework.MetroColorStyle.Default;
             this.Text = "Maha Sangram 2014";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
