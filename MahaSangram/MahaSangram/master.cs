@@ -6,37 +6,35 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-
-using MetroFramework.Forms;
 
 namespace MahaSangram
 {
-    public partial class Form1 : MetroForm
+    
+    public partial class master : Form
     {
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
-
-        public Form1()
+        
+        public master()
         {
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void master_Load(object sender, EventArgs e)
         {
-            //functions.center_panel(panel_form1, this);
-            //functions.center_panel(panel2, this);
-            //functions.center_panel(panel3, this);
+            functions.center_panel(panel_form1, this, 152, 197);
+            functions.center_panel(panel2, this, 597, 275);
+            functions.center_panel(panel3, this, 844, 279);
         }
 
-        // Form1 or panel1 components defination
-        private void newmatch_button_form1_click(object sender, EventArgs e)
+        private void newmatch_button_form1_Click(object sender, EventArgs e)
         {
-            panel_form1.AutoSize = true;
+            
             panel_form1.Visible = false;
             load_teams();
             listBox1.SelectedIndex = 0;
@@ -45,14 +43,12 @@ namespace MahaSangram
 
         private void statistics_button_form1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void addteam_button_form1_Click(object sender, EventArgs e)
         {
-            Form6 f = new Form6();
-            f.Show();
-            this.Hide();
+
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)
@@ -60,6 +56,8 @@ namespace MahaSangram
             functions.closeapp(this, this, connection);
         }
 
+        
+        
         private void load_teams()
         {
             listBox1.Items.Clear();
@@ -84,7 +82,29 @@ namespace MahaSangram
             teams.Close();
         }
 
-        // Form2 or panel2 components defination
+        private void load_team_players(string team, CheckedListBox box)
+        {
+            box.Items.Clear();
+            query.CommandText = "select Name from players where Team = '" + team + "'";
+            players = query.ExecuteReader();
+            if (players.HasRows)
+            {
+                try
+                {
+                    while (players.Read())
+                    {
+                        box.Items.Add(players[0].ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.Write(e);
+                }
+            }
+            players.Close();
+        }
+
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             object selectedteam = listBox1.SelectedItem;
@@ -117,37 +137,55 @@ namespace MahaSangram
             }
         }
 
-        private void load_team_players(string team, CheckedListBox box)
-        {
-            box.Items.Clear();
-            query.CommandText = "select Name from players where Team = '" + team + "'";
-            players = query.ExecuteReader();
-            if (players.HasRows)
-            {
-                try
-                {
-                    while (players.Read())
-                    {
-                        box.Items.Add(players[0].ToString());
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.Write(e);
-                }
-            }
-            players.Close();
-        }
-
         private void back_button_form3_Click(object sender, EventArgs e)
         {
             functions.back_panel(panel3, panel2);
         }
+        
+        // Default functions
+        
+        public virtual void exit_Click(object sender, EventArgs e)
+        {
+            functions.closeapp(this, this);
+        }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        public virtual void minimize_Click(object sender, EventArgs e)
+        {
+            if (WindowState != FormWindowState.Minimized)
+                WindowState = FormWindowState.Minimized;
+        }
+
+        public virtual void restore_down_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized){
+                WindowState = FormWindowState.Normal;
+                this.Size = new Size(800, 600);
+            }
+                
+            else if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+        }
+
+        private void master_FormClosing(object sender, FormClosingEventArgs e)
         {
             functions.closeapp(this, this, e, connection);
         }
 
+        //Movable Form
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void master_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        } // Movable form end
     }
 }

@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using MetroFramework.Forms;
 
-namespace MahaSangram
+namespace MahaSangram.Pages
 {
-    public partial class Form2 : MetroForm
+    public partial class UCteams : UserControl
     {
-
-        public Form2()
+        public UCteams()
         {
             InitializeComponent();
         }

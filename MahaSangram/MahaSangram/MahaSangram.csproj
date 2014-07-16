@@ -11,7 +11,8 @@
     <RootNamespace>MahaSangram</RootNamespace>
     <AssemblyName>MahaSangram</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -64,6 +65,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\WinForms-ModernUI.1.3.0.1\lib\net40\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -100,12 +103,6 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,10 +110,28 @@
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
     <Compile Include="functions.cs" />
+    <Compile Include="master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master.Designer.cs">
+      <DependentUpon>master.cs</DependentUpon>
+    </Compile>
     <Compile Include="MSDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UCstart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\UCstart.Designer.cs">
+      <DependentUpon>UCstart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UCteams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\UCteams.Designer.cs">
+      <DependentUpon>UCteams.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,11 +148,17 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master.resx">
+      <DependentUpon>master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\UCstart.resx">
+      <DependentUpon>UCstart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\UCteams.resx">
+      <DependentUpon>UCteams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -180,6 +201,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MSDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\control_icon_apple.png" />
+    <None Include="Resources\control_icon_apple.bmp" />
     <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>

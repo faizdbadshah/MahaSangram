@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.newmatch_button_form1 = new System.Windows.Forms.Button();
             this.addteam_button_form1 = new System.Windows.Forms.Button();
             this.quit_button_form1 = new System.Windows.Forms.Button();
@@ -344,6 +345,7 @@
             this.Controls.Add(this.dump_label_form1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_form1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Default;
             this.Text = "Maha Sangram 2014";
