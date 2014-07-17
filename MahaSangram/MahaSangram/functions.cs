@@ -90,13 +90,6 @@ namespace MahaSangram
 
         }
 
-        public static void center_panel(Panel panel, UserControl UC)
-        {
-            panel.Left = (UC.ClientSize.Width - panel.Width) / 2;
-            panel.Top = (UC.ClientSize.Height - panel.Height) / 2;
-
-        }
-
         public static void back_panel(Panel source, Panel destination)
         {
             source.Hide();

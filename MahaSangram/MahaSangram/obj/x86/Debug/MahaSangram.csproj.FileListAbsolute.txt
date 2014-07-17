@@ -18,3 +18,4 @@ C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFramework.Design.dll
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Pages.UCstart.resources
 C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Pages.UCteams.resources
+C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
