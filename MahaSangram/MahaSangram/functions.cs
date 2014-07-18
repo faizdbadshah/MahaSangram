@@ -12,6 +12,8 @@ namespace MahaSangram
 {
     static partial class functions
     {
+        static Panel global_destination;
+        public static List<Panel> panels = new List<Panel>();
         public static void closeapp(Form form, IWin32Window win)
         {
             form.Opacity = 0.95;
@@ -90,12 +92,25 @@ namespace MahaSangram
 
         }
 
-        public static void back_panel(Panel source, Panel destination)
+        public static void back_panel()
         {
-            source.Hide();
-            destination.Show();
+            if (panels.Count != 0) {
+               Panel last = panels.Last();
+               panels.Remove(last);
+               global_destination.Visible = false;
+               last.Visible = true;
+            }
+            
         }
 
+        public static void change_panel(Panel source_panel, Panel destination_panel)
+        {
+            global_destination = destination_panel;
+            panels.Add(source_panel);
+            source_panel.Visible = false;
+            destination_panel.Visible = true;
+        }
+       
         //next function here
     }
 }

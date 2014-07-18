@@ -17,7 +17,7 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
-
+        
         public master()
         {
             InitializeComponent();
@@ -37,10 +37,9 @@ namespace MahaSangram
         private void newmatch_button_form1_Click(object sender, EventArgs e)
         {
 
-            panel_form1.Visible = false;
             load_teams("newmatch");
             listBox1.SelectedIndex = 0;
-            panel2.Visible = true;
+            functions.change_panel(panel_form1, panel2);
         }
 
         private void statistics_button_form1_Click(object sender, EventArgs e)
@@ -50,9 +49,8 @@ namespace MahaSangram
 
         private void addteam_button_form1_Click(object sender, EventArgs e)
         {
-            panel_form1.Visible = false;
             load_teams("addteam");
-            metroPanel1.Visible = true;
+            functions.change_panel(panel_form1, metroPanel1);
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)
@@ -82,9 +80,31 @@ namespace MahaSangram
                     }
                     else if (usefor == "addteam")
                     {
+                        metroPanel2.Controls.Clear();
+                        int location = 0;
                         while (teams.Read())
                         {
-                            listBox3.Items.Add(teams[1].ToString());
+                            MetroFramework.Controls.MetroTile team = new MetroFramework.Controls.MetroTile();
+                            team.ActiveControl = null;
+                            team.Parent = metroPanel2;
+                            team.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+                            team.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+                            team.Location = new System.Drawing.Point(0, location);
+                            team.Size = new System.Drawing.Size(360, 44);
+                            team.Name = teams[1].ToString();
+                            team.Text = teams[1].ToString();
+                            team.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+                            team.TileImage = global::MahaSangram.Properties.Resources.player_icon_small;
+                            team.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                            team.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+                            team.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+                            team.UseCustomBackColor = true;
+                            team.UseCustomForeColor = true;
+                            team.UseSelectable = true;
+                            team.UseTileImage = true;
+                            Application.DoEvents();
+                            metroPanel2.Controls.Add(team);
+                            location += 46;
                         }
                     }
                 }
@@ -139,8 +159,7 @@ namespace MahaSangram
             string team2 = listBox2.Text;
             if (team1.Length != 0 && team2.Length != 0)
             {
-                panel2.Visible = false;
-                panel3.Visible = true;
+                functions.change_panel(panel2, panel3);
                 label6.Text = "Select Playing 11 of " + team1;
                 label5.Text = "Select Playing 11 of " + team2;
                 load_team_players(team1, checkedListBox1);
@@ -154,26 +173,60 @@ namespace MahaSangram
 
         private void back_button_form3_Click(object sender, EventArgs e)
         {
-            functions.back_panel(panel3, panel2);
+            functions.back_panel();
         }
 
 
-        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void course_branch_year_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(year.Text))
-                teamname_textbox.Text = branch.Text;
-            else
-                teamname_textbox.Text = branch.Text + " - " + year.Text + " Year";
+            
+            string course_name = (string.IsNullOrEmpty(course.Text)) ? "" : course.Text;
+            string branch_name = (string.IsNullOrEmpty(branch.Text)) ? "" : (string.IsNullOrEmpty(course.Text)) ? branch.Text : " - " + branch.Text;
+            string year_name = (string.IsNullOrEmpty(year.Text)) ? "" : (string.IsNullOrEmpty(branch.Text) & string.IsNullOrEmpty(course.Text)) ? year.Text + " Year" : " - " + year.Text + " Year";
+            teamname_textbox.Text = course_name + branch_name + year_name;
         }
-
-        private void Year_SelectedIndexChanged(object sender, EventArgs e)
+        
+       private void metroToggle1_CheckedChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(branch.Text))
-                teamname_textbox.Text = year.Text + " Year";
-            else
-                teamname_textbox.Text = branch.Text + " - " + year.Text + " Year";
-
+            teamname_textbox.Text = "";
+            if (metroToggle1.Checked)
+            {
+                teamname_textbox.Enabled = true;
+                course.Enabled = false;
+                branch.Enabled = false;
+                year.Enabled = false;
+            }
+            else if (!(metroToggle1.Checked))
+            {
+                teamname_textbox.Enabled = false;
+                course.Enabled = true;
+                branch.Enabled = true;
+                year.Enabled = true;
+            }
         }
+
+       private void submit_addteam_Click(object sender, EventArgs e)
+       {
+
+           if (!(metroToggle1.Checked))
+           {
+               if (string.IsNullOrEmpty(course.Text) | string.IsNullOrEmpty(branch.Text) | string.IsNullOrEmpty(year.Text))
+               {
+                   MessageBox.Show("Select Course, Branch & Year.");
+               }
+               else
+               {
+                   //insert team into database
+                   MessageBox.Show("Team Name : " + teamname_textbox.Text);
+               }
+           }
+           else if (metroToggle1.Checked)
+           {
+               //insert team into database
+               MessageBox.Show("Team Name : " + teamname_textbox.Text);
+           }
+       }
+
         // Default functions
 
         public virtual void exit_Click(object sender, EventArgs e)
@@ -269,28 +322,6 @@ namespace MahaSangram
             base.WndProc(ref m);
         }
 
-        private void metroToolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void metroToggle1_CheckedChanged(object sender, EventArgs e)
-        {
-            teamname_textbox.Text = "";
-            if (metroToggle1.Checked)
-            {
-                teamname_textbox.Enabled = true;
-                branch.Enabled = false;
-                year.Enabled = false;
-            }
-            else if (!(metroToggle1.Checked))
-            {
-                teamname_textbox.Enabled = false;
-                branch.Enabled = true;
-                year.Enabled = true;
-            }
-        }//shadow
-
-
+        
     }
 }

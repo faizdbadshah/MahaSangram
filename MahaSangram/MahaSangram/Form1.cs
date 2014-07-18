@@ -141,7 +141,7 @@ namespace MahaSangram
 
         private void back_button_form3_Click(object sender, EventArgs e)
         {
-            functions.back_panel(panel3, panel2);
+            functions.back_panel();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
