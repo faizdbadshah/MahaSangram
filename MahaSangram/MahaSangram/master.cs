@@ -32,6 +32,7 @@ namespace MahaSangram
             functions.center_panel(panel2, this, 597, 275);
             functions.center_panel(panel3, this, 840, 282);
             functions.center_panel(metroPanel1, this, 803, 503);
+            functions.center_panel(metroPanel3, this, 1356, 686);
         }
 
         private void newmatch_button_form1_Click(object sender, EventArgs e)
@@ -320,6 +321,11 @@ namespace MahaSangram
                 }
             }
             base.WndProc(ref m);
+        }
+
+        private void main_panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         
