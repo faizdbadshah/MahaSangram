@@ -90,6 +90,11 @@
             this.submit_addteam = new System.Windows.Forms.Button();
             this.year = new MetroFramework.Controls.MetroComboBox();
             this.branch = new MetroFramework.Controls.MetroComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.top.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.metroPanel3.SuspendLayout();
@@ -190,6 +195,11 @@
             // metroPanel3
             // 
             this.metroPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.metroPanel3.Controls.Add(this.label12);
+            this.metroPanel3.Controls.Add(this.label11);
+            this.metroPanel3.Controls.Add(this.label10);
+            this.metroPanel3.Controls.Add(this.label9);
+            this.metroPanel3.Controls.Add(this.label8);
             this.metroPanel3.Controls.Add(this.groupBox3);
             this.metroPanel3.Controls.Add(this.groupBox2);
             this.metroPanel3.Controls.Add(this.groupBox1);
@@ -198,11 +208,12 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(3, 42);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(1356, 666);
+            this.metroPanel3.Size = new System.Drawing.Size(1212, 666);
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
+            this.metroPanel3.Visible = false;
             // 
             // groupBox3
             // 
@@ -212,7 +223,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton13);
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
-            this.groupBox3.Location = new System.Drawing.Point(1210, 337);
+            this.groupBox3.Location = new System.Drawing.Point(1072, 337);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(135, 180);
             this.groupBox3.TabIndex = 9;
@@ -291,7 +302,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton7);
             this.groupBox2.Controls.Add(this.metroRadioButton8);
             this.groupBox2.Controls.Add(this.metroRadioButton9);
-            this.groupBox2.Location = new System.Drawing.Point(1209, 200);
+            this.groupBox2.Location = new System.Drawing.Point(1071, 200);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(135, 131);
             this.groupBox2.TabIndex = 8;
@@ -350,7 +361,7 @@
             this.groupBox1.Controls.Add(this.metroRadioButton1);
             this.groupBox1.Controls.Add(this.metroRadioButton2);
             this.groupBox1.Controls.Add(this.metroRadioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(1209, 11);
+            this.groupBox1.Location = new System.Drawing.Point(1071, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(138, 183);
             this.groupBox1.TabIndex = 7;
@@ -635,7 +646,6 @@
             this.panel_form1.Name = "panel_form1";
             this.panel_form1.Size = new System.Drawing.Size(116, 132);
             this.panel_form1.TabIndex = 5;
-            this.panel_form1.Visible = false;
             // 
             // dump_label_form1
             // 
@@ -920,6 +930,51 @@
             this.branch.UseSelectable = true;
             this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(122, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 19);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Team 1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(791, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 19);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Team 2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(101, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(45, 19);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Runs";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(168, 76);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 19);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Wickets";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(149, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(16, 19);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "/";
+            // 
             // master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -944,6 +999,7 @@
             this.top.ResumeLayout(false);
             this.main_panel.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
+            this.metroPanel3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1027,5 +1083,10 @@
         private MetroFramework.Controls.MetroRadioButton metroRadioButton14;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton16;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton15;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
