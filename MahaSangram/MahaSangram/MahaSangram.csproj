@@ -201,6 +201,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MSDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\b4.jpg" />
+    <None Include="Resources\b3.png" />
+    <None Include="Resources\b2.png" />
+    <None Include="Resources\b1.png" />
     <None Include="Resources\player_icon_small.png" />
     <None Include="Resources\player_icon.png" />
     <None Include="Resources\Other-Graduation-alt-Metro-icon.png" />

@@ -328,6 +328,11 @@ namespace MahaSangram
 
         }
 
+        private void metroPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         
     }
 }
