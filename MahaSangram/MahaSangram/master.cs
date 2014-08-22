@@ -14,7 +14,7 @@ namespace MahaSangram
 
     public partial class master : Form
     {
-        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
         
@@ -332,6 +332,48 @@ namespace MahaSangram
         {
 
         }
+
+        private void metroRadioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            if (metroRadioButton11.Checked==true)
+            {
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton10.Enabled = true;
+                metroRadioButton12.Enabled = true;
+                metroRadioButton13.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton15.Enabled = true;
+                metroRadioButton16.Enabled = true;
+            }
+        }
+
+        private void metroRadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (metroRadioButton4.Checked == true)
+            {
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton10.Enabled = true;
+                metroRadioButton13.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                metroRadioButton12.Enabled = false;
+                metroRadioButton15.Enabled = false;
+            }
+        }
+
+        private void metroRadioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
         
     }

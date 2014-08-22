@@ -209,7 +209,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(0, 39);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(1215, 666);
+            this.metroPanel3.Size = new System.Drawing.Size(1215, 669);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -228,7 +228,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(1069, 343);
+            this.groupBox3.Location = new System.Drawing.Point(1069, 344);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(138, 180);
             this.groupBox3.TabIndex = 9;
@@ -238,6 +238,7 @@
             // metroRadioButton16
             // 
             this.metroRadioButton16.AutoSize = true;
+            this.metroRadioButton16.Enabled = false;
             this.metroRadioButton16.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton16.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton16.Location = new System.Drawing.Point(13, 144);
@@ -254,6 +255,7 @@
             // metroRadioButton10
             // 
             this.metroRadioButton10.AutoSize = true;
+            this.metroRadioButton10.Enabled = false;
             this.metroRadioButton10.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton10.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton10.Location = new System.Drawing.Point(13, 50);
@@ -270,6 +272,7 @@
             // metroRadioButton12
             // 
             this.metroRadioButton12.AutoSize = true;
+            this.metroRadioButton12.Enabled = false;
             this.metroRadioButton12.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton12.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton12.Location = new System.Drawing.Point(13, 26);
@@ -286,6 +289,7 @@
             // metroRadioButton13
             // 
             this.metroRadioButton13.AutoSize = true;
+            this.metroRadioButton13.Enabled = false;
             this.metroRadioButton13.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton13.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton13.Location = new System.Drawing.Point(13, 122);
@@ -302,6 +306,7 @@
             // metroRadioButton14
             // 
             this.metroRadioButton14.AutoSize = true;
+            this.metroRadioButton14.Enabled = false;
             this.metroRadioButton14.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton14.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton14.Location = new System.Drawing.Point(13, 74);
@@ -318,6 +323,7 @@
             // metroRadioButton15
             // 
             this.metroRadioButton15.AutoSize = true;
+            this.metroRadioButton15.Enabled = false;
             this.metroRadioButton15.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton15.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton15.Location = new System.Drawing.Point(13, 98);
@@ -341,7 +347,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(1069, 208);
+            this.groupBox2.Location = new System.Drawing.Point(1069, 209);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(138, 131);
             this.groupBox2.TabIndex = 8;
@@ -351,6 +357,7 @@
             // metroRadioButton6
             // 
             this.metroRadioButton6.AutoSize = true;
+            this.metroRadioButton6.Enabled = false;
             this.metroRadioButton6.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton6.Location = new System.Drawing.Point(15, 26);
             this.metroRadioButton6.Name = "metroRadioButton6";
@@ -365,6 +372,7 @@
             // metroRadioButton7
             // 
             this.metroRadioButton7.AutoSize = true;
+            this.metroRadioButton7.Enabled = false;
             this.metroRadioButton7.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton7.Location = new System.Drawing.Point(15, 50);
             this.metroRadioButton7.Name = "metroRadioButton7";
@@ -379,6 +387,7 @@
             // metroRadioButton8
             // 
             this.metroRadioButton8.AutoSize = true;
+            this.metroRadioButton8.Enabled = false;
             this.metroRadioButton8.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton8.Location = new System.Drawing.Point(15, 98);
             this.metroRadioButton8.Name = "metroRadioButton8";
@@ -393,6 +402,7 @@
             // metroRadioButton9
             // 
             this.metroRadioButton9.AutoSize = true;
+            this.metroRadioButton9.Enabled = false;
             this.metroRadioButton9.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton9.Location = new System.Drawing.Point(15, 74);
             this.metroRadioButton9.Name = "metroRadioButton9";
@@ -409,9 +419,9 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1069, 538);
+            this.button1.Location = new System.Drawing.Point(1069, 539);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 35);
             this.button1.TabIndex = 25;
@@ -474,6 +484,7 @@
             this.metroRadioButton11.UseCustomForeColor = true;
             this.metroRadioButton11.UseSelectable = true;
             this.metroRadioButton11.UseStyleColors = true;
+            this.metroRadioButton11.CheckedChanged += new System.EventHandler(this.metroRadioButton11_CheckedChanged);
             // 
             // metroRadioButton4
             // 
@@ -492,6 +503,7 @@
             this.metroRadioButton4.UseCustomForeColor = true;
             this.metroRadioButton4.UseSelectable = true;
             this.metroRadioButton4.UseStyleColors = true;
+            this.metroRadioButton4.CheckedChanged += new System.EventHandler(this.metroRadioButton4_CheckedChanged);
             // 
             // metroRadioButton5
             // 
@@ -510,6 +522,7 @@
             this.metroRadioButton5.UseCustomForeColor = true;
             this.metroRadioButton5.UseSelectable = true;
             this.metroRadioButton5.UseStyleColors = true;
+            this.metroRadioButton5.CheckedChanged += new System.EventHandler(this.metroRadioButton5_CheckedChanged);
             // 
             // metroRadioButton1
             // 
@@ -570,12 +583,12 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(851, 112);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 35);
+            this.label13.Size = new System.Drawing.Size(118, 33);
             this.label13.TabIndex = 16;
             this.label13.Text = "Wickets";
             // 
@@ -583,11 +596,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(824, 112);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(27, 35);
+            this.label14.Size = new System.Drawing.Size(23, 33);
             this.label14.TabIndex = 17;
             this.label14.Text = "/";
             // 
@@ -595,11 +608,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(741, 112);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 35);
+            this.label15.Size = new System.Drawing.Size(83, 33);
             this.label15.TabIndex = 15;
             this.label15.Text = "Runs";
             // 
@@ -608,12 +621,12 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label11.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(408, 115);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 35);
+            this.label11.Size = new System.Drawing.Size(118, 33);
             this.label11.TabIndex = 13;
             this.label11.Text = "Wickets";
             // 
@@ -621,11 +634,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Roboto", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(318, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(186, 58);
+            this.label8.Size = new System.Drawing.Size(187, 55);
             this.label8.TabIndex = 10;
             this.label8.Text = "Team 1";
             // 
@@ -633,11 +646,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(381, 115);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(27, 35);
+            this.label12.Size = new System.Drawing.Size(23, 33);
             this.label12.TabIndex = 14;
             this.label12.Text = "/";
             // 
@@ -645,11 +658,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Roboto", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(764, 47);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 58);
+            this.label9.Size = new System.Drawing.Size(187, 55);
             this.label9.TabIndex = 11;
             this.label9.Text = "Team 2";
             // 
@@ -657,11 +670,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(298, 115);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 35);
+            this.label10.Size = new System.Drawing.Size(83, 33);
             this.label10.TabIndex = 12;
             this.label10.Text = "Runs";
             // 
@@ -670,7 +683,7 @@
             this.back_button_form3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.back_button_form3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.back_button_form3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back_button_form3.Font = new System.Drawing.Font("Lato", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button_form3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_button_form3.ForeColor = System.Drawing.Color.White;
             this.back_button_form3.Location = new System.Drawing.Point(12, 661);
             this.back_button_form3.Name = "back_button_form3";
@@ -709,22 +722,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.label5.Location = new System.Drawing.Point(547, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(239, 23);
+            this.label5.Size = new System.Drawing.Size(242, 24);
             this.label5.TabIndex = 12;
             this.label5.Text = "Select Playing 11 of Team 2";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.label6.Location = new System.Drawing.Point(58, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(239, 23);
+            this.label6.Size = new System.Drawing.Size(242, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "Select Playing 11 of Team 1";
             // 
@@ -732,7 +745,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(379, 235);
             this.button2.Name = "button2";
@@ -744,7 +757,7 @@
             // checkedListBox2
             // 
             this.checkedListBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.checkedListBox2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkedListBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
@@ -752,13 +765,13 @@
                 ""});
             this.checkedListBox2.Location = new System.Drawing.Point(472, 104);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(365, 84);
+            this.checkedListBox2.Size = new System.Drawing.Size(365, 80);
             this.checkedListBox2.TabIndex = 0;
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.checkedListBox1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkedListBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
@@ -766,7 +779,7 @@
                 ""});
             this.checkedListBox1.Location = new System.Drawing.Point(7, 104);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(365, 84);
+            this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
             this.checkedListBox1.TabIndex = 5;
             // 
             // panel2
@@ -799,7 +812,7 @@
             // 
             this.listBox2.BackColor = System.Drawing.SystemColors.MenuBar;
             this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 18;
@@ -815,7 +828,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(224, 231);
             this.button6.Name = "button6";
@@ -829,7 +842,7 @@
             // 
             this.listBox1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
@@ -845,22 +858,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.label2.Location = new System.Drawing.Point(396, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 23);
+            this.label2.Size = new System.Drawing.Size(131, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Select Team 2";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.label1.Location = new System.Drawing.Point(76, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.Size = new System.Drawing.Size(131, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Select Team 1";
             // 
@@ -894,7 +907,7 @@
             // 
             this.quit_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quit_button_form1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quit_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quit_button_form1.ForeColor = System.Drawing.Color.White;
             this.quit_button_form1.Location = new System.Drawing.Point(0, 150);
             this.quit_button_form1.Name = "quit_button_form1";
@@ -908,7 +921,7 @@
             // 
             this.newmatch_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.newmatch_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newmatch_button_form1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newmatch_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newmatch_button_form1.ForeColor = System.Drawing.Color.White;
             this.newmatch_button_form1.Location = new System.Drawing.Point(0, 0);
             this.newmatch_button_form1.Name = "newmatch_button_form1";
@@ -922,7 +935,7 @@
             // 
             this.addteam_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.addteam_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addteam_button_form1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addteam_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addteam_button_form1.ForeColor = System.Drawing.Color.White;
             this.addteam_button_form1.Location = new System.Drawing.Point(0, 100);
             this.addteam_button_form1.Name = "addteam_button_form1";
@@ -936,7 +949,7 @@
             // 
             this.statistics_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.statistics_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.statistics_button_form1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statistics_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statistics_button_form1.ForeColor = System.Drawing.Color.White;
             this.statistics_button_form1.Location = new System.Drawing.Point(0, 50);
             this.statistics_button_form1.Name = "statistics_button_form1";
@@ -965,9 +978,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1221, 463);
+            this.metroPanel1.Location = new System.Drawing.Point(1222, 463);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(122, 123);
+            this.metroPanel1.Size = new System.Drawing.Size(128, 115);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbar = true;
             this.metroPanel1.VerticalScrollbarBarColor = false;
@@ -1046,7 +1059,7 @@
             this.metroToggle1.AutoSize = true;
             this.metroToggle1.Location = new System.Drawing.Point(695, 181);
             this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(80, 23);
+            this.metroToggle1.Size = new System.Drawing.Size(80, 24);
             this.metroToggle1.TabIndex = 20;
             this.metroToggle1.Text = "Off";
             this.metroToggle1.UseSelectable = true;
@@ -1056,7 +1069,7 @@
             // 
             this.addplayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.addplayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addplayer.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addplayer.ForeColor = System.Drawing.Color.White;
             this.addplayer.Location = new System.Drawing.Point(21, 41);
             this.addplayer.Name = "addplayer";
@@ -1068,11 +1081,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lato Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.label4.Location = new System.Drawing.Point(513, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 45);
+            this.label4.Size = new System.Drawing.Size(190, 42);
             this.label4.TabIndex = 0;
             this.label4.Text = "Add Team";
             // 
@@ -1112,7 +1125,7 @@
             // 
             this.submit_addteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.submit_addteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submit_addteam.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit_addteam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submit_addteam.ForeColor = System.Drawing.Color.White;
             this.submit_addteam.Location = new System.Drawing.Point(466, 420);
             this.submit_addteam.Name = "submit_addteam";
@@ -1164,14 +1177,14 @@
             // 
             // master
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1362, 740);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.top);
             this.Controls.Add(this.main_panel);
-            this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
