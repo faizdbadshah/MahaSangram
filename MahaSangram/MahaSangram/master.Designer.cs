@@ -100,6 +100,8 @@
             this.submit_addteam = new System.Windows.Forms.Button();
             this.year = new MetroFramework.Controls.MetroComboBox();
             this.branch = new MetroFramework.Controls.MetroComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.top.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.metroPanel3.SuspendLayout();
@@ -209,7 +211,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(0, 39);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(1215, 669);
+            this.metroPanel3.Size = new System.Drawing.Size(690, 637);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -221,6 +223,7 @@
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.button4);
             this.groupBox3.Controls.Add(this.metroRadioButton16);
             this.groupBox3.Controls.Add(this.metroRadioButton10);
             this.groupBox3.Controls.Add(this.metroRadioButton12);
@@ -228,9 +231,9 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(1069, 344);
+            this.groupBox3.Location = new System.Drawing.Point(544, 367);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(138, 180);
+            this.groupBox3.Size = new System.Drawing.Size(138, 211);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Out";
@@ -238,7 +241,6 @@
             // metroRadioButton16
             // 
             this.metroRadioButton16.AutoSize = true;
-            this.metroRadioButton16.Enabled = false;
             this.metroRadioButton16.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton16.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton16.Location = new System.Drawing.Point(13, 144);
@@ -255,7 +257,6 @@
             // metroRadioButton10
             // 
             this.metroRadioButton10.AutoSize = true;
-            this.metroRadioButton10.Enabled = false;
             this.metroRadioButton10.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton10.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton10.Location = new System.Drawing.Point(13, 50);
@@ -272,7 +273,6 @@
             // metroRadioButton12
             // 
             this.metroRadioButton12.AutoSize = true;
-            this.metroRadioButton12.Enabled = false;
             this.metroRadioButton12.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton12.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton12.Location = new System.Drawing.Point(13, 26);
@@ -289,7 +289,6 @@
             // metroRadioButton13
             // 
             this.metroRadioButton13.AutoSize = true;
-            this.metroRadioButton13.Enabled = false;
             this.metroRadioButton13.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton13.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton13.Location = new System.Drawing.Point(13, 122);
@@ -306,7 +305,6 @@
             // metroRadioButton14
             // 
             this.metroRadioButton14.AutoSize = true;
-            this.metroRadioButton14.Enabled = false;
             this.metroRadioButton14.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton14.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton14.Location = new System.Drawing.Point(13, 74);
@@ -323,7 +321,6 @@
             // metroRadioButton15
             // 
             this.metroRadioButton15.AutoSize = true;
-            this.metroRadioButton15.Enabled = false;
             this.metroRadioButton15.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton15.ForeColor = System.Drawing.Color.Black;
             this.metroRadioButton15.Location = new System.Drawing.Point(13, 98);
@@ -341,15 +338,16 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.metroRadioButton6);
             this.groupBox2.Controls.Add(this.metroRadioButton7);
             this.groupBox2.Controls.Add(this.metroRadioButton8);
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(1069, 209);
+            this.groupBox2.Location = new System.Drawing.Point(544, 213);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(138, 131);
+            this.groupBox2.Size = new System.Drawing.Size(138, 163);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Extra";
@@ -357,7 +355,6 @@
             // metroRadioButton6
             // 
             this.metroRadioButton6.AutoSize = true;
-            this.metroRadioButton6.Enabled = false;
             this.metroRadioButton6.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton6.Location = new System.Drawing.Point(15, 26);
             this.metroRadioButton6.Name = "metroRadioButton6";
@@ -368,11 +365,11 @@
             this.metroRadioButton6.UseCustomForeColor = true;
             this.metroRadioButton6.UseSelectable = true;
             this.metroRadioButton6.UseStyleColors = true;
+            this.metroRadioButton6.CheckedChanged += new System.EventHandler(this.metroRadioButton6_CheckedChanged);
             // 
             // metroRadioButton7
             // 
             this.metroRadioButton7.AutoSize = true;
-            this.metroRadioButton7.Enabled = false;
             this.metroRadioButton7.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton7.Location = new System.Drawing.Point(15, 50);
             this.metroRadioButton7.Name = "metroRadioButton7";
@@ -383,11 +380,11 @@
             this.metroRadioButton7.UseCustomForeColor = true;
             this.metroRadioButton7.UseSelectable = true;
             this.metroRadioButton7.UseStyleColors = true;
+            this.metroRadioButton7.CheckedChanged += new System.EventHandler(this.metroRadioButton7_CheckedChanged);
             // 
             // metroRadioButton8
             // 
             this.metroRadioButton8.AutoSize = true;
-            this.metroRadioButton8.Enabled = false;
             this.metroRadioButton8.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton8.Location = new System.Drawing.Point(15, 98);
             this.metroRadioButton8.Name = "metroRadioButton8";
@@ -398,11 +395,11 @@
             this.metroRadioButton8.UseCustomForeColor = true;
             this.metroRadioButton8.UseSelectable = true;
             this.metroRadioButton8.UseStyleColors = true;
+            this.metroRadioButton8.CheckedChanged += new System.EventHandler(this.metroRadioButton8_CheckedChanged);
             // 
             // metroRadioButton9
             // 
             this.metroRadioButton9.AutoSize = true;
-            this.metroRadioButton9.Enabled = false;
             this.metroRadioButton9.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton9.Location = new System.Drawing.Point(15, 74);
             this.metroRadioButton9.Name = "metroRadioButton9";
@@ -413,6 +410,7 @@
             this.metroRadioButton9.UseCustomForeColor = true;
             this.metroRadioButton9.UseSelectable = true;
             this.metroRadioButton9.UseStyleColors = true;
+            this.metroRadioButton9.CheckedChanged += new System.EventHandler(this.metroRadioButton9_CheckedChanged);
             // 
             // button1
             // 
@@ -421,7 +419,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1069, 539);
+            this.button1.Location = new System.Drawing.Point(544, 594);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 35);
             this.button1.TabIndex = 25;
@@ -444,7 +442,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1215, 207);
+            this.panel1.Size = new System.Drawing.Size(690, 207);
             this.panel1.TabIndex = 27;
             // 
             // groupBox1
@@ -459,7 +457,7 @@
             this.groupBox1.Controls.Add(this.metroRadioButton3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(1069, 9);
+            this.groupBox1.Location = new System.Drawing.Point(544, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(138, 183);
             this.groupBox1.TabIndex = 7;
@@ -484,7 +482,6 @@
             this.metroRadioButton11.UseCustomForeColor = true;
             this.metroRadioButton11.UseSelectable = true;
             this.metroRadioButton11.UseStyleColors = true;
-            this.metroRadioButton11.CheckedChanged += new System.EventHandler(this.metroRadioButton11_CheckedChanged);
             // 
             // metroRadioButton4
             // 
@@ -541,6 +538,7 @@
             this.metroRadioButton1.UseCustomForeColor = true;
             this.metroRadioButton1.UseSelectable = true;
             this.metroRadioButton1.UseStyleColors = true;
+            this.metroRadioButton1.CheckedChanged += new System.EventHandler(this.metroRadioButton1_CheckedChanged);
             // 
             // metroRadioButton2
             // 
@@ -559,6 +557,7 @@
             this.metroRadioButton2.UseCustomForeColor = true;
             this.metroRadioButton2.UseSelectable = true;
             this.metroRadioButton2.UseStyleColors = true;
+            this.metroRadioButton2.CheckedChanged += new System.EventHandler(this.metroRadioButton2_CheckedChanged);
             // 
             // metroRadioButton3
             // 
@@ -577,6 +576,7 @@
             this.metroRadioButton3.UseCustomForeColor = true;
             this.metroRadioButton3.UseSelectable = true;
             this.metroRadioButton3.UseStyleColors = true;
+            this.metroRadioButton3.CheckedChanged += new System.EventHandler(this.metroRadioButton3_CheckedChanged);
             // 
             // label13
             // 
@@ -1175,6 +1175,26 @@
             this.branch.UseSelectable = true;
             this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(44, 125);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 30);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Reset";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(41, 175);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 30);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Reset";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1294,5 +1314,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
