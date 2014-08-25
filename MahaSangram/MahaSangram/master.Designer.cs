@@ -38,6 +38,7 @@
             this.main_panel = new System.Windows.Forms.Panel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.metroRadioButton16 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton10 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton12 = new MetroFramework.Controls.MetroRadioButton();
@@ -45,12 +46,15 @@
             this.metroRadioButton14 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton15 = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.metroRadioButton6 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton7 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton8 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton9 = new MetroFramework.Controls.MetroRadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroRadioButton11 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton4 = new MetroFramework.Controls.MetroRadioButton();
@@ -100,8 +104,12 @@
             this.submit_addteam = new System.Windows.Forms.Button();
             this.year = new MetroFramework.Controls.MetroComboBox();
             this.branch = new MetroFramework.Controls.MetroComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.top.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.metroPanel3.SuspendLayout();
@@ -115,6 +123,7 @@
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // top
@@ -202,6 +211,7 @@
             // metroPanel3
             // 
             this.metroPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.metroPanel3.Controls.Add(this.tabControl1);
             this.metroPanel3.Controls.Add(this.groupBox3);
             this.metroPanel3.Controls.Add(this.groupBox2);
             this.metroPanel3.Controls.Add(this.button1);
@@ -211,7 +221,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(0, 39);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(690, 637);
+            this.metroPanel3.Size = new System.Drawing.Size(1216, 637);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -231,12 +241,22 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(544, 367);
+            this.groupBox3.Location = new System.Drawing.Point(1070, 367);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(138, 211);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Out";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(41, 175);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 30);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Reset";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // metroRadioButton16
             // 
@@ -345,12 +365,22 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(544, 213);
+            this.groupBox2.Location = new System.Drawing.Point(1070, 213);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(138, 163);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Extra";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(44, 125);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 30);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Reset";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // metroRadioButton6
             // 
@@ -419,7 +449,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(544, 594);
+            this.button1.Location = new System.Drawing.Point(1070, 594);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 35);
             this.button1.TabIndex = 25;
@@ -431,6 +461,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImage = global::MahaSangram.Properties.Resources.b2;
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label14);
@@ -442,8 +474,30 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(690, 207);
+            this.panel1.Size = new System.Drawing.Size(1216, 207);
             this.panel1.TabIndex = 27;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(813, 159);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 20);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Overs";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(364, 159);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(50, 20);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "Overs";
             // 
             // groupBox1
             // 
@@ -457,7 +511,7 @@
             this.groupBox1.Controls.Add(this.metroRadioButton3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(544, 9);
+            this.groupBox1.Location = new System.Drawing.Point(1070, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(138, 183);
             this.groupBox1.TabIndex = 7;
@@ -1175,25 +1229,68 @@
             this.branch.UseSelectable = true;
             this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
             // 
-            // button3
+            // tabControl1
             // 
-            this.button3.Location = new System.Drawing.Point(44, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 30);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Reset";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Location = new System.Drawing.Point(16, 226);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1048, 393);
+            this.tabControl1.TabIndex = 30;
             // 
-            // button4
+            // tabPage1
             // 
-            this.button4.Location = new System.Drawing.Point(41, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 30);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Reset";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Overview";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Scorecard";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Batting Stats";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Bowling Stats";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Graph";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // master
             // 
@@ -1237,6 +1334,7 @@
             this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1316,5 +1414,13 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
