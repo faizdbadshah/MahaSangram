@@ -333,13 +333,44 @@ namespace MahaSangram
 
         }
 
+
+        private void metroRadioButton11_CheckedChanged(object sender, EventArgs e)  // Dot
+        {
+            if (metroRadioButton11.Checked == true)
+            {
+                button1.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton10.Enabled = true;
+                metroRadioButton12.Enabled = true;
+                metroRadioButton13.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton15.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                metroRadioButton8.Enabled = false;
+                metroRadioButton9.Enabled = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+            }
+        }
+
+        
         private void metroRadioButton4_CheckedChanged(object sender, EventArgs e)  // 1 run
         {
             if (metroRadioButton4.Checked == true)
             {
+                button1.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
                 metroRadioButton15.Enabled = false;
+                metroRadioButton10.Checked = false;
                 metroRadioButton12.Checked = false;
                 metroRadioButton13.Checked = false;
                 metroRadioButton15.Checked = false;
@@ -350,9 +381,18 @@ namespace MahaSangram
         {
             if (metroRadioButton5.Checked == true)
             {
+                button1.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
                 metroRadioButton15.Enabled = false;
+                metroRadioButton10.Checked = false;
                 metroRadioButton12.Checked = false;
                 metroRadioButton13.Checked = false;
                 metroRadioButton15.Checked = false;
@@ -363,9 +403,18 @@ namespace MahaSangram
         {
             if (metroRadioButton2.Checked == true)
             {
+                button1.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
                 metroRadioButton15.Enabled = false;
+                metroRadioButton10.Checked = false;
                 metroRadioButton12.Checked = false;
                 metroRadioButton13.Checked = false;
                 metroRadioButton15.Checked = false;
@@ -376,6 +425,12 @@ namespace MahaSangram
         {
             if (metroRadioButton1.Checked == true)
             {
+                button1.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton16.Enabled = true;
                 metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
@@ -393,6 +448,8 @@ namespace MahaSangram
         {
             if (metroRadioButton3.Checked == true)
             {
+                button1.Enabled = true;
+                metroRadioButton7.Enabled = true;
                 metroRadioButton6.Enabled = false;
                 metroRadioButton8.Enabled = false;
                 metroRadioButton9.Enabled = false;
@@ -416,6 +473,10 @@ namespace MahaSangram
         {
             if (metroRadioButton6.Checked == true)
             {
+                metroRadioButton13.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton15.Enabled = true;
+                metroRadioButton16.Enabled = true;
                 metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton10.Checked = false;
@@ -427,6 +488,8 @@ namespace MahaSangram
         {
             if (metroRadioButton7.Checked == true)
             {
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true; 
                 metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
@@ -442,6 +505,8 @@ namespace MahaSangram
         {
             if (metroRadioButton9.Checked == true)
             {
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true; 
                 metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
@@ -457,6 +522,8 @@ namespace MahaSangram
         {
             if (metroRadioButton8.Checked == true)
             {
+                metroRadioButton14.Enabled = true;
+                metroRadioButton16.Enabled = true; 
                 metroRadioButton10.Enabled = false;
                 metroRadioButton12.Enabled = false;
                 metroRadioButton13.Enabled = false;
@@ -470,21 +537,23 @@ namespace MahaSangram
 
         private void button3_Click(object sender, EventArgs e)
         {
+            metroRadioButton1.Checked = false;
+            metroRadioButton2.Checked = false;
+            metroRadioButton3.Checked = false;
+            metroRadioButton4.Checked = false;
+            metroRadioButton5.Checked = false;
             metroRadioButton6.Checked = false;
-            metroRadioButton7.Checked = false; 
-            metroRadioButton8.Checked = false; 
+            metroRadioButton7.Checked = false;
+            metroRadioButton8.Checked = false;
             metroRadioButton9.Checked = false;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
             metroRadioButton10.Checked = false;
+            metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton13.Checked = false;
             metroRadioButton14.Checked = false;
             metroRadioButton15.Checked = false;
             metroRadioButton16.Checked = false;
-        }
+        }   
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -526,6 +595,8 @@ namespace MahaSangram
 
             a = (100 * b) + (10 * c) + d;       
         }
+
+       
 
 
 
