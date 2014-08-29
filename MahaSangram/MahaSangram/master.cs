@@ -17,7 +17,10 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
-        
+
+        int a, b, c, d, i;
+        int[] record = new int[150];
+
         public master()
         {
             InitializeComponent();
@@ -557,8 +560,7 @@ namespace MahaSangram
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a,b,c,d;
-            a = b = c = d = 0;
+            i = a = b = c = d = 0;
             if (metroRadioButton4.Checked == true)
                 b = 1;
             else if (metroRadioButton5.Checked == true)
@@ -593,7 +595,11 @@ namespace MahaSangram
                 d = 6;
 
 
-            a = (100 * b) + (10 * c) + d;       
+            a = (100 * b) + (10 * c) + d;
+
+            record[i] = a;
+            i++;
+    
         }
 
        
