@@ -18,7 +18,7 @@ namespace MahaSangram
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
 
-        int a, b, c, d, i;
+        int a, b, c, d, i=0,overs=0,balls=0,runs=0;
         int[] record = new int[150];
 
         public master()
@@ -31,6 +31,7 @@ namespace MahaSangram
 
         private void master_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
             functions.center_panel(panel_form1, this, 152, 197);
             functions.center_panel(panel2, this, 597, 275);
             functions.center_panel(panel3, this, 840, 282);
@@ -598,6 +599,21 @@ namespace MahaSangram
             a = (100 * b) + (10 * c) + d;
 
             record[i] = a;
+            if (c != 1 && c != 2)
+            {
+                balls++;
+                runs += b;
+            }
+            else
+                runs += b + 1;
+
+            if (balls == 6)
+            {
+                overs++;
+                balls = 0;
+            }
+            
+            
             i++;
     
         }

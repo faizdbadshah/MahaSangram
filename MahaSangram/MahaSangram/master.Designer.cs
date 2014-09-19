@@ -154,7 +154,7 @@
             this.restore_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(208)))), ((int)(((byte)(42)))));
             this.restore_down.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.restore_down.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(187)))), ((int)(((byte)(85)))));
-            this.restore_down.Location = new System.Drawing.Point(34, 10);
+            this.restore_down.Location = new System.Drawing.Point(1316, 12);
             this.restore_down.Name = "restore_down";
             this.restore_down.SelectionColor = System.Drawing.Color.Transparent;
             this.restore_down.Size = new System.Drawing.Size(13, 13);
@@ -165,7 +165,7 @@
             this.minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(11)))));
             this.minimize.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.minimize.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(179)))), ((int)(((byte)(13)))));
-            this.minimize.Location = new System.Drawing.Point(53, 10);
+            this.minimize.Location = new System.Drawing.Point(1292, 13);
             this.minimize.Name = "minimize";
             this.minimize.SelectionColor = System.Drawing.Color.Transparent;
             this.minimize.Size = new System.Drawing.Size(13, 13);
@@ -176,7 +176,7 @@
             this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(79)))));
             this.exit.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.exit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(76)))));
-            this.exit.Location = new System.Drawing.Point(16, 10);
+            this.exit.Location = new System.Drawing.Point(1338, 12);
             this.exit.Name = "exit";
             this.exit.SelectionColor = System.Drawing.Color.Transparent;
             this.exit.Size = new System.Drawing.Size(13, 13);
