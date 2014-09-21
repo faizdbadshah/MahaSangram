@@ -113,6 +113,16 @@ namespace MahaSangram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Other_Graduation_alt_Metro_icon {
             get {
                 object obj = ResourceManager.GetObject("Other-Graduation-alt-Metro-icon", resourceCulture);
@@ -136,6 +146,16 @@ namespace MahaSangram.Properties {
         internal static System.Drawing.Bitmap player_icon_small {
             get {
                 object obj = ResourceManager.GetObject("player_icon_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap websites_illustration {
+            get {
+                object obj = ResourceManager.GetObject("websites-illustration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

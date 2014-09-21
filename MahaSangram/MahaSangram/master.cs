@@ -14,7 +14,7 @@ namespace MahaSangram
 
     public partial class master : Form
     {
-        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
 
@@ -32,7 +32,7 @@ namespace MahaSangram
         private void master_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            functions.center_panel(panel_form1, this, 152, 197);
+            functions.center_panel(panel_form1, this, 292, 530);
             functions.center_panel(panel2, this, 597, 275);
             functions.center_panel(panel3, this, 840, 282);
             functions.center_panel(metroPanel1, this, 803, 503);
@@ -41,7 +41,6 @@ namespace MahaSangram
 
         private void newmatch_button_form1_Click(object sender, EventArgs e)
         {
-
             load_teams("newmatch");
             listBox1.SelectedIndex = 0;
             functions.change_panel(panel_form1, panel2);
@@ -62,8 +61,6 @@ namespace MahaSangram
         {
             functions.closeapp(this, this, connection);
         }
-
-
 
         private void load_teams(string usefor)
         {

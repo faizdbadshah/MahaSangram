@@ -201,6 +201,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MSDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\websites-illustration.jpg" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\b4.jpg" />
     <None Include="Resources\b3.png" />
     <None Include="Resources\b2.png" />
