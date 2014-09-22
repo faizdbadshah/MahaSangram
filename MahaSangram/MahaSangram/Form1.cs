@@ -50,9 +50,9 @@ namespace MahaSangram
 
         private void addteam_button_form1_Click(object sender, EventArgs e)
         {
-            Form6 f = new Form6();
-            f.Show();
-            this.Hide();
+            //Form6 f = new Form6();
+            //f.Show();
+           // this.Hide();
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)

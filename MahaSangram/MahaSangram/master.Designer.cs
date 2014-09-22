@@ -57,39 +57,6 @@
             this.metroRadioButton8 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton9 = new MetroFramework.Controls.MetroRadioButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.back_button_form3 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_form1 = new System.Windows.Forms.Panel();
-            this.dump_label_form1 = new System.Windows.Forms.Label();
-            this.quit_button_form1 = new System.Windows.Forms.Button();
-            this.newmatch_button_form1 = new System.Windows.Forms.Button();
-            this.addteam_button_form1 = new System.Windows.Forms.Button();
-            this.statistics_button_form1 = new System.Windows.Forms.Button();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.course = new MetroFramework.Controls.MetroComboBox();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.line = new System.Windows.Forms.Label();
-            this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
-            this.addplayer = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.submit_addteam = new System.Windows.Forms.Button();
-            this.year = new MetroFramework.Controls.MetroComboBox();
-            this.branch = new MetroFramework.Controls.MetroComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -108,24 +75,57 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.back_button_form3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_form1 = new System.Windows.Forms.Panel();
+            this.dump_label_form1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.quit_button_form1 = new System.Windows.Forms.Button();
+            this.newmatch_button_form1 = new System.Windows.Forms.Button();
+            this.addteam_button_form1 = new System.Windows.Forms.Button();
+            this.statistics_button_form1 = new System.Windows.Forms.Button();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.course = new MetroFramework.Controls.MetroComboBox();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.line = new System.Windows.Forms.Label();
+            this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
+            this.addplayer = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.teamname_textbox = new MetroFramework.Controls.MetroTextBox();
+            this.submit_addteam = new System.Windows.Forms.Button();
+            this.year = new MetroFramework.Controls.MetroComboBox();
+            this.branch = new MetroFramework.Controls.MetroComboBox();
             this.top.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_form1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,15 +220,14 @@
             this.metroPanel3.Controls.Add(this.button3);
             this.metroPanel3.Controls.Add(this.tabControl1);
             this.metroPanel3.Controls.Add(this.groupBox3);
-            this.metroPanel3.Controls.Add(this.groupBox2);
             this.metroPanel3.Controls.Add(this.button1);
             this.metroPanel3.Controls.Add(this.panel1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(1012, 451);
+            this.metroPanel3.Location = new System.Drawing.Point(1091, 517);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(203, 156);
+            this.metroPanel3.Size = new System.Drawing.Size(182, 155);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -244,7 +243,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(79, 304);
+            this.button3.Location = new System.Drawing.Point(58, 303);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 34);
             this.button3.TabIndex = 31;
@@ -326,7 +325,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(57, 116);
+            this.groupBox3.Location = new System.Drawing.Point(36, 115);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(138, 172);
             this.groupBox3.TabIndex = 9;
@@ -439,7 +438,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(57, -27);
+            this.groupBox2.Location = new System.Drawing.Point(33, 199);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(138, 137);
             this.groupBox2.TabIndex = 8;
@@ -514,505 +513,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(57, 354);
+            this.button1.Location = new System.Drawing.Point(36, 353);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 35);
             this.button1.TabIndex = 25;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // back_button_form3
-            // 
-            this.back_button_form3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.back_button_form3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.back_button_form3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back_button_form3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_button_form3.ForeColor = System.Drawing.Color.White;
-            this.back_button_form3.Location = new System.Drawing.Point(12, 661);
-            this.back_button_form3.Name = "back_button_form3";
-            this.back_button_form3.Size = new System.Drawing.Size(33, 45);
-            this.back_button_form3.TabIndex = 1;
-            this.back_button_form3.Text = "<";
-            this.back_button_form3.UseVisualStyleBackColor = false;
-            this.back_button_form3.Click += new System.EventHandler(this.back_button_form3_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.checkedListBox2);
-            this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(1221, 328);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(129, 129);
-            this.panel3.TabIndex = 10;
-            this.panel3.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 25);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "form3";
-            this.label7.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label5.Location = new System.Drawing.Point(547, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(242, 24);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Select Playing 11 of Team 2";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label6.Location = new System.Drawing.Point(58, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(242, 24);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Select Playing 11 of Team 1";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(379, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Next";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "database se sare players ke nam aaenge team 2 ke aur usmese 11 select karne honge" +
-                ""});
-            this.checkedListBox2.Location = new System.Drawing.Point(472, 104);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(365, 80);
-            this.checkedListBox2.TabIndex = 0;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "database se sare players ke nam aaenge team 1 ke aur usmese 11 select karne honge" +
-                ""});
-            this.checkedListBox1.Location = new System.Drawing.Point(7, 104);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
-            this.checkedListBox1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.listBox2);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.listBox1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1221, 192);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(129, 129);
-            this.panel2.TabIndex = 6;
-            this.panel2.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "form2";
-            this.label3.Visible = false;
-            // 
-            // listBox2
-            // 
-            this.listBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 18;
-            this.listBox2.Items.AddRange(new object[] {
-            "Team 2"});
-            this.listBox2.Location = new System.Drawing.Point(316, 83);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(270, 90);
-            this.listBox2.TabIndex = 6;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(224, 231);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(149, 44);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Next";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Items.AddRange(new object[] {
-            "Team 1"});
-            this.listBox1.Location = new System.Drawing.Point(11, 83);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(268, 90);
-            this.listBox1.TabIndex = 5;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label2.Location = new System.Drawing.Point(396, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 24);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Select Team 2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label1.Location = new System.Drawing.Point(76, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Select Team 1";
-            // 
-            // panel_form1
-            // 
-            this.panel_form1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel_form1.BackColor = System.Drawing.Color.Transparent;
-            this.panel_form1.Controls.Add(this.dump_label_form1);
-            this.panel_form1.Controls.Add(this.pictureBox2);
-            this.panel_form1.Controls.Add(this.button5);
-            this.panel_form1.Controls.Add(this.button4);
-            this.panel_form1.Controls.Add(this.quit_button_form1);
-            this.panel_form1.Controls.Add(this.newmatch_button_form1);
-            this.panel_form1.Controls.Add(this.addteam_button_form1);
-            this.panel_form1.Controls.Add(this.statistics_button_form1);
-            this.panel_form1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_form1.Location = new System.Drawing.Point(1221, 45);
-            this.panel_form1.Name = "panel_form1";
-            this.panel_form1.Size = new System.Drawing.Size(135, 119);
-            this.panel_form1.TabIndex = 5;
-            // 
-            // dump_label_form1
-            // 
-            this.dump_label_form1.AutoSize = true;
-            this.dump_label_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dump_label_form1.Location = new System.Drawing.Point(46, 58);
-            this.dump_label_form1.Name = "dump_label_form1";
-            this.dump_label_form1.Size = new System.Drawing.Size(66, 25);
-            this.dump_label_form1.TabIndex = 9;
-            this.dump_label_form1.Text = "form1";
-            this.dump_label_form1.Visible = false;
-            // 
-            // quit_button_form1
-            // 
-            this.quit_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.quit_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.quit_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.quit_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quit_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.quit_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.quit_button_form1.Location = new System.Drawing.Point(9, 477);
-            this.quit_button_form1.Name = "quit_button_form1";
-            this.quit_button_form1.Size = new System.Drawing.Size(272, 46);
-            this.quit_button_form1.TabIndex = 2;
-            this.quit_button_form1.Text = "Quit";
-            this.quit_button_form1.UseVisualStyleBackColor = false;
-            this.quit_button_form1.Click += new System.EventHandler(this.quit_button_form1_Click);
-            // 
-            // newmatch_button_form1
-            // 
-            this.newmatch_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.newmatch_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.newmatch_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.newmatch_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.newmatch_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newmatch_button_form1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newmatch_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.newmatch_button_form1.Location = new System.Drawing.Point(9, 247);
-            this.newmatch_button_form1.Name = "newmatch_button_form1";
-            this.newmatch_button_form1.Size = new System.Drawing.Size(272, 46);
-            this.newmatch_button_form1.TabIndex = 3;
-            this.newmatch_button_form1.Text = "Match";
-            this.newmatch_button_form1.UseVisualStyleBackColor = false;
-            this.newmatch_button_form1.Click += new System.EventHandler(this.newmatch_button_form1_Click);
-            // 
-            // addteam_button_form1
-            // 
-            this.addteam_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.addteam_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.addteam_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.addteam_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.addteam_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addteam_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.addteam_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.addteam_button_form1.Location = new System.Drawing.Point(9, 293);
-            this.addteam_button_form1.Name = "addteam_button_form1";
-            this.addteam_button_form1.Size = new System.Drawing.Size(272, 46);
-            this.addteam_button_form1.TabIndex = 3;
-            this.addteam_button_form1.Text = "Teams";
-            this.addteam_button_form1.UseVisualStyleBackColor = false;
-            this.addteam_button_form1.Click += new System.EventHandler(this.addteam_button_form1_Click);
-            // 
-            // statistics_button_form1
-            // 
-            this.statistics_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.statistics_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.statistics_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.statistics_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.statistics_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.statistics_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.statistics_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.statistics_button_form1.Location = new System.Drawing.Point(9, 339);
-            this.statistics_button_form1.Name = "statistics_button_form1";
-            this.statistics_button_form1.Size = new System.Drawing.Size(272, 46);
-            this.statistics_button_form1.TabIndex = 1;
-            this.statistics_button_form1.Text = "Statistics";
-            this.statistics_button_form1.UseVisualStyleBackColor = false;
-            this.statistics_button_form1.Click += new System.EventHandler(this.statistics_button_form1_Click);
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroPanel1.AutoScroll = true;
-            this.metroPanel1.Controls.Add(this.course);
-            this.metroPanel1.Controls.Add(this.metroPanel2);
-            this.metroPanel1.Controls.Add(this.line);
-            this.metroPanel1.Controls.Add(this.metroToggle1);
-            this.metroPanel1.Controls.Add(this.addplayer);
-            this.metroPanel1.Controls.Add(this.label4);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.Controls.Add(this.teamname_textbox);
-            this.metroPanel1.Controls.Add(this.submit_addteam);
-            this.metroPanel1.Controls.Add(this.year);
-            this.metroPanel1.Controls.Add(this.branch);
-            this.metroPanel1.HorizontalScrollbar = true;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1221, 463);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(129, 115);
-            this.metroPanel1.TabIndex = 1;
-            this.metroPanel1.VerticalScrollbar = true;
-            this.metroPanel1.VerticalScrollbarBarColor = false;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            this.metroPanel1.Visible = false;
-            // 
-            // course
-            // 
-            this.course.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.course.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
-            this.course.FormattingEnabled = true;
-            this.course.ItemHeight = 29;
-            this.course.Items.AddRange(new object[] {
-            "BE",
-            "DUAL",
-            "POLY",
-            "MTECH"});
-            this.course.Location = new System.Drawing.Point(426, 274);
-            this.course.Name = "course";
-            this.course.PromptText = "Course";
-            this.course.Size = new System.Drawing.Size(349, 35);
-            this.course.TabIndex = 24;
-            this.course.UseSelectable = true;
-            this.course.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.AutoScroll = true;
-            this.metroPanel2.Controls.Add(this.metroTile1);
-            this.metroPanel2.HorizontalScrollbar = true;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(21, 91);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(360, 396);
-            this.metroPanel2.TabIndex = 23;
-            this.metroPanel2.VerticalScrollbar = true;
-            this.metroPanel2.VerticalScrollbarBarColor = false;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 20;
-            // 
-            // line
-            // 
-            this.line.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.line.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.line.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.line.Location = new System.Drawing.Point(400, 41);
-            this.line.Name = "line";
-            this.line.Size = new System.Drawing.Size(1, 410);
-            this.line.TabIndex = 21;
-            // 
-            // metroToggle1
-            // 
-            this.metroToggle1.AutoSize = true;
-            this.metroToggle1.Location = new System.Drawing.Point(695, 181);
-            this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(80, 24);
-            this.metroToggle1.TabIndex = 20;
-            this.metroToggle1.Text = "Off";
-            this.metroToggle1.UseSelectable = true;
-            this.metroToggle1.CheckedChanged += new System.EventHandler(this.metroToggle1_CheckedChanged);
-            // 
-            // addplayer
-            // 
-            this.addplayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.addplayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addplayer.ForeColor = System.Drawing.Color.White;
-            this.addplayer.Location = new System.Drawing.Point(21, 41);
-            this.addplayer.Name = "addplayer";
-            this.addplayer.Size = new System.Drawing.Size(360, 35);
-            this.addplayer.TabIndex = 5;
-            this.addplayer.Text = "Add Player";
-            this.addplayer.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label4.Location = new System.Drawing.Point(513, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 42);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Add Team";
-            // 
-            // submit_addteam
-            // 
-            this.submit_addteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.submit_addteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submit_addteam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submit_addteam.ForeColor = System.Drawing.Color.White;
-            this.submit_addteam.Location = new System.Drawing.Point(466, 420);
-            this.submit_addteam.Name = "submit_addteam";
-            this.submit_addteam.Size = new System.Drawing.Size(270, 35);
-            this.submit_addteam.TabIndex = 4;
-            this.submit_addteam.Text = "Submit";
-            this.submit_addteam.UseVisualStyleBackColor = false;
-            this.submit_addteam.Click += new System.EventHandler(this.submit_addteam_Click);
-            // 
-            // year
-            // 
-            this.year.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.year.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
-            this.year.FormattingEnabled = true;
-            this.year.ItemHeight = 29;
-            this.year.Items.AddRange(new object[] {
-            "I",
-            "II",
-            "III",
-            "IV"});
-            this.year.Location = new System.Drawing.Point(426, 356);
-            this.year.Name = "year";
-            this.year.PromptText = "Year";
-            this.year.Size = new System.Drawing.Size(349, 35);
-            this.year.TabIndex = 3;
-            this.year.UseSelectable = true;
-            this.year.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
-            // 
-            // branch
-            // 
-            this.branch.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.branch.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
-            this.branch.FormattingEnabled = true;
-            this.branch.ItemHeight = 29;
-            this.branch.Items.AddRange(new object[] {
-            "Civil",
-            "Mechanical",
-            "Computer Science",
-            "Electrical Electronics",
-            "Information Technology",
-            "Electronic Communication"});
-            this.branch.Location = new System.Drawing.Point(426, 315);
-            this.branch.Name = "branch";
-            this.branch.PromptText = "Branch";
-            this.branch.Size = new System.Drawing.Size(349, 35);
-            this.branch.TabIndex = 2;
-            this.branch.UseSelectable = true;
-            this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto", 12F);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.Location = new System.Drawing.Point(9, 431);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(272, 46);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Settings";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Roboto", 12F);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.Location = new System.Drawing.Point(9, 385);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(272, 46);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Rules";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -1024,15 +531,16 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 207);
+            this.panel1.Size = new System.Drawing.Size(179, 204);
             this.panel1.TabIndex = 27;
             // 
             // label17
@@ -1069,7 +577,7 @@
             this.groupBox1.Controls.Add(this.metroRadioButton3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(57, 9);
+            this.groupBox1.Location = new System.Drawing.Point(33, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(138, 183);
             this.groupBox1.TabIndex = 7;
@@ -1291,6 +799,234 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Runs";
             // 
+            // back_button_form3
+            // 
+            this.back_button_form3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.back_button_form3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.back_button_form3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_button_form3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button_form3.ForeColor = System.Drawing.Color.White;
+            this.back_button_form3.Location = new System.Drawing.Point(12, 661);
+            this.back_button_form3.Name = "back_button_form3";
+            this.back_button_form3.Size = new System.Drawing.Size(33, 45);
+            this.back_button_form3.TabIndex = 1;
+            this.back_button_form3.Text = "<";
+            this.back_button_form3.UseVisualStyleBackColor = false;
+            this.back_button_form3.Click += new System.EventHandler(this.back_button_form3_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.checkedListBox2);
+            this.panel3.Controls.Add(this.checkedListBox1);
+            this.panel3.Location = new System.Drawing.Point(1221, 327);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(129, 130);
+            this.panel3.TabIndex = 10;
+            this.panel3.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(18, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 25);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "form3";
+            this.label7.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label5.Location = new System.Drawing.Point(547, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(242, 24);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Select Playing 11 of Team 2";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label6.Location = new System.Drawing.Point(58, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(242, 24);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Select Playing 11 of Team 1";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(379, 235);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 44);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Next";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "database se sare players ke nam aaenge team 2 ke aur usmese 11 select karne honge" +
+                ""});
+            this.checkedListBox2.Location = new System.Drawing.Point(472, 104);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(365, 80);
+            this.checkedListBox2.TabIndex = 0;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "database se sare players ke nam aaenge team 1 ke aur usmese 11 select karne honge" +
+                ""});
+            this.checkedListBox1.Location = new System.Drawing.Point(7, 104);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
+            this.checkedListBox1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.listBox2);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(1221, 170);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(129, 151);
+            this.panel2.TabIndex = 6;
+            this.panel2.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "form2";
+            this.label3.Visible = false;
+            // 
+            // listBox2
+            // 
+            this.listBox2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 18;
+            this.listBox2.Items.AddRange(new object[] {
+            "Team 2"});
+            this.listBox2.Location = new System.Drawing.Point(316, 83);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(5);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(270, 90);
+            this.listBox2.TabIndex = 6;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(224, 231);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(149, 44);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Next";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 18;
+            this.listBox1.Items.AddRange(new object[] {
+            "Team 1"});
+            this.listBox1.Location = new System.Drawing.Point(11, 83);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(268, 90);
+            this.listBox1.TabIndex = 5;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label2.Location = new System.Drawing.Point(396, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Select Team 2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label1.Location = new System.Drawing.Point(76, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Select Team 1";
+            // 
+            // panel_form1
+            // 
+            this.panel_form1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel_form1.BackColor = System.Drawing.Color.Transparent;
+            this.panel_form1.Controls.Add(this.dump_label_form1);
+            this.panel_form1.Controls.Add(this.pictureBox2);
+            this.panel_form1.Controls.Add(this.button5);
+            this.panel_form1.Controls.Add(this.button4);
+            this.panel_form1.Controls.Add(this.quit_button_form1);
+            this.panel_form1.Controls.Add(this.newmatch_button_form1);
+            this.panel_form1.Controls.Add(this.addteam_button_form1);
+            this.panel_form1.Controls.Add(this.statistics_button_form1);
+            this.panel_form1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_form1.Location = new System.Drawing.Point(1221, 45);
+            this.panel_form1.Name = "panel_form1";
+            this.panel_form1.Size = new System.Drawing.Size(135, 119);
+            this.panel_form1.TabIndex = 5;
+            // 
+            // dump_label_form1
+            // 
+            this.dump_label_form1.AutoSize = true;
+            this.dump_label_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dump_label_form1.Location = new System.Drawing.Point(46, 58);
+            this.dump_label_form1.Name = "dump_label_form1";
+            this.dump_label_form1.Size = new System.Drawing.Size(66, 25);
+            this.dump_label_form1.TabIndex = 9;
+            this.dump_label_form1.Text = "form1";
+            this.dump_label_form1.Visible = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MahaSangram.Properties.Resources.logo;
@@ -1299,6 +1035,171 @@
             this.pictureBox2.Size = new System.Drawing.Size(217, 221);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button5.Location = new System.Drawing.Point(9, 385);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(272, 46);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Rules";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.Location = new System.Drawing.Point(9, 431);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(272, 46);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Settings";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // quit_button_form1
+            // 
+            this.quit_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.quit_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.quit_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.quit_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quit_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.quit_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.quit_button_form1.Location = new System.Drawing.Point(9, 477);
+            this.quit_button_form1.Name = "quit_button_form1";
+            this.quit_button_form1.Size = new System.Drawing.Size(272, 46);
+            this.quit_button_form1.TabIndex = 2;
+            this.quit_button_form1.Text = "Quit";
+            this.quit_button_form1.UseVisualStyleBackColor = false;
+            this.quit_button_form1.Click += new System.EventHandler(this.quit_button_form1_Click);
+            // 
+            // newmatch_button_form1
+            // 
+            this.newmatch_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.newmatch_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.newmatch_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.newmatch_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.newmatch_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newmatch_button_form1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newmatch_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.newmatch_button_form1.Location = new System.Drawing.Point(9, 247);
+            this.newmatch_button_form1.Name = "newmatch_button_form1";
+            this.newmatch_button_form1.Size = new System.Drawing.Size(272, 46);
+            this.newmatch_button_form1.TabIndex = 3;
+            this.newmatch_button_form1.Text = "Match";
+            this.newmatch_button_form1.UseVisualStyleBackColor = false;
+            this.newmatch_button_form1.Click += new System.EventHandler(this.newmatch_button_form1_Click);
+            // 
+            // addteam_button_form1
+            // 
+            this.addteam_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.addteam_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addteam_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.addteam_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.addteam_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addteam_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.addteam_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.addteam_button_form1.Location = new System.Drawing.Point(9, 293);
+            this.addteam_button_form1.Name = "addteam_button_form1";
+            this.addteam_button_form1.Size = new System.Drawing.Size(272, 46);
+            this.addteam_button_form1.TabIndex = 3;
+            this.addteam_button_form1.Text = "Teams";
+            this.addteam_button_form1.UseVisualStyleBackColor = false;
+            this.addteam_button_form1.Click += new System.EventHandler(this.addteam_button_form1_Click);
+            // 
+            // statistics_button_form1
+            // 
+            this.statistics_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.statistics_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.statistics_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.statistics_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.statistics_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statistics_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.statistics_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.statistics_button_form1.Location = new System.Drawing.Point(9, 339);
+            this.statistics_button_form1.Name = "statistics_button_form1";
+            this.statistics_button_form1.Size = new System.Drawing.Size(272, 46);
+            this.statistics_button_form1.TabIndex = 1;
+            this.statistics_button_form1.Text = "Statistics";
+            this.statistics_button_form1.UseVisualStyleBackColor = false;
+            this.statistics_button_form1.Click += new System.EventHandler(this.statistics_button_form1_Click);
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.metroPanel1.AutoScroll = true;
+            this.metroPanel1.Controls.Add(this.course);
+            this.metroPanel1.Controls.Add(this.metroPanel2);
+            this.metroPanel1.Controls.Add(this.line);
+            this.metroPanel1.Controls.Add(this.metroToggle1);
+            this.metroPanel1.Controls.Add(this.addplayer);
+            this.metroPanel1.Controls.Add(this.label4);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.Controls.Add(this.teamname_textbox);
+            this.metroPanel1.Controls.Add(this.submit_addteam);
+            this.metroPanel1.Controls.Add(this.year);
+            this.metroPanel1.Controls.Add(this.branch);
+            this.metroPanel1.HorizontalScrollbar = true;
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(293, 50);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(905, 576);
+            this.metroPanel1.TabIndex = 1;
+            this.metroPanel1.VerticalScrollbar = true;
+            this.metroPanel1.VerticalScrollbarBarColor = false;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.Visible = false;
+            // 
+            // course
+            // 
+            this.course.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.course.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
+            this.course.FormattingEnabled = true;
+            this.course.ItemHeight = 29;
+            this.course.Items.AddRange(new object[] {
+            "BE",
+            "DUAL",
+            "POLY",
+            "MTECH"});
+            this.course.Location = new System.Drawing.Point(426, 274);
+            this.course.Name = "course";
+            this.course.PromptText = "Course";
+            this.course.Size = new System.Drawing.Size(349, 35);
+            this.course.TabIndex = 24;
+            this.course.UseSelectable = true;
+            this.course.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
+            // 
+            // metroPanel2
+            // 
+            this.metroPanel2.AutoScroll = true;
+            this.metroPanel2.Controls.Add(this.metroTile1);
+            this.metroPanel2.HorizontalScrollbar = true;
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(21, 91);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(360, 396);
+            this.metroPanel2.TabIndex = 23;
+            this.metroPanel2.VerticalScrollbar = true;
+            this.metroPanel2.VerticalScrollbarBarColor = false;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 20;
             // 
             // metroTile1
             // 
@@ -1319,6 +1220,51 @@
             this.metroTile1.UseCustomForeColor = true;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            // 
+            // line
+            // 
+            this.line.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.line.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.line.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.line.Location = new System.Drawing.Point(400, 41);
+            this.line.Name = "line";
+            this.line.Size = new System.Drawing.Size(1, 410);
+            this.line.TabIndex = 21;
+            // 
+            // metroToggle1
+            // 
+            this.metroToggle1.AutoSize = true;
+            this.metroToggle1.Location = new System.Drawing.Point(695, 181);
+            this.metroToggle1.Name = "metroToggle1";
+            this.metroToggle1.Size = new System.Drawing.Size(80, 24);
+            this.metroToggle1.TabIndex = 20;
+            this.metroToggle1.Text = "Off";
+            this.metroToggle1.UseSelectable = true;
+            this.metroToggle1.CheckedChanged += new System.EventHandler(this.metroToggle1_CheckedChanged);
+            // 
+            // addplayer
+            // 
+            this.addplayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.addplayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addplayer.ForeColor = System.Drawing.Color.White;
+            this.addplayer.Location = new System.Drawing.Point(21, 41);
+            this.addplayer.Name = "addplayer";
+            this.addplayer.Size = new System.Drawing.Size(360, 35);
+            this.addplayer.TabIndex = 5;
+            this.addplayer.Text = "Add Player";
+            this.addplayer.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label4.Location = new System.Drawing.Point(513, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 42);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Add Team";
             // 
             // pictureBox1
             // 
@@ -1352,6 +1298,60 @@
             this.teamname_textbox.UseCustomBackColor = true;
             this.teamname_textbox.UseSelectable = true;
             // 
+            // submit_addteam
+            // 
+            this.submit_addteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.submit_addteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submit_addteam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit_addteam.ForeColor = System.Drawing.Color.White;
+            this.submit_addteam.Location = new System.Drawing.Point(466, 420);
+            this.submit_addteam.Name = "submit_addteam";
+            this.submit_addteam.Size = new System.Drawing.Size(270, 35);
+            this.submit_addteam.TabIndex = 4;
+            this.submit_addteam.Text = "Submit";
+            this.submit_addteam.UseVisualStyleBackColor = false;
+            this.submit_addteam.Click += new System.EventHandler(this.submit_addteam_Click);
+            // 
+            // year
+            // 
+            this.year.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.year.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
+            this.year.FormattingEnabled = true;
+            this.year.ItemHeight = 29;
+            this.year.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III",
+            "IV"});
+            this.year.Location = new System.Drawing.Point(426, 356);
+            this.year.Name = "year";
+            this.year.PromptText = "Year";
+            this.year.Size = new System.Drawing.Size(349, 35);
+            this.year.TabIndex = 3;
+            this.year.UseSelectable = true;
+            this.year.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
+            // 
+            // branch
+            // 
+            this.branch.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.branch.FontWeight = MetroFramework.MetroComboBoxWeight.Light;
+            this.branch.FormattingEnabled = true;
+            this.branch.ItemHeight = 29;
+            this.branch.Items.AddRange(new object[] {
+            "Civil",
+            "Mechanical",
+            "Computer Science",
+            "Electrical Electronics",
+            "Information Technology",
+            "Electronic Communication"});
+            this.branch.Location = new System.Drawing.Point(426, 315);
+            this.branch.Name = "branch";
+            this.branch.PromptText = "Branch";
+            this.branch.Size = new System.Drawing.Size(349, 35);
+            this.branch.TabIndex = 2;
+            this.branch.UseSelectable = true;
+            this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
+            // 
             // master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1381,20 +1381,20 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel_form1.ResumeLayout(false);
             this.panel_form1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

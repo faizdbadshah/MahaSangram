@@ -17,8 +17,7 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Faraz Siddiqui\Documents\GitHub\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
-
-        int a, b, c, d, i=0,overs=0,balls=0,runs=0;
+        int a, b, c, d, i=0,overs=0,balls=0,runs=0,latest_team_id;
         int[] record = new int[150];
 
         public master()
@@ -110,7 +109,6 @@ namespace MahaSangram
                         }
                     }
                 }
-
                 catch (Exception e)
                 {
                     Console.Write(e);
@@ -210,7 +208,7 @@ namespace MahaSangram
        private void submit_addteam_Click(object sender, EventArgs e)
        {
 
-           if (!(metroToggle1.Checked))
+           if ((!(metroToggle1.Checked)))
            {
                if (string.IsNullOrEmpty(course.Text) | string.IsNullOrEmpty(branch.Text) | string.IsNullOrEmpty(year.Text))
                {
@@ -219,13 +217,57 @@ namespace MahaSangram
                else
                {
                    //insert team into database
-                   MessageBox.Show("Team Name : " + teamname_textbox.Text);
+                   query.CommandText = "select max(team_id) from teams";
+                   teams = query.ExecuteReader(CommandBehavior.SingleRow);
+                   while (teams.Read()) {
+                       latest_team_id = teams.GetInt32(0);
+                       latest_team_id++;
+                   }
+                   teams.Close();
+                   query.CommandText = "INSERT INTO teams " + "(team_id, team_name) VALUES " + "(@team_id, @team_name)";
+                   query.Parameters.AddWithValue("@team_id", latest_team_id);
+                   query.Parameters.AddWithValue("@team_name", teamname_textbox.Text);
+                   try
+                   {
+                       int result = query.ExecuteNonQuery();
+                       if (result > 0)
+                           MessageBox.Show("Team Added!");
+                       else
+                           MessageBox.Show("Failed to add team!");
+                   }
+                   catch (SqlException ex)
+                   {
+                       MessageBox.Show("An error has occured!");
+                   }
+                   
                }
            }
            else if (metroToggle1.Checked)
            {
                //insert team into database
-               MessageBox.Show("Team Name : " + teamname_textbox.Text);
+               query.CommandText = "select max(team_id) from teams";
+               teams = query.ExecuteReader(CommandBehavior.SingleRow);
+               while (teams.Read())
+               {
+                   latest_team_id = teams.GetInt32(0);
+                   latest_team_id++;
+                }
+               teams.Close();
+               query.CommandText = "INSERT INTO teams " + "(team_id, team_name) VALUES " + "(@team_id, @team_name)";
+               query.Parameters.AddWithValue("@team_id", latest_team_id);
+               query.Parameters.AddWithValue("@team_name", teamname_textbox.Text);
+               try
+               {
+                   int result = query.ExecuteNonQuery();
+                   if (result > 0)
+                       MessageBox.Show("Team Added!");
+                   else
+                       MessageBox.Show("Failed to add team!");
+               }
+               catch (SqlException ex)
+               {
+                   MessageBox.Show("An error has occured!");
+               }
            }
        }
 
