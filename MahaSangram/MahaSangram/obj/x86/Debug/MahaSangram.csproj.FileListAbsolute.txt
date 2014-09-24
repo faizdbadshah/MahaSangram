@@ -25,7 +25,13 @@ C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFr
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form1.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form2.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form3.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form4.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form6.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.master.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Pages.UCstart.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Pages.UCteams.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Properties.Resources.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache
 C:\Users\Chaitanya\Desktop\temp\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
