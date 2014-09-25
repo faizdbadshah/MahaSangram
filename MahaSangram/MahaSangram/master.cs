@@ -207,12 +207,11 @@ namespace MahaSangram
 
        private void submit_addteam_Click(object sender, EventArgs e)
        {
-
            if ((!(metroToggle1.Checked)))
            {
                if (string.IsNullOrEmpty(course.Text) | string.IsNullOrEmpty(branch.Text) | string.IsNullOrEmpty(year.Text))
                {
-                   MessageBox.Show("Select Course, Branch & Year.");
+                   MetroFramework.MetroMessageBox.Show(this, "Select Course, Branch & Year.", "Missing Value!", MessageBoxButtons.OK, MessageBoxIcon.Warning);    
                }
                else
                {
