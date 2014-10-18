@@ -77,6 +77,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.back_button_form3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -220,14 +221,15 @@
             this.metroPanel3.Controls.Add(this.button3);
             this.metroPanel3.Controls.Add(this.tabControl1);
             this.metroPanel3.Controls.Add(this.groupBox3);
+            this.metroPanel3.Controls.Add(this.groupBox2);
             this.metroPanel3.Controls.Add(this.button1);
             this.metroPanel3.Controls.Add(this.panel1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(1091, 517);
+            this.metroPanel3.Location = new System.Drawing.Point(12, 50);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(182, 155);
+            this.metroPanel3.Size = new System.Drawing.Size(1226, 656);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbarBarColor = true;
@@ -243,7 +245,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(58, 303);
+            this.button3.Location = new System.Drawing.Point(1102, 554);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 34);
             this.button3.TabIndex = 31;
@@ -261,7 +263,7 @@
             this.tabControl1.Location = new System.Drawing.Point(16, 226);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1048, 393);
+            this.tabControl1.Size = new System.Drawing.Size(1047, 393);
             this.tabControl1.TabIndex = 30;
             // 
             // tabPage1
@@ -269,7 +271,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage1.Size = new System.Drawing.Size(1039, 360);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Overview";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -279,7 +281,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage2.Size = new System.Drawing.Size(1039, 360);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Scorecard";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -289,7 +291,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage3.Size = new System.Drawing.Size(1039, 360);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Batting Stats";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -299,7 +301,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage4.Size = new System.Drawing.Size(1039, 360);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bowling Stats";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -309,7 +311,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1040, 360);
+            this.tabPage5.Size = new System.Drawing.Size(1039, 360);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Graph";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -325,9 +327,9 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(36, 115);
+            this.groupBox3.Location = new System.Drawing.Point(1080, 359);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(138, 172);
+            this.groupBox3.Size = new System.Drawing.Size(138, 169);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Out";
@@ -436,7 +438,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(36, 353);
+            this.button1.Location = new System.Drawing.Point(1080, 604);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 35);
             this.button1.TabIndex = 25;
@@ -454,16 +456,15 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(16, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 204);
+            this.panel1.Size = new System.Drawing.Size(1210, 204);
             this.panel1.TabIndex = 27;
             // 
             // label17
@@ -471,7 +472,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(813, 159);
+            this.label17.Location = new System.Drawing.Point(734, 164);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(50, 20);
             this.label17.TabIndex = 19;
@@ -482,7 +483,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(364, 159);
+            this.label16.Location = new System.Drawing.Point(252, 159);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 20);
             this.label16.TabIndex = 18;
@@ -500,7 +501,7 @@
             this.groupBox1.Controls.Add(this.metroRadioButton3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(33, 9);
+            this.groupBox1.Location = new System.Drawing.Point(1064, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(138, 183);
             this.groupBox1.TabIndex = 7;
@@ -629,7 +630,7 @@
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(851, 112);
+            this.label13.Location = new System.Drawing.Point(779, 115);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 33);
@@ -642,7 +643,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(824, 112);
+            this.label14.Location = new System.Drawing.Point(752, 115);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 33);
             this.label14.TabIndex = 17;
@@ -658,7 +659,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(33, 199);
+            this.groupBox2.Location = new System.Drawing.Point(1080, 213);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(138, 137);
             this.groupBox2.TabIndex = 8;
@@ -731,7 +732,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(741, 112);
+            this.label15.Location = new System.Drawing.Point(669, 115);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(83, 33);
             this.label15.TabIndex = 15;
@@ -744,7 +745,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(408, 115);
+            this.label11.Location = new System.Drawing.Point(294, 112);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 33);
@@ -757,7 +758,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(318, 50);
+            this.label8.Location = new System.Drawing.Point(199, 50);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(187, 55);
             this.label8.TabIndex = 10;
@@ -769,7 +770,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(381, 115);
+            this.label12.Location = new System.Drawing.Point(267, 112);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(23, 33);
             this.label12.TabIndex = 14;
@@ -781,7 +782,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(764, 47);
+            this.label9.Location = new System.Drawing.Point(681, 50);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(187, 55);
             this.label9.TabIndex = 11;
@@ -793,7 +794,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(298, 115);
+            this.label10.Location = new System.Drawing.Point(184, 112);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 33);
             this.label10.TabIndex = 12;
@@ -817,17 +818,30 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(1221, 327);
+            this.panel3.Location = new System.Drawing.Point(1194, 344);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(129, 130);
+            this.panel3.Size = new System.Drawing.Size(162, 152);
             this.panel3.TabIndex = 10;
             this.panel3.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.GreenYellow;
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(379, 246);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 39);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Skip";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label7
             // 
@@ -868,12 +882,13 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(379, 235);
+            this.button2.Location = new System.Drawing.Point(348, 190);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(149, 44);
             this.button2.TabIndex = 2;
             this.button2.Text = "Next";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkedListBox2
             // 
@@ -912,9 +927,9 @@
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1221, 170);
+            this.panel2.Location = new System.Drawing.Point(1244, 189);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(129, 151);
+            this.panel2.Size = new System.Drawing.Size(84, 143);
             this.panel2.TabIndex = 6;
             this.panel2.Visible = false;
             // 
@@ -1010,7 +1025,7 @@
             this.panel_form1.Controls.Add(this.newmatch_button_form1);
             this.panel_form1.Controls.Add(this.addteam_button_form1);
             this.panel_form1.Controls.Add(this.statistics_button_form1);
-            this.panel_form1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_form1.Location = new System.Drawing.Point(1221, 45);
             this.panel_form1.Name = "panel_form1";
             this.panel_form1.Size = new System.Drawing.Size(135, 119);
@@ -1043,7 +1058,7 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button5.Location = new System.Drawing.Point(9, 385);
             this.button5.Name = "button5";
@@ -1059,7 +1074,7 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button4.Location = new System.Drawing.Point(9, 431);
             this.button4.Name = "button4";
@@ -1075,7 +1090,7 @@
             this.quit_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.quit_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quit_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.quit_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.quit_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.quit_button_form1.Location = new System.Drawing.Point(9, 477);
             this.quit_button_form1.Name = "quit_button_form1";
@@ -1092,7 +1107,7 @@
             this.newmatch_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.newmatch_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.newmatch_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newmatch_button_form1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newmatch_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newmatch_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.newmatch_button_form1.Location = new System.Drawing.Point(9, 247);
             this.newmatch_button_form1.Name = "newmatch_button_form1";
@@ -1109,7 +1124,7 @@
             this.addteam_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.addteam_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.addteam_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addteam_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.addteam_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.addteam_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.addteam_button_form1.Location = new System.Drawing.Point(9, 293);
             this.addteam_button_form1.Name = "addteam_button_form1";
@@ -1126,7 +1141,7 @@
             this.statistics_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.statistics_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.statistics_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.statistics_button_form1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.statistics_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.statistics_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.statistics_button_form1.Location = new System.Drawing.Point(9, 339);
             this.statistics_button_form1.Name = "statistics_button_form1";
@@ -1155,9 +1170,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1056, 363);
+            this.metroPanel1.Location = new System.Drawing.Point(1007, 344);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(156, 139);
+            this.metroPanel1.Size = new System.Drawing.Size(173, 139);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbar = true;
             this.metroPanel1.VerticalScrollbarBarColor = false;
@@ -1485,5 +1500,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button7;
     }
 }
