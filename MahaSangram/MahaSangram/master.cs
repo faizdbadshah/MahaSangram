@@ -658,8 +658,26 @@ namespace MahaSangram
 
         private void button2_Click(object sender, EventArgs e)
         {
+           // MessageBox.Show("Player selected from team 1 : " + checkedListBox1.SelectedItem.ToString());
+            Dictionary<int, string> team1_players = new Dictionary<int, string>();
+            foreach (Object playerselected in checkedListBox1.Items)
+            {
+                int index = checkedListBox1.Items.IndexOf(playerselected);
+                MessageBox.Show("Player : " + playerselected.ToString() + " & Index : " + index);
+                team1_players.Add(index, playerselected.ToString());
+            }
+
+            Dictionary<int, string> team2_players = new Dictionary<int, string>();
+            foreach (Object playerselected in checkedListBox2.Items)
+            {
+                int index = checkedListBox2.Items.IndexOf(playerselected);
+                MessageBox.Show("Player : " + playerselected.ToString() + " & Index : " + index);
+                team2_players.Add(index, playerselected.ToString());
+            }
+
             if (checkedListBox1.SelectedItems.Count == 11 && checkedListBox2.SelectedItems.Count == 11)
             {
+                MessageBox.Show("Player selected from team 1 : " + checkedListBox1.SelectedItems.ToString());
                 functions.change_panel(panel3, metroPanel3);
             }
         }
@@ -668,18 +686,6 @@ namespace MahaSangram
         {
             functions.change_panel(panel3, metroPanel3);
         }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
-
-
-
-
-
-        
     }
 }
