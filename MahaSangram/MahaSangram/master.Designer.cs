@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(master));
             this.top = new System.Windows.Forms.Panel();
-           // this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-           // this.restore_down = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-           // this.minimize = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-           // this.exit = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.footer = new System.Windows.Forms.Panel();
             this.main_panel = new System.Windows.Forms.Panel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
@@ -135,63 +134,48 @@
             // top
             // 
             this.top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
-           // this.top.Controls.Add(this.shapeContainer2);
+            this.top.Controls.Add(this.button10);
+            this.top.Controls.Add(this.button9);
+            this.top.Controls.Add(this.button8);
             this.top.Dock = System.Windows.Forms.DockStyle.Top;
             this.top.Location = new System.Drawing.Point(0, 0);
             this.top.Name = "top";
             this.top.Size = new System.Drawing.Size(1362, 39);
             this.top.TabIndex = 0;
-          //  this.top.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Paint);
             this.top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.master_MouseDown);
             // 
-            // shapeContainer2
+            // button10
             // 
-         /*   this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.restore_down,
-            this.minimize,
-            this.exit});
-            this.shapeContainer2.Size = new System.Drawing.Size(1362, 39);
-            this.shapeContainer2.TabIndex = 0;
-            this.shapeContainer2.TabStop = false; 
+            this.button10.BackColor = System.Drawing.Color.Red;
+            this.button10.ForeColor = System.Drawing.Color.Black;
+            this.button10.Location = new System.Drawing.Point(1327, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(32, 32);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "X";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // restore_down
+            // button9
             // 
-            this.restore_down.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.restore_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(208)))), ((int)(((byte)(42)))));
-            this.restore_down.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.restore_down.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(187)))), ((int)(((byte)(85)))));
-            this.restore_down.Location = new System.Drawing.Point(1314, 12);
-            this.restore_down.Name = "restore_down";
-            this.restore_down.SelectionColor = System.Drawing.Color.Transparent;
-            this.restore_down.Size = new System.Drawing.Size(13, 13);
-            this.restore_down.Click += new System.EventHandler(this.restore_down_Click);
+            this.button9.ForeColor = System.Drawing.Color.Black;
+            this.button9.Location = new System.Drawing.Point(1294, 3);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(32, 32);
+            this.button9.TabIndex = 1;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // minimize
+            // button8
             // 
-            this.minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(11)))));
-            this.minimize.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.minimize.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(179)))), ((int)(((byte)(13)))));
-            this.minimize.Location = new System.Drawing.Point(1292, 12);
-            this.minimize.Name = "minimize";
-            this.minimize.SelectionColor = System.Drawing.Color.Transparent;
-            this.minimize.Size = new System.Drawing.Size(13, 13);
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
-            // exit
-            // 
-            this.exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(94)))), ((int)(((byte)(79)))));
-            this.exit.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.exit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(76)))));
-            this.exit.Location = new System.Drawing.Point(1334, 12);
-            this.exit.Name = "exit";
-            this.exit.SelectionColor = System.Drawing.Color.Transparent;
-            this.exit.Size = new System.Drawing.Size(13, 13);
-            this.exit.Click += new System.EventHandler(this.exit_Click);*/
+            this.button8.ForeColor = System.Drawing.Color.Black;
+            this.button8.Location = new System.Drawing.Point(1261, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(32, 32);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "_";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // footer
             // 
@@ -216,7 +200,6 @@
             this.main_panel.Name = "main_panel";
             this.main_panel.Size = new System.Drawing.Size(1362, 740);
             this.main_panel.TabIndex = 3;
-            this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
             // 
             // metroPanel3
             // 
@@ -226,19 +209,20 @@
             this.metroPanel3.Controls.Add(this.groupBox2);
             this.metroPanel3.Controls.Add(this.tabControl1);
             this.metroPanel3.Controls.Add(this.panel1);
+            this.metroPanel3.HorizontalScrollbar = true;
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(770, 45);
+            this.metroPanel3.Location = new System.Drawing.Point(1056, 45);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(410, 241);
+            this.metroPanel3.Size = new System.Drawing.Size(124, 241);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
+            this.metroPanel3.VerticalScrollbar = true;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
             this.metroPanel3.Visible = false;
-            this.metroPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel3_Paint);
             // 
             // button1
             // 
@@ -248,7 +232,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(200, 396);
+            this.button1.Location = new System.Drawing.Point(-86, 396);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 35);
             this.button1.TabIndex = 25;
@@ -263,7 +247,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(200, 346);
+            this.button3.Location = new System.Drawing.Point(-86, 346);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 34);
             this.button3.TabIndex = 31;
@@ -282,7 +266,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(165, 151);
+            this.groupBox3.Location = new System.Drawing.Point(-121, 151);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(237, 183);
             this.groupBox3.TabIndex = 9;
@@ -395,7 +379,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(165, 5);
+            this.groupBox2.Location = new System.Drawing.Point(-121, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(237, 137);
             this.groupBox2.TabIndex = 8;
@@ -546,7 +530,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(16, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 204);
+            this.panel1.Size = new System.Drawing.Size(108, 204);
             this.panel1.TabIndex = 27;
             // 
             // panel4
@@ -555,7 +539,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.groupBox1);
-            this.panel4.Location = new System.Drawing.Point(145, 0);
+            this.panel4.Location = new System.Drawing.Point(-141, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 622);
             this.panel4.TabIndex = 20;
@@ -823,6 +807,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.AutoSize = true;
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
@@ -830,17 +815,18 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(41, 64);
+            this.panel3.Location = new System.Drawing.Point(12, 55);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(592, 315);
+            this.panel3.Size = new System.Drawing.Size(1022, 590);
             this.panel3.TabIndex = 10;
             this.panel3.Visible = false;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.GreenYellow;
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(379, 246);
+            this.button7.Location = new System.Drawing.Point(373, 290);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 39);
             this.button7.TabIndex = 13;
@@ -852,7 +838,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 36);
+            this.label7.Location = new System.Drawing.Point(15, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 25);
             this.label7.TabIndex = 10;
@@ -864,22 +850,24 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label5.Location = new System.Drawing.Point(547, 0);
+            this.label5.Location = new System.Drawing.Point(447, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 24);
             this.label5.TabIndex = 12;
             this.label5.Text = "Select Playing 11 of Team 2";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.label6.Location = new System.Drawing.Point(58, 0);
+            this.label6.Location = new System.Drawing.Point(41, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(242, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "Select Playing 11 of Team 1";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
@@ -887,7 +875,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(348, 190);
+            this.button2.Location = new System.Drawing.Point(336, 226);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(149, 44);
             this.button2.TabIndex = 2;
@@ -904,7 +892,7 @@
             this.checkedListBox2.Items.AddRange(new object[] {
             "database se sare players ke nam aaenge team 2 ke aur usmese 11 select karne honge" +
                 ""});
-            this.checkedListBox2.Location = new System.Drawing.Point(472, 104);
+            this.checkedListBox2.Location = new System.Drawing.Point(437, 117);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(365, 80);
             this.checkedListBox2.TabIndex = 0;
@@ -918,7 +906,7 @@
             this.checkedListBox1.Items.AddRange(new object[] {
             "database se sare players ke nam aaenge team 1 ke aur usmese 11 select karne honge" +
                 ""});
-            this.checkedListBox1.Location = new System.Drawing.Point(7, 104);
+            this.checkedListBox1.Location = new System.Drawing.Point(20, 117);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
             this.checkedListBox1.TabIndex = 5;
@@ -1175,7 +1163,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1007, 344);
+            this.metroPanel1.Location = new System.Drawing.Point(1178, 370);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(173, 139);
             this.metroPanel1.TabIndex = 1;
@@ -1395,6 +1383,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.master_MouseDown);
             this.top.ResumeLayout(false);
             this.main_panel.ResumeLayout(false);
+            this.main_panel.PerformLayout();
             this.metroPanel3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -1508,5 +1497,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }

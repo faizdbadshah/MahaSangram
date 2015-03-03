@@ -160,8 +160,8 @@ namespace MahaSangram
             if (team1.Length != 0 && team2.Length != 0)
             {
                 functions.change_panel(panel2, panel3);
-                label6.Text = "Select Playing 11 of " + team1;
-                label5.Text = "Select Playing 11 of " + team2;
+                label6.Text = "Select Playing 11 of \n" + team1;
+                label5.Text = "Select Playing 11 of \n" + team2;
                 load_team_players(team1, checkedListBox1);
                 load_team_players(team2, checkedListBox2);
             }
@@ -271,7 +271,7 @@ namespace MahaSangram
        }
 
         // Default functions
-
+/*
         public virtual void exit_Click(object sender, EventArgs e)
         {
             functions.closeapp(this, this);
@@ -290,7 +290,7 @@ namespace MahaSangram
             else if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
         }
-
+        */
         private void master_FormClosing(object sender, FormClosingEventArgs e)
         {
             functions.closeapp(this, this, e, connection);
@@ -685,6 +685,30 @@ namespace MahaSangram
         private void button7_Click(object sender, EventArgs e)
         {
             functions.change_panel(panel3, metroPanel3);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            functions.closeapp(this, this);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (WindowState != FormWindowState.Minimized)
+                WindowState = FormWindowState.Minimized;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+                WindowState = FormWindowState.Normal;
+            else if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
        
     }
