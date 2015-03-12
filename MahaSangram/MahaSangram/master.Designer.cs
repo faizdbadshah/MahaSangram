@@ -815,9 +815,9 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(12, 55);
+            this.panel3.Location = new System.Drawing.Point(1231, 494);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1022, 590);
+            this.panel3.Size = new System.Drawing.Size(805, 332);
             this.panel3.TabIndex = 10;
             this.panel3.Visible = false;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
@@ -1019,9 +1019,9 @@
             this.panel_form1.Controls.Add(this.addteam_button_form1);
             this.panel_form1.Controls.Add(this.statistics_button_form1);
             this.panel_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_form1.Location = new System.Drawing.Point(1210, 45);
+            this.panel_form1.Location = new System.Drawing.Point(28, 55);
             this.panel_form1.Name = "panel_form1";
-            this.panel_form1.Size = new System.Drawing.Size(146, 132);
+            this.panel_form1.Size = new System.Drawing.Size(1138, 574);
             this.panel_form1.TabIndex = 5;
             // 
             // dump_label_form1
@@ -1059,6 +1059,7 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "Rules";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -1075,6 +1076,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Settings";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // quit_button_form1
             // 

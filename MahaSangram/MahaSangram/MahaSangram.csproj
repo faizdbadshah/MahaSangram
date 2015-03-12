@@ -86,11 +86,23 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="functions.cs" />
+    <Compile Include="MainControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls.Designer.cs">
+      <DependentUpon>MainControls.cs</DependentUpon>
+    </Compile>
     <Compile Include="master.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="master.Designer.cs">
       <DependentUpon>master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MSDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -103,8 +115,14 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainControls.resx">
+      <DependentUpon>MainControls.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="master.resx">
       <DependentUpon>master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
