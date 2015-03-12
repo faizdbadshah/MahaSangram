@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class MainControls
+    partial class Home
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,13 +34,14 @@
             this.Match = new System.Windows.Forms.Button();
             this.Teams = new System.Windows.Forms.Button();
             this.Statistics = new System.Windows.Forms.Button();
+            this.quit_button_form1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Logo
             // 
             this.Logo.Image = global::MahaSangram.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(338, 29);
+            this.Logo.Location = new System.Drawing.Point(329, 8);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(217, 221);
             this.Logo.TabIndex = 13;
@@ -55,7 +56,7 @@
             this.Rules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Rules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Rules.Location = new System.Drawing.Point(307, 403);
+            this.Rules.Location = new System.Drawing.Point(303, 373);
             this.Rules.Name = "Rules";
             this.Rules.Size = new System.Drawing.Size(272, 46);
             this.Rules.TabIndex = 18;
@@ -71,7 +72,7 @@
             this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Settings.Location = new System.Drawing.Point(307, 449);
+            this.Settings.Location = new System.Drawing.Point(303, 419);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(272, 46);
             this.Settings.TabIndex = 17;
@@ -87,12 +88,13 @@
             this.Match.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Match.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Match.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Match.Location = new System.Drawing.Point(307, 265);
+            this.Match.Location = new System.Drawing.Point(303, 235);
             this.Match.Name = "Match";
             this.Match.Size = new System.Drawing.Size(272, 46);
             this.Match.TabIndex = 15;
             this.Match.Text = "Match";
             this.Match.UseVisualStyleBackColor = false;
+            this.Match.Click += new System.EventHandler(this.Match_Click);
             // 
             // Teams
             // 
@@ -103,12 +105,13 @@
             this.Teams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Teams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Teams.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Teams.Location = new System.Drawing.Point(307, 311);
+            this.Teams.Location = new System.Drawing.Point(303, 281);
             this.Teams.Name = "Teams";
             this.Teams.Size = new System.Drawing.Size(272, 46);
             this.Teams.TabIndex = 16;
             this.Teams.Text = "Teams";
             this.Teams.UseVisualStyleBackColor = false;
+            this.Teams.Click += new System.EventHandler(this.Teams_Click);
             // 
             // Statistics
             // 
@@ -119,17 +122,35 @@
             this.Statistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Statistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Statistics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Statistics.Location = new System.Drawing.Point(307, 357);
+            this.Statistics.Location = new System.Drawing.Point(303, 327);
             this.Statistics.Name = "Statistics";
             this.Statistics.Size = new System.Drawing.Size(272, 46);
             this.Statistics.TabIndex = 14;
             this.Statistics.Text = "Statistics";
             this.Statistics.UseVisualStyleBackColor = false;
             // 
+            // quit_button_form1
+            // 
+            this.quit_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.quit_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.quit_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.quit_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quit_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.quit_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.quit_button_form1.Location = new System.Drawing.Point(303, 468);
+            this.quit_button_form1.Name = "quit_button_form1";
+            this.quit_button_form1.Size = new System.Drawing.Size(272, 46);
+            this.quit_button_form1.TabIndex = 19;
+            this.quit_button_form1.Text = "Quit";
+            this.quit_button_form1.UseVisualStyleBackColor = false;
+            this.quit_button_form1.Click += new System.EventHandler(this.quit_button_form1_Click);
+            // 
             // MainControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.quit_button_form1);
             this.Controls.Add(this.Rules);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.Match);
@@ -151,5 +172,6 @@
         private System.Windows.Forms.Button Match;
         private System.Windows.Forms.Button Teams;
         private System.Windows.Forms.Button Statistics;
+        private System.Windows.Forms.Button quit_button_form1;
     }
 }
