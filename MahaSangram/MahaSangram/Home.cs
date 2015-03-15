@@ -18,20 +18,20 @@ namespace MahaSangram
 
         private void Match_Click(object sender, EventArgs e)
         {
-            load_teams("newmatch");
-            listBox1.SelectedIndex = 0;
-            functions.change_panel(panel_form1, panel2);
+           // load_teams("newmatch");
+            //listBox1.SelectedIndex = 0;
+            //functions.change_panel(panel_form1, panel2);
         }
 
         private void Teams_Click(object sender, EventArgs e)
         {
-            load_teams("addteam");
-            functions.change_panel(panel_form1, metroPanel1);
+           // load_teams("addteam");
+           // functions.change_panel(panel_form1, metroPanel1);
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)
         {
-            functions.closeapp(this, this, connection);
+            //functions.closeapp(this, this, connection);
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MahaSangram
 {
@@ -46,20 +47,20 @@ namespace MahaSangram
 
         private void Next_Click(object sender, EventArgs e)
         {
-            string team1 = listBox1.Text;
-            string team2 = listBox2.Text;
-            if (team1.Length != 0 && team2.Length != 0)
-            {
-                functions.change_panel(panel2, panel3);
-                label6.Text = "Select Playing 11 of \n" + team1;
-                label5.Text = "Select Playing 11 of \n" + team2;
-                load_team_players(team1, checkedListBox1);
-                load_team_players(team2, checkedListBox2);
-            }
-            else
-            {
-                dynamic close = MetroFramework.MetroMessageBox.Show(this, "Select both the team first!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+          //  string team1 = listBox1.Text;
+          //  string team2 = listBox2.Text;
+          //  if (team1.Length != 0 && team2.Length != 0)
+          //  {
+          //      functions.change_panel(panel2, panel3);
+          //      label6.Text = "Select Playing 11 of \n" + team1;
+          //      label5.Text = "Select Playing 11 of \n" + team2;
+          //      load_team_players(team1, checkedListBox1);
+          //      load_team_players(team2, checkedListBox2);
+          //  }
+          //  else
+          //  {
+          //      dynamic close = MetroFramework.MetroMessageBox.Show(this, "Select both the team first!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+          //  }
         }
 
         
