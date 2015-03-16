@@ -15,7 +15,7 @@ namespace MahaSangram
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new master());
+            Application.Run(new MasterForm());
         }
     }
 }

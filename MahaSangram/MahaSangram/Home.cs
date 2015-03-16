@@ -11,22 +11,28 @@ namespace MahaSangram
 {
     public partial class Home : UserControl
     {
+
+
         public Home()
         {
             InitializeComponent();
+            Match.Click += new EventHandler(Match_Click);
+        }
+
+        public void Matchclicklistner(EventHandler handler)
+        {
+            this.Match.Click += handler;
         }
 
         private void Match_Click(object sender, EventArgs e)
         {
-           // load_teams("newmatch");
-            //listBox1.SelectedIndex = 0;
-            //functions.change_panel(panel_form1, panel2);
+            // Delegate the event to the caller
         }
 
         private void Teams_Click(object sender, EventArgs e)
         {
-           // load_teams("addteam");
-           // functions.change_panel(panel_form1, metroPanel1);
+            // load_teams("addteam");
+            // functions.change_panel(panel_form1, metroPanel1);
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)

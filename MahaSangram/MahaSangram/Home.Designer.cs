@@ -146,7 +146,7 @@
             this.quit_button_form1.UseVisualStyleBackColor = false;
             this.quit_button_form1.Click += new System.EventHandler(this.quit_button_form1_Click);
             // 
-            // MainControls
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +157,7 @@
             this.Controls.Add(this.Teams);
             this.Controls.Add(this.Statistics);
             this.Controls.Add(this.Logo);
-            this.Name = "MainControls";
+            this.Name = "Home";
             this.Size = new System.Drawing.Size(955, 517);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);

@@ -37,10 +37,13 @@
             this.ClientSize = new System.Drawing.Size(941, 493);
             this.Name = "MasterForm";
             this.Text = "MasterForm";
+            this.Load += new System.EventHandler(this.MasterForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+
     }
 }

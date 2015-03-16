@@ -15,9 +15,12 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
+        
         public SelectTeams()
         {
             InitializeComponent();
+            connection.Open();
+            query.Connection = connection;
         }
 
 
@@ -27,8 +30,11 @@ namespace MahaSangram
             listBox2.Items.Clear();
             query.CommandText = "select * from teams";
             teams = query.ExecuteReader();
-            listBox1.Items.Add(teams[1].ToString());
-            listBox2.Items.Add(teams[1].ToString());
+            while (teams.Read())
+            {
+                listBox1.Items.Add(teams[1].ToString());
+                listBox2.Items.Add(teams[1].ToString());
+            }
             teams.Close();
         }
         

@@ -110,7 +110,16 @@ namespace MahaSangram
             source_panel.Visible = false;
             destination_panel.Visible = true;
         }
-       
+
+
+     /*  public void newmatch()
+        {
+            SelectTeams ST;
+            
+            ST = new SelectTeams();
+            ST.Dock = DockStyle.Fill;
+            this.Controls.Add(ST);
+        }*/
         //next function here
     }
 }
