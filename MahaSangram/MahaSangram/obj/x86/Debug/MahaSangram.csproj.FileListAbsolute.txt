@@ -67,3 +67,4 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.G
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Home.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.MasterForm.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectTeams.resources
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectPlayers.resources

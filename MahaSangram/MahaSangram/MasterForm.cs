@@ -13,11 +13,13 @@ namespace MahaSangram
     {
         Home H = new Home();
         SelectTeams ST = new SelectTeams();
-        
+        SelectPlayers SP = new SelectPlayers();
+
         public MasterForm()
         {
             InitializeComponent();
-            this.H.Matchclicklistner(new EventHandler(newmatch));
+            this.H.Matchclicklistner(new EventHandler(newmatch1));
+            this.ST.Nextclicklistner(new EventHandler(newmatch2));
         }
 
        
@@ -28,13 +30,20 @@ namespace MahaSangram
         }
 
 
-        private void newmatch(object sender, EventArgs e)
+
+        private void newmatch1(object sender, EventArgs e)
         {
             this.Controls.Remove(H);
             ST.Dock = DockStyle.Fill;
             this.Controls.Add(ST);
         }
-        
+
+        private void newmatch2(object sender, EventArgs e)
+        {
+            this.Controls.Remove(ST);
+            SP.Dock = DockStyle.Fill;
+            this.Controls.Add(SP);
+        }
         
 
        

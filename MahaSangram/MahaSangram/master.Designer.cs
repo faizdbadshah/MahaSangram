@@ -93,6 +93,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_form1 = new System.Windows.Forms.Panel();
             this.dump_label_form1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.quit_button_form1 = new System.Windows.Forms.Button();
@@ -102,18 +103,18 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.course = new MetroFramework.Controls.MetroComboBox();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.line = new System.Windows.Forms.Label();
             this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
             this.addplayer = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.teamname_textbox = new MetroFramework.Controls.MetroTextBox();
             this.submit_addteam = new System.Windows.Forms.Button();
             this.year = new MetroFramework.Controls.MetroComboBox();
             this.branch = new MetroFramework.Controls.MetroComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.teamname_textbox = new MetroFramework.Controls.MetroTextBox();
             this.top.SuspendLayout();
+            this.footer.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,9 +126,9 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_form1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,7 +141,7 @@
             this.top.Dock = System.Windows.Forms.DockStyle.Top;
             this.top.Location = new System.Drawing.Point(0, 0);
             this.top.Name = "top";
-            this.top.Size = new System.Drawing.Size(1362, 39);
+            this.top.Size = new System.Drawing.Size(1354, 39);
             this.top.TabIndex = 0;
             this.top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.master_MouseDown);
             // 
@@ -180,10 +181,11 @@
             // footer
             // 
             this.footer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.footer.Controls.Add(this.metroPanel1);
             this.footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footer.Location = new System.Drawing.Point(0, 725);
+            this.footer.Location = new System.Drawing.Point(0, 718);
             this.footer.Name = "footer";
-            this.footer.Size = new System.Drawing.Size(1362, 15);
+            this.footer.Size = new System.Drawing.Size(1354, 15);
             this.footer.TabIndex = 2;
             // 
             // main_panel
@@ -194,11 +196,10 @@
             this.main_panel.Controls.Add(this.panel3);
             this.main_panel.Controls.Add(this.panel2);
             this.main_panel.Controls.Add(this.panel_form1);
-            this.main_panel.Controls.Add(this.metroPanel1);
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(1362, 740);
+            this.main_panel.Size = new System.Drawing.Size(1354, 733);
             this.main_panel.TabIndex = 3;
             // 
             // metroPanel3
@@ -213,9 +214,9 @@
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(1056, 45);
+            this.metroPanel3.Location = new System.Drawing.Point(12, 45);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(124, 241);
+            this.metroPanel3.Size = new System.Drawing.Size(1168, 635);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroPanel3.TabIndex = 11;
             this.metroPanel3.VerticalScrollbar = true;
@@ -232,7 +233,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-86, 396);
+            this.button1.Location = new System.Drawing.Point(958, 593);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 35);
             this.button1.TabIndex = 25;
@@ -247,7 +248,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(-86, 346);
+            this.button3.Location = new System.Drawing.Point(958, 543);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 34);
             this.button3.TabIndex = 31;
@@ -266,7 +267,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(-121, 151);
+            this.groupBox3.Location = new System.Drawing.Point(923, 348);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(237, 183);
             this.groupBox3.TabIndex = 9;
@@ -379,7 +380,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(-121, 5);
+            this.groupBox2.Location = new System.Drawing.Point(923, 202);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(237, 137);
             this.groupBox2.TabIndex = 8;
@@ -477,7 +478,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(841, 360);
+            this.tabPage2.Size = new System.Drawing.Size(850, 360);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Scorecard";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -487,7 +488,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(841, 360);
+            this.tabPage3.Size = new System.Drawing.Size(850, 360);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Batting Stats";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -497,7 +498,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(841, 360);
+            this.tabPage4.Size = new System.Drawing.Size(850, 360);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bowling Stats";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -507,7 +508,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(841, 360);
+            this.tabPage5.Size = new System.Drawing.Size(850, 360);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Graph";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -530,7 +531,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(16, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(108, 204);
+            this.panel1.Size = new System.Drawing.Size(1152, 204);
             this.panel1.TabIndex = 27;
             // 
             // panel4
@@ -539,9 +540,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.groupBox1);
-            this.panel4.Location = new System.Drawing.Point(-141, 0);
+            this.panel4.Location = new System.Drawing.Point(937, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(263, 622);
+            this.panel4.Size = new System.Drawing.Size(229, 622);
             this.panel4.TabIndex = 20;
             // 
             // groupBox1
@@ -557,7 +558,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(4, 7);
+            this.groupBox1.Location = new System.Drawing.Point(-30, 7);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(237, 183);
             this.groupBox1.TabIndex = 7;
@@ -796,7 +797,7 @@
             this.back_button_form3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_button_form3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_button_form3.ForeColor = System.Drawing.Color.White;
-            this.back_button_form3.Location = new System.Drawing.Point(12, 661);
+            this.back_button_form3.Location = new System.Drawing.Point(12, 654);
             this.back_button_form3.Name = "back_button_form3";
             this.back_button_form3.Size = new System.Drawing.Size(33, 45);
             this.back_button_form3.TabIndex = 1;
@@ -815,7 +816,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.checkedListBox2);
             this.panel3.Controls.Add(this.checkedListBox1);
-            this.panel3.Location = new System.Drawing.Point(1231, 494);
+            this.panel3.Location = new System.Drawing.Point(1345, 681);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(805, 332);
             this.panel3.TabIndex = 10;
@@ -920,9 +921,9 @@
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(48, 60);
+            this.panel2.Location = new System.Drawing.Point(1215, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 445);
+            this.panel2.Size = new System.Drawing.Size(127, 153);
             this.panel2.TabIndex = 6;
             this.panel2.Visible = false;
             // 
@@ -1022,7 +1023,7 @@
             this.panel_form1.Controls.Add(this.addteam_button_form1);
             this.panel_form1.Controls.Add(this.statistics_button_form1);
             this.panel_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_form1.Location = new System.Drawing.Point(1201, 55);
+            this.panel_form1.Location = new System.Drawing.Point(1237, 568);
             this.panel_form1.Name = "panel_form1";
             this.panel_form1.Size = new System.Drawing.Size(283, 153);
             this.panel_form1.TabIndex = 5;
@@ -1037,6 +1038,15 @@
             this.dump_label_form1.TabIndex = 9;
             this.dump_label_form1.Text = "form1";
             this.dump_label_form1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MahaSangram.Properties.Resources.logo;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(217, 221);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
             // button5
             // 
@@ -1159,7 +1169,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(1178, 370);
+            this.metroPanel1.Location = new System.Drawing.Point(1189, 3);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(173, 139);
             this.metroPanel1.TabIndex = 1;
@@ -1205,6 +1215,26 @@
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 20;
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.metroTile1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.metroTile1.Location = new System.Drawing.Point(0, 0);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(360, 44);
+            this.metroTile1.TabIndex = 24;
+            this.metroTile1.Text = "Team Name";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTile1.TileImage = global::MahaSangram.Properties.Resources.player_icon_small;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.metroTile1.UseCustomBackColor = true;
+            this.metroTile1.UseCustomForeColor = true;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.UseTileImage = true;
+            // 
             // line
             // 
             this.line.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -1249,6 +1279,38 @@
             this.label4.Size = new System.Drawing.Size(190, 42);
             this.label4.TabIndex = 0;
             this.label4.Text = "Add Team";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::MahaSangram.Properties.Resources.player_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::MahaSangram.Properties.Resources.player_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(541, 75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // teamname_textbox
+            // 
+            this.teamname_textbox.BackColor = System.Drawing.Color.White;
+            this.teamname_textbox.Enabled = false;
+            this.teamname_textbox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.teamname_textbox.FontWeight = MetroFramework.MetroTextBoxWeight.Light;
+            this.teamname_textbox.ForeColor = System.Drawing.Color.Transparent;
+            this.teamname_textbox.Icon = global::MahaSangram.Properties.Resources.player_icon_small;
+            this.teamname_textbox.Lines = new string[0];
+            this.teamname_textbox.Location = new System.Drawing.Point(426, 210);
+            this.teamname_textbox.MaxLength = 32767;
+            this.teamname_textbox.Name = "teamname_textbox";
+            this.teamname_textbox.PasswordChar = '\0';
+            this.teamname_textbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.teamname_textbox.SelectedText = "";
+            this.teamname_textbox.Size = new System.Drawing.Size(349, 35);
+            this.teamname_textbox.TabIndex = 1;
+            this.teamname_textbox.UseCustomBackColor = true;
+            this.teamname_textbox.UseSelectable = true;
             // 
             // submit_addteam
             // 
@@ -1304,73 +1366,12 @@
             this.branch.UseSelectable = true;
             this.branch.SelectedIndexChanged += new System.EventHandler(this.course_branch_year_SelectedIndexChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MahaSangram.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(36, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(217, 221);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.metroTile1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.metroTile1.Location = new System.Drawing.Point(0, 0);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(360, 44);
-            this.metroTile1.TabIndex = 24;
-            this.metroTile1.Text = "Team Name";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroTile1.TileImage = global::MahaSangram.Properties.Resources.player_icon_small;
-            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile1.UseCustomBackColor = true;
-            this.metroTile1.UseCustomForeColor = true;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.UseTileImage = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::MahaSangram.Properties.Resources.player_icon;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::MahaSangram.Properties.Resources.player_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(541, 75);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // teamname_textbox
-            // 
-            this.teamname_textbox.BackColor = System.Drawing.Color.White;
-            this.teamname_textbox.Enabled = false;
-            this.teamname_textbox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.teamname_textbox.FontWeight = MetroFramework.MetroTextBoxWeight.Light;
-            this.teamname_textbox.ForeColor = System.Drawing.Color.Transparent;
-            this.teamname_textbox.Icon = global::MahaSangram.Properties.Resources.player_icon_small;
-            this.teamname_textbox.Lines = new string[0];
-            this.teamname_textbox.Location = new System.Drawing.Point(426, 210);
-            this.teamname_textbox.MaxLength = 32767;
-            this.teamname_textbox.Name = "teamname_textbox";
-            this.teamname_textbox.PasswordChar = '\0';
-            this.teamname_textbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.teamname_textbox.SelectedText = "";
-            this.teamname_textbox.Size = new System.Drawing.Size(349, 35);
-            this.teamname_textbox.TabIndex = 1;
-            this.teamname_textbox.UseCustomBackColor = true;
-            this.teamname_textbox.UseSelectable = true;
-            // 
             // master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1362, 740);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.top);
             this.Controls.Add(this.main_panel);
@@ -1387,6 +1388,7 @@
             this.Load += new System.EventHandler(this.master_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.master_MouseDown);
             this.top.ResumeLayout(false);
+            this.footer.ResumeLayout(false);
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
             this.metroPanel3.ResumeLayout(false);
@@ -1406,10 +1408,10 @@
             this.panel2.PerformLayout();
             this.panel_form1.ResumeLayout(false);
             this.panel_form1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

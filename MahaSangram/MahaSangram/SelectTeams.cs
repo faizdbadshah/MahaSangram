@@ -21,8 +21,13 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
+            Next.Click += new EventHandler(Next_Click);
         }
 
+        public void Nextclicklistner(EventHandler handler)
+        {
+            this.Next.Click += handler;
+        }
 
         private void SelectTeams_Load(object sender, EventArgs e)
         {
