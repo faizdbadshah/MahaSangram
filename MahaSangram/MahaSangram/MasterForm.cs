@@ -20,17 +20,15 @@ namespace MahaSangram
             InitializeComponent();
             this.H.Matchclicklistner(new EventHandler(newmatch1));
             this.ST.Nextclicklistner(new EventHandler(newmatch2));
+            ST.DataAvailable += new EventHandler(child_DataAvailable);
         }
-
-       
+                   
         private void MasterForm_Load(object sender, EventArgs e)
         {
             H.Dock = DockStyle.Fill;
             this.Controls.Add(H);
         }
-
-
-
+        
         private void newmatch1(object sender, EventArgs e)
         {
             this.Controls.Remove(H);
@@ -45,6 +43,21 @@ namespace MahaSangram
             this.Controls.Add(SP);
         }
         
+
+        
+
+        
+        //child1.DataAvailable += new EventHandler(child_DataAvailable);
+        
+        void child_DataAvailable(object sender, EventArgs e)
+        {
+            if (ST != null && SP != null)
+            {
+                string data = ST.Data;
+                SP.Data = data;
+            }
+        }
+
 
        
     }
