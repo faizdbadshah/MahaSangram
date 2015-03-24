@@ -111,6 +111,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scorecard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Scorecard.Designer.cs">
+      <DependentUpon>Scorecard.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectPlayers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +146,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scorecard.resx">
+      <DependentUpon>Scorecard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectPlayers.resx">
       <DependentUpon>SelectPlayers.cs</DependentUpon>

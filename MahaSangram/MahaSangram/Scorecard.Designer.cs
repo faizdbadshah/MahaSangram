@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class Scorecard
+    partial class scorecard
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.metroRadioButton16 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton10 = new MetroFramework.Controls.MetroRadioButton();
@@ -42,8 +40,8 @@
             this.metroRadioButton7 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton8 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton9 = new MetroFramework.Controls.MetroRadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroRadioButton11 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton4 = new MetroFramework.Controls.MetroRadioButton();
@@ -51,6 +49,7 @@
             this.metroRadioButton1 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton3 = new MetroFramework.Controls.MetroRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -61,41 +60,18 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button1.Enabled = false;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(827, 540);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 35);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(827, 490);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 34);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Reset";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
@@ -108,10 +84,10 @@
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.Controls.Add(this.metroRadioButton15);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(792, 295);
+            this.groupBox3.Location = new System.Drawing.Point(705, 342);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(237, 183);
-            this.groupBox3.TabIndex = 33;
+            this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Out";
             // 
@@ -221,10 +197,10 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(792, 149);
+            this.groupBox2.Location = new System.Drawing.Point(705, 199);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(237, 137);
-            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Extra";
             // 
@@ -284,42 +260,39 @@
             this.metroRadioButton9.UseSelectable = true;
             this.metroRadioButton9.UseStyleColors = true;
             // 
-            // panel1
+            // button1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(227)))));
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(-115, -50);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 204);
-            this.panel1.TabIndex = 35;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.button1.Enabled = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(734, 604);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 35);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel4
+            // button3
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.groupBox1);
-            this.panel4.Location = new System.Drawing.Point(937, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(229, 622);
-            this.panel4.TabIndex = 20;
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(734, 549);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(171, 34);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "Reset";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.metroRadioButton11);
             this.groupBox1.Controls.Add(this.metroRadioButton4);
             this.groupBox1.Controls.Add(this.metroRadioButton5);
@@ -329,10 +302,10 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(-30, 7);
+            this.groupBox1.Location = new System.Drawing.Point(705, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(237, 183);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.Size = new System.Drawing.Size(237, 180);
+            this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Runs";
             // 
@@ -433,12 +406,32 @@
             this.metroRadioButton3.UseSelectable = true;
             this.metroRadioButton3.UseStyleColors = true;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(227)))));
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(696, 190);
+            this.panel1.TabIndex = 41;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(662, 164);
+            this.label17.Location = new System.Drawing.Point(511, 145);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 13);
             this.label17.TabIndex = 19;
@@ -449,7 +442,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(252, 159);
+            this.label16.Location = new System.Drawing.Point(102, 145);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(35, 13);
             this.label16.TabIndex = 18;
@@ -462,7 +455,7 @@
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(707, 115);
+            this.label13.Location = new System.Drawing.Point(554, 101);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 33);
@@ -475,7 +468,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(680, 115);
+            this.label14.Location = new System.Drawing.Point(523, 101);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 33);
             this.label14.TabIndex = 17;
@@ -487,7 +480,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(597, 115);
+            this.label15.Location = new System.Drawing.Point(422, 101);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(83, 33);
             this.label15.TabIndex = 15;
@@ -500,7 +493,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(294, 112);
+            this.label11.Location = new System.Drawing.Point(145, 101);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 33);
@@ -513,7 +506,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(199, 50);
+            this.label8.Location = new System.Drawing.Point(51, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(187, 55);
             this.label8.TabIndex = 10;
@@ -525,7 +518,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(267, 112);
+            this.label12.Location = new System.Drawing.Point(114, 101);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(23, 33);
             this.label12.TabIndex = 14;
@@ -537,7 +530,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(609, 50);
+            this.label9.Location = new System.Drawing.Point(443, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(187, 55);
             this.label9.TabIndex = 11;
@@ -549,40 +542,101 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(184, 112);
+            this.label10.Location = new System.Drawing.Point(25, 101);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 33);
             this.label10.TabIndex = 12;
             this.label10.Text = "Runs";
             // 
-            // Scorecard
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Location = new System.Drawing.Point(3, 198);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(696, 441);
+            this.tabControl1.TabIndex = 42;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(688, 415);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Scorecard";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(688, 415);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Batting Stats";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(688, 415);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Overview";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(688, 415);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Bowling Stats";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(688, 415);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Graph";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // scorecard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.AutoScroll = true;
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.panel1);
-            this.Name = "Scorecard";
-            this.Size = new System.Drawing.Size(922, 524);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button3);
+            this.Name = "scorecard";
+            this.Size = new System.Drawing.Size(954, 667);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton16;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton10;
@@ -595,8 +649,8 @@
         private MetroFramework.Controls.MetroRadioButton metroRadioButton7;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton8;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton9;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton11;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton4;
@@ -604,6 +658,7 @@
         private MetroFramework.Controls.MetroRadioButton metroRadioButton1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton2;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton3;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
@@ -614,5 +669,11 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
