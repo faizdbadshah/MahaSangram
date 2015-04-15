@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace MahaSangram
 {
-    public partial class scorecard : UserControl
+    public partial class Scorecard : UserControl
     {
         int a, b, c, d, balls, runs, overs, i;
         int[] record = new int[150];
 
-        public scorecard()
+        public Scorecard()
         {
             InitializeComponent();
         }

@@ -22,6 +22,7 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
+            Skip.Click += new EventHandler(Skip_Click);
         }
 
 
@@ -56,5 +57,17 @@ namespace MahaSangram
                 initiate();
             }
         }
+
+        private void Skip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void Skipclicklistner(EventHandler handler)
+        {
+            this.Skip.Click += handler;
+        }
+
+       
     }
 }

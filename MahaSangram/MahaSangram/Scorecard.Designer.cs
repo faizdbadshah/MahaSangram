@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class scorecard
+    partial class Scorecard
     {
         /// <summary> 
         /// Required designer variable.
