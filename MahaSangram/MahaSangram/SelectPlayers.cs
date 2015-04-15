@@ -27,8 +27,8 @@ namespace MahaSangram
 
         void initiate()
         {
-            label6.Text = "SELECT PLAYING 11 OF \n" + teamnames[0];
-            label5.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
+            label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[0];
+            label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
             checkedListBox1.Items.Clear();
             checkedListBox2.Items.Clear();
             query.CommandText = "select Name from players where Team = '" + teamnames[0] + "'";

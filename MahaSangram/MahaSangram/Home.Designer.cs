@@ -34,7 +34,7 @@
             this.Match = new System.Windows.Forms.Button();
             this.Teams = new System.Windows.Forms.Button();
             this.Statistics = new System.Windows.Forms.Button();
-            this.quit_button_form1 = new System.Windows.Forms.Button();
+            this.Quit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,28 +129,28 @@
             this.Statistics.Text = "Statistics";
             this.Statistics.UseVisualStyleBackColor = false;
             // 
-            // quit_button_form1
+            // Quit
             // 
-            this.quit_button_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.quit_button_form1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.quit_button_form1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.quit_button_form1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.quit_button_form1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quit_button_form1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.quit_button_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.quit_button_form1.Location = new System.Drawing.Point(303, 468);
-            this.quit_button_form1.Name = "quit_button_form1";
-            this.quit_button_form1.Size = new System.Drawing.Size(272, 46);
-            this.quit_button_form1.TabIndex = 19;
-            this.quit_button_form1.Text = "Quit";
-            this.quit_button_form1.UseVisualStyleBackColor = false;
-            this.quit_button_form1.Click += new System.EventHandler(this.quit_button_form1_Click);
+            this.Quit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Quit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Quit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Quit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Quit.Location = new System.Drawing.Point(303, 468);
+            this.Quit.Name = "Quit";
+            this.Quit.Size = new System.Drawing.Size(272, 46);
+            this.Quit.TabIndex = 19;
+            this.Quit.Text = "Quit";
+            this.Quit.UseVisualStyleBackColor = false;
+            this.Quit.Click += new System.EventHandler(this.quit_button_form1_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.quit_button_form1);
+            this.Controls.Add(this.Quit);
             this.Controls.Add(this.Rules);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.Match);
@@ -172,6 +172,6 @@
         private System.Windows.Forms.Button Match;
         private System.Windows.Forms.Button Teams;
         private System.Windows.Forms.Button Statistics;
-        private System.Windows.Forms.Button quit_button_form1;
+        private System.Windows.Forms.Button Quit;
     }
 }
