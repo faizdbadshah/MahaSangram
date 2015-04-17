@@ -556,14 +556,14 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 198);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(808, 455);
+            this.tabControl1.Size = new System.Drawing.Size(773, 455);
             this.tabControl1.TabIndex = 42;
             // 
             // tabPage1
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(800, 429);
+            this.tabPage1.Size = new System.Drawing.Size(765, 429);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Overview";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -606,7 +606,7 @@
             this.tabPage5.Text = "Graph";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // scorecard
+            // Scorecard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -618,7 +618,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Name = "scorecard";
+            this.Name = "Scorecard";
             this.Size = new System.Drawing.Size(954, 667);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

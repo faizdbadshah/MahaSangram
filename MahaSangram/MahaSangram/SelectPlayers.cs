@@ -28,18 +28,18 @@ namespace MahaSangram
 
         void initiate()
         {
-            label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[0];
-            label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
+            label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
+            label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[2];
             checkedListBox1.Items.Clear();
             checkedListBox2.Items.Clear();
-            query.CommandText = "select Name from players where Team = '" + teamnames[0] + "'";
+            query.CommandText = "select Name from players where Team = '" + teamnames[1] + "'";
             players = query.ExecuteReader();
             while (players.Read())
             {
                 checkedListBox1.Items.Add(players[0].ToString());
             }
             players.Close();
-            query.CommandText = "select Name from players where Team = '" + teamnames[1] + "'";
+            query.CommandText = "select Name from players where Team = '" + teamnames[2] + "'";
             players = query.ExecuteReader();
             while (players.Read())
             {

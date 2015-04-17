@@ -60,14 +60,20 @@ namespace MahaSangram
         {
             OnDataAvailable(null);
         }
-
-
+        
 
         public string Data
         {
             get
             {
-                return listBox1.Text + "," + listBox2.Text;
+                if (listBox1.SelectedItems.Count == 1 && listBox2.SelectedItems.Count == 1)
+                {
+                    return 1 + "," + listBox1.Text + "," + listBox2.Text;
+                }
+                else
+                {
+                    return 0 + "," + listBox1.Text + "," + listBox2.Text;
+                }
             }
         }
 

@@ -15,6 +15,7 @@ namespace MahaSangram
         SelectTeams ST = new SelectTeams();
         SelectPlayers SP = new SelectPlayers();
         Scorecard SC = new Scorecard();
+        string[] abcde;
 
         public MasterForm()
         {
@@ -40,9 +41,18 @@ namespace MahaSangram
 
         private void newmatch2(object sender, EventArgs e)
         {
-            this.Controls.Remove(ST);
-            SP.Dock = DockStyle.Fill;
-            this.Controls.Add(SP);
+            abcde = ST.Data.Split(new Char[] { ',' });
+            if(Convert.ToInt64(abcde[0])==1)
+            {
+                this.Controls.Remove(ST);
+                SP.Dock = DockStyle.Fill;
+                this.Controls.Add(SP);
+            }
+            else
+            {
+                MessageBox.Show("Please select both the teams first");
+            }
+            
         }
 
         private void newmatch3(object sender, EventArgs e)
