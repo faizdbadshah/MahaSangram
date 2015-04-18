@@ -236,6 +236,7 @@ namespace MahaSangram
             {
                 f = value;
                 playersname = f.Split(new Char[] { ',' });
+                MessageBox.Show(f);
             }
         }
     }

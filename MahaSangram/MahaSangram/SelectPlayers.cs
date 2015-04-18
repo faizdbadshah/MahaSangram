@@ -68,7 +68,7 @@ namespace MahaSangram
                 }
                 else
                 {
-                    return 0 ;
+                    return Convert.ToString("0") ;
                 }
             }
         }
@@ -92,7 +92,17 @@ namespace MahaSangram
         {
             this.Next.Click += handler;
         }
+        
+        public event EventHandler DataAvailable;
 
+        protected virtual void OnDataAvailable(EventArgs e)
+        {
+            EventHandler eh = DataAvailable;
+            if (eh != null)
+            {
+                eh(this, e);
+            }
+        }
         
        
     }
