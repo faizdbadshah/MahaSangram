@@ -17,6 +17,7 @@ namespace MahaSangram
         {
             InitializeComponent();
             Match.Click += new EventHandler(Match_Click);
+            Teams.Click += new EventHandler(Teams_Click);
         }
 
         public void Matchclicklistner(EventHandler handler)
@@ -29,6 +30,11 @@ namespace MahaSangram
             // Delegate the event to the caller
         }
 
+        public void Teamsclicklistner(EventHandler handler)
+        {
+            this.Teams.Click += handler;
+        }
+
         private void Teams_Click(object sender, EventArgs e)
         {
             // load_teams("addteam");
@@ -38,6 +44,11 @@ namespace MahaSangram
         private void quit_button_form1_Click(object sender, EventArgs e)
         {
             //functions.closeapp(this, this, connection);
+        }
+
+        private void Rules_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -129,6 +129,12 @@
     <Compile Include="SelectTeams.Designer.cs">
       <DependentUpon>SelectTeams.cs</DependentUpon>
     </Compile>
+    <Compile Include="Newteam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Newteam.Designer.cs">
+      <DependentUpon>Newteam.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectTeams.resx">
       <DependentUpon>SelectTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newteam.resx">
+      <DependentUpon>Newteam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="MSDatabaseDataSet.xsc">

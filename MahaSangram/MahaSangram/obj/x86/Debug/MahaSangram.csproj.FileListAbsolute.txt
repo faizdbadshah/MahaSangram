@@ -69,3 +69,4 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.MasterFo
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectTeams.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectPlayers.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.scorecard.resources
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Newteam.resources

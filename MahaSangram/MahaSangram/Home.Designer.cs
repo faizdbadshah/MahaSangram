@@ -62,6 +62,7 @@
             this.Rules.TabIndex = 18;
             this.Rules.Text = "Rules";
             this.Rules.UseVisualStyleBackColor = false;
+            this.Rules.Click += new System.EventHandler(this.Rules_Click);
             // 
             // Settings
             // 

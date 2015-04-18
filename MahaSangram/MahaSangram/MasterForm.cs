@@ -12,6 +12,7 @@ namespace MahaSangram
     public partial class MasterForm : Form
     {
         Home H = new Home();
+        Newteam T = new Newteam();
         SelectTeams ST = new SelectTeams();
         SelectPlayers SP = new SelectPlayers();
         Scorecard SC = new Scorecard();
@@ -24,6 +25,7 @@ namespace MahaSangram
             this.ST.Nextclicklistner(new EventHandler(newmatch2));
             ST.DataAvailable += new EventHandler(child_DataAvailable);
             this.SP.Skipclicklistner(new EventHandler(newmatch3));
+            this.H.Teamsclicklistner(new EventHandler(team));
         }
                    
         private void MasterForm_Load(object sender, EventArgs e)
@@ -62,6 +64,12 @@ namespace MahaSangram
             this.Controls.Add(SC);
         }
 
+        private void team(object sender, EventArgs e)
+        {
+            this.Controls.Remove(H);
+            T.Dock = DockStyle.Fill;
+            this.Controls.Add(T);
+        }
         
 
         
