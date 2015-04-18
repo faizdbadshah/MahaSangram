@@ -15,7 +15,7 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader players;
-        string[] teamnames;
+        string[] teamnames,team1, team2;
         string a;
         public SelectPlayers()
         {
@@ -23,6 +23,7 @@ namespace MahaSangram
             connection.Open();
             query.Connection = connection;
             Skip.Click += new EventHandler(Skip_Click);
+            Next.Click += new EventHandler(Next_Click);
         }
 
 
@@ -56,6 +57,20 @@ namespace MahaSangram
                 teamnames = a.Split(new Char[] { ','});
                 initiate();
             }
+            get
+            {
+                checkedListBox1.SelectedItems.CopyTo(team1,0);
+                checkedListBox2.SelectedItems.CopyTo(team2,0);
+
+                if (checkedListBox1.SelectedItems.Count == 11 && checkedListBox2.SelectedItems.Count == 11)
+                {
+                    return 1 + "," + team1[0] + "," + team1[1] + "," + team1[2] + "," + team1[3] + "," + team1[4] + "," + team1[5] + "," + team1[6] + "," + team1[7] + "," + team1[8] + "," + team1[9] + "," + team1[10] + "," + team2[0] + "," + team2[1] + "," + team2[2] + "," + team2[3] + "," + team2[4] + "," + team2[5] + "," + team2[6] + "," + team2[7] + "," + team2[8] + "," + team2[9] + "," + team2[10] ;
+                }
+                else
+                {
+                    return 0 ;
+                }
+            }
         }
 
         private void Skip_Click(object sender, EventArgs e)
@@ -68,6 +83,17 @@ namespace MahaSangram
             this.Skip.Click += handler;
         }
 
+        private void Next_Click(object sender, EventArgs e)
+        {
+            OnDataAvailable(null);
+        }
+
+        public void Nextclicklistner(EventHandler handler)
+        {
+            this.Next.Click += handler;
+        }
+
+        
        
     }
 }

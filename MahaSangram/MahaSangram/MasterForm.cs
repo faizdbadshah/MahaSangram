@@ -25,6 +25,7 @@ namespace MahaSangram
             this.ST.Nextclicklistner(new EventHandler(newmatch2));
             ST.DataAvailable += new EventHandler(child_DataAvailable);
             this.SP.Skipclicklistner(new EventHandler(newmatch3));
+            this.SP.Nextclicklistner(new EventHandler(newmatch3));
             this.H.Teamsclicklistner(new EventHandler(team));
         }
                    

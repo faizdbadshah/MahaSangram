@@ -13,6 +13,8 @@ namespace MahaSangram
     {
         int a, b, c, d, balls, runs, overs, i;
         int[] record = new int[150];
+        string[] playersname;
+        string f;
 
         public Scorecard()
         {
@@ -227,6 +229,14 @@ namespace MahaSangram
 
 
             i++;
+        }
+        public string Data
+        {
+            set
+            {
+                f = value;
+                playersname = f.Split(new Char[] { ',' });
+            }
         }
     }
 }
