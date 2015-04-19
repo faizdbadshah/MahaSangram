@@ -33,17 +33,22 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pStats = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.mStats = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.mStats.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tStats);
             this.tabControl1.Controls.Add(this.pStats);
+            this.tabControl1.Controls.Add(this.mStats);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -90,6 +95,24 @@
             this.dataGridView2.Size = new System.Drawing.Size(522, 223);
             this.dataGridView2.TabIndex = 0;
             // 
+            // mStats
+            // 
+            this.mStats.Controls.Add(this.dataGridView3);
+            this.mStats.Location = new System.Drawing.Point(4, 22);
+            this.mStats.Name = "mStats";
+            this.mStats.Size = new System.Drawing.Size(590, 281);
+            this.mStats.TabIndex = 2;
+            this.mStats.Text = "Match Stats";
+            this.mStats.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(42, 33);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(525, 227);
+            this.dataGridView3.TabIndex = 0;
+            // 
             // Stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,6 +126,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pStats.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.mStats.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,6 +139,8 @@
         private System.Windows.Forms.TabPage pStats;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TabPage mStats;
+        private System.Windows.Forms.DataGridView dataGridView3;
 
 
     }

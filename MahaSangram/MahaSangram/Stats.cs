@@ -14,7 +14,7 @@ namespace MahaSangram
     {
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
-        private SqlDataReader teams, Players;
+        private SqlDataReader teams, Players, matches;
         
         public Stats()
         {
@@ -34,7 +34,7 @@ namespace MahaSangram
         {
             query.CommandText = "select * from teams";
             teams = query.ExecuteReader();
-             //while(teams.Read())
+           
             DataTable dt = new DataTable();
             dt.Load(teams);
             dataGridView1.DataSource = dt;
@@ -45,6 +45,15 @@ namespace MahaSangram
             DataTable dt2 = new DataTable();
             dt2.Load(Players);
             dataGridView2.DataSource = dt2;
+
+            query.CommandText = "select * from matches";
+            matches = query.ExecuteReader();
+
+            DataTable dt3 = new DataTable();
+            dt3.Load(matches);
+            dataGridView3.DataSource = dt3; 
+
+
 
             
         }

@@ -171,6 +171,9 @@
     <EmbeddedResource Include="Newteam.resx">
       <DependentUpon>Newteam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="MSDatabaseDataSet.xsc">
       <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
