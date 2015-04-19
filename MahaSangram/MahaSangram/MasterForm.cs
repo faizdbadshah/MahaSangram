@@ -25,7 +25,7 @@ namespace MahaSangram
             this.H.Matchclicklistner(new EventHandler(newmatch1));
             this.ST.Nextclicklistner(new EventHandler(newmatch2));
             ST.DataAvailable += new EventHandler(child_DataAvailable);
-            this.SP.Skipclicklistner(new EventHandler(newmatch3));
+            this.SP.Skipclicklistner(new EventHandler(newmatch4));
             this.SP.Nextclicklistner(new EventHandler(newmatch3));
             this.H.Teamsclicklistner(new EventHandler(team));
             this.H.Statsclicklistner(new EventHandler(newStats));
@@ -61,6 +61,21 @@ namespace MahaSangram
         }
 
         private void newmatch3(object sender, EventArgs e)
+        {
+            abcde = SP.Data.Split(new Char[] { ',' });
+            if (Convert.ToInt64(abcde[0]) == 1)
+            {
+                this.Controls.Remove(SP);
+                SC.Dock = DockStyle.Fill;
+                this.Controls.Add(SC);
+            }
+            else
+            {
+                MessageBox.Show("Please select 11 players from both the teams ");
+            }
+        }
+
+        private void newmatch4(object sender, EventArgs e)
         {
             this.Controls.Remove(SP);
             SC.Dock = DockStyle.Fill;
