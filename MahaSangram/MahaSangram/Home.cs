@@ -18,6 +18,7 @@ namespace MahaSangram
             InitializeComponent();
             Match.Click += new EventHandler(Match_Click);
             Teams.Click += new EventHandler(Teams_Click);
+            Statistics.Click += new EventHandler(Statistics_Click);
         }
 
         public void Matchclicklistner(EventHandler handler)
@@ -40,6 +41,17 @@ namespace MahaSangram
             // load_teams("addteam");
             // functions.change_panel(panel_form1, metroPanel1);
         }
+
+        private void Statistics_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void Statsclicklistner(EventHandler handler)
+        {
+            this.Statistics.Click += handler;
+        }
+
 
         private void quit_button_form1_Click(object sender, EventArgs e)
         {

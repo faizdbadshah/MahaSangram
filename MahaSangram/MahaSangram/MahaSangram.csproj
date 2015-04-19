@@ -135,6 +135,12 @@
     <Compile Include="Newteam.Designer.cs">
       <DependentUpon>Newteam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.cs">
+      <DependentUpon>Stats.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
