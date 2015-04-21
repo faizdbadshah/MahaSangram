@@ -17,6 +17,9 @@ namespace MahaSangram
         SelectPlayers SP = new SelectPlayers();
         Scorecard SC = new Scorecard();
         Stats Stats1 = new Stats();
+        Addteambutton A = new Addteambutton();
+        Addplayerbutton P = new Addplayerbutton();
+        PlayerInfo I = new PlayerInfo();
         string[] abcde;
 
         public MasterForm()
@@ -29,6 +32,9 @@ namespace MahaSangram
             this.SP.Nextclicklistner(new EventHandler(newmatch3));
             this.H.Teamsclicklistner(new EventHandler(team));
             this.H.Statsclicklistner(new EventHandler(newStats));
+            this.T.Addtclicklistner(new EventHandler(add1));
+            this.T.Addpclicklistner(new EventHandler(add2));
+            this.P.AddNewPlayerclicklistner(new EventHandler(add3));
         }
                    
         private void MasterForm_Load(object sender, EventArgs e)
@@ -100,6 +106,27 @@ namespace MahaSangram
 
         
         //child1.DataAvailable += new EventHandler(child_DataAvailable);
+
+        private void add1(object sender, EventArgs e)
+        {
+            this.Controls.Remove(T);
+            A.Dock = DockStyle.Fill;
+            this.Controls.Add(A);
+        }
+        private void add2(object sender, EventArgs e)
+        {
+            this.Controls.Remove(T);
+            P.Dock = DockStyle.Fill;
+            this.Controls.Add(P);
+        }
+        private void add3(object sender, EventArgs e)
+        {
+            this.Controls.Remove(P);
+            I.Dock = DockStyle.Fill;
+            this.Controls.Add(I);
+        }
+
+
         
         void child_DataAvailable(object sender, EventArgs e)
         {

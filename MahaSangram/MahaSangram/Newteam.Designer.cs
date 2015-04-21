@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.AddTeam = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Addt = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
+            this.Addp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -42,41 +42,42 @@
             this.listBox1.Size = new System.Drawing.Size(592, 329);
             this.listBox1.TabIndex = 0;
             // 
-            // AddTeam
+            // Addt
             // 
-            this.AddTeam.Location = new System.Drawing.Point(184, 387);
-            this.AddTeam.Name = "AddTeam";
-            this.AddTeam.Size = new System.Drawing.Size(132, 58);
-            this.AddTeam.TabIndex = 1;
-            this.AddTeam.Text = "Add Team";
-            this.AddTeam.UseVisualStyleBackColor = true;
-            this.AddTeam.Click += new System.EventHandler(this.button1_Click);
+            this.Addt.Location = new System.Drawing.Point(184, 387);
+            this.Addt.Name = "Addt";
+            this.Addt.Size = new System.Drawing.Size(132, 58);
+            this.Addt.TabIndex = 1;
+            this.Addt.Text = "Add Team";
+            this.Addt.UseVisualStyleBackColor = true;
+            this.Addt.Click += new System.EventHandler(this.Addt_Click);
             // 
-            // button2
+            // Delete
             // 
-            this.button2.Location = new System.Drawing.Point(387, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 58);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Delete Team";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Delete.Location = new System.Drawing.Point(387, 388);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(132, 58);
+            this.Delete.TabIndex = 2;
+            this.Delete.Text = "Delete Team";
+            this.Delete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Addp
             // 
-            this.button3.Location = new System.Drawing.Point(588, 388);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 58);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Add Player";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Addp.Location = new System.Drawing.Point(588, 388);
+            this.Addp.Name = "Addp";
+            this.Addp.Size = new System.Drawing.Size(132, 58);
+            this.Addp.TabIndex = 3;
+            this.Addp.Text = "Add Player";
+            this.Addp.UseVisualStyleBackColor = true;
+            this.Addp.Click += new System.EventHandler(this.Addp_Click);
             // 
             // Newteam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.AddTeam);
+            this.Controls.Add(this.Addp);
+            this.Controls.Add(this.Delete);
+            this.Controls.Add(this.Addt);
             this.Controls.Add(this.listBox1);
             this.Name = "Newteam";
             this.Size = new System.Drawing.Size(933, 515);
@@ -87,8 +88,8 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button AddTeam;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Addt;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.Button Addp;
     }
 }

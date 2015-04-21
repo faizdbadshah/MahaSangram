@@ -14,13 +14,30 @@ namespace MahaSangram
         public Newteam()
         {
             InitializeComponent();
-         
+
+            Addt.Click += new EventHandler(Addt_Click);
+            Addp.Click += new EventHandler(Addp_Click);
+
+        }
+        public void Addtclicklistner(EventHandler handler)
+        {
+            this.Addt.Click += handler;
+        }
+        public void Addpclicklistner(EventHandler handler)
+        {
+            this.Addp.Click += handler;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Addt_Click(object sender, EventArgs e)
         {
-        
-       
+
         }
+
+        private void Addp_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
