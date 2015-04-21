@@ -23,14 +23,7 @@ namespace MahaSangram
             query.Connection = connection;
         }
 
-       
-
-        private void tStats_Click(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void teamStats_Load(object sender, EventArgs e)
+        private void Stats_Load(object sender, EventArgs e)
         {
             query.CommandText = "select * from teams";
             teams = query.ExecuteReader();
@@ -51,20 +44,7 @@ namespace MahaSangram
 
             DataTable dt3 = new DataTable();
             dt3.Load(matches);
-            dataGridView3.DataSource = dt3; 
-
-
-
-            
+            dataGridView3.DataSource = dt3;
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-      
-
-      
     }
 }

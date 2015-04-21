@@ -19,16 +19,17 @@ namespace MahaSangram
             Addp.Click += new EventHandler(Addp_Click);
 
         }
+        
         public void Addtclicklistner(EventHandler handler)
         {
             this.Addt.Click += handler;
         }
+
         public void Addpclicklistner(EventHandler handler)
         {
             this.Addp.Click += handler;
         }
-
-
+        
         private void Addt_Click(object sender, EventArgs e)
         {
 

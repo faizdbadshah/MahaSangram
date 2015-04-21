@@ -65,7 +65,6 @@
             this.tStats.TabIndex = 0;
             this.tStats.Text = "Team Stats";
             this.tStats.UseVisualStyleBackColor = true;
-            this.tStats.Click += new System.EventHandler(this.tStats_Click);
             // 
             // dataGridView1
             // 
@@ -74,7 +73,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(447, 192);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pStats
             // 
@@ -120,7 +118,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Stats";
             this.Size = new System.Drawing.Size(942, 532);
-            this.Load += new System.EventHandler(this.teamStats_Load);
+            this.Load += new System.EventHandler(this.Stats_Load);
             this.tabControl1.ResumeLayout(false);
             this.tStats.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
