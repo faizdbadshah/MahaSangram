@@ -239,15 +239,5 @@ namespace MahaSangram
                 MessageBox.Show(f);
             }
         }
-
-        private void Scorecard_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
