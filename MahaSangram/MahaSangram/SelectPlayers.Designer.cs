@@ -125,6 +125,7 @@
             this.Controls.Add(this.checkedListBox1);
             this.Name = "SelectPlayers";
             this.Size = new System.Drawing.Size(938, 532);
+            this.Load += new System.EventHandler(this.SelectPlayers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

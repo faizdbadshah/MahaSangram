@@ -920,6 +920,7 @@
             this.Controls.Add(this.button2);
             this.Name = "Scorecard";
             this.Size = new System.Drawing.Size(954, 667);
+            this.Load += new System.EventHandler(this.Scorecard_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

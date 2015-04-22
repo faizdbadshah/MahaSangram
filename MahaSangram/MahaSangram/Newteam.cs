@@ -61,20 +61,27 @@ namespace MahaSangram
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            string message = "Do You Really Want to Delete the team "+ listBox1.Text + "\n The team will be deleted with all of its players";
-            string caption = "Delete";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result;
-            result = MessageBox.Show(this, message, caption, buttons);
-
-            if (result == DialogResult.Yes)
+            if(listBox1.SelectedItems.Count==1)
             {
-                query.CommandText = "delete from Players where Team =" + listBox1.Text;
-                players = query.ExecuteReader();
-                players.Close();
-                query.CommandText = "delete from teams where team_name =" + listBox1.Text;
-                players = query.ExecuteReader();
-                players.Close();
+                string message = "Do You Really Want to Delete the team " + listBox1.Text + "\n The team will be deleted with all of its players";
+                string caption = "Delete";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                result = MessageBox.Show(this, message, caption, buttons);
+
+                if (result == DialogResult.Yes)
+                {
+                    query.CommandText = "delete from Players where Team =" + listBox1.Text;
+                    players = query.ExecuteReader();
+                    players.Close();
+                    query.CommandText = "delete from teams where team_name =" + listBox1.Text;
+                    players = query.ExecuteReader();
+                    players.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select the team you want to delete");
             }
         }
 
@@ -90,6 +97,17 @@ namespace MahaSangram
                 {
                     return 0 + "," + listBox1.Text;
                 }
+            }
+        }
+
+        public event EventHandler DataAvailable;
+
+        protected virtual void OnDataAvailable(EventArgs e)
+        {
+            EventHandler eh = DataAvailable;
+            if (eh != null)
+            {
+                eh(this, e);
             }
         }
     }

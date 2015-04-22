@@ -27,36 +27,12 @@ namespace MahaSangram
             Skip.Click += new EventHandler(Skip_Click);
             Next.Click += new EventHandler(Next_Click);
         }
-
-
-        void initiate()
-        {
-            label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
-            label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[2];
-            checkedListBox1.Items.Clear();
-            checkedListBox2.Items.Clear();
-            query.CommandText = "select Name from players where Team = '" + teamnames[1] + "'";
-            players = query.ExecuteReader();
-            while (players.Read())
-            {
-                checkedListBox1.Items.Add(players[0].ToString());
-            }
-            players.Close();
-            query.CommandText = "select Name from players where Team = '" + teamnames[2] + "'";
-            players = query.ExecuteReader();
-            while (players.Read())
-            {
-                checkedListBox2.Items.Add(players[0].ToString());
-            }
-            players.Close();
-        }
-
+        
         public string Data
         {
             set
             {
                 teamnames = value.Split(new Char[] { ',' });
-                initiate();
             }
             get
             {
@@ -103,7 +79,27 @@ namespace MahaSangram
                 eh(this, e);
             }
         }
-        
-       
+
+        private void SelectPlayers_Load(object sender, EventArgs e)
+        {
+            label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
+            label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[2];
+            checkedListBox1.Items.Clear();
+            checkedListBox2.Items.Clear();
+            query.CommandText = "select Name from players where Team = '" + teamnames[1] + "'";
+            players = query.ExecuteReader();
+            while (players.Read())
+            {
+                checkedListBox1.Items.Add(players[0].ToString());
+            }
+            players.Close();
+            query.CommandText = "select Name from players where Team = '" + teamnames[2] + "'";
+            players = query.ExecuteReader();
+            while (players.Read())
+            {
+                checkedListBox2.Items.Add(players[0].ToString());
+            }
+            players.Close();
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace MahaSangram
             InitializeComponent();
             this.H.Matchclicklistner(new EventHandler(newmatch1));
             this.ST.Nextclicklistner(new EventHandler(newmatch2));
-            ST.DataAvailable += new EventHandler(child_DataAvailable);
+            ST.DataAvailable += new EventHandler(ST_DataAvailable);
             this.SP.Skipclicklistner(new EventHandler(newmatch4));
             this.SP.Nextclicklistner(new EventHandler(newmatch3));
             this.H.Teamsclicklistner(new EventHandler(team));
@@ -35,6 +35,8 @@ namespace MahaSangram
             this.T.Addtclicklistner(new EventHandler(add1));
             this.T.Addpclicklistner(new EventHandler(add2));
             this.P.AddNewPlayerclicklistner(new EventHandler(add3));
+            T.DataAvailable += new EventHandler(T_DataAvailable);
+            SP.DataAvailable += new EventHandler(SP_DataAvailable);
         }
                    
         private void MasterForm_Load(object sender, EventArgs e)
@@ -102,33 +104,37 @@ namespace MahaSangram
             Stats1.Dock = DockStyle.Fill;
             this.Controls.Add(Stats1);
         }
-
-
         
-        //child1.DataAvailable += new EventHandler(child_DataAvailable);
-
         private void add1(object sender, EventArgs e)
         {
             this.Controls.Remove(T);
             A.Dock = DockStyle.Fill;
             this.Controls.Add(A);
         }
+
         private void add2(object sender, EventArgs e)
         {
-            this.Controls.Remove(T);
-            P.Dock = DockStyle.Fill;
-            this.Controls.Add(P);
+            abcde = T.Data.Split(new Char[] { ',' });
+            if (Convert.ToInt64(abcde[0]) == 1)
+            {
+                this.Controls.Remove(T);
+                P.Dock = DockStyle.Fill;
+                this.Controls.Add(P);
+            }
+            else
+            {
+                MessageBox.Show("Please select a team from the list");
+            }
         }
+
         private void add3(object sender, EventArgs e)
         {
             this.Controls.Remove(P);
             I.Dock = DockStyle.Fill;
             this.Controls.Add(I);
         }
-
-
-        
-        void child_DataAvailable(object sender, EventArgs e)
+                
+        void ST_DataAvailable(object sender, EventArgs e)
         {
             if (ST != null && SP != null)
             {
@@ -137,7 +143,22 @@ namespace MahaSangram
             }
         }
 
+        void T_DataAvailable(object sender, EventArgs e)
+        {
+            if (T != null && P != null)
+            {
+                string data = T.Data;
+                P.Data = data;
+            }
+        }
 
-       
+        void SP_DataAvailable(object sender, EventArgs e)
+        {
+            if (SP != null && SC != null)
+            {
+                string data = SP.Data;
+                SC.Data = data;
+            }
+        }
     }
 }

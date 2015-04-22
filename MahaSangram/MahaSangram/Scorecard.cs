@@ -239,16 +239,16 @@ namespace MahaSangram
             row.Cells[3].Value = 20;
             dataGridView1.Rows.Add(row);
         }
+
         public string Data
         {
             set
             {
                 playersnames = value.Split(new Char[] { ',' });
-                getdata();
             }
         }
 
-        private void getdata()
+        private void Scorecard_Load(object sender, EventArgs e)
         {
             for (i = 0; i < 11; i++)
             {
@@ -268,7 +268,7 @@ namespace MahaSangram
             label6.Text = label10.Text = Convert.ToString("0.0");
 
             DataGridViewRow row;
-            for(i=0;i<11;i++)
+            for (i = 0; i < 11; i++)
             {
                 row = (DataGridViewRow)dataGridView1.Rows[i].Clone();
                 row.Cells[0].Value = players1[i];
