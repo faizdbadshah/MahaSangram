@@ -60,6 +60,7 @@
             this.Delete.TabIndex = 2;
             this.Delete.Text = "Delete Team";
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Addp
             // 
@@ -81,6 +82,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Newteam";
             this.Size = new System.Drawing.Size(933, 515);
+            this.Load += new System.EventHandler(this.Newteam_Load);
             this.ResumeLayout(false);
 
         }
