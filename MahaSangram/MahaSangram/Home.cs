@@ -11,14 +11,16 @@ namespace MahaSangram
 {
     public partial class Home : UserControl
     {
-
-
+      
         public Home()
         {
             InitializeComponent();
             Match.Click += new EventHandler(Match_Click);
             Teams.Click += new EventHandler(Teams_Click);
             Statistics.Click += new EventHandler(Statistics_Click);
+            
+         //   Properties.Settings.Default.TournamentStart = true;
+         //   Properties.Settings.Default.Save();
         }
 
         public void Matchclicklistner(EventHandler handler)

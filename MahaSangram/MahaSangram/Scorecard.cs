@@ -11,9 +11,10 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, overs, i;
+        int a, b, c, d, balls, runs, overs, i, k;
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
+        double[] povers= new double[11];
 
         public Scorecard()
         {
@@ -228,6 +229,15 @@ namespace MahaSangram
 
 
             i++;
+
+
+
+            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = "Chaitanya";
+            row.Cells[1].Value = "bas ho gaya ab out";
+            row.Cells[2].Value = 50;
+            row.Cells[3].Value = 20;
+            dataGridView1.Rows.Add(row);
         }
         public string Data
         {
@@ -240,7 +250,7 @@ namespace MahaSangram
 
         private void getdata()
         {
-            for (int i = 0; i < 11; i++)
+            for (i = 0; i < 11; i++)
             {
                 players1[i] = playersnames[i + 1];
                 players2[i] = playersnames[i + 12];
@@ -256,6 +266,18 @@ namespace MahaSangram
 
             label3.Text = label5.Text = label7.Text = label9.Text = Convert.ToString("0");
             label6.Text = label10.Text = Convert.ToString("0.0");
+
+            DataGridViewRow row;
+            for(i=0;i<11;i++)
+            {
+                row = (DataGridViewRow)dataGridView1.Rows[i].Clone();
+                row.Cells[0].Value = players1[i];
+                row.Cells[1].Value = "Still To Play";
+
+                row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
+                row.Cells[0].Value = players1[i];
+
+            }
         }
     }
 }
