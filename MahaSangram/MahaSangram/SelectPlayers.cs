@@ -26,6 +26,7 @@ namespace MahaSangram
             query.Connection = connection;
             Skip.Click += new EventHandler(Skip_Click);
             Next.Click += new EventHandler(Next_Click);
+            SelectPlayersBack.Click += new EventHandler(SelectPlayersBack_Click);
             
         }
         
@@ -56,8 +57,15 @@ namespace MahaSangram
         {
             this.Skip.Click += handler;
         }
-       
-      
+        public void SelectPlayersBackclicklistner(EventHandler handler)
+        {
+            this.SelectPlayersBack.Click += handler;
+        }
+
+        private void SelectPlayersBack_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Next_Click(object sender, EventArgs e)
         {
             team1 = checkedListBox1.CheckedItems.OfType<string>().ToArray();

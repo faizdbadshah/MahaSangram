@@ -99,6 +99,7 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ScorecardBack = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -122,7 +123,7 @@
             this.groupBox3.Controls.Add(this.metroRadioButton13);
             this.groupBox3.Controls.Add(this.metroRadioButton14);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(817, 365);
+            this.groupBox3.Location = new System.Drawing.Point(828, 382);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(125, 172);
             this.groupBox3.TabIndex = 34;
@@ -168,7 +169,7 @@
             this.metroRadioButton15.AutoSize = true;
             this.metroRadioButton15.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton15.ForeColor = System.Drawing.Color.Black;
-            this.metroRadioButton15.Location = new System.Drawing.Point(13, 122);
+            this.metroRadioButton15.Location = new System.Drawing.Point(13, 129);
             this.metroRadioButton15.Name = "metroRadioButton15";
             this.metroRadioButton15.Size = new System.Drawing.Size(109, 25);
             this.metroRadioButton15.TabIndex = 2;
@@ -224,7 +225,7 @@
             this.groupBox2.Controls.Add(this.metroRadioButton9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(814, 208);
+            this.groupBox2.Location = new System.Drawing.Point(825, 225);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(125, 151);
             this.groupBox2.TabIndex = 33;
@@ -299,7 +300,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(827, 600);
+            this.button1.Location = new System.Drawing.Point(840, 600);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 35);
             this.button1.TabIndex = 35;
@@ -314,7 +315,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(840, 543);
+            this.button2.Location = new System.Drawing.Point(851, 560);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 34);
             this.button2.TabIndex = 36;
@@ -334,7 +335,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(817, 13);
+            this.groupBox1.Location = new System.Drawing.Point(828, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(125, 189);
             this.groupBox1.TabIndex = 38;
@@ -461,7 +462,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 190);
+            this.panel1.Size = new System.Drawing.Size(819, 190);
             this.panel1.TabIndex = 41;
             // 
             // label10
@@ -905,11 +906,26 @@
             this.listBox1.Size = new System.Drawing.Size(266, 17);
             this.listBox1.TabIndex = 43;
             // 
+            // ScorecardBack
+            // 
+            this.ScorecardBack.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ScorecardBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.ScorecardBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ScorecardBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScorecardBack.ForeColor = System.Drawing.Color.White;
+            this.ScorecardBack.Location = new System.Drawing.Point(851, 641);
+            this.ScorecardBack.Name = "ScorecardBack";
+            this.ScorecardBack.Size = new System.Drawing.Size(84, 34);
+            this.ScorecardBack.TabIndex = 44;
+            this.ScorecardBack.Text = "Back";
+            this.ScorecardBack.UseVisualStyleBackColor = false;
+            // 
             // Scorecard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.ScorecardBack);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
@@ -919,7 +935,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Name = "Scorecard";
-            this.Size = new System.Drawing.Size(954, 667);
+            this.Size = new System.Drawing.Size(965, 700);
             this.Load += new System.EventHandler(this.Scorecard_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -1014,5 +1030,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button ScorecardBack;
     }
 }

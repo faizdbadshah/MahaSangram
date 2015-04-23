@@ -19,6 +19,7 @@ namespace MahaSangram
         public Scorecard()
         {
             InitializeComponent();
+            ScorecardBack.Click += new EventHandler(ScorecardBack_Click);
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -278,6 +279,15 @@ namespace MahaSangram
                 row.Cells[0].Value = players1[i];
 
             }*/
+        }
+        public void ScorecardBackclicklistner(EventHandler handler)
+        {
+            this.ScorecardBack.Click += handler;
+        }
+
+        private void ScorecardBack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

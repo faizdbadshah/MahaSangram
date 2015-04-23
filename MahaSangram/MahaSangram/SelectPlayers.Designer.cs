@@ -34,13 +34,14 @@
             this.Next = new System.Windows.Forms.Button();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.SelectPlayersBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Skip
             // 
             this.Skip.BackColor = System.Drawing.Color.GreenYellow;
             this.Skip.ForeColor = System.Drawing.Color.Black;
-            this.Skip.Location = new System.Drawing.Point(431, 366);
+            this.Skip.Location = new System.Drawing.Point(434, 363);
             this.Skip.Name = "Skip";
             this.Skip.Size = new System.Drawing.Size(75, 39);
             this.Skip.TabIndex = 19;
@@ -78,7 +79,7 @@
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next.ForeColor = System.Drawing.Color.White;
-            this.Next.Location = new System.Drawing.Point(396, 298);
+            this.Next.Location = new System.Drawing.Point(294, 294);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(149, 44);
             this.Next.TabIndex = 15;
@@ -113,10 +114,24 @@
             this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
             this.checkedListBox1.TabIndex = 16;
             // 
+            // SelectPlayersBack
+            // 
+            this.SelectPlayersBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.SelectPlayersBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SelectPlayersBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectPlayersBack.ForeColor = System.Drawing.Color.White;
+            this.SelectPlayersBack.Location = new System.Drawing.Point(495, 294);
+            this.SelectPlayersBack.Name = "SelectPlayersBack";
+            this.SelectPlayersBack.Size = new System.Drawing.Size(149, 44);
+            this.SelectPlayersBack.TabIndex = 20;
+            this.SelectPlayersBack.Text = "Back";
+            this.SelectPlayersBack.UseVisualStyleBackColor = false;
+            // 
             // SelectPlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.SelectPlayersBack);
             this.Controls.Add(this.Skip);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,5 +154,6 @@
         private System.Windows.Forms.Button Next;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button SelectPlayersBack;
     }
 }
