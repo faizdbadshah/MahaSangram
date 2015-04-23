@@ -21,6 +21,7 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
+            StatsBack.Click += new EventHandler(StatsBack_Click);
         }
 
         private void Stats_Load(object sender, EventArgs e)
@@ -45,6 +46,15 @@ namespace MahaSangram
             DataTable dt3 = new DataTable();
             dt3.Load(matches);
             dataGridView3.DataSource = dt3;
+        }
+        public void StatsBackclicklistner(EventHandler handler)
+        {
+            this.StatsBack.Click += handler;
+        }
+
+        private void StatsBack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

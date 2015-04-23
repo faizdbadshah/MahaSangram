@@ -26,6 +26,7 @@ namespace MahaSangram
             query.Connection = connection;
             Skip.Click += new EventHandler(Skip_Click);
             Next.Click += new EventHandler(Next_Click);
+            
         }
         
         public string Data
@@ -51,12 +52,12 @@ namespace MahaSangram
         {
 
         }
-
         public void Skipclicklistner(EventHandler handler)
         {
             this.Skip.Click += handler;
         }
-
+       
+      
         private void Next_Click(object sender, EventArgs e)
         {
             team1 = checkedListBox1.CheckedItems.OfType<string>().ToArray();

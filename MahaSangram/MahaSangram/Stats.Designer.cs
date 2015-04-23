@@ -35,6 +35,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.mStats = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.StatsBack = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -49,19 +50,20 @@
             this.tabControl1.Controls.Add(this.tStats);
             this.tabControl1.Controls.Add(this.pStats);
             this.tabControl1.Controls.Add(this.mStats);
-            this.tabControl1.Location = new System.Drawing.Point(19, 15);
+            this.tabControl1.Location = new System.Drawing.Point(19, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(898, 500);
+            this.tabControl1.Size = new System.Drawing.Size(920, 515);
             this.tabControl1.TabIndex = 0;
             // 
             // tStats
             // 
+            this.tStats.Controls.Add(this.StatsBack);
             this.tStats.Controls.Add(this.dataGridView1);
             this.tStats.Location = new System.Drawing.Point(4, 22);
             this.tStats.Name = "tStats";
             this.tStats.Padding = new System.Windows.Forms.Padding(3);
-            this.tStats.Size = new System.Drawing.Size(890, 474);
+            this.tStats.Size = new System.Drawing.Size(912, 489);
             this.tStats.TabIndex = 0;
             this.tStats.Text = "Team Stats";
             this.tStats.UseVisualStyleBackColor = true;
@@ -111,6 +113,15 @@
             this.dataGridView3.Size = new System.Drawing.Size(809, 422);
             this.dataGridView3.TabIndex = 0;
             // 
+            // StatsBack
+            // 
+            this.StatsBack.Location = new System.Drawing.Point(346, 460);
+            this.StatsBack.Name = "StatsBack";
+            this.StatsBack.Size = new System.Drawing.Size(146, 23);
+            this.StatsBack.TabIndex = 2;
+            this.StatsBack.Text = "Back";
+            this.StatsBack.UseVisualStyleBackColor = true;
+            // 
             // Stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,6 +150,7 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage mStats;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button StatsBack;
 
 
     }

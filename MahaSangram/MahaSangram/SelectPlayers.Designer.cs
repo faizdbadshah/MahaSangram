@@ -78,7 +78,7 @@
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next.ForeColor = System.Drawing.Color.White;
-            this.Next.Location = new System.Drawing.Point(394, 302);
+            this.Next.Location = new System.Drawing.Point(396, 298);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(149, 44);
             this.Next.TabIndex = 15;
