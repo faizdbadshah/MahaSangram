@@ -51,6 +51,17 @@ namespace MahaSangram
             {
                 teamname = value.Split(new Char[] { ',' });
             }
+            get
+            {
+                if (listBox1.SelectedItems.Count == 1)
+                {
+                    return 1 + "," + listBox1.Text;
+                }
+                else
+                {
+                    return 0 + "," + listBox1.Text;
+                }
+            }
         }
                
         private void Addplayerbutton_Load(object sender, EventArgs e)
@@ -63,6 +74,40 @@ namespace MahaSangram
                 listBox1.Items.Add(players[1].ToString());
             }
             players.Close();
+        }
+
+        private void RemovePlayer_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItems.Count == 1)
+            {
+                string message = "Do You Really Want to Remove the player " + listBox1.Text;
+                string caption = "Delete";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                result = MessageBox.Show(this, message, caption, buttons);
+
+                if (result == DialogResult.Yes)
+                {
+                    query.CommandText = "delete from Players where Name '" + listBox1.Text + "'";
+                    players = query.ExecuteReader();
+                    players.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select the player you want to remove");
+            }
+        }
+
+        public event EventHandler DataAvailable;
+
+        protected virtual void OnDataAvailable(EventArgs e)
+        {
+            EventHandler eh = DataAvailable;
+            if (eh != null)
+            {
+                eh(this, e);
+            }
         }
     }
 }

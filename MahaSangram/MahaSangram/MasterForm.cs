@@ -43,6 +43,7 @@ namespace MahaSangram
             this.Stats1.StatsBackclicklistner(new EventHandler(back6));
             T.DataAvailable += new EventHandler(T_DataAvailable);
             SP.DataAvailable += new EventHandler(SP_DataAvailable);
+            P.DataAvailable += new EventHandler(P_DataAvailable);
         }
                    
         private void MasterForm_Load(object sender, EventArgs e)
@@ -199,6 +200,15 @@ namespace MahaSangram
             {
                 string data = SP.Data;
                 SC.Data = data;
+            }
+        }
+
+        void P_DataAvailable(object sender, EventArgs e)
+        {
+            if (P != null && I != null)
+            {
+                string data = P.Data;
+                I.Data = data;
             }
         }
     }

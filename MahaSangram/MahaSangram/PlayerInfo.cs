@@ -6,14 +6,24 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MahaSangram
 {
     public partial class PlayerInfo : UserControl
     {
+
+        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlCommand query = new SqlCommand();
+        private SqlDataReader players;
+        string[] teamname;
+        int count;
+
         public PlayerInfo()
         {
             InitializeComponent();
+            connection.Open();
+            query.Connection = connection;
             PlayerInfoBack.Click += new EventHandler(PlayerInfoBack_Click);
         }
         public void PlayerInfoBackclicklistner(EventHandler handler)
@@ -28,6 +38,34 @@ namespace MahaSangram
         private void PlayerYear_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public string Data
+        {
+            set
+            {
+                teamname = value.Split(new Char[] { ',' });
+            }
+        }
+
+        private void PlayerName_Click(object sender, EventArgs e)
+        {
+            if (PlayerName.Text == "Name of Player")
+            {
+                PlayerName.Text = "";
+            }
+        }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            query.CommandText = "SELECT COUNT(*) FROM Players";
+            players = query.ExecuteReader();
+            count = Convert.ToInt32(players[0]);
+            players.Close();
+
+            query.CommandText = "insert into Players values('"+ count + "' , '"+ PlayerName.Text + "' , '" + teamname[1] + "'" ;
+            players = query.ExecuteReader();
+            players.Close();
         }
     }
 }

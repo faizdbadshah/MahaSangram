@@ -63,6 +63,7 @@
             this.RemovePlayer.TabIndex = 3;
             this.RemovePlayer.Text = "Remove";
             this.RemovePlayer.UseVisualStyleBackColor = false;
+            this.RemovePlayer.Click += new System.EventHandler(this.RemovePlayer_Click);
             // 
             // AddplayerbuttonBack
             // 
