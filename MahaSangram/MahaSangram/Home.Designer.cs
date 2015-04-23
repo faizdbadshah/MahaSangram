@@ -50,13 +50,13 @@
             // 
             // Rules
             // 
-            this.Rules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Rules.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Rules.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Rules.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Rules.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Rules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Rules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Rules.ForeColor = System.Drawing.Color.White;
             this.Rules.Location = new System.Drawing.Point(303, 373);
             this.Rules.Name = "Rules";
             this.Rules.Size = new System.Drawing.Size(272, 46);
@@ -67,13 +67,13 @@
             // 
             // Settings
             // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Settings.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Settings.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Settings.ForeColor = System.Drawing.Color.White;
             this.Settings.Location = new System.Drawing.Point(303, 419);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(272, 46);
@@ -83,13 +83,13 @@
             // 
             // Match
             // 
-            this.Match.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Match.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Match.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Match.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Match.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Match.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Match.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Match.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Match.ForeColor = System.Drawing.Color.White;
             this.Match.Location = new System.Drawing.Point(303, 235);
             this.Match.Name = "Match";
             this.Match.Size = new System.Drawing.Size(272, 46);
@@ -100,13 +100,13 @@
             // 
             // Teams
             // 
-            this.Teams.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Teams.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Teams.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Teams.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Teams.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Teams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Teams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Teams.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Teams.ForeColor = System.Drawing.Color.White;
             this.Teams.Location = new System.Drawing.Point(303, 281);
             this.Teams.Name = "Teams";
             this.Teams.Size = new System.Drawing.Size(272, 46);
@@ -117,13 +117,13 @@
             // 
             // Statistics
             // 
-            this.Statistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Statistics.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Statistics.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Statistics.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Statistics.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Statistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Statistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Statistics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Statistics.ForeColor = System.Drawing.Color.White;
             this.Statistics.Location = new System.Drawing.Point(303, 327);
             this.Statistics.Name = "Statistics";
             this.Statistics.Size = new System.Drawing.Size(272, 46);
@@ -133,14 +133,14 @@
             // 
             // Quit
             // 
-            this.Quit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.Quit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Quit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Quit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Quit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Quit.Location = new System.Drawing.Point(303, 468);
+            this.Quit.ForeColor = System.Drawing.Color.White;
+            this.Quit.Location = new System.Drawing.Point(303, 465);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(272, 46);
             this.Quit.TabIndex = 19;
@@ -150,12 +150,14 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(644, 257);
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(643, 236);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(125, 45);
             this.button1.TabIndex = 20;
             this.button1.Text = "End";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

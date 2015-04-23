@@ -45,7 +45,7 @@
             this.listBox2.ItemHeight = 18;
             this.listBox2.Items.AddRange(new object[] {
             "Team 2"});
-            this.listBox2.Location = new System.Drawing.Point(495, 208);
+            this.listBox2.Location = new System.Drawing.Point(517, 208);
             this.listBox2.Margin = new System.Windows.Forms.Padding(5);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(270, 90);
@@ -53,7 +53,7 @@
             // 
             // Next
             // 
-            this.Next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.Next.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next.ForeColor = System.Drawing.Color.White;
@@ -75,7 +75,7 @@
             this.listBox1.ItemHeight = 18;
             this.listBox1.Items.AddRange(new object[] {
             "Team 1"});
-            this.listBox1.Location = new System.Drawing.Point(190, 208);
+            this.listBox1.Location = new System.Drawing.Point(193, 208);
             this.listBox1.Margin = new System.Windows.Forms.Padding(5);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(268, 90);
@@ -86,7 +86,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label2.Location = new System.Drawing.Point(575, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 24);
@@ -97,7 +97,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(255, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 24);

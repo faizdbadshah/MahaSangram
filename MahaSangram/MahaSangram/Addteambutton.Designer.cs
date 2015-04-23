@@ -36,16 +36,18 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(253, 285);
+            this.submit.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.submit.ForeColor = System.Drawing.Color.White;
+            this.submit.Location = new System.Drawing.Point(420, 320);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(118, 49);
             this.submit.TabIndex = 3;
-            this.submit.Text = "submit";
-            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Text = "Submit";
+            this.submit.UseVisualStyleBackColor = false;
             // 
             // TeamName
             // 
-            this.TeamName.Location = new System.Drawing.Point(175, 98);
+            this.TeamName.Location = new System.Drawing.Point(338, 110);
             this.TeamName.Name = "TeamName";
             this.TeamName.Size = new System.Drawing.Size(274, 20);
             this.TeamName.TabIndex = 4;
@@ -53,7 +55,7 @@
             // 
             // TeamBranch
             // 
-            this.TeamBranch.Location = new System.Drawing.Point(175, 216);
+            this.TeamBranch.Location = new System.Drawing.Point(338, 249);
             this.TeamBranch.Name = "TeamBranch";
             this.TeamBranch.Size = new System.Drawing.Size(274, 20);
             this.TeamBranch.TabIndex = 5;
@@ -61,7 +63,7 @@
             // 
             // TeamYear
             // 
-            this.TeamYear.Location = new System.Drawing.Point(175, 159);
+            this.TeamYear.Location = new System.Drawing.Point(338, 176);
             this.TeamYear.Name = "TeamYear";
             this.TeamYear.Size = new System.Drawing.Size(274, 20);
             this.TeamYear.TabIndex = 6;
@@ -76,7 +78,7 @@
             this.Controls.Add(this.TeamName);
             this.Controls.Add(this.submit);
             this.Name = "Addteambutton";
-            this.Size = new System.Drawing.Size(677, 500);
+            this.Size = new System.Drawing.Size(937, 562);
             this.ResumeLayout(false);
             this.PerformLayout();
 

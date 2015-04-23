@@ -49,10 +49,10 @@
             this.tabControl1.Controls.Add(this.tStats);
             this.tabControl1.Controls.Add(this.pStats);
             this.tabControl1.Controls.Add(this.mStats);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(19, 15);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(598, 307);
+            this.tabControl1.Size = new System.Drawing.Size(898, 500);
             this.tabControl1.TabIndex = 0;
             // 
             // tStats
@@ -61,7 +61,7 @@
             this.tStats.Location = new System.Drawing.Point(4, 22);
             this.tStats.Name = "tStats";
             this.tStats.Padding = new System.Windows.Forms.Padding(3);
-            this.tStats.Size = new System.Drawing.Size(590, 281);
+            this.tStats.Size = new System.Drawing.Size(890, 474);
             this.tStats.TabIndex = 0;
             this.tStats.Text = "Team Stats";
             this.tStats.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(35, 28);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(447, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(809, 422);
             this.dataGridView1.TabIndex = 1;
             // 
             // pStats
@@ -80,7 +80,7 @@
             this.pStats.Location = new System.Drawing.Point(4, 22);
             this.pStats.Name = "pStats";
             this.pStats.Padding = new System.Windows.Forms.Padding(3);
-            this.pStats.Size = new System.Drawing.Size(590, 281);
+            this.pStats.Size = new System.Drawing.Size(890, 474);
             this.pStats.TabIndex = 1;
             this.pStats.Text = "Player Stats";
             this.pStats.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(40, 26);
+            this.dataGridView2.Location = new System.Drawing.Point(38, 27);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(522, 223);
+            this.dataGridView2.Size = new System.Drawing.Size(809, 422);
             this.dataGridView2.TabIndex = 0;
             // 
             // mStats
@@ -98,7 +98,7 @@
             this.mStats.Controls.Add(this.dataGridView3);
             this.mStats.Location = new System.Drawing.Point(4, 22);
             this.mStats.Name = "mStats";
-            this.mStats.Size = new System.Drawing.Size(590, 281);
+            this.mStats.Size = new System.Drawing.Size(890, 474);
             this.mStats.TabIndex = 2;
             this.mStats.Text = "Match Stats";
             this.mStats.UseVisualStyleBackColor = true;
@@ -106,9 +106,9 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(42, 33);
+            this.dataGridView3.Location = new System.Drawing.Point(37, 27);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(525, 227);
+            this.dataGridView3.Size = new System.Drawing.Size(809, 422);
             this.dataGridView3.TabIndex = 0;
             // 
             // Stats

@@ -44,32 +44,38 @@
             // 
             // Addt
             // 
+            this.Addt.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Addt.ForeColor = System.Drawing.Color.White;
             this.Addt.Location = new System.Drawing.Point(184, 387);
             this.Addt.Name = "Addt";
             this.Addt.Size = new System.Drawing.Size(132, 58);
             this.Addt.TabIndex = 1;
             this.Addt.Text = "Add Team";
-            this.Addt.UseVisualStyleBackColor = true;
+            this.Addt.UseVisualStyleBackColor = false;
             this.Addt.Click += new System.EventHandler(this.Addt_Click);
             // 
             // Delete
             // 
+            this.Delete.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Delete.ForeColor = System.Drawing.Color.White;
             this.Delete.Location = new System.Drawing.Point(387, 388);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(132, 58);
             this.Delete.TabIndex = 2;
             this.Delete.Text = "Delete Team";
-            this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.UseVisualStyleBackColor = false;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Addp
             // 
+            this.Addp.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Addp.ForeColor = System.Drawing.Color.White;
             this.Addp.Location = new System.Drawing.Point(588, 388);
             this.Addp.Name = "Addp";
             this.Addp.Size = new System.Drawing.Size(132, 58);
             this.Addp.TabIndex = 3;
             this.Addp.Text = "Add Player";
-            this.Addp.UseVisualStyleBackColor = true;
+            this.Addp.UseVisualStyleBackColor = false;
             this.Addp.Click += new System.EventHandler(this.Addp_Click);
             // 
             // Newteam
@@ -81,7 +87,7 @@
             this.Controls.Add(this.Addt);
             this.Controls.Add(this.listBox1);
             this.Name = "Newteam";
-            this.Size = new System.Drawing.Size(933, 515);
+            this.Size = new System.Drawing.Size(939, 557);
             this.Load += new System.EventHandler(this.Newteam_Load);
             this.ResumeLayout(false);
 
