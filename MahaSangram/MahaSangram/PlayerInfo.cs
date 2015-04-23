@@ -16,7 +16,7 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader players;
-        string[] teamname;
+        string teamname;
         int count;
 
         public PlayerInfo()
@@ -44,7 +44,7 @@ namespace MahaSangram
         {
             set
             {
-                teamname = value.Split(new Char[] { ',' });
+                teamname = value;
             }
         }
 
@@ -60,12 +60,16 @@ namespace MahaSangram
         {
             query.CommandText = "SELECT COUNT(*) FROM Players";
             players = query.ExecuteReader();
-            count = Convert.ToInt32(players[0]);
+            while(players.Read())
+            {
+                count = Convert.ToInt32(players[0]);
+            }
+           
             players.Close();
-
+            MessageBox.Show("insert into Players values('" + count+1 + "' , '" + PlayerName.Text + "' , '" + teamname + "')");
             if (count < 15)
             {
-                query.CommandText = "insert into Players values('" + count + "' , '" + PlayerName.Text + "' , '" + teamname[1] + "'";
+                query.CommandText = "insert into Players values ('" + count+1 + "','" + PlayerName.Text + "','" + teamname + "')";
                 players = query.ExecuteReader();
                 players.Close();
             }

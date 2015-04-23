@@ -88,11 +88,6 @@ namespace MahaSangram
             Match.Text = "Start Tournament";
         }
 
-        private void Statistics_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Settings_Click(object sender, EventArgs e)
         {
 
@@ -100,7 +95,16 @@ namespace MahaSangram
 
         private void Quit_Click(object sender, EventArgs e)
         {
+            string message = "Do You Really Want to QUIT";
+            string caption = "QUIT";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+            result = MessageBox.Show(this, message, caption, buttons);
 
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

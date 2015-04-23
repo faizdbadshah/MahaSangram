@@ -44,6 +44,7 @@ namespace MahaSangram
         {
 
         }
+
         private void NewTeamBack_Click(object sender, EventArgs e)
         {
 

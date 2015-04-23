@@ -53,7 +53,8 @@
             this.TeamName.Name = "TeamName";
             this.TeamName.Size = new System.Drawing.Size(274, 20);
             this.TeamName.TabIndex = 4;
-            this.TeamName.Text = "Name of the team-";
+            this.TeamName.Text = "Name of the team";
+            this.TeamName.Click += new System.EventHandler(this.TeamName_Click);
             // 
             // TeamBranch
             // 
@@ -61,7 +62,8 @@
             this.TeamBranch.Name = "TeamBranch";
             this.TeamBranch.Size = new System.Drawing.Size(274, 20);
             this.TeamBranch.TabIndex = 5;
-            this.TeamBranch.Text = "Branch-";
+            this.TeamBranch.Text = "Branch";
+            this.TeamBranch.Click += new System.EventHandler(this.TeamBranch_Click);
             // 
             // TeamYear
             // 
@@ -69,7 +71,8 @@
             this.TeamYear.Name = "TeamYear";
             this.TeamYear.Size = new System.Drawing.Size(274, 20);
             this.TeamYear.TabIndex = 6;
-            this.TeamYear.Text = "Year-";
+            this.TeamYear.Text = "Year";
+            this.TeamYear.Click += new System.EventHandler(this.TeamYear_Click);
             // 
             // AddteambuttonBack
             // 

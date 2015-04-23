@@ -38,8 +38,9 @@ namespace MahaSangram
 
         private void AddNewPlayer_Click(object sender, EventArgs e)
         {
-
+            OnDataAvailable(null);
         }
+
         private void AddplayerbuttonBack_Click(object sender, EventArgs e)
         {
 
@@ -53,14 +54,7 @@ namespace MahaSangram
             }
             get
             {
-                if (listBox1.SelectedItems.Count == 1)
-                {
-                    return 1 + "," + listBox1.Text;
-                }
-                else
-                {
-                    return 0 + "," + listBox1.Text;
-                }
+                return teamname[1];
             }
         }
                
