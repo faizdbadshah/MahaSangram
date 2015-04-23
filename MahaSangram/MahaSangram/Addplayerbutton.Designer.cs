@@ -31,6 +31,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.AddNewPlayer = new System.Windows.Forms.Button();
             this.RemovePlayer = new System.Windows.Forms.Button();
+            this.AddplayerbuttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -45,7 +46,7 @@
             // 
             this.AddNewPlayer.BackColor = System.Drawing.SystemColors.HotTrack;
             this.AddNewPlayer.ForeColor = System.Drawing.Color.White;
-            this.AddNewPlayer.Location = new System.Drawing.Point(286, 413);
+            this.AddNewPlayer.Location = new System.Drawing.Point(224, 413);
             this.AddNewPlayer.Name = "AddNewPlayer";
             this.AddNewPlayer.Size = new System.Drawing.Size(119, 48);
             this.AddNewPlayer.TabIndex = 1;
@@ -56,17 +57,29 @@
             // 
             this.RemovePlayer.BackColor = System.Drawing.SystemColors.HotTrack;
             this.RemovePlayer.ForeColor = System.Drawing.Color.White;
-            this.RemovePlayer.Location = new System.Drawing.Point(515, 413);
+            this.RemovePlayer.Location = new System.Drawing.Point(398, 413);
             this.RemovePlayer.Name = "RemovePlayer";
             this.RemovePlayer.Size = new System.Drawing.Size(119, 48);
             this.RemovePlayer.TabIndex = 3;
             this.RemovePlayer.Text = "Remove";
             this.RemovePlayer.UseVisualStyleBackColor = false;
             // 
+            // AddplayerbuttonBack
+            // 
+            this.AddplayerbuttonBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.AddplayerbuttonBack.ForeColor = System.Drawing.Color.White;
+            this.AddplayerbuttonBack.Location = new System.Drawing.Point(574, 413);
+            this.AddplayerbuttonBack.Name = "AddplayerbuttonBack";
+            this.AddplayerbuttonBack.Size = new System.Drawing.Size(119, 48);
+            this.AddplayerbuttonBack.TabIndex = 4;
+            this.AddplayerbuttonBack.Text = "Back";
+            this.AddplayerbuttonBack.UseVisualStyleBackColor = false;
+            // 
             // Addplayerbutton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.AddplayerbuttonBack);
             this.Controls.Add(this.RemovePlayer);
             this.Controls.Add(this.AddNewPlayer);
             this.Controls.Add(this.listBox1);
@@ -82,5 +95,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button AddNewPlayer;
         private System.Windows.Forms.Button RemovePlayer;
+        private System.Windows.Forms.Button AddplayerbuttonBack;
     }
 }

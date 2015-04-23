@@ -32,13 +32,14 @@
             this.TeamName = new System.Windows.Forms.TextBox();
             this.TeamBranch = new System.Windows.Forms.TextBox();
             this.TeamYear = new System.Windows.Forms.TextBox();
+            this.AddteambuttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // submit
             // 
             this.submit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.submit.ForeColor = System.Drawing.Color.White;
-            this.submit.Location = new System.Drawing.Point(420, 320);
+            this.submit.Location = new System.Drawing.Point(338, 327);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(118, 49);
             this.submit.TabIndex = 3;
@@ -69,10 +70,22 @@
             this.TeamYear.TabIndex = 6;
             this.TeamYear.Text = "Year-";
             // 
+            // AddteambuttonBack
+            // 
+            this.AddteambuttonBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.AddteambuttonBack.ForeColor = System.Drawing.Color.White;
+            this.AddteambuttonBack.Location = new System.Drawing.Point(494, 327);
+            this.AddteambuttonBack.Name = "AddteambuttonBack";
+            this.AddteambuttonBack.Size = new System.Drawing.Size(118, 49);
+            this.AddteambuttonBack.TabIndex = 7;
+            this.AddteambuttonBack.Text = "Back";
+            this.AddteambuttonBack.UseVisualStyleBackColor = false;
+            // 
             // Addteambutton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.AddteambuttonBack);
             this.Controls.Add(this.TeamYear);
             this.Controls.Add(this.TeamBranch);
             this.Controls.Add(this.TeamName);
@@ -90,5 +103,6 @@
         private System.Windows.Forms.TextBox TeamName;
         private System.Windows.Forms.TextBox TeamBranch;
         private System.Windows.Forms.TextBox TeamYear;
+        private System.Windows.Forms.Button AddteambuttonBack;
     }
 }

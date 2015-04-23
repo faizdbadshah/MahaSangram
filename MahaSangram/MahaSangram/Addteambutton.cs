@@ -14,6 +14,15 @@ namespace MahaSangram
         public Addteambutton()
         {
             InitializeComponent();
+            AddteambuttonBack.Click += new EventHandler(AddteambuttonBack_Click);
+        }
+        public void AddteambuttonBackclicklistner(EventHandler handler)
+        {
+            this.AddteambuttonBack.Click += handler;
+        }
+        private void AddteambuttonBack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

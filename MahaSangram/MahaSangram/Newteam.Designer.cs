@@ -32,6 +32,7 @@
             this.Addt = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.Addp = new System.Windows.Forms.Button();
+            this.NewTeamBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -46,7 +47,7 @@
             // 
             this.Addt.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Addt.ForeColor = System.Drawing.Color.White;
-            this.Addt.Location = new System.Drawing.Point(184, 387);
+            this.Addt.Location = new System.Drawing.Point(154, 388);
             this.Addt.Name = "Addt";
             this.Addt.Size = new System.Drawing.Size(132, 58);
             this.Addt.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             this.Delete.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Delete.ForeColor = System.Drawing.Color.White;
-            this.Delete.Location = new System.Drawing.Point(387, 388);
+            this.Delete.Location = new System.Drawing.Point(306, 388);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(132, 58);
             this.Delete.TabIndex = 2;
@@ -70,7 +71,7 @@
             // 
             this.Addp.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Addp.ForeColor = System.Drawing.Color.White;
-            this.Addp.Location = new System.Drawing.Point(588, 388);
+            this.Addp.Location = new System.Drawing.Point(458, 388);
             this.Addp.Name = "Addp";
             this.Addp.Size = new System.Drawing.Size(132, 58);
             this.Addp.TabIndex = 3;
@@ -78,10 +79,22 @@
             this.Addp.UseVisualStyleBackColor = false;
             this.Addp.Click += new System.EventHandler(this.Addp_Click);
             // 
+            // NewTeamBack
+            // 
+            this.NewTeamBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.NewTeamBack.ForeColor = System.Drawing.Color.White;
+            this.NewTeamBack.Location = new System.Drawing.Point(614, 388);
+            this.NewTeamBack.Name = "NewTeamBack";
+            this.NewTeamBack.Size = new System.Drawing.Size(132, 58);
+            this.NewTeamBack.TabIndex = 4;
+            this.NewTeamBack.Text = "Back";
+            this.NewTeamBack.UseVisualStyleBackColor = false;
+            // 
             // Newteam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.NewTeamBack);
             this.Controls.Add(this.Addp);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Addt);
@@ -99,5 +112,6 @@
         private System.Windows.Forms.Button Addt;
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Addp;
+        private System.Windows.Forms.Button NewTeamBack;
     }
 }

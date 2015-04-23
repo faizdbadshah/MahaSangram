@@ -24,20 +24,27 @@ namespace MahaSangram
             query.Connection = connection;
             Addt.Click += new EventHandler(Addt_Click);
             Addp.Click += new EventHandler(Addp_Click);
-
+            NewTeamBack.Click += new EventHandler(NewTeamBack_Click);
         }
         
         public void Addtclicklistner(EventHandler handler)
         {
             this.Addt.Click += handler;
         }
-
+        public void NewTeamBackclicklistner(EventHandler handler)
+        {
+            this.NewTeamBack.Click += handler;
+        }
         public void Addpclicklistner(EventHandler handler)
         {
             this.Addp.Click += handler;
         }
         
         private void Addt_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void NewTeamBack_Click(object sender, EventArgs e)
         {
 
         }
