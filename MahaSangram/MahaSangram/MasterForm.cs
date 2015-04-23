@@ -38,6 +38,8 @@ namespace MahaSangram
             this.T.NewTeamBackclicklistner(new EventHandler(back1));
             this.A.AddteambuttonBackclicklistner(new EventHandler(back2));
             this.P.AddplayerbuttonBackclicklistner(new EventHandler(back3));
+            this.I.PlayerInfoBackclicklistner(new EventHandler(back4));
+            this.ST.SelectTeamsBackclicklistner(new EventHandler(back5));
             T.DataAvailable += new EventHandler(T_DataAvailable);
             SP.DataAvailable += new EventHandler(SP_DataAvailable);
         }
@@ -153,6 +155,18 @@ namespace MahaSangram
             this.Controls.Remove(P);
             T.Dock = DockStyle.Fill;
             this.Controls.Add(T);
+        }
+        private void back4(object sender, EventArgs e)
+        {
+            this.Controls.Remove(I);
+            P.Dock = DockStyle.Fill;
+            this.Controls.Add(P);
+        }
+        private void back5(object sender, EventArgs e)
+        {
+            this.Controls.Remove(ST);
+            H.Dock = DockStyle.Fill;
+            this.Controls.Add(H);
         }     
         void ST_DataAvailable(object sender, EventArgs e)
         {

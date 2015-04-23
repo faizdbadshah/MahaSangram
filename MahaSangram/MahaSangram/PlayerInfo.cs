@@ -14,9 +14,17 @@ namespace MahaSangram
         public PlayerInfo()
         {
             InitializeComponent();
+            PlayerInfoBack.Click += new EventHandler(PlayerInfoBack_Click);
         }
-
+        public void PlayerInfoBackclicklistner(EventHandler handler)
+        {
+            this.PlayerInfoBack.Click += handler;
+        }
         private void PlayerYear_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void PlayerInfoBack_Click(object sender, EventArgs e)
         {
 
         }

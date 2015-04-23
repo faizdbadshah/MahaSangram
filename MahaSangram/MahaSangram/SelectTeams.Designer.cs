@@ -33,6 +33,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.SelectTeamsBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox2
@@ -57,7 +58,7 @@
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next.ForeColor = System.Drawing.Color.White;
-            this.Next.Location = new System.Drawing.Point(403, 356);
+            this.Next.Location = new System.Drawing.Point(286, 356);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(149, 44);
             this.Next.TabIndex = 8;
@@ -104,10 +105,24 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Select Team 1";
             // 
+            // SelectTeamsBack
+            // 
+            this.SelectTeamsBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.SelectTeamsBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SelectTeamsBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectTeamsBack.ForeColor = System.Drawing.Color.White;
+            this.SelectTeamsBack.Location = new System.Drawing.Point(480, 356);
+            this.SelectTeamsBack.Name = "SelectTeamsBack";
+            this.SelectTeamsBack.Size = new System.Drawing.Size(149, 44);
+            this.SelectTeamsBack.TabIndex = 12;
+            this.SelectTeamsBack.Text = "Back";
+            this.SelectTeamsBack.UseVisualStyleBackColor = false;
+            // 
             // SelectTeams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.SelectTeamsBack);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.listBox1);
@@ -128,6 +143,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button SelectTeamsBack;
 
     }
 }

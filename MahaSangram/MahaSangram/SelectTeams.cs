@@ -22,13 +22,17 @@ namespace MahaSangram
             connection.Open();
             query.Connection = connection;
             Next.Click += new EventHandler(Next_Click);
+            SelectTeamsBack.Click += new EventHandler(SelectTeamsBack_Click);
         }
 
         public void Nextclicklistner(EventHandler handler)
         {
             this.Next.Click += handler;
         }
-
+        public void SelectTeamsBackclicklistner(EventHandler handler)
+        {
+            this.SelectTeamsBack.Click += handler;
+        }
         private void SelectTeams_Load(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
@@ -59,6 +63,10 @@ namespace MahaSangram
         private void Next_Click(object sender, EventArgs e)
         {
             OnDataAvailable(null);
+        }
+        private void SelectTeamsBack_Click(object sender, EventArgs e)
+        {
+          
         }
         
 
