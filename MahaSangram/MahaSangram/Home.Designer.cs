@@ -80,6 +80,7 @@
             this.Settings.TabIndex = 17;
             this.Settings.Text = "Settings";
             this.Settings.UseVisualStyleBackColor = false;
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Match
             // 
@@ -130,6 +131,7 @@
             this.Statistics.TabIndex = 14;
             this.Statistics.Text = "Statistics";
             this.Statistics.UseVisualStyleBackColor = false;
+            this.Statistics.Click += new System.EventHandler(this.Statistics_Click);
             // 
             // Quit
             // 
@@ -146,7 +148,7 @@
             this.Quit.TabIndex = 19;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = false;
-            this.Quit.Click += new System.EventHandler(this.quit_button_form1_Click);
+            this.Quit.Click += new System.EventHandler(this.Quit_Click);
             // 
             // button1
             // 

@@ -30,12 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tStats = new System.Windows.Forms.TabPage();
+            this.StatsBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pStats = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.mStats = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.StatsBack = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,6 +68,16 @@
             this.tStats.Text = "Team Stats";
             this.tStats.UseVisualStyleBackColor = true;
             // 
+            // StatsBack
+            // 
+            this.StatsBack.Location = new System.Drawing.Point(346, 460);
+            this.StatsBack.Name = "StatsBack";
+            this.StatsBack.Size = new System.Drawing.Size(146, 23);
+            this.StatsBack.TabIndex = 2;
+            this.StatsBack.Text = "Back";
+            this.StatsBack.UseVisualStyleBackColor = true;
+            this.StatsBack.Click += new System.EventHandler(this.StatsBack_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -82,7 +92,7 @@
             this.pStats.Location = new System.Drawing.Point(4, 22);
             this.pStats.Name = "pStats";
             this.pStats.Padding = new System.Windows.Forms.Padding(3);
-            this.pStats.Size = new System.Drawing.Size(890, 474);
+            this.pStats.Size = new System.Drawing.Size(912, 489);
             this.pStats.TabIndex = 1;
             this.pStats.Text = "Player Stats";
             this.pStats.UseVisualStyleBackColor = true;
@@ -100,7 +110,7 @@
             this.mStats.Controls.Add(this.dataGridView3);
             this.mStats.Location = new System.Drawing.Point(4, 22);
             this.mStats.Name = "mStats";
-            this.mStats.Size = new System.Drawing.Size(890, 474);
+            this.mStats.Size = new System.Drawing.Size(912, 489);
             this.mStats.TabIndex = 2;
             this.mStats.Text = "Match Stats";
             this.mStats.UseVisualStyleBackColor = true;
@@ -112,15 +122,6 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(809, 422);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // StatsBack
-            // 
-            this.StatsBack.Location = new System.Drawing.Point(346, 460);
-            this.StatsBack.Name = "StatsBack";
-            this.StatsBack.Size = new System.Drawing.Size(146, 23);
-            this.StatsBack.TabIndex = 2;
-            this.StatsBack.Text = "Back";
-            this.StatsBack.UseVisualStyleBackColor = true;
             // 
             // Stats
             // 

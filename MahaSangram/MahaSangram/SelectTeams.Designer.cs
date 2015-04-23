@@ -117,6 +117,7 @@
             this.SelectTeamsBack.TabIndex = 12;
             this.SelectTeamsBack.Text = "Back";
             this.SelectTeamsBack.UseVisualStyleBackColor = false;
+            this.SelectTeamsBack.Click += new System.EventHandler(this.SelectTeamsBack_Click);
             // 
             // SelectTeams
             // 

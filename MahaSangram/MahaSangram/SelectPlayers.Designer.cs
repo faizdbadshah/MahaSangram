@@ -85,6 +85,7 @@
             this.Next.TabIndex = 15;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = false;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // checkedListBox2
             // 
@@ -126,6 +127,7 @@
             this.SelectPlayersBack.TabIndex = 20;
             this.SelectPlayersBack.Text = "Back";
             this.SelectPlayersBack.UseVisualStyleBackColor = false;
+            this.SelectPlayersBack.Click += new System.EventHandler(this.SelectPlayersBack_Click);
             // 
             // SelectPlayers
             // 

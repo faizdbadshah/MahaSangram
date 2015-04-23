@@ -45,6 +45,7 @@
             this.submit.TabIndex = 3;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = false;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // TeamName
             // 
@@ -80,6 +81,7 @@
             this.AddteambuttonBack.TabIndex = 7;
             this.AddteambuttonBack.Text = "Back";
             this.AddteambuttonBack.UseVisualStyleBackColor = false;
+            this.AddteambuttonBack.Click += new System.EventHandler(this.AddteambuttonBack_Click);
             // 
             // Addteambutton
             // 

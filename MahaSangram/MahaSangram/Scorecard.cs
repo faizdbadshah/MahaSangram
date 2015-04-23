@@ -24,12 +24,12 @@ namespace MahaSangram
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
         }
 
         private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton14.Checked = false;
@@ -38,7 +38,7 @@ namespace MahaSangram
 
         private void metroRadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton14.Checked = false;
@@ -47,7 +47,7 @@ namespace MahaSangram
 
         private void metroRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton14.Checked = false;
@@ -56,7 +56,7 @@ namespace MahaSangram
 
         private void metroRadioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton13.Checked = false;
@@ -66,7 +66,7 @@ namespace MahaSangram
 
         private void metroRadioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton7.Checked = false;
             metroRadioButton9.Checked = false;
             metroRadioButton10.Checked = false;
@@ -79,7 +79,7 @@ namespace MahaSangram
 
         private void metroRadioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton6.Checked = false;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
@@ -87,7 +87,7 @@ namespace MahaSangram
 
         private void metroRadioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton14.Checked = false;
@@ -96,7 +96,7 @@ namespace MahaSangram
 
         private void metroRadioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton6.Checked = false;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
@@ -105,7 +105,7 @@ namespace MahaSangram
 
         private void metroRadioButton10_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton6.Checked = false;
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
@@ -114,7 +114,7 @@ namespace MahaSangram
 
         private void metroRadioButton11_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton1.Checked = false;
             metroRadioButton2.Checked = false;
             metroRadioButton3.Checked = false;
@@ -129,7 +129,7 @@ namespace MahaSangram
 
         private void metroRadioButton12_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton1.Checked = false;
             metroRadioButton2.Checked = false;
             metroRadioButton3.Checked = false;
@@ -144,14 +144,14 @@ namespace MahaSangram
 
         private void metroRadioButton13_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton5.Checked = false;
             metroRadioButton6.Checked = false;
         }
 
         private void metroRadioButton14_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton1.Checked = false;
             metroRadioButton2.Checked = false;
             metroRadioButton3.Checked = false;
@@ -165,7 +165,7 @@ namespace MahaSangram
 
         private void metroRadioButton15_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Enabled = true;
+            Submit.Enabled = true;
             metroRadioButton1.Checked = false;
             metroRadioButton2.Checked = false;
             metroRadioButton3.Checked = false;
@@ -175,70 +175,6 @@ namespace MahaSangram
             metroRadioButton8.Checked = false;
             metroRadioButton9.Checked = false;
             metroRadioButton10.Checked = false;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            i = a = b = c = d = 0;
-            if (metroRadioButton2.Checked == true)
-                b = 1;
-            else if (metroRadioButton3.Checked == true)
-                b = 2;
-            else if (metroRadioButton4.Checked == true)
-                b = 3;
-            else if (metroRadioButton5.Checked == true)
-                b = 4;
-            else if (metroRadioButton6.Checked == true)
-                b = 6;
-
-            if (metroRadioButton7.Checked == true)
-                c = 1;
-            else if (metroRadioButton8.Checked == true)
-                c = 2;
-            else if (metroRadioButton9.Checked == true)
-                c = 3;
-            else if (metroRadioButton10.Checked == true)
-                c = 4;
-
-            if (metroRadioButton11.Checked == true)
-                d = 1;
-            else if (metroRadioButton12.Checked == true)
-                d = 2;
-            else if (metroRadioButton13.Checked == true)
-                d = 3;
-            else if (metroRadioButton14.Checked == true)
-                d = 4;
-            else if (metroRadioButton15.Checked == true)
-                d = 5;
-       
-            a = (100 * b) + (10 * c) + d;
-
-            record[i] = a;
-            if (c != 1 && c != 2)
-            {
-                balls++;
-                runs += b;
-            }
-            else
-                runs += b + 1;
-
-            if (balls == 6)
-            {
-                overs++;
-                balls = 0;
-            }
-
-
-            i++;
-
-
-
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = "Chaitanya";
-            row.Cells[1].Value = "bas ho gaya ab out";
-            row.Cells[2].Value = 50;
-            row.Cells[3].Value = 20;
-            dataGridView1.Rows.Add(row);
         }
 
         public string Data
@@ -288,6 +224,75 @@ namespace MahaSangram
         private void ScorecardBack_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            i = a = b = c = d = 0;
+            if (metroRadioButton2.Checked == true)
+                b = 1;
+            else if (metroRadioButton3.Checked == true)
+                b = 2;
+            else if (metroRadioButton4.Checked == true)
+                b = 3;
+            else if (metroRadioButton5.Checked == true)
+                b = 4;
+            else if (metroRadioButton6.Checked == true)
+                b = 6;
+
+            if (metroRadioButton7.Checked == true)
+                c = 1;
+            else if (metroRadioButton8.Checked == true)
+                c = 2;
+            else if (metroRadioButton9.Checked == true)
+                c = 3;
+            else if (metroRadioButton10.Checked == true)
+                c = 4;
+
+            if (metroRadioButton11.Checked == true)
+                d = 1;
+            else if (metroRadioButton12.Checked == true)
+                d = 2;
+            else if (metroRadioButton13.Checked == true)
+                d = 3;
+            else if (metroRadioButton14.Checked == true)
+                d = 4;
+            else if (metroRadioButton15.Checked == true)
+                d = 5;
+
+            a = (100 * b) + (10 * c) + d;
+
+            record[i] = a;
+            if (c != 1 && c != 2)
+            {
+                balls++;
+                runs += b;
+            }
+            else
+                runs += b + 1;
+
+            if (balls == 6)
+            {
+                overs++;
+                balls = 0;
+            }
+
+
+            i++;
+
+
+
+            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = "Chaitanya";
+            row.Cells[1].Value = "bas ho gaya ab out";
+            row.Cells[2].Value = 50;
+            row.Cells[3].Value = 20;
+            dataGridView1.Rows.Add(row);
         }
     }
 }

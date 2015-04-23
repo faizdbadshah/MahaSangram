@@ -64,6 +64,7 @@
             this.PlayerInfoBack.TabIndex = 4;
             this.PlayerInfoBack.Text = "Back";
             this.PlayerInfoBack.UseVisualStyleBackColor = false;
+            this.PlayerInfoBack.Click += new System.EventHandler(this.PlayerInfoBack_Click);
             // 
             // PlayerInfo
             // 

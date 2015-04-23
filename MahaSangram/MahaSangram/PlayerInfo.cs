@@ -63,9 +63,17 @@ namespace MahaSangram
             count = Convert.ToInt32(players[0]);
             players.Close();
 
-            query.CommandText = "insert into Players values('"+ count + "' , '"+ PlayerName.Text + "' , '" + teamname[1] + "'" ;
-            players = query.ExecuteReader();
-            players.Close();
+            if (count < 15)
+            {
+                query.CommandText = "insert into Players values('" + count + "' , '" + PlayerName.Text + "' , '" + teamname[1] + "'";
+                players = query.ExecuteReader();
+                players.Close();
+            }
+            else
+            {
+                MessageBox.Show("The Team is full, all 15 players have been added, please remove an existing player to add a new player");
+            }
+            PlayerName.Text = "Name of Player";
         }
     }
 }

@@ -74,13 +74,7 @@ namespace MahaSangram
         {
             this.Statistics.Click += handler;
         }
-
-
-        private void quit_button_form1_Click(object sender, EventArgs e)
-        {
-            //functions.closeapp(this, this, connection);
-        }
-
+        
         private void Rules_Click(object sender, EventArgs e)
         {
 
@@ -91,7 +85,22 @@ namespace MahaSangram
             Properties.Settings.Default.TournamentStart = false;
             Properties.Settings.Default.Save();
             Teams.Enabled = true;
-            Match.Text = "Start Tournament"; 
+            Match.Text = "Start Tournament";
+        }
+
+        private void Statistics_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Quit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

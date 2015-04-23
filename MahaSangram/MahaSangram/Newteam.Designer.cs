@@ -89,6 +89,7 @@
             this.NewTeamBack.TabIndex = 4;
             this.NewTeamBack.Text = "Back";
             this.NewTeamBack.UseVisualStyleBackColor = false;
+            this.NewTeamBack.Click += new System.EventHandler(this.NewTeamBack_Click);
             // 
             // Newteam
             // 

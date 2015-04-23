@@ -39,8 +39,8 @@
             this.metroRadioButton8 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton10 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton9 = new MetroFramework.Controls.MetroRadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Submit = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroRadioButton1 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
@@ -292,35 +292,36 @@
             this.metroRadioButton9.UseStyleColors = true;
             this.metroRadioButton9.CheckedChanged += new System.EventHandler(this.metroRadioButton9_CheckedChanged);
             // 
-            // button1
+            // Submit
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button1.Enabled = false;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(840, 600);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 35);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Submit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.Submit.Enabled = false;
+            this.Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.ForeColor = System.Drawing.Color.White;
+            this.Submit.Location = new System.Drawing.Point(840, 600);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(106, 35);
+            this.Submit.TabIndex = 35;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = false;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
-            // button2
+            // Reset
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(851, 560);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 34);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Reset.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reset.ForeColor = System.Drawing.Color.White;
+            this.Reset.Location = new System.Drawing.Point(851, 560);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(84, 34);
+            this.Reset.TabIndex = 36;
+            this.Reset.Text = "Reset";
+            this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // groupBox1
             // 
@@ -919,6 +920,7 @@
             this.ScorecardBack.TabIndex = 44;
             this.ScorecardBack.Text = "Back";
             this.ScorecardBack.UseVisualStyleBackColor = false;
+            this.ScorecardBack.Click += new System.EventHandler(this.ScorecardBack_Click);
             // 
             // Scorecard
             // 
@@ -932,8 +934,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Submit);
+            this.Controls.Add(this.Reset);
             this.Name = "Scorecard";
             this.Size = new System.Drawing.Size(965, 700);
             this.Load += new System.EventHandler(this.Scorecard_Load);
@@ -970,8 +972,8 @@
         private MetroFramework.Controls.MetroRadioButton metroRadioButton8;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton10;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton2;

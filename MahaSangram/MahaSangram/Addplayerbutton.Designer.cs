@@ -52,6 +52,7 @@
             this.AddNewPlayer.TabIndex = 1;
             this.AddNewPlayer.Text = "Add";
             this.AddNewPlayer.UseVisualStyleBackColor = false;
+            this.AddNewPlayer.Click += new System.EventHandler(this.AddNewPlayer_Click);
             // 
             // RemovePlayer
             // 
@@ -75,6 +76,7 @@
             this.AddplayerbuttonBack.TabIndex = 4;
             this.AddplayerbuttonBack.Text = "Back";
             this.AddplayerbuttonBack.UseVisualStyleBackColor = false;
+            this.AddplayerbuttonBack.Click += new System.EventHandler(this.AddplayerbuttonBack_Click);
             // 
             // Addplayerbutton
             // 
