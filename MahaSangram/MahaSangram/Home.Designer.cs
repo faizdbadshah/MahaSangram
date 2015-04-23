@@ -35,6 +35,7 @@
             this.Teams = new System.Windows.Forms.Button();
             this.Statistics = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             this.Match.Name = "Match";
             this.Match.Size = new System.Drawing.Size(272, 46);
             this.Match.TabIndex = 15;
-            this.Match.Text = "Match";
+            this.Match.Text = "Start Tournament";
             this.Match.UseVisualStyleBackColor = false;
             this.Match.Click += new System.EventHandler(this.Match_Click);
             // 
@@ -147,10 +148,22 @@
             this.Quit.UseVisualStyleBackColor = false;
             this.Quit.Click += new System.EventHandler(this.quit_button_form1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(644, 257);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "End";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.Rules);
             this.Controls.Add(this.Settings);
@@ -174,5 +187,6 @@
         private System.Windows.Forms.Button Teams;
         private System.Windows.Forms.Button Statistics;
         private System.Windows.Forms.Button Quit;
+        private System.Windows.Forms.Button button1;
     }
 }

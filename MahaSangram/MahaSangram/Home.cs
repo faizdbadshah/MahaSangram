@@ -21,6 +21,13 @@ namespace MahaSangram
             
          //   Properties.Settings.Default.TournamentStart = true;
          //   Properties.Settings.Default.Save();
+            if (Properties.Settings.Default.TournamentStart == true)
+            {
+                
+                Teams.Enabled = false;
+                Match.Text = "Match";
+                button1.Visible = true;
+            }
         }
 
         public void Matchclicklistner(EventHandler handler)
@@ -31,6 +38,20 @@ namespace MahaSangram
         private void Match_Click(object sender, EventArgs e)
         {
             // Delegate the event to the caller
+            string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in team."  ;
+            string caption = "Delete";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+            result = MessageBox.Show(this, message, caption, buttons);
+
+            if (result == DialogResult.Yes)
+            {
+                Properties.Settings.Default.TournamentStart = true;
+                Properties.Settings.Default.Save();
+                Teams.Enabled = false;
+                Match.Text = "Match";
+                button1.Visible = true;
+            }
         }
 
         public void Teamsclicklistner(EventHandler handler)
@@ -63,6 +84,14 @@ namespace MahaSangram
         private void Rules_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.TournamentStart = false;
+            Properties.Settings.Default.Save();
+            Teams.Enabled = true;
+            Match.Text = "Start Tournament"; 
         }
     }
 }

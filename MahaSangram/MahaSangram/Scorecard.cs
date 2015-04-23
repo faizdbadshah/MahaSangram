@@ -250,7 +250,7 @@ namespace MahaSangram
 
         private void Scorecard_Load(object sender, EventArgs e)
         {
-            for (i = 0; i < 11; i++)
+           /* for (i = 0; i < 11; i++)
             {
                 players1[i] = playersnames[i + 1];
                 players2[i] = playersnames[i + 12];
@@ -277,7 +277,7 @@ namespace MahaSangram
                 row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
                 row.Cells[0].Value = players1[i];
 
-            }
+            }*/
         }
     }
 }
