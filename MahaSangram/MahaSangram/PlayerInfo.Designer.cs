@@ -35,7 +35,7 @@
             // 
             // PlayerName
             // 
-            this.PlayerName.Location = new System.Drawing.Point(45, 37);
+            this.PlayerName.Location = new System.Drawing.Point(354, 192);
             this.PlayerName.Name = "PlayerName";
             this.PlayerName.Size = new System.Drawing.Size(267, 20);
             this.PlayerName.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             this.Submit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Submit.ForeColor = System.Drawing.Color.White;
-            this.Submit.Location = new System.Drawing.Point(63, 102);
+            this.Submit.Location = new System.Drawing.Point(329, 266);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(112, 47);
             this.Submit.TabIndex = 3;
@@ -58,7 +58,7 @@
             // 
             this.PlayerInfoBack.BackColor = System.Drawing.SystemColors.HotTrack;
             this.PlayerInfoBack.ForeColor = System.Drawing.Color.White;
-            this.PlayerInfoBack.Location = new System.Drawing.Point(181, 102);
+            this.PlayerInfoBack.Location = new System.Drawing.Point(539, 266);
             this.PlayerInfoBack.Name = "PlayerInfoBack";
             this.PlayerInfoBack.Size = new System.Drawing.Size(112, 47);
             this.PlayerInfoBack.TabIndex = 4;
@@ -74,7 +74,7 @@
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.PlayerName);
             this.Name = "PlayerInfo";
-            this.Size = new System.Drawing.Size(359, 196);
+            this.Size = new System.Drawing.Size(949, 523);
             this.ResumeLayout(false);
             this.PerformLayout();
 

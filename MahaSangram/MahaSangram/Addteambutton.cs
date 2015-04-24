@@ -43,11 +43,12 @@ namespace MahaSangram
             {
                 count = Convert.ToInt32(teams[0]);
             }
+            count++;
             teams.Close();
 
             if (TeamName.Text != "Name of the team" && TeamYear.Text != "Year" && TeamBranch.Text != "Branch")
             {
-                query.CommandText = "insert into teams values('" + count+1 + "' , '" + TeamName.Text + "')";
+                query.CommandText = "insert into teams(team_id,team_name) values('" + count + "' , '" + TeamName.Text + "')";
                 teams = query.ExecuteReader();
                 teams.Close();
             }

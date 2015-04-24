@@ -207,38 +207,7 @@ namespace MahaSangram
                 playersnames = value.Split(new Char[] { ',' });
             }
         }
-
-        private void Scorecard_Load(object sender, EventArgs e)
-        {
-           /* for (i = 0; i < 11; i++)
-            {
-                players1[i] = playersnames[i + 1];
-                players2[i] = playersnames[i + 12];
-            }
-            teamname[0] = playersnames[23];
-            teamname[1] = playersnames[24];
-
-            label1.Text = teamname[0];
-            label2.Text = teamname[1];
-
-            listBox1.Items.Add(teamname[0]);
-            listBox1.Items.Add(teamname[1]);
-
-            label3.Text = label5.Text = label7.Text = label9.Text = Convert.ToString("0");
-            label6.Text = label10.Text = Convert.ToString("0.0");
-
-            DataGridViewRow row;
-            for (i = 0; i < 11; i++)
-            {
-                row = (DataGridViewRow)dataGridView1.Rows[i].Clone();
-                row.Cells[0].Value = players1[i];
-                row.Cells[1].Value = "Still To Play";
-
-                row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
-                row.Cells[0].Value = players1[i];
-
-            }*/
-        }
+              
         public void ScorecardBackclicklistner(EventHandler handler)
         {
             this.ScorecardBack.Click += handler;
@@ -333,6 +302,37 @@ namespace MahaSangram
             dataGridView1.Rows.Add(row);
         }
 
+        public void initiate()
+        {
+            /* for (i = 0; i < 11; i++)
+            {
+                players1[i] = playersnames[i + 1];
+                players2[i] = playersnames[i + 12];
+            }
+            teamname[0] = playersnames[23];
+            teamname[1] = playersnames[24];
+
+            label1.Text = teamname[0];
+            label2.Text = teamname[1];
+
+            listBox1.Items.Add(teamname[0]);
+            listBox1.Items.Add(teamname[1]);
+
+            label3.Text = label5.Text = label7.Text = label9.Text = Convert.ToString("0");
+            label6.Text = label10.Text = Convert.ToString("0.0");
+
+            DataGridViewRow row;
+            for (i = 0; i < 11; i++)
+            {
+                row = (DataGridViewRow)dataGridView1.Rows[i].Clone();
+                row.Cells[0].Value = players1[i];
+                row.Cells[1].Value = "Still To Play";
+
+                row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
+                row.Cells[0].Value = players1[i];
+
+            }*/
+        }
        
     }
 }

@@ -131,7 +131,6 @@
             this.Controls.Add(this.label1);
             this.Name = "SelectTeams";
             this.Size = new System.Drawing.Size(954, 531);
-            this.Load += new System.EventHandler(this.SelectTeams_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

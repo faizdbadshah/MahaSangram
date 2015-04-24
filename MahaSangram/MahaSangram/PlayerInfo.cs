@@ -64,14 +64,16 @@ namespace MahaSangram
             {
                 count = Convert.ToInt32(players[0]);
             }
+            count++;
            
             players.Close();
-            MessageBox.Show("insert into Players values('" + count+1 + "' , '" + PlayerName.Text + "' , '" + teamname + "')");
+           
             if (count < 15)
             {
-                query.CommandText = "insert into Players values ('" + count+1 + "','" + PlayerName.Text + "','" + teamname + "')";
+                query.CommandText = "insert into Players(Player_Id,Name,Team) values ('" + count + "','" + PlayerName.Text + "','" + teamname + "')";
                 players = query.ExecuteReader();
                 players.Close();
+                MessageBox.Show("The Player has been added to the team");
             }
             else
             {

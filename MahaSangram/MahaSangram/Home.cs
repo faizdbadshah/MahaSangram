@@ -18,9 +18,7 @@ namespace MahaSangram
             Match.Click += new EventHandler(Match_Click);
             Teams.Click += new EventHandler(Teams_Click);
             Statistics.Click += new EventHandler(Statistics_Click);
-            
-         //   Properties.Settings.Default.TournamentStart = true;
-         //   Properties.Settings.Default.Save();
+
             if (Properties.Settings.Default.TournamentStart == true)
             {
                 
@@ -37,7 +35,6 @@ namespace MahaSangram
 
         private void Match_Click(object sender, EventArgs e)
         {
-            // Delegate the event to the caller
             string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in team."  ;
             string caption = "Delete";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -61,8 +58,7 @@ namespace MahaSangram
 
         private void Teams_Click(object sender, EventArgs e)
         {
-            // load_teams("addteam");
-            // functions.change_panel(panel_form1, metroPanel1);
+           
         }
 
         private void Statistics_Click(object sender, EventArgs e)

@@ -53,12 +53,14 @@ namespace MahaSangram
             H.Dock = DockStyle.Fill;
             this.Controls.Add(H);
         }
-        
+
+  
         private void newmatch1(object sender, EventArgs e)
         {
             this.Controls.Remove(H);
             ST.Dock = DockStyle.Fill;
             this.Controls.Add(ST);
+            ST.Initiate();
         }
 
         private void newmatch2(object sender, EventArgs e)
@@ -69,6 +71,7 @@ namespace MahaSangram
                 this.Controls.Remove(ST);
                 SP.Dock = DockStyle.Fill;
                 this.Controls.Add(SP);
+                SP.initiate();
             }
             else
             {
@@ -85,6 +88,7 @@ namespace MahaSangram
                 this.Controls.Remove(SP);
                 SC.Dock = DockStyle.Fill;
                 this.Controls.Add(SC);
+                SC.initiate();
             }
             else
             {
@@ -97,6 +101,7 @@ namespace MahaSangram
             this.Controls.Remove(SP);
             SC.Dock = DockStyle.Fill;
             this.Controls.Add(SC);
+            SC.initiate();
         }
 
         private void team(object sender, EventArgs e)
@@ -183,12 +188,14 @@ namespace MahaSangram
             this.Controls.Remove(SC);
             SP.Dock = DockStyle.Fill;
             this.Controls.Add(SP);
+            SP.initiate();
         }
         private void back8(object sender, EventArgs e)
         {
             this.Controls.Remove(SP);
             ST.Dock = DockStyle.Fill;
             this.Controls.Add(ST);
+            ST.Initiate();
         }
         void ST_DataAvailable(object sender, EventArgs e)
         {

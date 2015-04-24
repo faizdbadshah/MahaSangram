@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.metroRadioButton14 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton12 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton11 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton16 = new MetroFramework.Controls.MetroRadioButton();
@@ -100,7 +101,6 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.ScorecardBack = new System.Windows.Forms.Button();
-            this.metroRadioButton14 = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -131,6 +131,23 @@
             this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Out";
+            // 
+            // metroRadioButton14
+            // 
+            this.metroRadioButton14.AutoSize = true;
+            this.metroRadioButton14.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
+            this.metroRadioButton14.ForeColor = System.Drawing.Color.Black;
+            this.metroRadioButton14.Location = new System.Drawing.Point(13, 86);
+            this.metroRadioButton14.Name = "metroRadioButton14";
+            this.metroRadioButton14.Size = new System.Drawing.Size(63, 25);
+            this.metroRadioButton14.TabIndex = 8;
+            this.metroRadioButton14.Text = "LBW";
+            this.metroRadioButton14.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroRadioButton14.UseCustomBackColor = true;
+            this.metroRadioButton14.UseCustomForeColor = true;
+            this.metroRadioButton14.UseSelectable = true;
+            this.metroRadioButton14.UseStyleColors = true;
+            this.metroRadioButton14.CheckedChanged += new System.EventHandler(this.metroRadioButton14_CheckedChanged);
             // 
             // metroRadioButton12
             // 
@@ -924,23 +941,6 @@
             this.ScorecardBack.UseVisualStyleBackColor = false;
             this.ScorecardBack.Click += new System.EventHandler(this.ScorecardBack_Click);
             // 
-            // metroRadioButton14
-            // 
-            this.metroRadioButton14.AutoSize = true;
-            this.metroRadioButton14.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
-            this.metroRadioButton14.ForeColor = System.Drawing.Color.Black;
-            this.metroRadioButton14.Location = new System.Drawing.Point(13, 86);
-            this.metroRadioButton14.Name = "metroRadioButton14";
-            this.metroRadioButton14.Size = new System.Drawing.Size(63, 25);
-            this.metroRadioButton14.TabIndex = 8;
-            this.metroRadioButton14.Text = "LBW";
-            this.metroRadioButton14.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroRadioButton14.UseCustomBackColor = true;
-            this.metroRadioButton14.UseCustomForeColor = true;
-            this.metroRadioButton14.UseSelectable = true;
-            this.metroRadioButton14.UseStyleColors = true;
-            this.metroRadioButton14.CheckedChanged += new System.EventHandler(this.metroRadioButton14_CheckedChanged);
-            // 
             // Scorecard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -957,7 +957,6 @@
             this.Controls.Add(this.Reset);
             this.Name = "Scorecard";
             this.Size = new System.Drawing.Size(965, 700);
-            this.Load += new System.EventHandler(this.Scorecard_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

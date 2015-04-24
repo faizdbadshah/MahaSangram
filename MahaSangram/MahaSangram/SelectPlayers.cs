@@ -89,7 +89,7 @@ namespace MahaSangram
             }
         }
 
-        private void SelectPlayers_Load(object sender, EventArgs e)
+        public void initiate()
         {
             label1.Text = "SELECT PLAYING 11 OF \n" + teamnames[1];
             label2.Text = "SELECT PLAYING 11 OF \n" + teamnames[2];

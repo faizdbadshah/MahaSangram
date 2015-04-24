@@ -33,20 +33,7 @@ namespace MahaSangram
         {
             this.SelectTeamsBack.Click += handler;
         }
-        private void SelectTeams_Load(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            listBox2.Items.Clear();
-            query.CommandText = "select * from teams";
-            teams = query.ExecuteReader();
-            while (teams.Read())
-            {
-                listBox1.Items.Add(teams[1].ToString());
-                listBox2.Items.Add(teams[1].ToString());
-            }
-            teams.Close();
-        }
-        
+                
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             object selectedteam = listBox1.SelectedItem;
@@ -96,5 +83,20 @@ namespace MahaSangram
                 eh(this, e);
             }
         }
+
+        public void Initiate()
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            query.CommandText = "select * from teams";
+            teams = query.ExecuteReader();
+            while (teams.Read())
+            {
+                listBox1.Items.Add(teams[1].ToString());
+                listBox2.Items.Add(teams[1].ToString());
+            }
+            teams.Close();
+        }
+
     }
 }
