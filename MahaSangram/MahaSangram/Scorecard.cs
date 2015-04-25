@@ -11,7 +11,7 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, overs, i, k;
+        int a, b, c, d, balls, runs, overs, i, k, l, wickets;
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
         double[] povers= new double[11];
@@ -237,6 +237,7 @@ namespace MahaSangram
             metroRadioButton11.Checked = false;
             metroRadioButton12.Checked = false;
             metroRadioButton13.Checked = false;
+            metroRadioButton14.Checked = false;
             metroRadioButton15.Checked = false;
             metroRadioButton16.Checked = false;
         }
@@ -270,10 +271,12 @@ namespace MahaSangram
                 d = 2;
             else if (metroRadioButton13.Checked == true)
                 d = 3;
-            else if (metroRadioButton15.Checked == true)
+            else if (metroRadioButton14.Checked == true)
                 d = 4;
-            else if (metroRadioButton16.Checked == true)
+            else if (metroRadioButton15.Checked == true)
                 d = 5;
+            else if (metroRadioButton16.Checked == true)
+                d = 6;
 
             a = (100 * b) + (10 * c) + d;
 
@@ -291,6 +294,12 @@ namespace MahaSangram
                 overs++;
                 balls = 0;
             }
+
+            if (d > 0 && d < 7)
+            {
+                wickets++;
+            }
+
 
 
             i++;
@@ -344,5 +353,57 @@ namespace MahaSangram
             chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
             chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
         }
+
+
+        public void generateScorecard()
+         {   
+             //jb team1 ki batting
+             label3.Text = Convert.ToString(runs);
+             label5.Text = Convert.ToString(wickets);
+             label6.Text = Convert.ToString(overs);
+
+             // teAM 2 ki batting
+             label7.Text = Convert.ToString(runs);
+             label9.Text = Convert.ToString(wickets);
+             label10.Text = Convert.ToString(overs);
+
+            if(c==1)
+            {
+                label16.Text = Convert.ToString( Convert.ToInt32(label16.Text) + Convert.ToInt32(1)) ;
+               
+            }
+
+            else if (c==2)
+            {
+                label17.Text = Convert.ToString( Convert.ToInt32(label17.Text) + Convert.ToInt32(1));
+
+            }
+
+            else if (c==3)
+            {
+                label18.Text = Convert.ToString( Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
+
+            }
+            else if (c == 4)
+            {
+                label19.Text = Convert.ToString(Convert.ToInt32(label19.Text) + Convert.ToInt32(b));
+
+            }
+
+            if (c > 0 && c < 5)
+            {
+                label13.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(label17.Text) + Convert.ToInt32(label18.Text) + Convert.ToInt32(label19.Text));
+
+            }
+
+            if (d > 0 && d < 7)
+            {
+
+                label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")";
+            }
+
+
+
+         }
     }
 }

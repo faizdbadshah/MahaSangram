@@ -35,19 +35,27 @@ namespace MahaSangram
 
         private void Match_Click(object sender, EventArgs e)
         {
-            string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in team."  ;
-            string caption = "Delete";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result;
-            result = MessageBox.Show(this, message, caption, buttons);
-
-            if (result == DialogResult.Yes)
+            if (Properties.Settings.Default.TournamentStart == false)
             {
                 Properties.Settings.Default.TournamentStart = true;
                 Properties.Settings.Default.Save();
                 Teams.Enabled = false;
                 Match.Text = "Match";
                 button1.Visible = true;
+                string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in team.";
+                string caption = "Delete";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                result = MessageBox.Show(this, message, caption, buttons);
+
+                if (result == DialogResult.Yes)
+                {
+                    Properties.Settings.Default.TournamentStart = true;
+                    Properties.Settings.Default.Save();
+                    Teams.Enabled = false;
+                    Match.Text = "Match";
+                    button1.Visible = true;
+                }
             }
         }
 

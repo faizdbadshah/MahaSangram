@@ -99,3 +99,6 @@ C:\Users\Chaitanya\Desktop\dbfmasj\MahaSangram\MahaSangram\MahaSangram\obj\x86\D
 C:\Users\Chaitanya\Desktop\dbfmasj\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectTeams.resources
 C:\Users\Chaitanya\Desktop\dbfmasj\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Stats.resources
 C:\Users\Chaitanya\Desktop\dbfmasj\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache
+D:\TEMP\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
+D:\TEMP\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
+D:\TEMP\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
