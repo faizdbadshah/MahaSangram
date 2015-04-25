@@ -15,6 +15,9 @@ namespace MahaSangram
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
         double[] povers= new double[11];
+        int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
+        int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
+        int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
 
         public Scorecard()
         {
@@ -300,6 +303,8 @@ namespace MahaSangram
             row.Cells[2].Value = 50;
             row.Cells[3].Value = 20;
             dataGridView1.Rows.Add(row);
+
+            generateGraph(); 
         }
 
         public void initiate()
@@ -334,5 +339,10 @@ namespace MahaSangram
             }*/
         }
        
+         public void generateGraph()
+        {
+            chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
+            chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
+        }
     }
 }
