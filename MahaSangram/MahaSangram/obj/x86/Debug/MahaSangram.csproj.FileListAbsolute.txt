@@ -102,3 +102,6 @@ C:\Users\Chaitanya\Desktop\dbfmasj\MahaSangram\MahaSangram\MahaSangram\obj\x86\D
 D:\TEMP\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
 D:\TEMP\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 D:\TEMP\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+E:\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
+E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
+E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb

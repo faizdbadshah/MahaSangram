@@ -14,7 +14,7 @@ namespace MahaSangram
         int a, b, c, d, balls, runs, overs, i, k, l, wickets;
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
-        double[] povers= new double[11];
+        double[] povers = new double[11];
         int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
         int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
@@ -210,7 +210,7 @@ namespace MahaSangram
                 playersnames = value.Split(new Char[] { ',' });
             }
         }
-              
+
         public void ScorecardBackclicklistner(EventHandler handler)
         {
             this.ScorecardBack.Click += handler;
@@ -313,7 +313,7 @@ namespace MahaSangram
             row.Cells[3].Value = 20;
             dataGridView1.Rows.Add(row);
 
-            generateGraph(); 
+            generateGraph();
         }
 
         public void initiate()
@@ -347,41 +347,37 @@ namespace MahaSangram
 
             }*/
         }
-       
-         public void generateGraph()
-        {
-            chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
-            chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
-        }
+
+
 
 
         public void generateScorecard()
-         {   
-             //jb team1 ki batting
-             label3.Text = Convert.ToString(runs);
-             label5.Text = Convert.ToString(wickets);
-             label6.Text = Convert.ToString(overs);
+        {
+            //jb team1 ki batting
+            label3.Text = Convert.ToString(runs);
+            label5.Text = Convert.ToString(wickets);
+            label6.Text = Convert.ToString(overs);
 
-             // teAM 2 ki batting
-             label7.Text = Convert.ToString(runs);
-             label9.Text = Convert.ToString(wickets);
-             label10.Text = Convert.ToString(overs);
+            // teAM 2 ki batting
+            label7.Text = Convert.ToString(runs);
+            label9.Text = Convert.ToString(wickets);
+            label10.Text = Convert.ToString(overs);
 
-            if(c==1)
+            if (c == 1)
             {
-                label16.Text = Convert.ToString( Convert.ToInt32(label16.Text) + Convert.ToInt32(1)) ;
-               
-            }
-
-            else if (c==2)
-            {
-                label17.Text = Convert.ToString( Convert.ToInt32(label17.Text) + Convert.ToInt32(1));
+                label16.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(1));
 
             }
 
-            else if (c==3)
+            else if (c == 2)
             {
-                label18.Text = Convert.ToString( Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
+                label17.Text = Convert.ToString(Convert.ToInt32(label17.Text) + Convert.ToInt32(1));
+
+            }
+
+            else if (c == 3)
+            {
+                label18.Text = Convert.ToString(Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
 
             }
             else if (c == 4)
@@ -404,6 +400,35 @@ namespace MahaSangram
 
 
 
-         }
+        }
+
+        int aa = 4;
+        int bb = 2;
+        int cc = 1;
+
+        int p1 = -1;
+        int p2 = 1;
+        int pp = 1;
+        public void generateGraph()
+        {
+            chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
+            chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
+
+
+
+
+            chart2.Series["teamA"].Points.AddXY(cc, aa);
+            chart2.Series["teamB"].Points.AddXY(cc, bb);
+            aa++;
+            bb++;
+            cc++;
+
+
+            chart3.Series["batsmanA"].Points.AddXY(pp, p1);
+            chart3.Series["batsmanB"].Points.AddXY(pp, p2);
+            p1--;
+            p2++;
+            pp++;
+        }
     }
 }
