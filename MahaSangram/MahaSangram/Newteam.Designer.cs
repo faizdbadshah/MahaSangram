@@ -102,7 +102,6 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Newteam";
             this.Size = new System.Drawing.Size(939, 557);
-            this.Load += new System.EventHandler(this.Newteam_Load);
             this.ResumeLayout(false);
 
         }

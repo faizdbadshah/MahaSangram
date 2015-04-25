@@ -58,18 +58,6 @@ namespace MahaSangram
             }
         }
                
-        private void Addplayerbutton_Load(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            query.CommandText = "select * from Players where Team = '" + teamname[1] + "'";
-            players = query.ExecuteReader();
-            while (players.Read())
-            {
-                listBox1.Items.Add(players[1].ToString());
-            }
-            players.Close();
-        }
-
         private void RemovePlayer_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItems.Count == 1)
@@ -102,6 +90,18 @@ namespace MahaSangram
             {
                 eh(this, e);
             }
+        }
+
+        public void initiate()
+        {
+            listBox1.Items.Clear();
+            query.CommandText = "select * from Players where Team = '" + teamname[1] + "'";
+            players = query.ExecuteReader();
+            while (players.Read())
+            {
+                listBox1.Items.Add(players[1].ToString());
+            }
+            players.Close();
         }
     }
 }

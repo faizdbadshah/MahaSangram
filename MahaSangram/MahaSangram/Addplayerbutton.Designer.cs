@@ -88,7 +88,6 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Addplayerbutton";
             this.Size = new System.Drawing.Size(925, 558);
-            this.Load += new System.EventHandler(this.Addplayerbutton_Load);
             this.ResumeLayout(false);
 
         }

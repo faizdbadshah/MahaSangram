@@ -55,18 +55,7 @@ namespace MahaSangram
             OnDataAvailable(null);
         }
 
-        private void Newteam_Load(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            query.CommandText = "select * from teams";
-            teams = query.ExecuteReader();
-            while (teams.Read())
-            {
-                listBox1.Items.Add(teams[1].ToString());
-            }
-            teams.Close();
-        }
-
+    
         private void Delete_Click(object sender, EventArgs e)
         {
             if(listBox1.SelectedItems.Count==1)
@@ -117,6 +106,18 @@ namespace MahaSangram
             {
                 eh(this, e);
             }
+        }
+
+        public void initiate()
+        {
+            listBox1.Items.Clear();
+            query.CommandText = "select * from teams";
+            teams = query.ExecuteReader();
+            while (teams.Read())
+            {
+                listBox1.Items.Add(teams[1].ToString());
+            }
+            teams.Close();
         }
     }
 }

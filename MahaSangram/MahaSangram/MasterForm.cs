@@ -109,6 +109,7 @@ namespace MahaSangram
             this.Controls.Remove(H);
             T.Dock = DockStyle.Fill;
             this.Controls.Add(T);
+            T.initiate();
         }
 
 
@@ -117,6 +118,7 @@ namespace MahaSangram
             this.Controls.Remove(H);
             Stats1.Dock = DockStyle.Fill;
             this.Controls.Add(Stats1);
+            Stats1.initiate();
         }
         
         private void add1(object sender, EventArgs e)
@@ -134,6 +136,7 @@ namespace MahaSangram
                 this.Controls.Remove(T);
                 P.Dock = DockStyle.Fill;
                 this.Controls.Add(P);
+                P.initiate();
             }
             else
             {
@@ -158,18 +161,21 @@ namespace MahaSangram
             this.Controls.Remove(A);
             T.Dock = DockStyle.Fill;
             this.Controls.Add(T);
+            T.initiate();
         }
         private void back3(object sender, EventArgs e)
         {
             this.Controls.Remove(P);
             T.Dock = DockStyle.Fill;
             this.Controls.Add(T);
+            T.initiate();
         }
         private void back4(object sender, EventArgs e)
         {
             this.Controls.Remove(I);
             P.Dock = DockStyle.Fill;
             this.Controls.Add(P);
+            P.initiate();
         }
         private void back5(object sender, EventArgs e)
         {

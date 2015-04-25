@@ -26,9 +26,23 @@ namespace MahaSangram
 
         private void Stats_Load(object sender, EventArgs e)
         {
+            
+        }
+        public void StatsBackclicklistner(EventHandler handler)
+        {
+            this.StatsBack.Click += handler;
+        }
+
+        private void StatsBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void initiate()
+        {
             query.CommandText = "select * from teams";
             teams = query.ExecuteReader();
-           
+
             DataTable dt = new DataTable();
             dt.Load(teams);
             dataGridView1.DataSource = dt;
@@ -46,15 +60,6 @@ namespace MahaSangram
             DataTable dt3 = new DataTable();
             dt3.Load(matches);
             dataGridView3.DataSource = dt3;
-        }
-        public void StatsBackclicklistner(EventHandler handler)
-        {
-            this.StatsBack.Click += handler;
-        }
-
-        private void StatsBack_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

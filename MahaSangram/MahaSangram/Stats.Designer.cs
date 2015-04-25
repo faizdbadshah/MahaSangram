@@ -130,7 +130,6 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Stats";
             this.Size = new System.Drawing.Size(942, 532);
-            this.Load += new System.EventHandler(this.Stats_Load);
             this.tabControl1.ResumeLayout(false);
             this.tStats.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
