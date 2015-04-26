@@ -11,6 +11,8 @@ namespace MahaSangram
 {
     public partial class Home : UserControl
     {
+
+        int a;
       
         public Home()
         {
@@ -37,13 +39,8 @@ namespace MahaSangram
         {
             if (Properties.Settings.Default.TournamentStart == false)
             {
-                Properties.Settings.Default.TournamentStart = true;
-                Properties.Settings.Default.Save();
-                Teams.Enabled = false;
-                Match.Text = "Match";
-                button1.Visible = true;
-                string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in team.";
-                string caption = "Delete";
+                string message = "Do You Really Want to Start tournament ???? \n After starting you won't be able to add team or make changes in teams.";
+                string caption = "Start";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result;
                 result = MessageBox.Show(this, message, caption, buttons);
@@ -55,8 +52,15 @@ namespace MahaSangram
                     Teams.Enabled = false;
                     Match.Text = "Match";
                     button1.Visible = true;
+                    a = 1;
+                }
+                else
+                {
+                    a = 0;
                 }
             }
+
+            OnDataAvailable(null);
         }
 
         public void Teamsclicklistner(EventHandler handler)
@@ -108,6 +112,25 @@ namespace MahaSangram
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
+            }
+        }
+
+        public string Data
+        {
+            get
+            {
+                return Convert.ToString(a);
+            }
+        }
+
+        public event EventHandler DataAvailable;
+
+        protected virtual void OnDataAvailable(EventArgs e)
+        {
+            EventHandler eh = DataAvailable;
+            if (eh != null)
+            {
+                eh(this, e);
             }
         }
     }

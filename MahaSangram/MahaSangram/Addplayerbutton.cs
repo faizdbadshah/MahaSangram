@@ -31,6 +31,7 @@ namespace MahaSangram
         {
             this.AddNewPlayer.Click += handler;
         }
+
         public void AddplayerbuttonBackclicklistner(EventHandler handler)
         {
             this.AddplayerbuttonBack.Click += handler;
@@ -70,9 +71,11 @@ namespace MahaSangram
 
                 if (result == DialogResult.Yes)
                 {
-                    query.CommandText = "delete from Players where Name '" + listBox1.Text + "'";
+                    query.CommandText = "delete from Players where Name ='" + listBox1.Text + "'";
                     players = query.ExecuteReader();
                     players.Close();
+
+                    initiate();
                 }
             }
             else

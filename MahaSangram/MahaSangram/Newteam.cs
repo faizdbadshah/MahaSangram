@@ -71,9 +71,12 @@ namespace MahaSangram
                     query.CommandText = "delete from Players where Team ='" + listBox1.Text + "'";
                     players = query.ExecuteReader();
                     players.Close();
+
                     query.CommandText = "delete from teams where team_name ='" + listBox1.Text + "'";
-                    players = query.ExecuteReader();
-                    players.Close();
+                    teams = query.ExecuteReader();
+                    teams.Close();
+
+                    initiate();
                 }
             }
             else

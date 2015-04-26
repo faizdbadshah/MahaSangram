@@ -57,10 +57,13 @@ namespace MahaSangram
   
         private void newmatch1(object sender, EventArgs e)
         {
-            this.Controls.Remove(H);
-            ST.Dock = DockStyle.Fill;
-            this.Controls.Add(ST);
-            ST.Initiate();
+            if (Convert.ToInt64(H.Data) == 1)
+            {
+                this.Controls.Remove(H);
+                ST.Dock = DockStyle.Fill;
+                this.Controls.Add(ST);
+                ST.Initiate();
+            }
         }
 
         private void newmatch2(object sender, EventArgs e)
@@ -150,12 +153,14 @@ namespace MahaSangram
             I.Dock = DockStyle.Fill;
             this.Controls.Add(I);
         }
+
         private void back1(object sender, EventArgs e)
         {
             this.Controls.Remove(T);
             H.Dock = DockStyle.Fill;
             this.Controls.Add(H);
         }
+
         private void back2(object sender, EventArgs e)
         {
             this.Controls.Remove(A);
@@ -163,6 +168,7 @@ namespace MahaSangram
             this.Controls.Add(T);
             T.initiate();
         }
+
         private void back3(object sender, EventArgs e)
         {
             this.Controls.Remove(P);
@@ -170,6 +176,7 @@ namespace MahaSangram
             this.Controls.Add(T);
             T.initiate();
         }
+
         private void back4(object sender, EventArgs e)
         {
             this.Controls.Remove(I);
@@ -177,18 +184,21 @@ namespace MahaSangram
             this.Controls.Add(P);
             P.initiate();
         }
+
         private void back5(object sender, EventArgs e)
         {
             this.Controls.Remove(ST);
             H.Dock = DockStyle.Fill;
             this.Controls.Add(H);
         }
+
         private void back6(object sender, EventArgs e)
         {
             this.Controls.Remove(Stats1);
             H.Dock = DockStyle.Fill;
             this.Controls.Add(H);
         }
+
         private void back7(object sender, EventArgs e)
         {
             this.Controls.Remove(SC);
@@ -196,6 +206,7 @@ namespace MahaSangram
             this.Controls.Add(SP);
             SP.initiate();
         }
+
         private void back8(object sender, EventArgs e)
         {
             this.Controls.Remove(SP);
@@ -203,6 +214,7 @@ namespace MahaSangram
             this.Controls.Add(ST);
             ST.Initiate();
         }
+
         void ST_DataAvailable(object sender, EventArgs e)
         {
             if (ST != null && SP != null)

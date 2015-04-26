@@ -58,7 +58,7 @@ namespace MahaSangram
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            query.CommandText = "SELECT COUNT(*) FROM Players";
+            query.CommandText = "SELECT COUNT(*) FROM Players where Team = '" + teamname + "'";
             players = query.ExecuteReader();
             while(players.Read())
             {
@@ -70,7 +70,7 @@ namespace MahaSangram
            
             if (count < 15)
             {
-                query.CommandText = "insert into Players(Player_Id,Name,Team) values ('" + count + "','" + PlayerName.Text + "','" + teamname + "')";
+                query.CommandText = "insert into Players(Name,Team) values ('" + PlayerName.Text + "','" + teamname + "')";
                 players = query.ExecuteReader();
                 players.Close();
                 MessageBox.Show("The Player has been added to the team");
