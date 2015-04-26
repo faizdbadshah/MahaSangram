@@ -22,9 +22,6 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            Addt.Click += new EventHandler(Addt_Click);
-            Addp.Click += new EventHandler(Addp_Click);
-            NewTeamBack.Click += new EventHandler(NewTeamBack_Click);
         }
         
         public void Addtclicklistner(EventHandler handler)

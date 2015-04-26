@@ -21,7 +21,6 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            StatsBack.Click += new EventHandler(StatsBack_Click);
         }
 
         private void Stats_Load(object sender, EventArgs e)

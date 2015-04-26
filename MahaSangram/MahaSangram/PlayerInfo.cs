@@ -24,8 +24,8 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            PlayerInfoBack.Click += new EventHandler(PlayerInfoBack_Click);
         }
+
         public void PlayerInfoBackclicklistner(EventHandler handler)
         {
             this.PlayerInfoBack.Click += handler;
@@ -35,6 +35,7 @@ namespace MahaSangram
         {
 
         }
+
         private void PlayerYear_TextChanged(object sender, EventArgs e)
         {
 

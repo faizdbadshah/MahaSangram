@@ -24,10 +24,6 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            Skip.Click += new EventHandler(Skip_Click);
-            Next.Click += new EventHandler(Next_Click);
-            SelectPlayersBack.Click += new EventHandler(SelectPlayersBack_Click);
-            
         }
         
         public string Data

@@ -11,7 +11,8 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, overs, i, k, l, wickets;
+        int a, b, c, d, balls, runs, i, k, l, wickets, f, temp;
+        double overs;
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
         double[] povers = new double[11];
@@ -22,7 +23,6 @@ namespace MahaSangram
         public Scorecard()
         {
             InitializeComponent();
-            ScorecardBack.Click += new EventHandler(ScorecardBack_Click);
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -244,7 +244,7 @@ namespace MahaSangram
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            i = a = b = c = d = 0;
+            i = a = b = c = d = f = 0;
             if (metroRadioButton2.Checked == true)
                 b = 1;
             else if (metroRadioButton3.Checked == true)
@@ -260,52 +260,52 @@ namespace MahaSangram
                 c = 1;
             else if (metroRadioButton8.Checked == true)
                 c = 2;
+
             else if (metroRadioButton9.Checked == true)
-                c = 3;
+                d = 1;
             else if (metroRadioButton10.Checked == true)
-                c = 4;
+                d = 2;
 
             if (metroRadioButton11.Checked == true)
-                d = 1;
+                f = 1;
             else if (metroRadioButton12.Checked == true)
-                d = 2;
+                f = 2;
             else if (metroRadioButton13.Checked == true)
-                d = 3;
+                f = 3;
             else if (metroRadioButton14.Checked == true)
-                d = 4;
+                f = 4;
             else if (metroRadioButton15.Checked == true)
-                d = 5;
+                f = 5;
             else if (metroRadioButton16.Checked == true)
-                d = 6;
+                f = 6;
 
-            a = (100 * b) + (10 * c) + d;
+            a = (1000 * b) + (100 * c) + (10*d) + f;
 
             record[i] = a;
+
             if (c != 1 && c != 2)
             {
                 balls++;
                 runs += b;
+                overs += 0.1;
             }
             else
-                runs += b + 1;
-
-            if (balls == 6)
             {
-                overs++;
-                balls = 0;
+                runs += b + 1;
             }
 
-            if (d > 0 && d < 7)
+            if (balls%6 == 0)
+            {
+                overs = Convert.ToInt32(overs);
+            }
+
+            if (f > 0 && f < 7)
             {
                 wickets++;
             }
-
-
-
+            
             i++;
-
-
-
+            
             DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[0].Value = "Chaitanya";
             row.Cells[1].Value = "bas ho gaya ab out";
@@ -314,6 +314,7 @@ namespace MahaSangram
             dataGridView1.Rows.Add(row);
 
             generateGraph();
+            generateScorecard();
         }
 
         public void initiate()
@@ -375,24 +376,24 @@ namespace MahaSangram
 
             }
 
-            else if (c == 3)
+            else if (d == 1)
             {
                 label18.Text = Convert.ToString(Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
 
             }
-            else if (c == 4)
+            else if (d == 2)
             {
                 label19.Text = Convert.ToString(Convert.ToInt32(label19.Text) + Convert.ToInt32(b));
 
             }
 
-            if (c > 0 && c < 5)
+            if ((c > 0 && c < 3) || (d > 0 && d < 3))
             {
                 label13.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(label17.Text) + Convert.ToInt32(label18.Text) + Convert.ToInt32(label19.Text));
 
             }
 
-            if (d > 0 && d < 7)
+            if (f > 0 && f < 7)
             {
 
                 label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")";

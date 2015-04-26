@@ -15,14 +15,12 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams;
-        int count;
-
+        
         public Addteambutton()
         {
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            AddteambuttonBack.Click += new EventHandler(AddteambuttonBack_Click);
         }
 
         public void AddteambuttonBackclicklistner(EventHandler handler)

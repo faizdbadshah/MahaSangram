@@ -17,13 +17,9 @@ namespace MahaSangram
         public Home()
         {
             InitializeComponent();
-            Match.Click += new EventHandler(Match_Click);
-            Teams.Click += new EventHandler(Teams_Click);
-            Statistics.Click += new EventHandler(Statistics_Click);
-
+          
             if (Properties.Settings.Default.TournamentStart == true)
             {
-                
                 Teams.Enabled = false;
                 Match.Text = "Match";
                 button1.Visible = true;
@@ -52,12 +48,16 @@ namespace MahaSangram
                     Teams.Enabled = false;
                     Match.Text = "Match";
                     button1.Visible = true;
-                    a = 1;
+                    a = 0;
                 }
                 else
                 {
                     a = 0;
                 }
+            }
+            else
+            {
+                a = 1;
             }
 
             OnDataAvailable(null);

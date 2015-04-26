@@ -23,8 +23,6 @@ namespace MahaSangram
             InitializeComponent();
             connection.Open();
             query.Connection = connection;
-            AddNewPlayer.Click += new EventHandler(AddNewPlayer_Click);
-            AddplayerbuttonBack.Click += new EventHandler(AddplayerbuttonBack_Click);
         }
 
         public void AddNewPlayerclicklistner(EventHandler handler)
