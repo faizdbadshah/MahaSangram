@@ -11,7 +11,7 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, i, k, l, wickets, f, temp;
+        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8;
         double overs;
         int[] record = new int[150];
         string[] playersnames, players1, players2, teamname;
@@ -19,6 +19,7 @@ namespace MahaSangram
         int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
         int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
+        bool firstinnings;
 
         public Scorecard()
         {
@@ -244,77 +245,46 @@ namespace MahaSangram
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            i = a = b = c = d = f = 0;
-            if (metroRadioButton2.Checked == true)
-                b = 1;
-            else if (metroRadioButton3.Checked == true)
-                b = 2;
-            else if (metroRadioButton4.Checked == true)
-                b = 3;
-            else if (metroRadioButton5.Checked == true)
-                b = 4;
-            else if (metroRadioButton6.Checked == true)
-                b = 6;
+            generatecode();
+            settempvariables();        
 
-            if (metroRadioButton7.Checked == true)
-                c = 1;
-            else if (metroRadioButton8.Checked == true)
-                c = 2;
-
-            else if (metroRadioButton9.Checked == true)
-                d = 1;
-            else if (metroRadioButton10.Checked == true)
-                d = 2;
-
-            if (metroRadioButton11.Checked == true)
-                f = 1;
-            else if (metroRadioButton12.Checked == true)
-                f = 2;
-            else if (metroRadioButton13.Checked == true)
-                f = 3;
-            else if (metroRadioButton14.Checked == true)
-                f = 4;
-            else if (metroRadioButton15.Checked == true)
-                f = 5;
-            else if (metroRadioButton16.Checked == true)
-                f = 6;
-
-            a = (1000 * b) + (100 * c) + (10*d) + f;
-
-            record[i] = a;
-
-            if (c != 1 && c != 2)
+            if(firstinnings==true)
             {
-                balls++;
-                runs += b;
-                overs += 0.1;
+                if (overs == maxovers)
+                {
+                    Submit.Text = "END INNINGS";
+                    firstinnings = false;
+                }
             }
             else
             {
-                runs += b + 1;
+                if (overs == maxovers)
+                {
+                    Submit.Text = "END MATCH";
+                }
             }
-
-            if (balls%6 == 0)
-            {
-                overs = Convert.ToInt32(overs);
-            }
-
-            if (f > 0 && f < 7)
-            {
-                wickets++;
-            }
-            
-            i++;
-            
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = "Chaitanya";
-            row.Cells[1].Value = "bas ho gaya ab out";
-            row.Cells[2].Value = 50;
-            row.Cells[3].Value = 20;
-            dataGridView1.Rows.Add(row);
-
+                        
+            updatetables();
             generateGraph();
             generateScorecard();
+
+            Submit.Enabled = false;
+            metroRadioButton1.Checked = false;
+            metroRadioButton2.Checked = false;
+            metroRadioButton3.Checked = false;
+            metroRadioButton4.Checked = false;
+            metroRadioButton5.Checked = false;
+            metroRadioButton6.Checked = false;
+            metroRadioButton7.Checked = false;
+            metroRadioButton8.Checked = false;
+            metroRadioButton9.Checked = false;
+            metroRadioButton10.Checked = false;
+            metroRadioButton11.Checked = false;
+            metroRadioButton12.Checked = false;
+            metroRadioButton13.Checked = false;
+            metroRadioButton14.Checked = false;
+            metroRadioButton15.Checked = false;
+            metroRadioButton16.Checked = false;
         }
 
         public void initiate()
@@ -348,18 +318,15 @@ namespace MahaSangram
 
             }*/
         }
-
-
-
-
-        public void generateScorecard()
+        
+        private void generateScorecard()
         {
             //jb team1 ki batting
             label3.Text = Convert.ToString(runs);
             label5.Text = Convert.ToString(wickets);
             label6.Text = Convert.ToString(overs);
 
-            // teAM 2 ki batting
+            // team 2 ki batting
             label7.Text = Convert.ToString(runs);
             label9.Text = Convert.ToString(wickets);
             label10.Text = Convert.ToString(overs);
@@ -398,9 +365,6 @@ namespace MahaSangram
 
                 label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")";
             }
-
-
-
         }
 
         int aa = 4;
@@ -410,26 +374,101 @@ namespace MahaSangram
         int p1 = -1;
         int p2 = 1;
         int pp = 1;
+
         public void generateGraph()
         {
             chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
             chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
-
-
-
-
+            
             chart2.Series["teamA"].Points.AddXY(cc, aa);
             chart2.Series["teamB"].Points.AddXY(cc, bb);
             aa++;
             bb++;
             cc++;
-
-
+            
             chart3.Series["batsmanA"].Points.AddXY(pp, p1);
             chart3.Series["batsmanB"].Points.AddXY(pp, p2);
             p1--;
             p2++;
             pp++;
+        }
+
+        private void generatecode()
+        {
+            if (metroRadioButton2.Checked == true)
+                b = 1;
+            else if (metroRadioButton3.Checked == true)
+                b = 2;
+            else if (metroRadioButton4.Checked == true)
+                b = 3;
+            else if (metroRadioButton5.Checked == true)
+                b = 4;
+            else if (metroRadioButton6.Checked == true)
+                b = 6;
+
+            if (metroRadioButton7.Checked == true)
+                c = 1;
+            else if (metroRadioButton8.Checked == true)
+                c = 2;
+
+            else if (metroRadioButton9.Checked == true)
+                d = 1;
+            else if (metroRadioButton10.Checked == true)
+                d = 2;
+
+            if (metroRadioButton11.Checked == true)
+                f = 1;
+            else if (metroRadioButton12.Checked == true)
+                f = 2;
+            else if (metroRadioButton13.Checked == true)
+                f = 3;
+            else if (metroRadioButton14.Checked == true)
+                f = 4;
+            else if (metroRadioButton15.Checked == true)
+                f = 5;
+            else if (metroRadioButton16.Checked == true)
+                f = 6;
+
+            a = (1000 * b) + (100 * c) + (10 * d) + f;
+
+            
+        }
+
+        private void settempvariables()
+        {
+            record[i] = a;
+            if (c != 1 && c != 2)
+            {
+                balls++;
+                runs += b;
+                overs += 0.1;
+            }
+            else
+            {
+                runs += b + 1;
+            }
+
+            if (balls % 6 == 0)
+            {
+                overs = Convert.ToInt32(overs);
+            }
+
+            if (f > 0 && f < 7)
+            {
+                wickets++;
+            }
+        }
+
+        private void updatetables()
+        {
+            /*
+            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = "Chaitanya";
+            row.Cells[1].Value = "bas ho gaya ab out";
+            row.Cells[2].Value = 50;
+            row.Cells[3].Value = 20;
+            dataGridView1.Rows.Add(row);
+            */
         }
     }
 }
