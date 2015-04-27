@@ -19,7 +19,7 @@ namespace MahaSangram
         int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
         int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
-        bool firstinnings;
+        bool firstinnings, firstteambatting;
 
         public Scorecard()
         {
@@ -247,23 +247,6 @@ namespace MahaSangram
         {
             generatecode();
             settempvariables();        
-
-            if(firstinnings==true)
-            {
-                if (overs == maxovers)
-                {
-                    Submit.Text = "END INNINGS";
-                    firstinnings = false;
-                }
-            }
-            else
-            {
-                if (overs == maxovers)
-                {
-                    Submit.Text = "END MATCH";
-                }
-            }
-                        
             updatetables();
             generateGraph();
             generateScorecard();
@@ -285,6 +268,44 @@ namespace MahaSangram
             metroRadioButton14.Checked = false;
             metroRadioButton15.Checked = false;
             metroRadioButton16.Checked = false;
+
+            if (firstinnings == true)
+            {
+                if (overs == maxovers)
+                {
+                    Submit.Text = "END INNINGS";
+                    firstinnings = false;
+                }
+            }
+            else
+            {
+                if (overs == maxovers)
+                {
+                    Submit.Text = "END MATCH";
+                }
+            }
+
+            if (overs == maxovers)
+            {
+                firstinnings = false;
+                Submit.Enabled = true;
+                metroRadioButton1.Enabled = false;
+                metroRadioButton2.Enabled = false;
+                metroRadioButton3.Enabled = false;
+                metroRadioButton4.Enabled = false;
+                metroRadioButton5.Enabled = false;
+                metroRadioButton6.Enabled = false;
+                metroRadioButton7.Enabled = false;
+                metroRadioButton8.Enabled = false;
+                metroRadioButton9.Enabled = false;
+                metroRadioButton10.Enabled = false;
+                metroRadioButton11.Enabled = false;
+                metroRadioButton12.Enabled = false;
+                metroRadioButton13.Enabled = false;
+                metroRadioButton14.Enabled = false;
+                metroRadioButton15.Enabled = false;
+                metroRadioButton16.Enabled = false;
+            }
         }
 
         public void initiate()
@@ -321,48 +342,46 @@ namespace MahaSangram
         
         private void generateScorecard()
         {
-            //jb team1 ki batting
-            label3.Text = Convert.ToString(runs);
-            label5.Text = Convert.ToString(wickets);
-            label6.Text = Convert.ToString(overs);
-
-            // team 2 ki batting
-            label7.Text = Convert.ToString(runs);
-            label9.Text = Convert.ToString(wickets);
-            label10.Text = Convert.ToString(overs);
+            if(firstteambatting==true)
+            {
+                label3.Text = Convert.ToString(runs);
+                label5.Text = Convert.ToString(wickets);
+                label6.Text = Convert.ToString(overs);
+            }
+            else
+            {
+                label7.Text = Convert.ToString(runs);
+                label9.Text = Convert.ToString(wickets);
+                label10.Text = Convert.ToString(overs);
+            }
 
             if (c == 1)
             {
                 label16.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(1));
-
             }
 
             else if (c == 2)
             {
                 label17.Text = Convert.ToString(Convert.ToInt32(label17.Text) + Convert.ToInt32(1));
-
             }
 
             else if (d == 1)
             {
                 label18.Text = Convert.ToString(Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
-
             }
+
             else if (d == 2)
             {
                 label19.Text = Convert.ToString(Convert.ToInt32(label19.Text) + Convert.ToInt32(b));
-
             }
 
             if ((c > 0 && c < 3) || (d > 0 && d < 3))
             {
                 label13.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(label17.Text) + Convert.ToInt32(label18.Text) + Convert.ToInt32(label19.Text));
-
             }
 
             if (f > 0 && f < 7)
             {
-
                 label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")";
             }
         }

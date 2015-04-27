@@ -1,0 +1,35 @@
+Varsha
+
+1. toss										
+2. how many overs match??		
+
+
+Sakshi
+
+1. update lables in the scorecard
+2. designing and presentation
+
+
+Ruchi
+1. stats of all the players of team when selected	
+
+
+
+Other
+
+1. add teams in db			 (urgent)
+2. add players in db		 (urgent)
+3. select next batsmen when wicket falls
+4. select next bowler at over end
+5. fixtures
+6. update values of datagrid views in scorecard (scorecard , batting stats and bowling stats)
+7. update values of graphs in scorecard
+8. show match statistics when clicked on a specific match
+9. input values in db when match ends
+10. decode the values and generate the scorecard page for match statistics
+11. add module for penalties to both batting and bowling teams
+12. settings
+13. design overview in scorecard
+14. add statistics to show highest partnerships and other highest things possible
+15. set caption and vice caption in the teams
+16. add a contact detail for all the teams which should be hidden in statistics
