@@ -53,6 +53,7 @@ namespace MahaSangram
         {
             this.Skip.Click += handler;
         }
+
         public void SelectPlayersBackclicklistner(EventHandler handler)
         {
             this.SelectPlayersBack.Click += handler;
@@ -62,6 +63,7 @@ namespace MahaSangram
         {
 
         }
+
         private void Next_Click(object sender, EventArgs e)
         {
             team1 = checkedListBox1.CheckedItems.OfType<string>().ToArray();

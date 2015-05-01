@@ -121,6 +121,24 @@
     <Compile Include="NewTeam.Designer.cs">
       <DependentUpon>NewTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="nextbatsmen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nextbatsmen.Designer.cs">
+      <DependentUpon>nextbatsmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nextbowler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nextbowler.Designer.cs">
+      <DependentUpon>nextbowler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="overs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="overs.Designer.cs">
+      <DependentUpon>overs.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlayerInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +171,12 @@
     <Compile Include="Stats.Designer.cs">
       <DependentUpon>Stats.cs</DependentUpon>
     </Compile>
+    <Compile Include="Toss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toss.Designer.cs">
+      <DependentUpon>Toss.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Addplayerbutton.resx">
       <DependentUpon>Addplayerbutton.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +194,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Newteam.resx">
       <DependentUpon>NewTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nextbatsmen.resx">
+      <DependentUpon>nextbatsmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nextbowler.resx">
+      <DependentUpon>nextbowler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="overs.resx">
+      <DependentUpon>overs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlayerInfo.resx">
       <DependentUpon>PlayerInfo.cs</DependentUpon>
@@ -190,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stats.resx">
       <DependentUpon>Stats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toss.resx">
+      <DependentUpon>Toss.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="MSDatabaseDataSet.xsc">

@@ -104,3 +104,5 @@ D:\TEMP\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
 E:\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MahaSangram.exe.config
 E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.overs.resources
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Toss.resources

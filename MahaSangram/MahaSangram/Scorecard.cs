@@ -20,10 +20,12 @@ namespace MahaSangram
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
         int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
         bool firstinnings, firstteambatting;
+        overs O = new overs();
 
         public Scorecard()
         {
-            InitializeComponent();
+           InitializeComponent();
+           this.O.button1clicklistner(new EventHandler(setover));
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -310,7 +312,12 @@ namespace MahaSangram
 
         public void initiate()
         {
-             for (i = 0; i < 11; i++)
+            O.Dock = DockStyle.Fill;
+            this.Controls.Add(O);
+            O.BringToFront();
+      
+
+           /* for (i = 0; i < 11; i++)
             {
                 players1[i] = playersnames[i + 1];
                 players2[i] = playersnames[i + 12];
@@ -337,7 +344,7 @@ namespace MahaSangram
                 row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
                 row.Cells[0].Value = players1[i];
 
-            }
+            }*/
         }
         
         private void generateScorecard()
@@ -472,11 +479,13 @@ namespace MahaSangram
             if (balls % 6 == 0)
             {
                 overs = Convert.ToInt32(overs);
+                // user control bowler
             }
 
             if (f > 0 && f < 7)
             {
                 wickets++;
+                // wickets
             }
         }
 
@@ -490,6 +499,13 @@ namespace MahaSangram
             row.Cells[3].Value = 20;
             dataGridView1.Rows.Add(row);
             */
+        }
+
+
+        public void setover(object sender, EventArgs e)
+        {
+            maxovers = Convert.ToInt32( O.Data);
+
         }
     }
 }
