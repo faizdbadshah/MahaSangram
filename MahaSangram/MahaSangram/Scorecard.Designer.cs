@@ -752,9 +752,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(184, 288);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 13);
+            this.label13.Size = new System.Drawing.Size(80, 13);
             this.label13.TabIndex = 3;
-            this.label13.Text = "(wd,nb,lb,b)";
+            this.label13.Text = "(wd , nb , lb , b)";
             // 
             // label12
             // 

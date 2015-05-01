@@ -310,7 +310,7 @@ namespace MahaSangram
 
         public void initiate()
         {
-            /* for (i = 0; i < 11; i++)
+             for (i = 0; i < 11; i++)
             {
                 players1[i] = playersnames[i + 1];
                 players2[i] = playersnames[i + 12];
@@ -337,7 +337,7 @@ namespace MahaSangram
                 row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
                 row.Cells[0].Value = players1[i];
 
-            }*/
+            }
         }
         
         private void generateScorecard()
@@ -377,12 +377,12 @@ namespace MahaSangram
 
             if ((c > 0 && c < 3) || (d > 0 && d < 3))
             {
-                label13.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(label17.Text) + Convert.ToInt32(label18.Text) + Convert.ToInt32(label19.Text));
+                label20.Text = Convert.ToString(Convert.ToInt32(label16.Text) + Convert.ToInt32(label17.Text) + Convert.ToInt32(label18.Text) + Convert.ToInt32(label19.Text));
             }
 
             if (f > 0 && f < 7)
             {
-                label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")";
+                label15.Text = label15.Text + runs + "/" + wickets + "(" + "jo bhi player out hua hoga" + "," + overs + ")" + "   " + ",";
             }
         }
 
@@ -414,6 +414,8 @@ namespace MahaSangram
 
         private void generatecode()
         {
+            a = b = c = d = f = 0;
+
             if (metroRadioButton2.Checked == true)
                 b = 1;
             else if (metroRadioButton3.Checked == true)

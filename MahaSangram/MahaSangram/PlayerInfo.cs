@@ -69,7 +69,7 @@ namespace MahaSangram
            
             players.Close();
            
-            if (count < 15)
+            if (count <= 15)
             {
                 query.CommandText = "insert into Players(Name,Team) values ('" + PlayerName.Text + "','" + teamname + "')";
                 players = query.ExecuteReader();
