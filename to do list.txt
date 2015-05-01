@@ -1,13 +1,14 @@
 Varsha
 
-1. toss										
-2. how many overs match??		
+1. toss					(design)					
+2. how many overs match??		(done)
 
 
 Sakshi
 
-1. update lables in the scorecard
-2. designing and presentation
+1. update lables in the scorecard        (done)
+2. designing and presentation            (done)
+
 
 
 Ruchi
@@ -17,10 +18,10 @@ Ruchi
 
 Other
 
-1. add teams in db			 (urgent)
-2. add players in db		 (urgent)
-3. select next batsmen when wicket falls
-4. select next bowler at over end
+1. add teams in db			 (urgent)        (done)
+2. add players in db		 (urgent)              (done)
+3. select next batsmen when wicket falls         (design uc)
+4. select next bowler at over end                (design uc)
 5. fixtures
 6. update values of datagrid views in scorecard (scorecard , batting stats and bowling stats)
 7. update values of graphs in scorecard
