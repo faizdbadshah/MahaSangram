@@ -12,6 +12,7 @@ namespace MahaSangram
     public partial class Scorecard : UserControl
     {
         int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8;
+        string[] pet;
         double overs;
         int[] record = new int[150];
         string[] playersnames;
@@ -22,13 +23,16 @@ namespace MahaSangram
         int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
         int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
-        bool firstinnings, firstteambatting;
+        bool firstinnings, firstteambatting ,firstteamtoss ;
         overs O = new overs();
+        Toss T = new Toss();
 
         public Scorecard()
         {
            InitializeComponent();
            this.O.button1clicklistner(new EventHandler(setover));
+           this.T.button1clicklistner(new EventHandler(settoss));
+           this.T.button2clicklistner(new EventHandler(settoss));
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -315,6 +319,10 @@ namespace MahaSangram
 
         public void initiate()
         {
+            T.Data = teamname[0] + "," + teamname[1];
+            T.Dock = DockStyle.Fill;
+            this.Controls.Add(T);
+            T.BringToFront();
             O.Dock = DockStyle.Fill;
             this.Controls.Add(O);
             O.BringToFront();
@@ -336,6 +344,15 @@ namespace MahaSangram
 
             label3.Text = label5.Text = label7.Text = label9.Text = Convert.ToString("0");
             label6.Text = label10.Text = Convert.ToString("0.0");
+
+            T.Data = teamname[0] + "," + teamname[1];
+            T.Dock = DockStyle.Fill;
+            this.Controls.Add(T);
+            T.BringToFront();
+            O.Dock = DockStyle.Fill;
+            this.Controls.Add(O);
+            O.BringToFront();
+
 
        /*     DataGridViewRow row;
             
@@ -416,8 +433,9 @@ namespace MahaSangram
 
         public void generateGraph()
         {
-            chart1.Series["teamA"].Points.DataBindXY(x1val, y1val);
-            chart1.Series["teamB"].Points.DataBindXY(x1val, y2val);
+
+            chart1.Series["teamA"].Points.AddXY(cc, aa);
+            chart1.Series["teamB"].Points.AddXY(cc, bb);
             
             chart2.Series["teamA"].Points.AddXY(cc, aa);
             chart2.Series["teamB"].Points.AddXY(cc, bb);
@@ -505,11 +523,16 @@ namespace MahaSangram
         private void updatetables()
         {
             /*
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = "Chaitanya";
+            DataGridViewRow row;
+            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = "Chaitanya"; player name var
+            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[1].Value = "bas ho gaya ab out";
+            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[2].Value = 50;
+            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[3].Value = 20;
+             * row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             dataGridView1.Rows.Add(row);
             */
         }
@@ -519,6 +542,45 @@ namespace MahaSangram
         {
             maxovers = Convert.ToInt32( O.Data);
             this.Controls.Remove(O);
+        }
+
+        public void settoss(object sender, EventArgs e)
+        {
+
+            pet = T.Data.Split(new Char[] { ',' });
+
+            MessageBox.Show(pet[0] + pet[1] + pet[2]);
+
+            if(pet[0]== Convert.ToString(1))
+            {
+                if (pet[1]== teamname[0])
+                {
+                    firstteamtoss = true;
+                    if (pet[2]== "Batting")
+                    {
+                        firstteambatting = true;
+                    }
+                    else
+                    {
+                        firstteambatting = false;
+                    }
+                }
+                else 
+                {
+                    firstteamtoss = false;
+                    if (pet[2]== "Batting")
+                    {
+                        firstteambatting = false;
+                    }
+                    else
+                    {
+                        firstteambatting = true;
+                    }
+                }
+              this.Controls.Remove(T);
+
+            }
+            
         }
     }
 }
