@@ -38,7 +38,7 @@ namespace MahaSangram
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button1.Text == "Fielding")
+            if (button2.Text == "Fielding")
             {
                 abcd[0] = Convert.ToString(1);
                 abcd[2] = "Fielding";

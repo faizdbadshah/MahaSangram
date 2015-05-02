@@ -233,7 +233,6 @@ namespace MahaSangram
 
         private void Reset_Click(object sender, EventArgs e)
         {
-            Submit.Enabled = false;
             metroRadioButton1.Checked = false;
             metroRadioButton2.Checked = false;
             metroRadioButton3.Checked = false;
@@ -250,70 +249,110 @@ namespace MahaSangram
             metroRadioButton14.Checked = false;
             metroRadioButton15.Checked = false;
             metroRadioButton16.Checked = false;
+            Submit.Enabled = false;
         }
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            generatecode();
-            settempvariables();        
-            updatetables();
-            generateGraph();
-            generateScorecard();
-
-            Submit.Enabled = false;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton7.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton13.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
-
-            if (firstinnings == true)
+            if(Submit.Text=="Submit")
             {
+                generatecode();
+                settempvariables();
+                updatetables();
+                generateGraph();
+                generateScorecard();
+                                
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton7.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton13.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+                Submit.Enabled = false;
+
                 if (overs == maxovers)
                 {
-                    Submit.Text = "END INNINGS";
-                    firstinnings = false;
+                    if (firstinnings == true)
+                    {
+                        Submit.Text = "END INNINGS";
+                    }
+                    else
+                    {
+                        Submit.Text = "END MATCH";
+                    }
+
+                    Submit.Enabled = true;
+                    metroRadioButton1.Enabled = false;
+                    metroRadioButton2.Enabled = false;
+                    metroRadioButton3.Enabled = false;
+                    metroRadioButton4.Enabled = false;
+                    metroRadioButton5.Enabled = false;
+                    metroRadioButton6.Enabled = false;
+                    metroRadioButton7.Enabled = false;
+                    metroRadioButton8.Enabled = false;
+                    metroRadioButton9.Enabled = false;
+                    metroRadioButton10.Enabled = false;
+                    metroRadioButton11.Enabled = false;
+                    metroRadioButton12.Enabled = false;
+                    metroRadioButton13.Enabled = false;
+                    metroRadioButton14.Enabled = false;
+                    metroRadioButton15.Enabled = false;
+                    metroRadioButton16.Enabled = false;
+                    Reset.Enabled = false;
                 }
+            }
+            else if (Submit.Text == "END INNINGS")
+            {
+                firstinnings = false;
+                runs = 0;
+                overs = 0;
+                balls = 0;
+                wickets = 0;
+
+                Submit.Text = "Submit";
+                                
+                if(firstteambatting==true)
+                {
+                    firstteambatting=false;
+                }
+                else
+                {
+                    firstteambatting=true;
+                }
+                                
+                metroRadioButton1.Enabled = true;
+                metroRadioButton2.Enabled = true;
+                metroRadioButton3.Enabled = true;
+                metroRadioButton4.Enabled = true;
+                metroRadioButton5.Enabled = true;
+                metroRadioButton6.Enabled = true;
+                metroRadioButton7.Enabled = true;
+                metroRadioButton8.Enabled = true;
+                metroRadioButton9.Enabled = true;
+                metroRadioButton10.Enabled = true;
+                metroRadioButton11.Enabled = true;
+                metroRadioButton12.Enabled = true;
+                metroRadioButton13.Enabled = true;
+                metroRadioButton14.Enabled = true;
+                metroRadioButton15.Enabled = true;
+                metroRadioButton16.Enabled = true;
+                Submit.Enabled = false;
+                Reset.Enabled = true;
             }
             else
             {
-                if (overs == maxovers)
-                {
-                    Submit.Text = "END MATCH";
-                }
-            }
-
-            if (overs == maxovers)
-            {
-                firstinnings = false;
-                Submit.Enabled = true;
-                metroRadioButton1.Enabled = false;
-                metroRadioButton2.Enabled = false;
-                metroRadioButton3.Enabled = false;
-                metroRadioButton4.Enabled = false;
-                metroRadioButton5.Enabled = false;
-                metroRadioButton6.Enabled = false;
-                metroRadioButton7.Enabled = false;
-                metroRadioButton8.Enabled = false;
-                metroRadioButton9.Enabled = false;
-                metroRadioButton10.Enabled = false;
-                metroRadioButton11.Enabled = false;
-                metroRadioButton12.Enabled = false;
-                metroRadioButton13.Enabled = false;
-                metroRadioButton14.Enabled = false;
-                metroRadioButton15.Enabled = false;
-                metroRadioButton16.Enabled = false;
+                Submit.Text = "Submit";
+                //end match ki coding
             }
         }
 
@@ -353,8 +392,10 @@ namespace MahaSangram
             this.Controls.Add(O);
             O.BringToFront();
 
+            firstinnings = true;
 
-       /*     DataGridViewRow row;
+
+          /*     DataGridViewRow row;
             
             row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
             row.Cells[0].Value = players1[i];
@@ -546,10 +587,7 @@ namespace MahaSangram
 
         public void settoss(object sender, EventArgs e)
         {
-
             pet = T.Data.Split(new Char[] { ',' });
-
-            MessageBox.Show(pet[0] + pet[1] + pet[2]);
 
             if(pet[0]== Convert.ToString(1))
             {
@@ -559,10 +597,12 @@ namespace MahaSangram
                     if (pet[2]== "Batting")
                     {
                         firstteambatting = true;
+                        label21.Text = teamname[0] +" has won the toss and elected to Bat first";
                     }
                     else
                     {
                         firstteambatting = false;
+                        label21.Text = teamname[0] + " has won the toss and elected to Field first";
                     }
                 }
                 else 
@@ -571,15 +611,21 @@ namespace MahaSangram
                     if (pet[2]== "Batting")
                     {
                         firstteambatting = false;
+                        label21.Text = teamname[1] + " has won the toss and elected to Bat first";
                     }
                     else
                     {
                         firstteambatting = true;
+                        label21.Text = teamname[1] + " has won the toss and elected to Field first";
                     }
                 }
-              this.Controls.Remove(T);
+                this.Controls.Remove(T);
+
+                
 
             }
+
+
             
         }
     }

@@ -41,7 +41,7 @@
             // 
             this.Skip.BackColor = System.Drawing.Color.GreenYellow;
             this.Skip.ForeColor = System.Drawing.Color.Black;
-            this.Skip.Location = new System.Drawing.Point(434, 363);
+            this.Skip.Location = new System.Drawing.Point(428, 411);
             this.Skip.Name = "Skip";
             this.Skip.Size = new System.Drawing.Size(75, 39);
             this.Skip.TabIndex = 19;
@@ -54,7 +54,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(505, 127);
+            this.label2.Location = new System.Drawing.Point(505, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(242, 24);
             this.label2.TabIndex = 18;
@@ -66,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(99, 127);
+            this.label1.Location = new System.Drawing.Point(103, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 17;
@@ -79,7 +79,7 @@
             this.Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next.ForeColor = System.Drawing.Color.White;
-            this.Next.Location = new System.Drawing.Point(294, 294);
+            this.Next.Location = new System.Drawing.Point(294, 335);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(149, 44);
             this.Next.TabIndex = 15;
@@ -96,9 +96,9 @@
             this.checkedListBox2.Items.AddRange(new object[] {
             "database se sare players ke nam aaenge team 2 ke aur usmese 11 select karne honge" +
                 ""});
-            this.checkedListBox2.Location = new System.Drawing.Point(495, 193);
+            this.checkedListBox2.Location = new System.Drawing.Point(495, 155);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(365, 80);
+            this.checkedListBox2.Size = new System.Drawing.Size(365, 156);
             this.checkedListBox2.TabIndex = 14;
             // 
             // checkedListBox1
@@ -110,9 +110,9 @@
             this.checkedListBox1.Items.AddRange(new object[] {
             "database se sare players ke nam aaenge team 1 ke aur usmese 11 select karne honge" +
                 ""});
-            this.checkedListBox1.Location = new System.Drawing.Point(78, 193);
+            this.checkedListBox1.Location = new System.Drawing.Point(78, 155);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(365, 80);
+            this.checkedListBox1.Size = new System.Drawing.Size(365, 156);
             this.checkedListBox1.TabIndex = 16;
             // 
             // SelectPlayersBack
@@ -121,7 +121,7 @@
             this.SelectPlayersBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SelectPlayersBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectPlayersBack.ForeColor = System.Drawing.Color.White;
-            this.SelectPlayersBack.Location = new System.Drawing.Point(495, 294);
+            this.SelectPlayersBack.Location = new System.Drawing.Point(495, 335);
             this.SelectPlayersBack.Name = "SelectPlayersBack";
             this.SelectPlayersBack.Size = new System.Drawing.Size(149, 44);
             this.SelectPlayersBack.TabIndex = 20;

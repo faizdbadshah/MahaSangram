@@ -1,40 +1,24 @@
+necesarry
 
-1. stats of all the players of team when selected	
-2. select next batsmen when wicket falls         (design uc)
-3. select next bowler at over end                (design uc)
-4. update values of datagrid views in scorecard (scorecard ,                                                                               	batting stats and bowling stats)
-5. update values of graphs in scorecard
-6. show match statistics when clicked on a specific match
-7. input values in db when match ends
-8. decode the values and generate the scorecard page for match 	statistics
-9. add module for penalties to both batting and bowling teams
-10. design overview in scorecard
-14. add statistics to show highest partnerships and other highest things possible
-10. settings
+1. select next batsmen when wicket falls         (design uc)
+2. select next bowler at over end                (design uc)
+3. update values of datagrid views in scorecard (scorecard ,batting stats and bowling stats)
+4. update values of graphs in scorecard (only run rate and over by over)
+5. input values in db when match ends
+6. design overview in scorecard
+7. code to decide which team has won
 
+extras
 
-
-
-
-
-
-
-
-Other
-
-1. add teams in db			 (urgent)        (done)
-2. add players in db		 (urgent)              (done)
-3. select next batsmen when wicket falls         (design uc)
-4. select next bowler at over end                (design uc)
-5. fixtures
-6. update values of datagrid views in scorecard (scorecard , batting stats and bowling stats)
-7. update values of graphs in scorecard
-8. show match statistics when clicked on a specific match
-9. input values in db when match ends
-10. decode the values and generate the scorecard page for match statistics
-11. add module for penalties to both batting and bowling teams
-12. settings
-13. design overview in scorecard
-14. add statistics to show highest partnerships and other highest things possible
-15. set caption and vice caption in the teams
-16. add a contact detail for all the teams which should be hidden in statistics
+1. fixtures
+2. add more graphs (partnership etc)
+3. show match statistics when clicked on a specific match
+4. decode the values and generate the scorecard page for match statistics
+5. add module for penalties to both batting and bowling teams
+6. settings
+7. add statistics to show highest partnerships and other highest things possible
+8. set caption and vice caption in the teams
+9. add a contact detail for all the teams which should be hidden in statistics
+10. stats of all the players of team when selected	
+11. upgrade toss to let toss happen in software
+12. reduce the overs of the match in the middle
