@@ -14,7 +14,10 @@ namespace MahaSangram
         int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8;
         double overs;
         int[] record = new int[150];
-        string[] playersnames, players1, players2, teamname;
+        string[] playersnames;
+        string[] players1 = new string[11];
+        string[] players2 = new string[11];
+        string[] teamname = new string[2];
         double[] povers = new double[11];
         int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
         int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
@@ -315,13 +318,13 @@ namespace MahaSangram
             O.Dock = DockStyle.Fill;
             this.Controls.Add(O);
             O.BringToFront();
-      
 
-           /* for (i = 0; i < 11; i++)
+            for (i = 0; i < 11; i++)
             {
                 players1[i] = playersnames[i + 1];
                 players2[i] = playersnames[i + 12];
             }
+
             teamname[0] = playersnames[23];
             teamname[1] = playersnames[24];
 
@@ -334,17 +337,27 @@ namespace MahaSangram
             label3.Text = label5.Text = label7.Text = label9.Text = Convert.ToString("0");
             label6.Text = label10.Text = Convert.ToString("0.0");
 
-            DataGridViewRow row;
-            for (i = 0; i < 11; i++)
-            {
-                row = (DataGridViewRow)dataGridView1.Rows[i].Clone();
-                row.Cells[0].Value = players1[i];
-                row.Cells[1].Value = "Still To Play";
+       /*     DataGridViewRow row;
+            
+            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
+            row.Cells[0].Value = players1[i];
+            row.Cells[1].Value = "Still To Play";
+            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
+            row.Cells[0].Value = players1[i];
+            row.Cells[1].Value = "Still To Play";
+            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
+            row.Cells[0].Value = players1[i];
+            row.Cells[1].Value = "Still To Play";
+            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
+            row.Cells[0].Value = players1[i];
+            row.Cells[1].Value = "Still To Play";
 
-                row = (DataGridViewRow)dataGridView2.Rows[i].Clone();
-                row.Cells[0].Value = players1[i];
 
-            }*/
+
+            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
+            row.Cells[0].Value = players1[i];
+*/
+         
         }
         
         private void generateScorecard()
@@ -505,7 +518,7 @@ namespace MahaSangram
         public void setover(object sender, EventArgs e)
         {
             maxovers = Convert.ToInt32( O.Data);
-
+            this.Controls.Remove(O);
         }
     }
 }

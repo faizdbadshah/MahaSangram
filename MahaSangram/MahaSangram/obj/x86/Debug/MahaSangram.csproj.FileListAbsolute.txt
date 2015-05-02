@@ -106,3 +106,5 @@ E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 E:\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.overs.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Toss.resources
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.nextbatsmen.resources
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.nextbowler.resources
