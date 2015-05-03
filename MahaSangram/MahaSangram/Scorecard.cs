@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MahaSangram
 {
@@ -20,12 +21,12 @@ namespace MahaSangram
         string[] players2 = new string[11];
         string[] teamname = new string[2];
         double[] povers = new double[11];
-        int[] x1val = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //array for balls for team A&B
-        int[] y1val = new int[9] { 6, 2, 4, 1, 0, 5, 6, 2, 1 }; //array for runs-teamA
-        int[] y2val = new int[9] { 4, 3, 1, 1, 2, 6, 0, 4, 1 };//array for runs teamB
         bool firstinnings, firstteambatting ,firstteamtoss ;
         overs O = new overs();
         Toss T = new Toss();
+        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlCommand query = new SqlCommand();
+        private SqlDataReader teams, players;
 
         public Scorecard()
         {
@@ -33,6 +34,8 @@ namespace MahaSangram
            this.O.button1clicklistner(new EventHandler(setover));
            this.T.button1clicklistner(new EventHandler(settoss));
            this.T.button2clicklistner(new EventHandler(settoss));
+           connection.Open();
+           query.Connection = connection;
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -280,7 +283,7 @@ namespace MahaSangram
                 metroRadioButton16.Checked = false;
                 Submit.Enabled = false;
 
-                if (overs == maxovers)
+                if (overs == maxovers || wickets==10)
                 {
                     if (firstinnings == true)
                     {
@@ -329,7 +332,7 @@ namespace MahaSangram
                 {
                     firstteambatting=true;
                 }
-                                
+
                 metroRadioButton1.Enabled = true;
                 metroRadioButton2.Enabled = true;
                 metroRadioButton3.Enabled = true;
@@ -353,6 +356,61 @@ namespace MahaSangram
             {
                 Submit.Text = "Submit";
                 //end match ki coding
+            }
+            
+
+            if(firstinnings==false)
+            {
+                if(firstteambatting==true)
+                {
+                    if(runs>Convert.ToInt32(label7.Text))
+                    {
+                        Submit.Text = "END MATCH";
+                        Submit.Enabled = true;
+                        metroRadioButton1.Enabled = false;
+                        metroRadioButton2.Enabled = false;
+                        metroRadioButton3.Enabled = false;
+                        metroRadioButton4.Enabled = false;
+                        metroRadioButton5.Enabled = false;
+                        metroRadioButton6.Enabled = false;
+                        metroRadioButton7.Enabled = false;
+                        metroRadioButton8.Enabled = false;
+                        metroRadioButton9.Enabled = false;
+                        metroRadioButton10.Enabled = false;
+                        metroRadioButton11.Enabled = false;
+                        metroRadioButton12.Enabled = false;
+                        metroRadioButton13.Enabled = false;
+                        metroRadioButton14.Enabled = false;
+                        metroRadioButton15.Enabled = false;
+                        metroRadioButton16.Enabled = false;
+                        Reset.Enabled = false;
+                    }
+                }
+                else
+                {
+                    if (runs > Convert.ToInt32(label3.Text))
+                    {
+                        Submit.Text = "END MATCH";
+                        Submit.Enabled = true;
+                        metroRadioButton1.Enabled = false;
+                        metroRadioButton2.Enabled = false;
+                        metroRadioButton3.Enabled = false;
+                        metroRadioButton4.Enabled = false;
+                        metroRadioButton5.Enabled = false;
+                        metroRadioButton6.Enabled = false;
+                        metroRadioButton7.Enabled = false;
+                        metroRadioButton8.Enabled = false;
+                        metroRadioButton9.Enabled = false;
+                        metroRadioButton10.Enabled = false;
+                        metroRadioButton11.Enabled = false;
+                        metroRadioButton12.Enabled = false;
+                        metroRadioButton13.Enabled = false;
+                        metroRadioButton14.Enabled = false;
+                        metroRadioButton15.Enabled = false;
+                        metroRadioButton16.Enabled = false;
+                        Reset.Enabled = false;
+                    }
+                }
             }
         }
 
@@ -393,6 +451,18 @@ namespace MahaSangram
             O.BringToFront();
 
             firstinnings = true;
+
+            chart1.Series.Add(teamname[0]);
+            chart1.Series.Add(teamname[1]);
+            chart2.Series.Add(teamname[0]);
+            chart2.Series.Add(teamname[1]);
+
+            chart1.Series[teamname[0]].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            chart1.Series[teamname[1]].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+
+            chart1.Series[teamname[0]].Points.AddXY(0, 0);
+            chart1.Series[teamname[1]].Points.AddXY(0, 0);
+          
 
 
           /*     DataGridViewRow row;
@@ -464,31 +534,34 @@ namespace MahaSangram
             }
         }
 
-        int aa = 4;
-        int bb = 2;
-        int cc = 1;
-
-        int p1 = -1;
-        int p2 = 1;
-        int pp = 1;
-
+        int aa = 0;
+      
         public void generateGraph()
         {
+            aa += b;
 
-            chart1.Series["teamA"].Points.AddXY(cc, aa);
-            chart1.Series["teamB"].Points.AddXY(cc, bb);
+            if(firstteambatting==true)
+            {
+                chart1.Series[teamname[0]].Points.AddXY(balls, runs);
+
+                if(balls%6==0)
+                {
+                    chart2.Series[teamname[0]].Points.AddXY(overs, aa);
+                }
+            }
+            else
+            {
+                chart1.Series[teamname[1]].Points.AddXY(balls, runs);
+                if (balls % 6 == 0)
+                {
+                    chart2.Series[teamname[1]].Points.AddXY(overs, aa);
+                }
+            }
             
-            chart2.Series["teamA"].Points.AddXY(cc, aa);
-            chart2.Series["teamB"].Points.AddXY(cc, bb);
-            aa++;
-            bb++;
-            cc++;
-            
-            chart3.Series["batsmanA"].Points.AddXY(pp, p1);
-            chart3.Series["batsmanB"].Points.AddXY(pp, p2);
-            p1--;
-            p2++;
-            pp++;
+            if (balls % 6 == 0)
+            {
+                aa = 0;
+            }
         }
 
         private void generatecode()
@@ -620,13 +693,7 @@ namespace MahaSangram
                     }
                 }
                 this.Controls.Remove(T);
-
-                
-
             }
-
-
-            
         }
     }
 }

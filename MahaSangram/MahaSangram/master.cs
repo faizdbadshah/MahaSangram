@@ -31,18 +31,18 @@ namespace MahaSangram
         private void master_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            functions.center_panel(panel_form1, this, 292, 530);
-            functions.center_panel(panel2, this, 597, 275);
-            functions.center_panel(panel3, this, 840, 282);
-            functions.center_panel(metroPanel1, this, 803, 503);
-            functions.center_panel(metroPanel3, this, 1356, 686);
+         //   functions.center_panel(panel_form1, this, 292, 530);
+         //   functions.center_panel(panel2, this, 597, 275);
+         //   functions.center_panel(panel3, this, 840, 282);
+         //   functions.center_panel(metroPanel1, this, 803, 503);
+         //   functions.center_panel(metroPanel3, this, 1356, 686);
         }
 
         private void newmatch_button_form1_Click(object sender, EventArgs e)
         {
             load_teams("newmatch");
             listBox1.SelectedIndex = 0;
-            functions.change_panel(panel_form1, panel2);
+         //   functions.change_panel(panel_form1, panel2);
         }
 
         private void statistics_button_form1_Click(object sender, EventArgs e)
@@ -53,12 +53,12 @@ namespace MahaSangram
         private void addteam_button_form1_Click(object sender, EventArgs e)
         {
             load_teams("addteam");
-            functions.change_panel(panel_form1, metroPanel1);
+     //       functions.change_panel(panel_form1, metroPanel1);
         }
 
         private void quit_button_form1_Click(object sender, EventArgs e)
         {
-            functions.closeapp(this, this, connection);
+    //        functions.closeapp(this, this, connection);
         }
 
         private void load_teams(string usefor)
@@ -159,7 +159,7 @@ namespace MahaSangram
             string team2 = listBox2.Text;
             if (team1.Length != 0 && team2.Length != 0)
             {
-                functions.change_panel(panel2, panel3);
+    //            functions.change_panel(panel2, panel3);
                 label6.Text = "Select Playing 11 of \n" + team1;
                 label5.Text = "Select Playing 11 of \n" + team2;
                 load_team_players(team1, checkedListBox1);
@@ -173,7 +173,7 @@ namespace MahaSangram
 
         private void back_button_form3_Click(object sender, EventArgs e)
         {
-            functions.back_panel();
+  //          functions.back_panel();
         }
 
 
@@ -293,7 +293,7 @@ namespace MahaSangram
         */
         private void master_FormClosing(object sender, FormClosingEventArgs e)
         {
-            functions.closeapp(this, this, e, connection);
+   //         functions.closeapp(this, this, e, connection);
         }
 
         //Movable Form
@@ -678,18 +678,18 @@ namespace MahaSangram
             if (checkedListBox1.SelectedItems.Count == 11 && checkedListBox2.SelectedItems.Count == 11)
             {
                 MessageBox.Show("Player selected from team 1 : " + checkedListBox1.SelectedItems.ToString());
-                functions.change_panel(panel3, metroPanel3);
+    //            functions.change_panel(panel3, metroPanel3);
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            functions.change_panel(panel3, metroPanel3);
+ //           functions.change_panel(panel3, metroPanel3);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            functions.closeapp(this, this);
+   //         functions.closeapp(this, this);
         }
 
         private void button8_Click(object sender, EventArgs e)
