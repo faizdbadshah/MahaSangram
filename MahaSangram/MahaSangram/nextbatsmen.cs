@@ -11,9 +11,42 @@ namespace MahaSangram
 {
     public partial class nextbatsmen : UserControl
     {
+        string[] batsmen;
+        int i;
+
         public nextbatsmen()
         {
             InitializeComponent();
+        }
+
+        public string Data
+        {
+            get
+            {
+                return comboBox1.Text;
+            }
+            set
+            {
+                batsmen = value.Split(new Char[] { ',' });
+            }
+        }
+
+        public void button1clicklistner(EventHandler handler)
+        {
+            this.button1.Click += handler;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void initiate()
+        {
+            for (i = 0; i < batsmen.Length; i++)
+            {
+                comboBox1.Items.Add(batsmen[i]);
+            }
         }
     }
 }

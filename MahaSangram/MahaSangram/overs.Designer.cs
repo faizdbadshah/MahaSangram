@@ -35,7 +35,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(328, 207);
+            this.button1.Location = new System.Drawing.Point(70, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -45,7 +45,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(274, 152);
+            this.textBox1.Location = new System.Drawing.Point(21, 60);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 20);
             this.textBox1.TabIndex = 2;
@@ -53,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(306, 100);
+            this.label1.Location = new System.Drawing.Point(56, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 3;
@@ -66,8 +66,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Location = new System.Drawing.Point(200, 300);
             this.Name = "overs";
-            this.Size = new System.Drawing.Size(715, 343);
+            this.Size = new System.Drawing.Size(231, 170);
             this.ResumeLayout(false);
             this.PerformLayout();
 

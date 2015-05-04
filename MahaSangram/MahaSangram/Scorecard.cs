@@ -12,7 +12,7 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8;
+        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0;
         string[] pet;
         double overs;
         int[] record = new int[150];
@@ -27,6 +27,8 @@ namespace MahaSangram
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
+        nextbatsmen NB = new nextbatsmen();
+        string remainingbatsmen;
 
         public Scorecard()
         {
@@ -34,6 +36,7 @@ namespace MahaSangram
            this.O.button1clicklistner(new EventHandler(setover));
            this.T.button1clicklistner(new EventHandler(settoss));
            this.T.button2clicklistner(new EventHandler(settoss));
+           this.NB.button1clicklistner(new EventHandler(setbatsmen));
            connection.Open();
            query.Connection = connection;
         }
@@ -446,8 +449,11 @@ namespace MahaSangram
             T.Dock = DockStyle.Fill;
             this.Controls.Add(T);
             T.BringToFront();
-            O.Dock = DockStyle.Fill;
+          
+            O.Dock = DockStyle.None;
+            
             this.Controls.Add(O);
+           
             O.BringToFront();
 
             firstinnings = true;
@@ -462,30 +468,38 @@ namespace MahaSangram
 
             chart1.Series[teamname[0]].Points.AddXY(0, 0);
             chart1.Series[teamname[1]].Points.AddXY(0, 0);
-          
 
-
-          /*     DataGridViewRow row;
             
-            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
-            row.Cells[0].Value = players1[i];
-            row.Cells[1].Value = "Still To Play";
-            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
-            row.Cells[0].Value = players1[i];
-            row.Cells[1].Value = "Still To Play";
-            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
-            row.Cells[0].Value = players1[i];
-            row.Cells[1].Value = "Still To Play";
-            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
-            row.Cells[0].Value = players1[i];
-            row.Cells[1].Value = "Still To Play";
+        }
 
+        private void initializedatagridviews()
+        {
+            if (firstteambatting == true)
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    dataGridView2.Rows.Add();
+                    dataGridView2.Rows[i].Cells[0].Value = players1[i];
+                    for (j = 1; j < 10; j++)
+                    {
+                        dataGridView2.Rows[i].Cells[j].Value = 0;
+                    }
+                }
+            }
+            else
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    dataGridView2.Rows.Add();
+                    dataGridView2.Rows[i].Cells[0].Value = players2[i];
+                    for (j = 1; j < 10; j++)
+                    {
+                        dataGridView2.Rows[i].Cells[j].Value = 0;
+                    }
+                }
+            }
 
-
-            row = (DataGridViewRow)dataGridView2.Rows[0].Clone();
-            row.Cells[0].Value = players1[i];
-*/
-         
+            dataGridView2.AllowUserToAddRows = false;
         }
         
         private void generateScorecard()
@@ -609,7 +623,8 @@ namespace MahaSangram
 
         private void settempvariables()
         {
-            record[i] = a;
+            record[x] = a;
+            x++;
             if (c != 1 && c != 2)
             {
                 balls++;
@@ -630,7 +645,36 @@ namespace MahaSangram
             if (f > 0 && f < 7)
             {
                 wickets++;
-                // wickets
+                               
+                if(firstteambatting==true && wickets!=10)
+                {
+                    for (i = wickets; i < 10; i++)
+                    {
+                        remainingbatsmen = remainingbatsmen + players1[i + 1];
+                        if (i < 9)
+                        {
+                            remainingbatsmen = remainingbatsmen + ",";
+                        }
+                    }
+                }
+                else
+                {
+                    for (i = wickets; i < 10; i++)
+                    {
+                        remainingbatsmen = remainingbatsmen + players2[i + 1] + ",";
+                        if (i < 9)
+                        {
+                            remainingbatsmen = remainingbatsmen + ",";
+                        }
+                    }
+                }
+
+                NB.Data = remainingbatsmen;
+                remainingbatsmen = "";
+                NB.Dock = DockStyle.None;
+                this.Controls.Add(NB);
+                NB.BringToFront();
+                NB.initiate();
             }
         }
 
@@ -646,7 +690,7 @@ namespace MahaSangram
             row.Cells[2].Value = 50;
             row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[3].Value = 20;
-             * row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             dataGridView1.Rows.Add(row);
             */
         }
@@ -693,7 +737,14 @@ namespace MahaSangram
                     }
                 }
                 this.Controls.Remove(T);
+                initializedatagridviews();
             }
+        }
+
+        public void setbatsmen(object sender, EventArgs e)
+        {
+            MessageBox.Show(NB.Data);
+            this.Controls.Remove(NB);
         }
     }
 }
