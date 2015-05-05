@@ -472,36 +472,6 @@ namespace MahaSangram
             
         }
 
-        private void initializedatagridviews()
-        {
-            if (firstteambatting == true)
-            {
-                for (i = 0; i < 11; i++)
-                {
-                    dataGridView2.Rows.Add();
-                    dataGridView2.Rows[i].Cells[0].Value = players1[i];
-                    for (j = 1; j < 10; j++)
-                    {
-                        dataGridView2.Rows[i].Cells[j].Value = 0;
-                    }
-                }
-            }
-            else
-            {
-                for (i = 0; i < 11; i++)
-                {
-                    dataGridView2.Rows.Add();
-                    dataGridView2.Rows[i].Cells[0].Value = players2[i];
-                    for (j = 1; j < 10; j++)
-                    {
-                        dataGridView2.Rows[i].Cells[j].Value = 0;
-                    }
-                }
-            }
-
-            dataGridView2.AllowUserToAddRows = false;
-        }
-        
         private void generateScorecard()
         {
             if(firstteambatting==true)
@@ -680,19 +650,85 @@ namespace MahaSangram
 
         private void updatetables()
         {
-            /*
-            DataGridViewRow row;
-            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = "Chaitanya"; player name var
-            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[1].Value = "bas ho gaya ab out";
-            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[2].Value = 50;
-            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[3].Value = 20;
-            row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            dataGridView1.Rows.Add(row);
-            */
+            i = 0;
+
+            if(firstteambatting==true)
+            {
+                if (c != 1 && c != 2)
+                {
+                    dataGridView2.Rows[i].Cells[2].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[2].Value.ToString()) + 1;
+                    dataGridView2.Rows[i].Cells[1].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[1].Value.ToString()) + b;
+                }
+                else
+                {
+                    dataGridView2.Rows[i].Cells[1].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[1].Value.ToString()) + b + 1;
+                }
+
+                if (b == 0)
+                {
+                    dataGridView2.Rows[i].Cells[3].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[3].Value.ToString()) + 1;
+                }
+                else if (b == 1)
+                {
+                    dataGridView2.Rows[i].Cells[4].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[4].Value.ToString()) + 1;
+                }
+                else if (b == 2)
+                {
+                    dataGridView2.Rows[i].Cells[5].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[5].Value.ToString()) + 1;
+                }
+                else if (b == 3)
+                {
+                    dataGridView2.Rows[i].Cells[6].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[6].Value.ToString()) + 1;
+                }
+                else if (b == 4)
+                {
+                    dataGridView2.Rows[i].Cells[7].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[7].Value.ToString()) + 1;
+                }
+                else
+                {
+                    dataGridView2.Rows[i].Cells[8].Value = Convert.ToInt32(dataGridView2.Rows[i].Cells[8].Value.ToString()) + 1;
+                }
+            }
+
+            else
+            {
+                if (c != 1 && c != 2)
+                {
+                    dataGridView5.Rows[i].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[2].Value.ToString()) + 1;
+                    dataGridView5.Rows[i].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[1].Value.ToString()) + b;
+                }
+                else
+                {
+                    dataGridView5.Rows[i].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[1].Value.ToString()) + b + 1;
+                }
+
+                if (b == 0)
+                {
+                    dataGridView5.Rows[i].Cells[3].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[3].Value.ToString()) + 1;
+                }
+                else if (b == 1)
+                {
+                    dataGridView5.Rows[i].Cells[4].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[4].Value.ToString()) + 1;
+                }
+                else if (b == 2)
+                {
+                    dataGridView5.Rows[i].Cells[5].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[5].Value.ToString()) + 1;
+                }
+                else if (b == 3)
+                {
+                    dataGridView5.Rows[i].Cells[6].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[6].Value.ToString()) + 1;
+                }
+                else if (b == 4)
+                {
+                    dataGridView5.Rows[i].Cells[7].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[7].Value.ToString()) + 1;
+                }
+                else
+                {
+                    dataGridView5.Rows[i].Cells[8].Value = Convert.ToInt32(dataGridView5.Rows[i].Cells[8].Value.ToString()) + 1;
+                }
+            }
+
+            
         }
 
 
@@ -745,6 +781,69 @@ namespace MahaSangram
         {
             MessageBox.Show(NB.Data);
             this.Controls.Remove(NB);
+        }
+
+        private void initializedatagridviews()
+        {
+            if (firstteambatting == true)
+            {
+                dataGridView1.Visible = true;
+                dataGridView2.Visible = true;
+                dataGridView3.Visible = true;
+                dataGridView4.Visible = false;
+                dataGridView5.Visible = false;
+                dataGridView6.Visible = false;
+            }
+            else
+            {
+                dataGridView4.Visible = true;
+                dataGridView5.Visible = true;
+                dataGridView6.Visible = true;
+                dataGridView1.Visible = false;
+                dataGridView2.Visible = false;
+                dataGridView3.Visible = false;
+            }
+
+            for (i = 0; i < 11; i++)
+            {
+                dataGridView2.Rows.Add();
+                dataGridView2.Rows[i].Cells[0].Value = players1[i];
+                for (j = 1; j < 10; j++)
+                {
+                    dataGridView2.Rows[i].Cells[j].Value = 0;
+                }
+                dataGridView5.Rows.Add();
+                dataGridView5.Rows[i].Cells[0].Value = players2[i];
+                for (j = 1; j < 10; j++)
+                {
+                    dataGridView5.Rows[i].Cells[j].Value = 0;
+                }
+            }
+
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView5.AllowUserToAddRows = false;
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(listBox1.Text==teamname[0])
+            {
+                dataGridView1.Visible = true;
+                dataGridView2.Visible = true;
+                dataGridView3.Visible = true;
+                dataGridView4.Visible = false;
+                dataGridView5.Visible = false;
+                dataGridView6.Visible = false;
+            }
+            else
+            {
+                dataGridView4.Visible = true;
+                dataGridView5.Visible = true;
+                dataGridView6.Visible = true;
+                dataGridView1.Visible = false;
+                dataGridView2.Visible = false;
+                dataGridView3.Visible = false;
+            }
         }
     }
 }

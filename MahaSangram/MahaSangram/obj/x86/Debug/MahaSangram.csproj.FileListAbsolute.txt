@@ -107,3 +107,4 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Toss.res
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
