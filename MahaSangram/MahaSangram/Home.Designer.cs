@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.Logo = new System.Windows.Forms.PictureBox();
             this.Rules = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@
             // Logo
             // 
             this.Logo.Image = global::MahaSangram.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(329, 8);
+            this.Logo.Location = new System.Drawing.Point(333, 23);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(217, 221);
             this.Logo.TabIndex = 13;
@@ -167,6 +168,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.Rules);
