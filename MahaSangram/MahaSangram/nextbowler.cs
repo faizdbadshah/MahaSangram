@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace MahaSangram
 {
-    public partial class nextbowler : UserControl
+    public partial class NextBowler : UserControl
     {
-        public nextbowler()
+        public NextBowler()
         {
             InitializeComponent();
         }

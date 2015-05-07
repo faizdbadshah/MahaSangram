@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace MahaSangram
 {
-    public partial class overs : UserControl
+    public partial class Overs : UserControl
     {
-        public overs()
+        public Overs()
         {
             InitializeComponent();
         }

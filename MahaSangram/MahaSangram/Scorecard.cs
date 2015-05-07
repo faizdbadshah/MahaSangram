@@ -22,12 +22,12 @@ namespace MahaSangram
         string[] teamname = new string[2];
         double[] povers = new double[11];
         bool firstinnings, firstteambatting ,firstteamtoss ;
-        overs O = new overs();
+        Overs O = new Overs();
         Toss T = new Toss();
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
-        nextbatsmen NB = new nextbatsmen();
+        NextBatsmen NB = new NextBatsmen();
         string remainingbatsmen;
 
         public Scorecard()
@@ -615,36 +615,39 @@ namespace MahaSangram
             if (f > 0 && f < 7)
             {
                 wickets++;
-                               
-                if(firstteambatting==true && wickets!=10)
-                {
-                    for (i = wickets; i < 10; i++)
-                    {
-                        remainingbatsmen = remainingbatsmen + players1[i + 1];
-                        if (i < 9)
-                        {
-                            remainingbatsmen = remainingbatsmen + ",";
-                        }
-                    }
-                }
-                else
-                {
-                    for (i = wickets; i < 10; i++)
-                    {
-                        remainingbatsmen = remainingbatsmen + players2[i + 1] + ",";
-                        if (i < 9)
-                        {
-                            remainingbatsmen = remainingbatsmen + ",";
-                        }
-                    }
-                }
 
-                NB.Data = remainingbatsmen;
-                remainingbatsmen = "";
-                NB.Dock = DockStyle.None;
-                this.Controls.Add(NB);
-                NB.BringToFront();
-                NB.initiate();
+                if(wickets!=10)
+                {
+                    if (firstteambatting == true)
+                    {
+                        for (i = wickets; i < 10; i++)
+                        {
+                            remainingbatsmen = remainingbatsmen + players1[i + 1];
+                            if (i < 9)
+                            {
+                                remainingbatsmen = remainingbatsmen + ",";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (i = wickets; i < 10; i++)
+                        {
+                            remainingbatsmen = remainingbatsmen + players2[i + 1] + ",";
+                            if (i < 9)
+                            {
+                                remainingbatsmen = remainingbatsmen + ",";
+                            }
+                        }
+                    }
+
+                    NB.Data = remainingbatsmen;
+                    remainingbatsmen = "";
+                    NB.Dock = DockStyle.None;
+                    this.Controls.Add(NB);
+                    NB.BringToFront();
+                    NB.initiate();
+                }
             }
         }
 

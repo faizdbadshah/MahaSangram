@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class overs
+    partial class Overs
     {
         /// <summary> 
         /// Required designer variable.

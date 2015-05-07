@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class Addteambutton
+    partial class AddTeam
     {
         /// <summary> 
         /// Required designer variable.

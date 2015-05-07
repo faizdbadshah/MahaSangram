@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class Newteam
+    partial class Teams
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.Addt = new System.Windows.Forms.Button();
+            this.AddT = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
-            this.Addp = new System.Windows.Forms.Button();
-            this.NewTeamBack = new System.Windows.Forms.Button();
+            this.PlayersInfo = new System.Windows.Forms.Button();
+            this.TeamsBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -43,17 +43,17 @@
             this.listBox1.Size = new System.Drawing.Size(592, 329);
             this.listBox1.TabIndex = 0;
             // 
-            // Addt
+            // AddT
             // 
-            this.Addt.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.Addt.ForeColor = System.Drawing.Color.White;
-            this.Addt.Location = new System.Drawing.Point(154, 388);
-            this.Addt.Name = "Addt";
-            this.Addt.Size = new System.Drawing.Size(132, 58);
-            this.Addt.TabIndex = 1;
-            this.Addt.Text = "Add Team";
-            this.Addt.UseVisualStyleBackColor = false;
-            this.Addt.Click += new System.EventHandler(this.Addt_Click);
+            this.AddT.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.AddT.ForeColor = System.Drawing.Color.White;
+            this.AddT.Location = new System.Drawing.Point(154, 388);
+            this.AddT.Name = "AddT";
+            this.AddT.Size = new System.Drawing.Size(132, 58);
+            this.AddT.TabIndex = 1;
+            this.AddT.Text = "Add Team";
+            this.AddT.UseVisualStyleBackColor = false;
+            this.AddT.Click += new System.EventHandler(this.Addt_Click);
             // 
             // Delete
             // 
@@ -67,40 +67,40 @@
             this.Delete.UseVisualStyleBackColor = false;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
-            // Addp
+            // PlayersInfo
             // 
-            this.Addp.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.Addp.ForeColor = System.Drawing.Color.White;
-            this.Addp.Location = new System.Drawing.Point(458, 388);
-            this.Addp.Name = "Addp";
-            this.Addp.Size = new System.Drawing.Size(132, 58);
-            this.Addp.TabIndex = 3;
-            this.Addp.Text = "Add Player";
-            this.Addp.UseVisualStyleBackColor = false;
-            this.Addp.Click += new System.EventHandler(this.Addp_Click);
+            this.PlayersInfo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.PlayersInfo.ForeColor = System.Drawing.Color.White;
+            this.PlayersInfo.Location = new System.Drawing.Point(458, 388);
+            this.PlayersInfo.Name = "PlayersInfo";
+            this.PlayersInfo.Size = new System.Drawing.Size(132, 58);
+            this.PlayersInfo.TabIndex = 3;
+            this.PlayersInfo.Text = "Players";
+            this.PlayersInfo.UseVisualStyleBackColor = false;
+            this.PlayersInfo.Click += new System.EventHandler(this.PlayersInfo_Click);
             // 
-            // NewTeamBack
+            // TeamsBack
             // 
-            this.NewTeamBack.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.NewTeamBack.ForeColor = System.Drawing.Color.White;
-            this.NewTeamBack.Location = new System.Drawing.Point(614, 388);
-            this.NewTeamBack.Name = "NewTeamBack";
-            this.NewTeamBack.Size = new System.Drawing.Size(132, 58);
-            this.NewTeamBack.TabIndex = 4;
-            this.NewTeamBack.Text = "Back";
-            this.NewTeamBack.UseVisualStyleBackColor = false;
-            this.NewTeamBack.Click += new System.EventHandler(this.NewTeamBack_Click);
+            this.TeamsBack.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.TeamsBack.ForeColor = System.Drawing.Color.White;
+            this.TeamsBack.Location = new System.Drawing.Point(614, 388);
+            this.TeamsBack.Name = "TeamsBack";
+            this.TeamsBack.Size = new System.Drawing.Size(132, 58);
+            this.TeamsBack.TabIndex = 4;
+            this.TeamsBack.Text = "Back";
+            this.TeamsBack.UseVisualStyleBackColor = false;
+            this.TeamsBack.Click += new System.EventHandler(this.TeamsBack_Click);
             // 
-            // Newteam
+            // Teams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.NewTeamBack);
-            this.Controls.Add(this.Addp);
+            this.Controls.Add(this.TeamsBack);
+            this.Controls.Add(this.PlayersInfo);
             this.Controls.Add(this.Delete);
-            this.Controls.Add(this.Addt);
+            this.Controls.Add(this.AddT);
             this.Controls.Add(this.listBox1);
-            this.Name = "Newteam";
+            this.Name = "Teams";
             this.Size = new System.Drawing.Size(939, 557);
             this.ResumeLayout(false);
 
@@ -109,9 +109,9 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button Addt;
+        private System.Windows.Forms.Button AddT;
         private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.Button Addp;
-        private System.Windows.Forms.Button NewTeamBack;
+        private System.Windows.Forms.Button PlayersInfo;
+        private System.Windows.Forms.Button TeamsBack;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class nextbowler
+    partial class NextBowler
     {
         /// <summary> 
         /// Required designer variable.

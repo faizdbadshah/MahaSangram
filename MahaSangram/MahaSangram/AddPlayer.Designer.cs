@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class PlayerInfo
+    partial class AddPlayer
     {
         /// <summary> 
         /// Required designer variable.
@@ -66,14 +66,14 @@
             this.PlayerInfoBack.UseVisualStyleBackColor = false;
             this.PlayerInfoBack.Click += new System.EventHandler(this.PlayerInfoBack_Click);
             // 
-            // PlayerInfo
+            // AddPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PlayerInfoBack);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.PlayerName);
-            this.Name = "PlayerInfo";
+            this.Name = "AddPlayer";
             this.Size = new System.Drawing.Size(949, 523);
             this.ResumeLayout(false);
             this.PerformLayout();

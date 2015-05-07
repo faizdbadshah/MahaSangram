@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace MahaSangram
 {
-    public partial class Addplayerbutton : UserControl
+    public partial class Players : UserControl
     {
 
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
@@ -18,7 +18,7 @@ namespace MahaSangram
         private SqlDataReader players;
         string[] teamname;
 
-        public Addplayerbutton()
+        public Players()
         {
             InitializeComponent();
             connection.Open();

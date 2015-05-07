@@ -10,13 +10,13 @@ using System.Data.SqlClient;
 
 namespace MahaSangram
 {
-    public partial class Addteambutton : UserControl
+    public partial class AddTeam : UserControl
     {
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams;
         
-        public Addteambutton()
+        public AddTeam()
         {
             InitializeComponent();
             connection.Open();

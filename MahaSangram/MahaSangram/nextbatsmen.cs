@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace MahaSangram
 {
-    public partial class nextbatsmen : UserControl
+    public partial class NextBatsmen : UserControl
     {
         string[] batsmen;
         int i;
 
-        public nextbatsmen()
+        public NextBatsmen()
         {
             InitializeComponent();
         }
@@ -43,6 +43,7 @@ namespace MahaSangram
 
         public void initiate()
         {
+            comboBox1.Items.Clear();
             for (i = 0; i < batsmen.Length; i++)
             {
                 comboBox1.Items.Add(batsmen[i]);

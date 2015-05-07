@@ -12,14 +12,14 @@ namespace MahaSangram
     public partial class MasterForm : Form
     {
         Home H = new Home();
-        Newteam T = new Newteam();
+        Teams T = new Teams();
         SelectTeams ST = new SelectTeams();
         SelectPlayers SP = new SelectPlayers();
         Scorecard SC = new Scorecard();
         Stats Stats1 = new Stats();
-        Addteambutton A = new Addteambutton();
-        Addplayerbutton P = new Addplayerbutton();
-        PlayerInfo I = new PlayerInfo();
+        AddTeam A = new AddTeam();
+        Players P = new Players();
+        AddPlayer I = new AddPlayer();
         string[] abcde;
 
         public MasterForm()
@@ -33,9 +33,9 @@ namespace MahaSangram
             this.H.Teamsclicklistner(new EventHandler(team));
             this.H.Statsclicklistner(new EventHandler(newStats));
             this.T.Addtclicklistner(new EventHandler(add1));
-            this.T.Addpclicklistner(new EventHandler(add2));
+            this.T.PlayersInfoclicklistner(new EventHandler(add2));
             this.P.AddNewPlayerclicklistner(new EventHandler(add3));
-            this.T.NewTeamBackclicklistner(new EventHandler(back1));
+            this.T.TeamsBackclicklistner(new EventHandler(back1));
             this.A.AddteambuttonBackclicklistner(new EventHandler(back2));
             this.P.AddplayerbuttonBackclicklistner(new EventHandler(back3));
             this.I.PlayerInfoBackclicklistner(new EventHandler(back4));

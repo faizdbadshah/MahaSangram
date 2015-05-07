@@ -1,6 +1,6 @@
 ﻿namespace MahaSangram
 {
-    partial class nextbatsmen
+    partial class NextBatsmen
     {
         /// <summary> 
         /// Required designer variable.
@@ -52,13 +52,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // nextbatsmen
+            // NextBatsmen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "nextbatsmen";
+            this.Name = "NextBatsmen";
             this.Size = new System.Drawing.Size(263, 180);
             this.ResumeLayout(false);
 

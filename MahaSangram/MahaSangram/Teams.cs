@@ -10,14 +10,14 @@ using System.Data.SqlClient;
 
 namespace MahaSangram
 {
-    public partial class Newteam : UserControl
+    public partial class Teams : UserControl
     {
 
         private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
 
-        public Newteam()
+        public Teams()
         {
             InitializeComponent();
             connection.Open();
@@ -26,32 +26,22 @@ namespace MahaSangram
         
         public void Addtclicklistner(EventHandler handler)
         {
-            this.Addt.Click += handler;
+            this.AddT.Click += handler;
         }
-        public void NewTeamBackclicklistner(EventHandler handler)
+        public void TeamsBackclicklistner(EventHandler handler)
         {
-            this.NewTeamBack.Click += handler;
+            this.TeamsBack.Click += handler;
         }
-        public void Addpclicklistner(EventHandler handler)
+
+        public void PlayersInfoclicklistner(EventHandler handler)
         {
-            this.Addp.Click += handler;
+            this.PlayersInfo.Click += handler;
         }
         
         private void Addt_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void NewTeamBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Addp_Click(object sender, EventArgs e)
-        {
-            OnDataAvailable(null);
-        }
-
     
         private void Delete_Click(object sender, EventArgs e)
         {
@@ -118,6 +108,16 @@ namespace MahaSangram
                 listBox1.Items.Add(teams[1].ToString());
             }
             teams.Close();
+        }
+
+        private void PlayersInfo_Click(object sender, EventArgs e)
+        {
+            OnDataAvailable(null);
+        }
+
+        private void TeamsBack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

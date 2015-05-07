@@ -79,17 +79,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addplayerbutton.cs">
+    <Compile Include="Players.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Addplayerbutton.Designer.cs">
-      <DependentUpon>Addplayerbutton.cs</DependentUpon>
+    <Compile Include="Players.Designer.cs">
+      <DependentUpon>Players.cs</DependentUpon>
     </Compile>
-    <Compile Include="Addteambutton.cs">
+    <Compile Include="AddTeam.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Addteambutton.Designer.cs">
-      <DependentUpon>Addteambutton.cs</DependentUpon>
+    <Compile Include="AddTeam.Designer.cs">
+      <DependentUpon>AddTeam.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
@@ -114,35 +114,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="NewTeam.cs">
+    <Compile Include="Teams.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NewTeam.Designer.cs">
-      <DependentUpon>NewTeam.cs</DependentUpon>
+    <Compile Include="Teams.Designer.cs">
+      <DependentUpon>Teams.cs</DependentUpon>
     </Compile>
-    <Compile Include="nextbatsmen.cs">
+    <Compile Include="NextBatsmen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nextbatsmen.Designer.cs">
-      <DependentUpon>nextbatsmen.cs</DependentUpon>
+    <Compile Include="NextBatsmen.Designer.cs">
+      <DependentUpon>NextBatsmen.cs</DependentUpon>
     </Compile>
-    <Compile Include="nextbowler.cs">
+    <Compile Include="NextBowler.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nextbowler.Designer.cs">
-      <DependentUpon>nextbowler.cs</DependentUpon>
+    <Compile Include="NextBowler.Designer.cs">
+      <DependentUpon>NextBowler.cs</DependentUpon>
     </Compile>
-    <Compile Include="overs.cs">
+    <Compile Include="Overs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="overs.Designer.cs">
-      <DependentUpon>overs.cs</DependentUpon>
+    <Compile Include="Overs.Designer.cs">
+      <DependentUpon>Overs.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlayerInfo.cs">
+    <Compile Include="AddPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PlayerInfo.Designer.cs">
-      <DependentUpon>PlayerInfo.cs</DependentUpon>
+    <Compile Include="AddPlayer.Designer.cs">
+      <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,11 +176,11 @@
     <Compile Include="Toss.Designer.cs">
       <DependentUpon>Toss.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Addplayerbutton.resx">
-      <DependentUpon>Addplayerbutton.cs</DependentUpon>
+    <EmbeddedResource Include="Players.resx">
+      <DependentUpon>Players.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Addteambutton.resx">
-      <DependentUpon>Addteambutton.cs</DependentUpon>
+    <EmbeddedResource Include="AddTeam.resx">
+      <DependentUpon>AddTeam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -191,20 +191,20 @@
     <EmbeddedResource Include="MasterForm.resx">
       <DependentUpon>MasterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Newteam.resx">
-      <DependentUpon>NewTeam.cs</DependentUpon>
+    <EmbeddedResource Include="Teams.resx">
+      <DependentUpon>Teams.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nextbatsmen.resx">
-      <DependentUpon>nextbatsmen.cs</DependentUpon>
+    <EmbeddedResource Include="NextBatsmen.resx">
+      <DependentUpon>NextBatsmen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nextbowler.resx">
-      <DependentUpon>nextbowler.cs</DependentUpon>
+    <EmbeddedResource Include="NextBowler.resx">
+      <DependentUpon>NextBowler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="overs.resx">
-      <DependentUpon>overs.cs</DependentUpon>
+    <EmbeddedResource Include="Overs.resx">
+      <DependentUpon>Overs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlayerInfo.resx">
-      <DependentUpon>PlayerInfo.cs</DependentUpon>
+    <EmbeddedResource Include="AddPlayer.resx">
+      <DependentUpon>AddPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
