@@ -24,7 +24,6 @@ C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFr
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFramework.dll
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
-C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Form1.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.master.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Properties.Resources.resources
 C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csproj.GenerateResource.Cache
@@ -108,3 +107,17 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Players.
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.AddTeam.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Teams.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.AddPlayer.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Players.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.AddTeam.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Home.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.MasterForm.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Teams.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.NextBatsmen.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.NextBowler.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Overs.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.AddPlayer.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Scorecard.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectPlayers.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.SelectTeams.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Stats.resources
+C:\Users\Chaitanya\Desktop\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Toss.resources

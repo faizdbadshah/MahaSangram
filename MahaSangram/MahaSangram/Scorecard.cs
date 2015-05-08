@@ -12,7 +12,7 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0;
+        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0, y;
         string[] pet;
         double overs;
         int[] record = new int[150];
@@ -29,6 +29,10 @@ namespace MahaSangram
         private SqlDataReader teams, players;
         NextBatsmen NB = new NextBatsmen();
         string remainingbatsmen;
+        string[] players1id = new string[11];
+        string[] players2id = new string[11];
+        string[] swapplayers = new string[11];
+        string[] swapplayersid = new string[11];
 
         public Scorecard()
         {
@@ -43,180 +47,228 @@ namespace MahaSangram
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
+            if(metroRadioButton1.Checked==true)
+            {
+                Submit.Enabled = true;
+            }
         }
 
         private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton2.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton3.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton4.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton13.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton5.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton13.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton7.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton13.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton6.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton7.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton13.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton6.Checked = false;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
+            if (metroRadioButton7.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton6.Checked = false;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+            }
         }
 
         private void metroRadioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
-            metroRadioButton16.Checked = false;
+            if (metroRadioButton8.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+                metroRadioButton16.Checked = false;
+            }
         }
 
         private void metroRadioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton6.Checked = false;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
+            if (metroRadioButton9.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton6.Checked = false;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+            }
         }
 
         private void metroRadioButton10_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton6.Checked = false;
-            metroRadioButton11.Checked = false;
-            metroRadioButton12.Checked = false;
-            metroRadioButton14.Checked = false;
-            metroRadioButton15.Checked = false;
+            if (metroRadioButton10.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton6.Checked = false;
+                metroRadioButton11.Checked = false;
+                metroRadioButton12.Checked = false;
+                metroRadioButton14.Checked = false;
+                metroRadioButton15.Checked = false;
+            }
         }
 
         private void metroRadioButton11_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton7.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
+            if (metroRadioButton11.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton7.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+            }
         }
 
         private void metroRadioButton12_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton7.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
+            if (metroRadioButton12.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton7.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+            }
         }
 
         private void metroRadioButton13_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
+            if (metroRadioButton13.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+            }
         }
 
         private void metroRadioButton14_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
+            if (metroRadioButton14.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+            }
         }
 
         private void metroRadioButton15_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
+            if (metroRadioButton15.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+            }
         }
 
         private void metroRadioButton16_CheckedChanged(object sender, EventArgs e)
         {
-            Submit.Enabled = true;
-            metroRadioButton1.Checked = false;
-            metroRadioButton2.Checked = false;
-            metroRadioButton3.Checked = false;
-            metroRadioButton4.Checked = false;
-            metroRadioButton5.Checked = false;
-            metroRadioButton6.Checked = false;
-            metroRadioButton8.Checked = false;
-            metroRadioButton9.Checked = false;
-            metroRadioButton10.Checked = false;
+            if (metroRadioButton16.Checked == true)
+            {
+                Submit.Enabled = true;
+                metroRadioButton1.Checked = false;
+                metroRadioButton2.Checked = false;
+                metroRadioButton3.Checked = false;
+                metroRadioButton4.Checked = false;
+                metroRadioButton5.Checked = false;
+                metroRadioButton6.Checked = false;
+                metroRadioButton8.Checked = false;
+                metroRadioButton9.Checked = false;
+                metroRadioButton10.Checked = false;
+            }
         }
 
         public string Data
@@ -354,6 +406,8 @@ namespace MahaSangram
                 metroRadioButton16.Enabled = true;
                 Submit.Enabled = false;
                 Reset.Enabled = true;
+
+                setopeningbatsmenandbowler();
             }
             else
             {
@@ -427,10 +481,10 @@ namespace MahaSangram
             this.Controls.Add(O);
             O.BringToFront();
 
-            for (i = 0; i < 11; i++)
+            for (x = 0; x < 11; x++)
             {
-                players1[i] = playersnames[i + 1];
-                players2[i] = playersnames[i + 12];
+                players1[x] = playersnames[x + 1];
+                players2[x] = playersnames[x + 12];
             }
 
             teamname[0] = playersnames[23];
@@ -469,7 +523,24 @@ namespace MahaSangram
             chart1.Series[teamname[0]].Points.AddXY(0, 0);
             chart1.Series[teamname[1]].Points.AddXY(0, 0);
 
-            
+            for (x = 0; x < 11; x++)
+            {
+                query.CommandText = "select Player_Id from Players where Team = '" + teamname[0] + "' AND Name = '" + players1[x] + "'";
+                players = query.ExecuteReader();
+                while (players.Read())
+                {
+                    players1id[x] = players[0].ToString();
+                }
+                players.Close();
+
+                query.CommandText = "select Player_Id from Players where Team = '" + teamname[1] + "' AND Name = '" + players2[x] + "'";
+                players = query.ExecuteReader();
+                while (players.Read())
+                {
+                    players2id[x] = players[0].ToString();
+                }
+                players.Close();
+            }
         }
 
         private void generateScorecard()
@@ -616,6 +687,8 @@ namespace MahaSangram
             {
                 wickets++;
 
+                remainingbatsmen = "";
+
                 if(wickets!=10)
                 {
                     if (firstteambatting == true)
@@ -642,7 +715,6 @@ namespace MahaSangram
                     }
 
                     NB.Data = remainingbatsmen;
-                    remainingbatsmen = "";
                     NB.Dock = DockStyle.None;
                     this.Controls.Add(NB);
                     NB.BringToFront();
@@ -777,12 +849,142 @@ namespace MahaSangram
                 }
                 this.Controls.Remove(T);
                 initializedatagridviews();
+                setopeningbatsmenandbowler();
             }
         }
 
         public void setbatsmen(object sender, EventArgs e)
         {
-            MessageBox.Show(NB.Data);
+            pet = NB.Data.Split(new Char[] { ',' });
+
+            if(wickets==0)
+            {
+                swapplayers[0] = pet[0];
+                swapplayers[1] = pet[1];
+
+                if (firstteambatting == true)
+                {
+                    for (x = 0, y = 2; x < 11; x++)
+                    {
+                        if (players1[x] != swapplayers[0] && players1[x] != swapplayers[1])
+                        {
+                            swapplayers[y] = players1[x];
+                            swapplayersid[y] = players1id[x];
+                            y++;
+                        }
+                        else
+                        {
+                            if (players1[x] == swapplayers[0])
+                            {
+                                swapplayersid[0] = players1id[x];
+                            }
+                            else
+                            {
+                                swapplayersid[1] = players1id[x];
+                            }
+                        }
+                    }
+
+                    for (x = 0; x < 11; x++)
+                    {
+                        players1[x] = swapplayers[x];
+                        players1id[x] = swapplayersid[x];
+                    }
+                }
+                else
+                {
+                    for (x = 0, y = 2; x < 11; x++)
+                    {
+                        if (players2[x] != swapplayers[0] && players2[x] != swapplayers[1])
+                        {
+                            swapplayers[y] = players2[x];
+                            swapplayersid[y] = players2id[x];
+                            y++;
+                        }
+                        else
+                        {
+                            if (players2[x] == swapplayers[0])
+                            {
+                                swapplayersid[0] = players2id[x];
+                            }
+                            else
+                            {
+                                swapplayersid[1] = players2id[x];
+                            }
+                        }
+                    }
+
+                    for (x = 0; x < 11; x++)
+                    {
+                        players2[x] = swapplayers[x];
+                        players2id[x] = swapplayersid[x];
+                    }
+                }
+            }
+            else
+            {
+                swapplayers[wickets+1] = pet[0];
+
+                if (firstteambatting == true)
+                {
+                    for (x = 0, y = 0; x < 11; x++,y++)
+                    {
+                        if (y == (wickets + 1))
+                        {
+                            x--;
+                        }
+                        else
+                        {
+                            if (players1[x] != swapplayers[wickets+1])
+                            {
+                                swapplayers[y] = players1[x];
+                                swapplayersid[y] = players1id[x];
+                            }
+                            else
+                            {
+                                swapplayersid[wickets + 1] = players1[x];
+                                x++;
+                            }
+                        }
+                    }
+
+                    for (x = 0; x < 11; x++)
+                    {
+                        players1[x] = swapplayers[x];
+                        players1id[x] = swapplayersid[x];
+                    }
+                }
+                else
+                {
+                    for (x = 0, y = 0; x < 11; x++, y++)
+                    {
+                        if (y == (wickets + 1))
+                        {
+                            x--;
+                        }
+                        else
+                        {
+                            if (players2[x] != swapplayers[wickets+1])
+                            {
+                                swapplayers[y] = players2[x];
+                                swapplayersid[y] = players2id[x];
+                            }
+                            else
+                            {
+                                swapplayersid[wickets + 1] = players2[x];
+                                x++;
+                            }
+                        }
+                    }
+
+                    for (x = 0; x < 11; x++)
+                    {
+                        players2[x] = swapplayers[x];
+                        players2id[x] = swapplayersid[x];
+                    }
+                }
+            }
+
             this.Controls.Remove(NB);
         }
 
@@ -847,6 +1049,41 @@ namespace MahaSangram
                 dataGridView2.Visible = false;
                 dataGridView3.Visible = false;
             }
+        }
+
+        private void setopeningbatsmenandbowler()
+        {
+            remainingbatsmen = "";
+
+            if (firstteambatting == true)
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    remainingbatsmen = remainingbatsmen + players1[i];
+                    if (i < 11)
+                    {
+                        remainingbatsmen = remainingbatsmen + ",";
+                    }
+                }
+            }
+            else
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    remainingbatsmen = remainingbatsmen + players2[i];
+                    if (i < 11)
+                    {
+                        remainingbatsmen = remainingbatsmen + ",";
+                    }
+                }
+            }
+
+            NB.Data = remainingbatsmen;
+            NB.Dock = DockStyle.None;
+            this.Controls.Add(NB);
+            NB.BringToFront();
+            NB.initiate();
+            NB.initiate2();
         }
     }
 }
