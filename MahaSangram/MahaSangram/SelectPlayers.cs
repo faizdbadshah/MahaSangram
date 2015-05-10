@@ -107,6 +107,12 @@ namespace MahaSangram
                 checkedListBox2.Items.Add(players[0].ToString());
             }
             players.Close();
+
+            for(int i = 0; i < 11; i++)
+            {
+                checkedListBox1.SetItemChecked(i, true);
+                checkedListBox2.SetItemChecked(i, true);
+            }
         }
     }
 }

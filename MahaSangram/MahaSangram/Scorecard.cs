@@ -12,7 +12,7 @@ namespace MahaSangram
 {
     public partial class Scorecard : UserControl
     {
-        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0, y;
+        int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0, y, z;
         string[] pet;
         double overs;
         int[] record = new int[150];
@@ -408,6 +408,26 @@ namespace MahaSangram
                 Reset.Enabled = true;
 
                 setopeningbatsmenandbowler();
+
+                if (firstteambatting == true)
+                {
+                    dataGridView1.Visible = true;
+                    dataGridView2.Visible = true;
+                    dataGridView3.Visible = true;
+                    dataGridView4.Visible = false;
+                    dataGridView5.Visible = false;
+                    dataGridView6.Visible = false;
+
+                }
+                else
+                {
+                    dataGridView4.Visible = true;
+                    dataGridView5.Visible = true;
+                    dataGridView6.Visible = true;
+                    dataGridView1.Visible = false;
+                    dataGridView2.Visible = false;
+                    dataGridView3.Visible = false;
+                }
             }
             else
             {
@@ -706,7 +726,7 @@ namespace MahaSangram
                     {
                         for (i = wickets; i < 10; i++)
                         {
-                            remainingbatsmen = remainingbatsmen + players2[i + 1] + ",";
+                            remainingbatsmen = remainingbatsmen + players2[i + 1];
                             if (i < 9)
                             {
                                 remainingbatsmen = remainingbatsmen + ",";
@@ -872,16 +892,53 @@ namespace MahaSangram
                             swapplayersid[y] = players1id[x];
                             y++;
                         }
+                        else if (players1[x] == swapplayers[0] )
+                        {
+                            swapplayersid[0] = players1id[x];
+                            dataGridView2.Rows.InsertCopy(x, 0);
+                            for (z = 0; z < 10; z++)
+                            {
+                                dataGridView2.Rows[0].Cells[z].Value = dataGridView2.Rows[x + 1].Cells[z].Value;
+                            }
+                            dataGridView2.Rows.RemoveAt(x + 1);
+                            dataGridView1.Rows.InsertCopy(x, 0);
+                            dataGridView1.Rows[0].Cells[0].Value = dataGridView1.Rows[x + 1].Cells[0].Value;
+                            dataGridView1.Rows[0].Cells[1].Value = "";
+                            dataGridView1.Rows[0].Cells[2].Value = 0;
+                            dataGridView1.Rows[0].Cells[3].Value = 0;
+                            dataGridView1.Rows.RemoveAt(x + 1);
+                        }
+                        else if(Convert.ToString(dataGridView1.Rows[0].Cells[0].Value) != swapplayers[0])
+                        {
+                            swapplayersid[1] = players1id[x];
+                            dataGridView2.Rows.InsertCopy(x, 0);
+                            for (z = 0; z < 10; z++)
+                            {
+                                dataGridView2.Rows[0].Cells[z].Value = dataGridView2.Rows[x + 1].Cells[z].Value;
+                            }
+                            dataGridView2.Rows.RemoveAt(x + 1);
+                            dataGridView1.Rows.InsertCopy(x, 0);
+                            dataGridView1.Rows[0].Cells[0].Value = dataGridView1.Rows[x + 1].Cells[0].Value;
+                            dataGridView1.Rows[0].Cells[1].Value = "";
+                            dataGridView1.Rows[0].Cells[2].Value = 0;
+                            dataGridView1.Rows[0].Cells[3].Value = 0;
+                            dataGridView1.Rows.RemoveAt(x + 1);
+                        }
                         else
                         {
-                            if (players1[x] == swapplayers[0])
+                            swapplayersid[1] = players1id[x];
+                            dataGridView2.Rows.InsertCopy(x, 1);
+                            for (z = 0; z < 10; z++)
                             {
-                                swapplayersid[0] = players1id[x];
+                                dataGridView2.Rows[1].Cells[z].Value = dataGridView2.Rows[x + 1].Cells[z].Value;
                             }
-                            else
-                            {
-                                swapplayersid[1] = players1id[x];
-                            }
+                            dataGridView2.Rows.RemoveAt(x + 1);
+                            dataGridView1.Rows.InsertCopy(x, 1);
+                            dataGridView1.Rows[1].Cells[0].Value = dataGridView1.Rows[x + 1].Cells[0].Value;
+                            dataGridView1.Rows[1].Cells[1].Value = "";
+                            dataGridView1.Rows[1].Cells[2].Value = 0;
+                            dataGridView1.Rows[1].Cells[3].Value = 0;
+                            dataGridView1.Rows.RemoveAt(x + 1);                                
                         }
                     }
 
@@ -901,16 +958,53 @@ namespace MahaSangram
                             swapplayersid[y] = players2id[x];
                             y++;
                         }
+                        else if (players2[x] == swapplayers[0])
+                        {
+                            swapplayersid[0] = players2id[x];
+                            dataGridView5.Rows.InsertCopy(x, 0);
+                            for (z = 0; z < 10; z++)
+                            {
+                                dataGridView5.Rows[0].Cells[z].Value = dataGridView5.Rows[x + 1].Cells[z].Value;
+                            }
+                            dataGridView5.Rows.RemoveAt(x + 1);
+                            dataGridView4.Rows.InsertCopy(x, 0);
+                            dataGridView4.Rows[0].Cells[0].Value = dataGridView4.Rows[x + 1].Cells[0].Value;
+                            dataGridView4.Rows[0].Cells[1].Value = "";
+                            dataGridView4.Rows[0].Cells[2].Value = 0;
+                            dataGridView4.Rows[0].Cells[3].Value = 0;
+                            dataGridView4.Rows.RemoveAt(x + 1);
+                        }
+                        else if (Convert.ToString(dataGridView4.Rows[0].Cells[0].Value) != swapplayers[0])
+                        {
+                            swapplayersid[1] = players2id[x];
+                            dataGridView5.Rows.InsertCopy(x, 0);
+                            for (z = 0; z < 10; z++)
+                            {
+                                dataGridView5.Rows[0].Cells[z].Value = dataGridView5.Rows[x + 1].Cells[z].Value;
+                            }
+                            dataGridView5.Rows.RemoveAt(x + 1);
+                            dataGridView4.Rows.InsertCopy(x, 0);
+                            dataGridView4.Rows[0].Cells[0].Value = dataGridView4.Rows[x + 1].Cells[0].Value;
+                            dataGridView4.Rows[0].Cells[1].Value = "";
+                            dataGridView4.Rows[0].Cells[2].Value = 0;
+                            dataGridView4.Rows[0].Cells[3].Value = 0;
+                            dataGridView4.Rows.RemoveAt(x + 1);
+                        }
                         else
                         {
-                            if (players2[x] == swapplayers[0])
+                            swapplayersid[1] = players2id[x];
+                            dataGridView5.Rows.InsertCopy(x, 1);
+                            for (z = 0; z < 10; z++)
                             {
-                                swapplayersid[0] = players2id[x];
+                                dataGridView5.Rows[1].Cells[z].Value = dataGridView5.Rows[x + 1].Cells[z].Value;
                             }
-                            else
-                            {
-                                swapplayersid[1] = players2id[x];
-                            }
+                            dataGridView5.Rows.RemoveAt(x + 1);
+                            dataGridView4.Rows.InsertCopy(x, 1);
+                            dataGridView4.Rows[1].Cells[0].Value = dataGridView4.Rows[x + 1].Cells[0].Value;
+                            dataGridView4.Rows[1].Cells[1].Value = "";
+                            dataGridView4.Rows[1].Cells[2].Value = 0;
+                            dataGridView4.Rows[1].Cells[3].Value = 0;
+                            dataGridView4.Rows.RemoveAt(x + 1);
                         }
                     }
 
@@ -943,6 +1037,18 @@ namespace MahaSangram
                             else
                             {
                                 swapplayersid[wickets + 1] = players1[x];
+                                dataGridView2.Rows.InsertCopy(x , wickets + 1);
+                                for (z = 0; z < 10; z++)
+                                {
+                                    dataGridView2.Rows[wickets + 1].Cells[z].Value = dataGridView2.Rows[x + 1].Cells[z].Value;
+                                }
+                                dataGridView2.Rows.RemoveAt(x + 1);
+                                dataGridView1.Rows.InsertCopy(x, wickets + 1);
+                                dataGridView1.Rows[wickets + 1].Cells[0].Value = dataGridView1.Rows[x + 1].Cells[0].Value;
+                                dataGridView1.Rows[wickets + 1].Cells[1].Value = "";
+                                dataGridView1.Rows[wickets + 1].Cells[2].Value = 0;
+                                dataGridView1.Rows[wickets + 1].Cells[3].Value = 0;
+                                dataGridView1.Rows.RemoveAt(x + 1);
                                 x++;
                             }
                         }
@@ -952,7 +1058,7 @@ namespace MahaSangram
                     {
                         players1[x] = swapplayers[x];
                         players1id[x] = swapplayersid[x];
-                    }
+                    }       
                 }
                 else
                 {
@@ -964,7 +1070,7 @@ namespace MahaSangram
                         }
                         else
                         {
-                            if (players2[x] != swapplayers[wickets+1])
+                            if (players2[x] != swapplayers[wickets + 1])
                             {
                                 swapplayers[y] = players2[x];
                                 swapplayersid[y] = players2id[x];
@@ -972,6 +1078,18 @@ namespace MahaSangram
                             else
                             {
                                 swapplayersid[wickets + 1] = players2[x];
+                                dataGridView5.Rows.InsertCopy(x, wickets + 1);
+                                for (z = 0; z < 10; z++)
+                                {
+                                    dataGridView5.Rows[wickets + 1].Cells[z].Value = dataGridView5.Rows[x + 1].Cells[z].Value;
+                                }
+                                dataGridView5.Rows.RemoveAt(x + 1);
+                                dataGridView4.Rows.InsertCopy(x, wickets + 1);
+                                dataGridView4.Rows[wickets + 1].Cells[0].Value = dataGridView4.Rows[x + 1].Cells[0].Value;
+                                dataGridView4.Rows[wickets + 1].Cells[1].Value = "";
+                                dataGridView4.Rows[wickets + 1].Cells[2].Value = 0;
+                                dataGridView4.Rows[wickets + 1].Cells[3].Value = 0;
+                                dataGridView4.Rows.RemoveAt(x + 1);
                                 x++;
                             }
                         }
@@ -998,6 +1116,7 @@ namespace MahaSangram
                 dataGridView4.Visible = false;
                 dataGridView5.Visible = false;
                 dataGridView6.Visible = false;
+                
             }
             else
             {
@@ -1013,12 +1132,19 @@ namespace MahaSangram
             {
                 dataGridView2.Rows.Add();
                 dataGridView2.Rows[i].Cells[0].Value = players1[i];
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[i].Cells[0].Value = players1[i];
+                dataGridView1.Rows[i].Cells[1].Value = "Still To Bat";
                 for (j = 1; j < 10; j++)
                 {
                     dataGridView2.Rows[i].Cells[j].Value = 0;
                 }
+
                 dataGridView5.Rows.Add();
                 dataGridView5.Rows[i].Cells[0].Value = players2[i];
+                dataGridView4.Rows.Add();
+                dataGridView4.Rows[i].Cells[0].Value = players2[i];
+                dataGridView4.Rows[i].Cells[1].Value = "Still To Bat";
                 for (j = 1; j < 10; j++)
                 {
                     dataGridView5.Rows[i].Cells[j].Value = 0;
@@ -1026,7 +1152,9 @@ namespace MahaSangram
             }
 
             dataGridView2.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToAddRows = false;
             dataGridView5.AllowUserToAddRows = false;
+            dataGridView4.AllowUserToAddRows = false;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1087,3 +1215,5 @@ namespace MahaSangram
         }
     }
 }
+
+
