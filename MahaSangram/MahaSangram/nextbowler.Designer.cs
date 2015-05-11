@@ -35,7 +35,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(213, 66);
+            this.comboBox1.Location = new System.Drawing.Point(31, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(206, 21);
             this.comboBox1.TabIndex = 0;
@@ -43,7 +43,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(273, 113);
+            this.button1.Location = new System.Drawing.Point(96, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -58,7 +58,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Name = "NextBowler";
-            this.Size = new System.Drawing.Size(740, 449);
+            this.Size = new System.Drawing.Size(277, 127);
             this.ResumeLayout(false);
 
         }

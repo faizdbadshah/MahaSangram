@@ -1,9 +1,8 @@
 necesarry
 
-2. select next bowler at over end                (design uc)
-3. update values of datagrid views in scorecard (scorecard ,batting stats and bowling stats)
-5. input values in db when match ends
-6. design overview in scorecard
+3. update values of datagrid views in scorecard (bowling stats)
+5. input values in db when match ends (players left)
+
 
 extras
 
@@ -20,6 +19,7 @@ extras
 11. upgrade toss to let toss happen in software
 12. reduce the overs of the match in the middle
 13. who is getting run out
+14. design overview in scorecard
 
 fixes
 
