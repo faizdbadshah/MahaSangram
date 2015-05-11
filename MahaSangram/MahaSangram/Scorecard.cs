@@ -14,6 +14,7 @@ namespace MahaSangram
     {
         int a, b, c, d, balls, runs, i, k, l, wickets, f, maxovers=8, j, x=0, y, z;
         string[] pet;
+        string selectedbowler;
         double overs;
         int[] record = new int[150];
         string[] playersnames;
@@ -28,7 +29,8 @@ namespace MahaSangram
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
         NextBatsmen NB = new NextBatsmen();
-        string remainingbatsmen;
+        NextBowler NBW = new NextBowler();
+        string remainingbatsmen, remainingbowler;
         string[] players1id = new string[11];
         string[] players2id = new string[11];
         string[] swapplayers = new string[11];
@@ -41,6 +43,7 @@ namespace MahaSangram
            this.T.button1clicklistner(new EventHandler(settoss));
            this.T.button2clicklistner(new EventHandler(settoss));
            this.NB.button1clicklistner(new EventHandler(setbatsmen));
+           this.NBW.button1clicklistner(new EventHandler(setbowler));
            connection.Open();
            query.Connection = connection;
         }
@@ -699,8 +702,44 @@ namespace MahaSangram
 
             if (balls % 6 == 0)
             {
+                remainingbowler = "";
                 overs = Convert.ToInt32(overs);
-                // user control bowler
+
+                if (firstteambatting == true)
+                {
+                    for (i = 0; i <= 10; i++)
+                    {
+                        if(players2[i]!= selectedbowler)
+                        {
+                            remainingbowler = remainingbowler + players2[i];
+                            if (i <= 9)
+                            {
+                                remainingbowler = remainingbowler + ",";
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    for (i = 0; i <= 10; i++)
+                    {
+                        if (players1[i] != selectedbowler)
+                        {
+                            remainingbowler = remainingbowler + players1[i];
+                            if (i <= 9)
+                            {
+                                remainingbowler = remainingbowler + ",";
+                            }
+                        }
+                    }
+                }
+               
+                NBW.Data = remainingbowler;
+                NBW.Dock = DockStyle.None;
+                this.Controls.Add(NBW);
+                NBW.BringToFront();
+                NBW.initiate();
+
             }
 
             if (f > 0 && f < 7)
@@ -1188,7 +1227,7 @@ namespace MahaSangram
                 for (i = 0; i < 11; i++)
                 {
                     remainingbatsmen = remainingbatsmen + players1[i];
-                    if (i < 11)
+                    if (i < 10)
                     {
                         remainingbatsmen = remainingbatsmen + ",";
                     }
@@ -1199,7 +1238,7 @@ namespace MahaSangram
                 for (i = 0; i < 11; i++)
                 {
                     remainingbatsmen = remainingbatsmen + players2[i];
-                    if (i < 11)
+                    if (i < 10)
                     {
                         remainingbatsmen = remainingbatsmen + ",";
                     }
@@ -1212,6 +1251,43 @@ namespace MahaSangram
             NB.BringToFront();
             NB.initiate();
             NB.initiate2();
+
+            remainingbowler = "";
+            if (firstteambatting == true)
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    remainingbowler = remainingbowler + players2[i];
+                    if (i < 10)
+                    {
+                        remainingbowler = remainingbowler + ",";
+                    }
+                }
+            }
+            else
+            {
+                for (i = 0; i < 11; i++)
+                {
+                    remainingbowler = remainingbowler + players1[i];
+                    if (i < 10)
+                    {
+                        remainingbowler = remainingbowler + ",";
+                    }
+                }
+            }
+
+            NBW.Data = remainingbowler;
+            NBW.Dock = DockStyle.None;
+            this.Controls.Add(NBW);
+            NBW.BringToFront();
+            NBW.initiate();
+            
+        }
+
+        public void setbowler(object sender, EventArgs e)
+        {
+            selectedbowler = NBW.Data;
+            this.Controls.Remove(NBW);
         }
     }
 }
