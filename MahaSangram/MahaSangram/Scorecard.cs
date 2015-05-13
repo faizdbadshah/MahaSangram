@@ -442,6 +442,8 @@ namespace MahaSangram
                 }
 
                 strike = true;
+                firstplayer = 0;
+                secondplayer = 1;
             }
             else
             {
@@ -471,8 +473,31 @@ namespace MahaSangram
                     teams = query.ExecuteReader();
                     teams.Close();
                 }
+
+                for (x = 0; x < 11; x++)
+                {
+                    query.CommandText = "update Players set Matches_Played = ((select Matches_Played from Players where Player_Id = '" + players1id[x] + "') + 1) where Player_Id = '" + players1id[x] + "'";
+                    players = query.ExecuteReader();
+                    players.Close();
+                    query.CommandText = "update Players set Matches_Played = ((select Matches_Played from Players where Player_Id = '" + players2id[x] + "') + 1) where Player_Id = '" + players2id[x] + "'";
+                    players = query.ExecuteReader();
+                    players.Close();
+
+                    if (dataGridView1.Rows[x].Cells[1].Value != "Still To Bat")
+                    {
+                        query.CommandText = "update Players set Innings = ((select Innings from Players where Player_Id = '" + players1id[x] + "') + 1) , Runs = ((select Runs from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView1.Rows[x].Cells[2].Value + ") , Balls_Played = ((select Balls_Played from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView1.Rows[x].Cells[3].Value + ") , Sixes = ((select Sixes from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[8].Value + ") , Fours = ((select Fours from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[7].Value + ") , Triples = ((select Triples from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[6].Value + ") , Doubles = ((select Doubles from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[5].Value + ") , Singles = ((select Singles from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[4].Value + ") , Dots = ((select Dots from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[3].Value + ") where Player_Id = '" + players1id[x] + "'";
+                        players = query.ExecuteReader();
+                        players.Close();
+                    }
+
+                    if (dataGridView4.Rows[x].Cells[1].Value != "Still To Bat")
+                    {
+                        query.CommandText = "update Players set Innings = ((select Innings from Players where Player_Id = '" + players2id[x] + "') + 1) , Runs = ((select Runs from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView4.Rows[x].Cells[2].Value + ") , Balls_Played = ((select Balls_Played from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView4.Rows[x].Cells[3].Value + ") , Sixes = ((select Sixes from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[8].Value + ") , Fours = ((select Fours from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[7].Value + ") , Triples = ((select Triples from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[6].Value + ") , Doubles = ((select Doubles from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[5].Value + ") , Singles = ((select Singles from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[4].Value + ") , Dots = ((select Dots from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[3].Value + ") where Player_Id = '" + players2id[x] + "'";
+                        players = query.ExecuteReader();
+                        players.Close();
+                    }
+                }
             }
-            
 
             if(firstinnings==false)
             {
@@ -1481,7 +1506,7 @@ namespace MahaSangram
             }
             else
             {
-                for (x = 0; x < dataGridView3.Rows.Count; x++)
+                for (x = 0; x < dataGridView6.Rows.Count; x++)
                 {
                     if (dataGridView6.Rows[x].Cells[0].Value == selectedbowler)
                     {
@@ -1492,8 +1517,8 @@ namespace MahaSangram
 
                 if (temp == true)
                 {
-                    dataGridView3.Rows.Add();
-                    dataGridView2.Rows[i].Cells[0].Value = selectedbowler;
+                    dataGridView6.Rows.Add();
+                    dataGridView5.Rows[i].Cells[0].Value = selectedbowler;
                 }
             }
         }

@@ -6,17 +6,25 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MahaSangram
 {
     public partial class Home : UserControl
     {
 
+        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlCommand query = new SqlCommand();
+        private SqlDataReader teams, players;
+
+
         int a;
       
         public Home()
         {
             InitializeComponent();
+            connection.Open();
+            query.Connection = connection;
           
             if (Properties.Settings.Default.TournamentStart == true)
             {
@@ -94,6 +102,10 @@ namespace MahaSangram
             Properties.Settings.Default.Save();
             Teams.Enabled = true;
             Match.Text = "Start Tournament";
+
+            query.CommandText = "update Players set Matches_Played = 0 , Innings = 0 , Runs = 0 , Balls_Played = 0";
+            teams = query.ExecuteReader();
+            teams.Close();
         }
 
         private void Settings_Click(object sender, EventArgs e)
