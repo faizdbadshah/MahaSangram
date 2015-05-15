@@ -320,7 +320,7 @@ namespace MahaSangram
                 settempvariables();
                 updatetables();
                 generateGraph();
-                generateScorecard();
+                updatelables();
                                 
                 metroRadioButton1.Checked = false;
                 metroRadioButton2.Checked = false;
@@ -447,7 +447,6 @@ namespace MahaSangram
             }
             else
             {
-                //end match ki coding
                 query.CommandText = "update teams set Matches = ((select Matches from teams where team_name = '" + teamname[0] + "') + 1) where team_name = '" + teamname[0] + "'";
                 teams = query.ExecuteReader();
                 teams.Close();
@@ -630,7 +629,7 @@ namespace MahaSangram
             }
         }
 
-        private void generateScorecard()
+        private void updatelables()
         {
             if(firstteambatting==true)
             {
@@ -655,7 +654,7 @@ namespace MahaSangram
                 label17.Text = Convert.ToString(Convert.ToInt32(label17.Text) + Convert.ToInt32(1));
             }
 
-            else if (d == 1)
+            if (d == 1)
             {
                 label18.Text = Convert.ToString(Convert.ToInt32(label18.Text) + Convert.ToInt32(b));
             }
@@ -698,14 +697,92 @@ namespace MahaSangram
                     strike = true;
                 }
             }
+
+            if (balls % 6 == 0 && c != 1 && c != 2)
+            {
+                remainingbowler = "";
+              
+                if (overs < maxovers)
+                {
+                    if (firstteambatting == true)
+                    {
+                        for (i = 0; i <= 10; i++)
+                        {
+                            if (players2[i] != selectedbowler)
+                            {
+                                remainingbowler = remainingbowler + players2[i];
+                                if (i <= 9)
+                                {
+                                    remainingbowler = remainingbowler + ",";
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (i = 0; i <= 10; i++)
+                        {
+                            if (players1[i] != selectedbowler)
+                            {
+                                remainingbowler = remainingbowler + players1[i];
+                                if (i <= 9)
+                                {
+                                    remainingbowler = remainingbowler + ",";
+                                }
+                            }
+                        }
+                    }
+
+                    NBW.Data = remainingbowler;
+                    NBW.Dock = DockStyle.None;
+                    this.Controls.Add(NBW);
+                    NBW.BringToFront();
+                    NBW.initiate();
+                }
+            }
+
+            if (f > 0 && f < 7)
+            {
+                remainingbatsmen = "";
+
+                if (wickets != 10)
+                {
+                    if (firstteambatting == true)
+                    {
+                        for (i = wickets; i < 10; i++)
+                        {
+                            remainingbatsmen = remainingbatsmen + players1[i + 1];
+                            if (i < 9)
+                            {
+                                remainingbatsmen = remainingbatsmen + ",";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (i = wickets; i < 10; i++)
+                        {
+                            remainingbatsmen = remainingbatsmen + players2[i + 1];
+                            if (i < 9)
+                            {
+                                remainingbatsmen = remainingbatsmen + ",";
+                            }
+                        }
+                    }
+
+                    NB.Data = remainingbatsmen;
+                    NB.Dock = DockStyle.None;
+                    this.Controls.Add(NB);
+                    NB.BringToFront();
+                    NB.initiate();
+                }
+            }
         }
 
         
       
         public void generateGraph()
         {
-            aa += b;
-
             if(firstteambatting==true)
             {
                 chart1.Series[teamname[0]].Points.AddXY(balls, runs);
@@ -788,87 +865,14 @@ namespace MahaSangram
                 runs += b + 1;
             }
 
-            if (balls % 6 == 0)
+            if (balls % 6 == 0 && c != 1 && c != 2)
             {
-                remainingbowler = "";
                 overs = Convert.ToInt32(overs);
-
-                if (overs < maxovers)
-                {
-                    if (firstteambatting == true)
-                    {
-                        for (i = 0; i <= 10; i++)
-                        {
-                            if (players2[i] != selectedbowler)
-                            {
-                                remainingbowler = remainingbowler + players2[i];
-                                if (i <= 9)
-                                {
-                                    remainingbowler = remainingbowler + ",";
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        for (i = 0; i <= 10; i++)
-                        {
-                            if (players1[i] != selectedbowler)
-                            {
-                                remainingbowler = remainingbowler + players1[i];
-                                if (i <= 9)
-                                {
-                                    remainingbowler = remainingbowler + ",";
-                                }
-                            }
-                        }
-                    }
-
-                    NBW.Data = remainingbowler;
-                    NBW.Dock = DockStyle.None;
-                    this.Controls.Add(NBW);
-                    NBW.BringToFront();
-                    NBW.initiate();
-                }
             }
 
             if (f > 0 && f < 7)
             {
                 wickets++;
-
-                remainingbatsmen = "";
-
-                if(wickets!=10)
-                {
-                    if (firstteambatting == true)
-                    {
-                        for (i = wickets; i < 10; i++)
-                        {
-                            remainingbatsmen = remainingbatsmen + players1[i + 1];
-                            if (i < 9)
-                            {
-                                remainingbatsmen = remainingbatsmen + ",";
-                            }
-                        }
-                    }
-                    else
-                    {
-                        for (i = wickets; i < 10; i++)
-                        {
-                            remainingbatsmen = remainingbatsmen + players2[i + 1];
-                            if (i < 9)
-                            {
-                                remainingbatsmen = remainingbatsmen + ",";
-                            }
-                        }
-                    }
-
-                    NB.Data = remainingbatsmen;
-                    NB.Dock = DockStyle.None;
-                    this.Controls.Add(NB);
-                    NB.BringToFront();
-                    NB.initiate();
-                }
             }
         }
 
@@ -1040,18 +1044,123 @@ namespace MahaSangram
                 }
             }
 
-            if(firstteambatting==true)
+            aa += b;
+
+            if (firstteambatting==true)
             {
                 if (c != 1 && c != 2)
                 {
-                   // dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
+                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
+                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b;
                 }
-                if(balls%6==0)
+                else
                 {
-                   // dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToInt32(Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1);
+                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b + 1;
                 }
 
-                //yahan karna hai bowler ka bacha hua sara kam
+                if (balls % 6 == 0 && c != 1 && c != 2)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
+                    if (aa == 0)
+                    {
+                        dataGridView3.Rows[selectedbowlerindex].Cells[2].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[2].Value.ToString()) + 1;
+                    }
+                }
+
+                if (f > 0 && f < 7 && f != 3)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
+                }
+
+                if (balls%6 == 5)
+                {
+                    //dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (((Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[5].Value.ToString()) - 1) * 6) + 5)) * 6;
+                }
+                else
+                {
+                    //dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / ((Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[5].Value.ToString()) * 6) + (balls%6))) * 6;
+                }
+
+                if (b==0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
+                }
+                else if (b==4)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[7].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[7].Value.ToString()) + 1;
+                }
+                else if (b == 6)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[8].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[8].Value.ToString()) + 1;
+                }
+
+                if (c != 0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + 1;
+                }
+
+                if (d != 0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + b;
+                }
+            }
+            else
+            {
+                if (c != 1 && c != 2)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
+                    dataGridView6.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b;
+                }
+                else
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b + 1;
+                }
+
+                if (balls % 6 == 0 && c != 1 && c != 2)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
+                    if (aa == 0)
+                    {
+                        dataGridView6.Rows[selectedbowlerindex].Cells[2].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[2].Value.ToString()) + 1;
+                    }
+                }
+
+                if (f > 0 && f < 7 && f != 3)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
+                }
+
+                if (balls % 6 == 5)
+                {
+                   // dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (((Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[5].Value.ToString()) - 1) * 6) + 5)) * 6;
+                }
+                else
+                {
+                   // dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / ((Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[5].Value.ToString()) * 6) + (balls % 6))) * 6;
+                }
+
+                if (b == 0)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
+                }
+                else if (b == 4)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[7].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[7].Value.ToString()) + 1;
+                }
+                else if (b == 6)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[8].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[8].Value.ToString()) + 1;
+                }
+
+                if (c != 0)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + 1;
+                }
+
+                if (d != 0)
+                {
+                    dataGridView6.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + b;
+                }
             }
         }
 
@@ -1489,6 +1598,10 @@ namespace MahaSangram
 
             if(firstteambatting==true)
             {
+                temp = true;
+                dataGridView3.AllowUserToAddRows = false;
+                dataGridView6.AllowUserToAddRows = false;
+
                 for (x = 0; x < dataGridView3.Rows.Count; x++)
                 {
                     if(dataGridView3.Rows[x].Cells[0].Value == selectedbowler)
@@ -1501,7 +1614,12 @@ namespace MahaSangram
                 if(temp==true)
                 {
                     dataGridView3.Rows.Add();
-                    dataGridView2.Rows[i].Cells[0].Value = selectedbowler;
+                    dataGridView3.Rows[x].Cells[0].Value = selectedbowler;
+                    for (y = 1; y < 10; y++)
+                    {
+                        dataGridView3.Rows[x].Cells[y].Value = 0;
+                    }
+                    selectedbowlerindex = x;
                 }
             }
             else
@@ -1518,7 +1636,12 @@ namespace MahaSangram
                 if (temp == true)
                 {
                     dataGridView6.Rows.Add();
-                    dataGridView5.Rows[i].Cells[0].Value = selectedbowler;
+                    dataGridView6.Rows[x].Cells[0].Value = selectedbowler;
+                    for (y = 1; y < 10; y++)
+                    {
+                        dataGridView6.Rows[x].Cells[y].Value = 0;
+                    }
+                    selectedbowlerindex = x;
                 }
             }
         }
