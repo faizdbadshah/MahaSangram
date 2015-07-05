@@ -11,7 +11,6 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\bin\Release\MetroFramework.Fonts.d
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.Players.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.AddTeam.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.Home.resources
-D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.master.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.MasterForm.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.Teams.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.NextBatsmen.resources
@@ -29,3 +28,4 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.exe.ma
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.application
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.exe
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.pdb
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Release\MahaSangram.csprojResolveAssemblyReference.cache

@@ -111,12 +111,6 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="master.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="master.Designer.cs">
-      <DependentUpon>master.cs</DependentUpon>
-    </Compile>
     <Compile Include="MasterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,9 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="master.resx">
-      <DependentUpon>master.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterForm.resx">
       <DependentUpon>MasterForm.cs</DependentUpon>
