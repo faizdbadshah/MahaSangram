@@ -50,8 +50,5 @@ namespace MahaSangram
                 comboBox1.Items.Add(bowler[i]);
             }
         }
-
-        
-
     }
 }

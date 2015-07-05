@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace MahaSangram
 {
@@ -24,7 +25,7 @@ namespace MahaSangram
         bool firstinnings, firstteambatting , firstteamtoss, strike = true, temp, firstteamwinner;
         Overs O = new Overs();
         Toss T = new Toss();
-        private SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Github\MahaSangram\MahaSangram\MahaSangram\MSDatabase.mdf;Integrated Security=True;User Instance=True");
+        private SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["constr"].ToString());
         private SqlCommand query = new SqlCommand();
         private SqlDataReader teams, players;
         NextBatsmen NB = new NextBatsmen();
@@ -1118,7 +1119,7 @@ namespace MahaSangram
 
                 if (balls % 6 == 0 && c != 1 && c != 2)
                 {
-                    dataGridView6.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
+                    dataGridView6.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
                     if (aa == 0)
                     {
                         dataGridView6.Rows[selectedbowlerindex].Cells[2].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[2].Value.ToString()) + 1;
