@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="369600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="350656">
       <assemblyIdentity name="MahaSangram" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>gfy3spNIXpWXiJ26cZ/qJDvcdr4=</dsig:DigestValue>
+        <dsig:DigestValue>Nu5OKymVNUJ2tvW8j0DtgXM7zcg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -104,7 +104,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>y4V/465Ou1FEvxBQq39IhEkTyNQ=</dsig:DigestValue>
+      <dsig:DigestValue>8U3tUtNRngLN+rvd5mFjHUIiVqY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MSDatabase_log.ldf" size="786432" writeableType="applicationData">
@@ -113,16 +113,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>i2AqJcRGwEjLyJqXOJCs8LsauzA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resources\Image1.jpg" size="8333">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Lp2BHDsrzxYyvIqKlBoJ6nzSrd0=</dsig:DigestValue>
+      <dsig:DigestValue>BT59gWrS2l6XumoQBv4i8VKw/ik=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

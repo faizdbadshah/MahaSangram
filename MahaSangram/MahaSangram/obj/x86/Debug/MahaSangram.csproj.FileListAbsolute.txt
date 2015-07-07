@@ -106,7 +106,6 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\bin\Debug\MetroFramework.Fonts.dll
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Players.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.AddTeam.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Home.resources
-D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.master.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.MasterForm.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.Teams.resources
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.NextBatsmen.resources

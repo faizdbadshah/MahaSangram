@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Logo = new System.Windows.Forms.PictureBox();
             this.Rules = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
             this.Match = new System.Windows.Forms.Button();
@@ -36,17 +35,9 @@
             this.Statistics = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Logo
-            // 
-            this.Logo.Image = global::MahaSangram.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(333, 23);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(217, 221);
-            this.Logo.TabIndex = 13;
-            this.Logo.TabStop = false;
             // 
             // Rules
             // 
@@ -163,11 +154,21 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MahaSangram.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(331, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(214, 213);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.Rules);
@@ -175,17 +176,15 @@
             this.Controls.Add(this.Match);
             this.Controls.Add(this.Teams);
             this.Controls.Add(this.Statistics);
-            this.Controls.Add(this.Logo);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(955, 517);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Button Rules;
         private System.Windows.Forms.Button Settings;
         private System.Windows.Forms.Button Match;
@@ -193,5 +192,6 @@
         private System.Windows.Forms.Button Statistics;
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

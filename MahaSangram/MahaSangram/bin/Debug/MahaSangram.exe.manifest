@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="MahaSangram.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="MahaSangram.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="MahaSangram" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="509376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="148928">
       <assemblyIdentity name="MahaSangram" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BC3kXC5V0pPkqr+mP/w8ECXatfk=</dsig:DigestValue>
+        <dsig:DigestValue>ALdpXvpkFKy/b5onaoMRc8Ia32M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -104,7 +104,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>IDf0qasaALbLJOZFRk9JknwR61Q=</dsig:DigestValue>
+      <dsig:DigestValue>vs2zTxBtzo+XqR4mROrUmVNA9bs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MSDatabase_log.ldf" size="786432" writeableType="applicationData">
@@ -113,16 +113,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>L/Cs5Nq5FucNLnDl2bQXh6Ki1Dw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resources\Image1.jpg" size="8333">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Lp2BHDsrzxYyvIqKlBoJ6nzSrd0=</dsig:DigestValue>
+      <dsig:DigestValue>Ym3WR10c6Vgre7QsP5HL3sgEn5Q=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
