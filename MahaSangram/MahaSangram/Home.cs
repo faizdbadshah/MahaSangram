@@ -104,9 +104,13 @@ namespace MahaSangram
             Teams.Enabled = true;
             Match.Text = "Start Tournament";
 
-            query.CommandText = "update Players set Matches_Played = 0 , Innings = 0 , Runs = 0 , Balls_Played = 0";
-            teams = query.ExecuteReader();
-            teams.Close();
+            query.CommandText = "update Players set Matches_Played = 0 , Innings = 0 , Runs = 0 , Balls_Played = 0 , Sixes = 0 , Fours = 0 , Triples = 0 , Doubles = 0 , Singles = 0 , Dots = 0 , Overs = 0 , Wickets = 0 , Runs_Given = 0 , Extras = 0";
+            players = query.ExecuteReader();
+            players.Close();
+
+            query.CommandText = "update Teams set Matches = 0 , Won = 0 , Lost = 0 , NRR = 0";
+            players = query.ExecuteReader();
+            players.Close();
         }
 
         private void Settings_Click(object sender, EventArgs e)

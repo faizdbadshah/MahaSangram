@@ -1073,15 +1073,8 @@ namespace MahaSangram
                     dataGridView3.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
                 }
 
-                if (balls%6 == 5)
-                {
-                    //dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (((Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[5].Value.ToString()) - 1) * 6) + 5)) * 6;
-                }
-                else
-                {
-                    //dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / ((Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[5].Value.ToString()) * 6) + (balls%6))) * 6;
-                }
-
+                dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls%6))) *6);
+              
                 if (b==0)
                 {
                     dataGridView3.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
@@ -1131,15 +1124,8 @@ namespace MahaSangram
                     dataGridView6.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
                 }
 
-                if (balls % 6 == 5)
-                {
-                   // dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (((Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[5].Value.ToString()) - 1) * 6) + 5)) * 6;
-                }
-                else
-                {
-                   // dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / ((Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[5].Value.ToString()) * 6) + (balls % 6))) * 6;
-                }
-
+                dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls%6)))) * 6;
+         
                 if (b == 0)
                 {
                     dataGridView6.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;

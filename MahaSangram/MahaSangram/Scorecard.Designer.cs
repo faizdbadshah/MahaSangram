@@ -248,7 +248,7 @@
             this.metroRadioButton16.AutoSize = true;
             this.metroRadioButton16.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroRadioButton16.ForeColor = System.Drawing.Color.Black;
-            this.metroRadioButton16.Location = new System.Drawing.Point(13, 141);
+            this.metroRadioButton16.Location = new System.Drawing.Point(13, 137);
             this.metroRadioButton16.Name = "metroRadioButton16";
             this.metroRadioButton16.Size = new System.Drawing.Size(109, 25);
             this.metroRadioButton16.TabIndex = 2;
@@ -1284,7 +1284,7 @@
             this.tabPage5.Controls.Add(this.tabControl2);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(823, 429);
+            this.tabPage5.Size = new System.Drawing.Size(765, 429);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Graph";
             this.tabPage5.UseVisualStyleBackColor = true;

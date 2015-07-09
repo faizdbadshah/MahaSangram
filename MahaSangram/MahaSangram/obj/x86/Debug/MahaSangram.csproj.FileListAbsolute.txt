@@ -123,3 +123,4 @@ D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe.mani
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.application
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.exe
 D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.pdb
+D:\Github\MahaSangram\MahaSangram\MahaSangram\obj\x86\Debug\MahaSangram.csprojResolveAssemblyReference.cache
