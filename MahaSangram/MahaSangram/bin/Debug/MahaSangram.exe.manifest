@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="149440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="150976">
       <assemblyIdentity name="MahaSangram" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rGY0BFg6uHUdBbUYz5kMujOqcLQ=</dsig:DigestValue>
+        <dsig:DigestValue>OYNe6ViAJWEPdCRo8HxgVMblIcg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -89,13 +89,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="MahaSangram.exe.config" size="1391">
+  <file name="MahaSangram.exe.config" size="1421">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>3EMPj8IUB42N5E5i29Q0sVlLP1Y=</dsig:DigestValue>
+      <dsig:DigestValue>Cae476F5FXqqTPb+Hio205WyjwA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MSDatabase.mdf" size="3014656" writeableType="applicationData">
@@ -104,7 +104,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>JX+ncWc+wEz9KLDvzN/rCtQaIpg=</dsig:DigestValue>
+      <dsig:DigestValue>DxFYVgO0OjRl1vEa065NsHwk1t4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MSDatabase_log.ldf" size="786432" writeableType="applicationData">
@@ -113,7 +113,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>M/zhSsL1NX1NnfKjd9biO4Ny9gU=</dsig:DigestValue>
+      <dsig:DigestValue>y8fRIHh2GnzRpMVALApaQp+DxHQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

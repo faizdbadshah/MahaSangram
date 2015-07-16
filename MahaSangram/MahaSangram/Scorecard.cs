@@ -448,51 +448,48 @@ namespace MahaSangram
             }
             else
             {
-                query.CommandText = "update teams set Matches = ((select Matches from teams where team_name = '" + teamname[0] + "') + 1) where team_name = '" + teamname[0] + "'";
+                query.CommandText = "update teams set Matches = Matches + 1 where team_name = '" + teamname[0] + "' OR team_name = '" + teamname[1] + "'";
                 teams = query.ExecuteReader();
                 teams.Close();
-                query.CommandText = "update teams set Matches = ((select Matches from teams where team_name = '" + teamname[1] + "') + 1) where team_name = '" + teamname[1] + "'";
-                teams = query.ExecuteReader();
-                teams.Close();
-
+           
                 if(firstteamwinner==true)
                 {
-                    query.CommandText = "update teams set Won = ((select Won from teams where team_name = '" + teamname[0] + "') + 1) where team_name = '" + teamname[0] + "'";
+                    query.CommandText = "update teams set Won = Won + 1 where team_name = '" + teamname[0] + "'";
                     teams = query.ExecuteReader();
                     teams.Close();
-                    query.CommandText = "update teams set Lost = ((select Lost from teams where team_name = '" + teamname[1] + "') + 1) where team_name = '" + teamname[1] + "'";
+                    query.CommandText = "update teams set Lost = Lost + 1 where team_name = '" + teamname[1] + "'";
                     teams = query.ExecuteReader();
                     teams.Close();
                 }
                 else
                 {
-                    query.CommandText = "update teams set Won = ((select Won from teams where team_name = '" + teamname[1] + "') + 1) where team_name = '" + teamname[1] + "'";
+                    query.CommandText = "update teams set Won = Won + 1 where team_name = '" + teamname[1] + "'";
                     teams = query.ExecuteReader();
                     teams.Close();
-                    query.CommandText = "update teams set Lost = ((select Lost from teams where team_name = '" + teamname[0] + "') + 1) where team_name = '" + teamname[0] + "'";
+                    query.CommandText = "update teams set Lost = Lost + 1 where team_name = '" + teamname[0] + "'";
                     teams = query.ExecuteReader();
                     teams.Close();
                 }
-
+             
                 for (x = 0; x < 11; x++)
                 {
-                    query.CommandText = "update Players set Matches_Played = ((select Matches_Played from Players where Player_Id = '" + players1id[x] + "') + 1) where Player_Id = '" + players1id[x] + "'";
+                    query.CommandText = "update Players set Matches_Played =  Matches_Played + 1 where Player_Id = '" + players1id[x] + "'";
                     players = query.ExecuteReader();
                     players.Close();
-                    query.CommandText = "update Players set Matches_Played = ((select Matches_Played from Players where Player_Id = '" + players2id[x] + "') + 1) where Player_Id = '" + players2id[x] + "'";
+                    query.CommandText = "update Players set Matches_Played =  Matches_Played + 1 where Player_Id = '" + players2id[x] + "'";
                     players = query.ExecuteReader();
                     players.Close();
 
-                    if (dataGridView1.Rows[x].Cells[1].Value != "Still To Bat")
+                    if(string.Equals(dataGridView1.Rows[x].Cells[1].Value,"Still To Bat") == false)
                     {
-                        query.CommandText = "update Players set Innings = ((select Innings from Players where Player_Id = '" + players1id[x] + "') + 1) , Runs = ((select Runs from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView1.Rows[x].Cells[2].Value + ") , Balls_Played = ((select Balls_Played from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView1.Rows[x].Cells[3].Value + ") , Sixes = ((select Sixes from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[8].Value + ") , Fours = ((select Fours from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[7].Value + ") , Triples = ((select Triples from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[6].Value + ") , Doubles = ((select Doubles from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[5].Value + ") , Singles = ((select Singles from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[4].Value + ") , Dots = ((select Dots from Players where Player_Id = '" + players1id[x] + "') +" + dataGridView2.Rows[x].Cells[3].Value + ") where Player_Id = '" + players1id[x] + "'";
+                        query.CommandText = "update Players set Innings = Innings + 1 , Runs = Runs + '" + dataGridView1.Rows[x].Cells[2].Value + "' , Balls_Played = Balls_Played + '" + dataGridView1.Rows[x].Cells[3].Value + "' , Sixes = Sixes + '" + dataGridView2.Rows[x].Cells[8].Value + "' , Fours = Fours + '" + dataGridView2.Rows[x].Cells[7].Value + "' , Triples = Triples + '" + dataGridView2.Rows[x].Cells[6].Value + "' , Doubles = Doubles + '" + dataGridView2.Rows[x].Cells[5].Value + "' , Singles = Singles + '" + dataGridView2.Rows[x].Cells[4].Value + "' , Dots = Dots + '" + dataGridView2.Rows[x].Cells[3].Value + "' where Player_Id = '" + players1id[x] + "'";
                         players = query.ExecuteReader();
                         players.Close();
                     }
-
-                    if (dataGridView4.Rows[x].Cells[1].Value != "Still To Bat")
+                    
+                    if (string.Equals(dataGridView4.Rows[x].Cells[1].Value,"Still To Bat") == false)
                     {
-                        query.CommandText = "update Players set Innings = ((select Innings from Players where Player_Id = '" + players2id[x] + "') + 1) , Runs = ((select Runs from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView4.Rows[x].Cells[2].Value + ") , Balls_Played = ((select Balls_Played from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView4.Rows[x].Cells[3].Value + ") , Sixes = ((select Sixes from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[8].Value + ") , Fours = ((select Fours from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[7].Value + ") , Triples = ((select Triples from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[6].Value + ") , Doubles = ((select Doubles from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[5].Value + ") , Singles = ((select Singles from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[4].Value + ") , Dots = ((select Dots from Players where Player_Id = '" + players2id[x] + "') +" + dataGridView5.Rows[x].Cells[3].Value + ") where Player_Id = '" + players2id[x] + "'";
+                        query.CommandText = "update Players set Innings = Innings + 1 , Runs = Runs + '" + dataGridView4.Rows[x].Cells[2].Value + "' , Balls_Played = Balls_Played + '" + dataGridView4.Rows[x].Cells[3].Value + "' , Sixes = Sixes + '" + dataGridView5.Rows[x].Cells[8].Value + "' , Fours = Fours + '" + dataGridView5.Rows[x].Cells[7].Value + "' , Triples = Triples + '" + dataGridView5.Rows[x].Cells[6].Value + "' , Doubles = Doubles + '" + dataGridView5.Rows[x].Cells[5].Value + "' , Singles = Singles + '" + dataGridView5.Rows[x].Cells[4].Value + "' , Dots = Dots + '" + dataGridView5.Rows[x].Cells[3].Value + "' where Player_Id = '" + players2id[x] + "'";
                         players = query.ExecuteReader();
                         players.Close();
                     }
@@ -879,10 +876,37 @@ namespace MahaSangram
 
         private void updatetables()
         {
-            if (strike == true)
+            aa += b;
+
+            if(firstteambatting == true)
             {
-                if (firstteambatting == true)
+                if(strike == true)
                 {
+                    if(f == 1)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "b  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 2)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "c  ____ b  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 3)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "Run Out";
+                    }
+                    else if (f == 4)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "lbw  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 5)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "stumping  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 6)
+                    {
+                        dataGridView1.Rows[firstplayer].Cells[1].Value = "hit wicket  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                   
                     if (c != 1 && c != 2)
                     {
                         dataGridView2.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView2.Rows[firstplayer].Cells[2].Value.ToString()) + 1;
@@ -920,52 +944,36 @@ namespace MahaSangram
                     {
                         dataGridView2.Rows[firstplayer].Cells[8].Value = Convert.ToInt32(dataGridView2.Rows[firstplayer].Cells[8].Value.ToString()) + 1;
                     }
+
+                    dataGridView2.Rows[firstplayer].Cells[9].Value = ((Convert.ToDouble(dataGridView2.Rows[firstplayer].Cells[1].Value.ToString())) / (Convert.ToDouble(dataGridView2.Rows[firstplayer].Cells[2].Value.ToString()))) * 100;
                 }
                 else
                 {
-                    if (c != 1 && c != 2)
+                    if (f == 1)
                     {
-                        dataGridView5.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[2].Value.ToString()) + 1;
-                        dataGridView5.Rows[firstplayer].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[1].Value.ToString()) + b;
-                        dataGridView4.Rows[firstplayer].Cells[3].Value = Convert.ToInt32(dataGridView4.Rows[firstplayer].Cells[3].Value.ToString()) + 1;
-                        dataGridView4.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView4.Rows[firstplayer].Cells[2].Value.ToString()) + b;
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "b  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
                     }
-                    else
+                    else if (f == 2)
                     {
-                        dataGridView5.Rows[firstplayer].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[1].Value.ToString()) + b + 1;
-                        dataGridView4.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[2].Value.ToString()) + b + 1;
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "c  ____ b  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 3)
+                    {
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "Run Out";
+                    }
+                    else if (f == 4)
+                    {
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "lbw  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 5)
+                    {
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "stumping  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 6)
+                    {
+                        dataGridView1.Rows[secondplayer].Cells[1].Value = "hit wicket  " + dataGridView3.Rows[selectedbowlerindex].Cells[0].Value;
                     }
 
-                    if (b == 0)
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[3].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[3].Value.ToString()) + 1;
-                    }
-                    else if (b == 1)
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[4].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[4].Value.ToString()) + 1;
-                    }
-                    else if (b == 2)
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[5].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[5].Value.ToString()) + 1;
-                    }
-                    else if (b == 3)
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[6].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[6].Value.ToString()) + 1;
-                    }
-                    else if (b == 4)
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[7].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[7].Value.ToString()) + 1;
-                    }
-                    else
-                    {
-                        dataGridView5.Rows[firstplayer].Cells[8].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[8].Value.ToString()) + 1;
-                    }
-                }
-            }
-            else
-            {
-                if (firstteambatting == true)
-                {
                     if (c != 1 && c != 2)
                     {
                         dataGridView2.Rows[secondplayer].Cells[2].Value = Convert.ToInt32(dataGridView2.Rows[secondplayer].Cells[2].Value.ToString()) + 1;
@@ -1003,9 +1011,155 @@ namespace MahaSangram
                     {
                         dataGridView2.Rows[secondplayer].Cells[8].Value = Convert.ToInt32(dataGridView2.Rows[secondplayer].Cells[8].Value.ToString()) + 1;
                     }
+
+                    dataGridView2.Rows[secondplayer].Cells[9].Value = ((Convert.ToDouble(dataGridView2.Rows[secondplayer].Cells[1].Value.ToString())) / (Convert.ToDouble(dataGridView2.Rows[secondplayer].Cells[2].Value.ToString()))) * 100;
+                }
+
+                if (c != 1 && c != 2)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
+                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b;
                 }
                 else
                 {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b + 1;
+                }
+
+                if (balls % 6 == 0 && c != 1 && c != 2)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
+                    if (aa == 0)
+                    {
+                        dataGridView3.Rows[selectedbowlerindex].Cells[2].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[2].Value.ToString()) + 1;
+                    }
+                }
+
+                if (f > 0 && f < 7 && f != 3)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
+                }
+
+                dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls % 6))) * 6);
+
+                if (b == 0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
+                }
+                else if (b == 4)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[7].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[7].Value.ToString()) + 1;
+                }
+                else if (b == 6)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[8].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[8].Value.ToString()) + 1;
+                }
+
+                if (c != 0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + 1;
+                }
+
+                if (d != 0)
+                {
+                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + b;
+                }
+            }
+            else
+            {
+                if (strike == true)
+                {
+                    if (f == 1)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "b  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 2)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "c  ____ b  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 3)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "Run Out";
+                    }
+                    else if (f == 4)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "lbw  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 5)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "stumping  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 6)
+                    {
+                        dataGridView4.Rows[firstplayer].Cells[1].Value = "hit wicket  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+
+                    if (c != 1 && c != 2)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[2].Value.ToString()) + 1;
+                        dataGridView5.Rows[firstplayer].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[1].Value.ToString()) + b;
+                        dataGridView4.Rows[firstplayer].Cells[3].Value = Convert.ToInt32(dataGridView4.Rows[firstplayer].Cells[3].Value.ToString()) + 1;
+                        dataGridView4.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView4.Rows[firstplayer].Cells[2].Value.ToString()) + b;
+                    }
+                    else
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[1].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[1].Value.ToString()) + b + 1;
+                        dataGridView4.Rows[firstplayer].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[2].Value.ToString()) + b + 1;
+                    }
+
+                    if (b == 0)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[3].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[3].Value.ToString()) + 1;
+                    }
+                    else if (b == 1)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[4].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[4].Value.ToString()) + 1;
+                    }
+                    else if (b == 2)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[5].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[5].Value.ToString()) + 1;
+                    }
+                    else if (b == 3)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[6].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[6].Value.ToString()) + 1;
+                    }
+                    else if (b == 4)
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[7].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[7].Value.ToString()) + 1;
+                    }
+                    else
+                    {
+                        dataGridView5.Rows[firstplayer].Cells[8].Value = Convert.ToInt32(dataGridView5.Rows[firstplayer].Cells[8].Value.ToString()) + 1;
+                    }
+
+                    dataGridView5.Rows[firstplayer].Cells[9].Value = ((Convert.ToDouble(dataGridView5.Rows[firstplayer].Cells[1].Value.ToString())) / (Convert.ToDouble(dataGridView5.Rows[firstplayer].Cells[2].Value.ToString()))) * 100;
+                }
+                else
+                {
+                    if (f == 1)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "b  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 2)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "c  ____ b  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 3)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "Run Out";
+                    }
+                    else if (f == 4)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "lbw  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 5)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "stumping  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+                    else if (f == 6)
+                    {
+                        dataGridView4.Rows[secondplayer].Cells[1].Value = "hit wicket  " + dataGridView6.Rows[selectedbowlerindex].Cells[0].Value;
+                    }
+
                     if (c != 1 && c != 2)
                     {
                         dataGridView5.Rows[secondplayer].Cells[2].Value = Convert.ToInt32(dataGridView5.Rows[secondplayer].Cells[2].Value.ToString()) + 1;
@@ -1042,64 +1196,10 @@ namespace MahaSangram
                     {
                         dataGridView5.Rows[secondplayer].Cells[8].Value = Convert.ToInt32(dataGridView5.Rows[secondplayer].Cells[8].Value.ToString()) + 1;
                     }
-                }
-            }
 
-            aa += b;
-
-            if (firstteambatting==true)
-            {
-                if (c != 1 && c != 2)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
-                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b;
-                }
-                else
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[3].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) + b + 1;
+                    dataGridView5.Rows[secondplayer].Cells[9].Value = ((Convert.ToDouble(dataGridView5.Rows[secondplayer].Cells[1].Value.ToString())) / (Convert.ToDouble(dataGridView5.Rows[secondplayer].Cells[2].Value.ToString()))) * 100;
                 }
 
-                if (balls % 6 == 0 && c != 1 && c != 2)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.4;
-                    if (aa == 0)
-                    {
-                        dataGridView3.Rows[selectedbowlerindex].Cells[2].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[2].Value.ToString()) + 1;
-                    }
-                }
-
-                if (f > 0 && f < 7 && f != 3)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
-                }
-
-                dataGridView3.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView3.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls%6))) *6);
-              
-                if (b==0)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
-                }
-                else if (b==4)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[7].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[7].Value.ToString()) + 1;
-                }
-                else if (b == 6)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[8].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[8].Value.ToString()) + 1;
-                }
-
-                if (c != 0)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + 1;
-                }
-
-                if (d != 0)
-                {
-                    dataGridView3.Rows[selectedbowlerindex].Cells[9].Value = Convert.ToInt32(dataGridView3.Rows[selectedbowlerindex].Cells[9].Value.ToString()) + b;
-                }
-            }
-            else
-            {
                 if (c != 1 && c != 2)
                 {
                     dataGridView6.Rows[selectedbowlerindex].Cells[1].Value = Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString()) + 0.1;
@@ -1124,8 +1224,8 @@ namespace MahaSangram
                     dataGridView6.Rows[selectedbowlerindex].Cells[4].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[4].Value.ToString()) + 1;
                 }
 
-                dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls%6)))) * 6;
-         
+                dataGridView6.Rows[selectedbowlerindex].Cells[5].Value = (Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[3].Value.ToString()) / (Convert.ToDouble((Convert.ToInt32(Convert.ToDouble(dataGridView6.Rows[selectedbowlerindex].Cells[1].Value.ToString())) * 6) + (balls % 6)))) * 6;
+
                 if (b == 0)
                 {
                     dataGridView6.Rows[selectedbowlerindex].Cells[6].Value = Convert.ToInt32(dataGridView6.Rows[selectedbowlerindex].Cells[6].Value.ToString()) + 1;
@@ -1360,7 +1460,7 @@ namespace MahaSangram
                             }
                             else
                             {
-                                swapplayersid[wickets + 1] = players1[x];
+                                swapplayersid[wickets + 1] = players1id[x];
                                 dataGridView2.Rows.InsertCopy(x , wickets + 1);
                                 for (z = 0; z < 10; z++)
                                 {
@@ -1401,7 +1501,7 @@ namespace MahaSangram
                             }
                             else
                             {
-                                swapplayersid[wickets + 1] = players2[x];
+                                swapplayersid[wickets + 1] = players2id[x];
                                 dataGridView5.Rows.InsertCopy(x, wickets + 1);
                                 for (z = 0; z < 10; z++)
                                 {
