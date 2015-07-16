@@ -117,11 +117,6 @@
     <Compile Include="MasterForm.Designer.cs">
       <DependentUpon>MasterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MSDatabaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -237,18 +232,6 @@
       <DependentUpon>Toss.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="MahaSangram_TemporaryKey.pfx" />
-    <None Include="MSDatabaseDataSet.xsc">
-      <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MSDatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MSDatabaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MSDatabaseDataSet.xss">
-      <DependentUpon>MSDatabaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

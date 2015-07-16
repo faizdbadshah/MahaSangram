@@ -5,11 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahaSangram", "MahaSangram\MahaSangram.csproj", "{A822682E-3E9B-4FF6-9FFB-FECD43D0130F}"
 EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A822682E-3E9B-4FF6-9FFB-FECD43D0130F} = {A822682E-3E9B-4FF6-9FFB-FECD43D0130F}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|x86 = CD_ROM|x86
@@ -29,16 +24,6 @@ Global
 		{A822682E-3E9B-4FF6-9FFB-FECD43D0130F}.Release|x86.Build.0 = Release|x86
 		{A822682E-3E9B-4FF6-9FFB-FECD43D0130F}.SingleImage|x86.ActiveCfg = Release|x86
 		{A822682E-3E9B-4FF6-9FFB-FECD43D0130F}.SingleImage|x86.Build.0 = Release|x86
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.CD_ROM|x86.ActiveCfg = CD_ROM
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.CD_ROM|x86.Build.0 = CD_ROM
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.Debug|x86.ActiveCfg = DVD-5
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.Debug|x86.Build.0 = DVD-5
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.DVD-5|x86.ActiveCfg = DVD-5
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.DVD-5|x86.Build.0 = DVD-5
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.Release|x86.ActiveCfg = SingleImage
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.Release|x86.Build.0 = SingleImage
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.SingleImage|x86.ActiveCfg = SingleImage
-		{69CF0ABA-BC22-420C-AC18-34DBFCBFE571}.SingleImage|x86.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

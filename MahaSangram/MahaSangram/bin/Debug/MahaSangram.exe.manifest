@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="150976">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MahaSangram.exe" size="145856">
       <assemblyIdentity name="MahaSangram" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OYNe6ViAJWEPdCRo8HxgVMblIcg=</dsig:DigestValue>
+        <dsig:DigestValue>DUTg/xhRqy3nOFVloTtjzR7Wxuo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -104,7 +104,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DxFYVgO0OjRl1vEa065NsHwk1t4=</dsig:DigestValue>
+      <dsig:DigestValue>h320iDTuii/raNcdYa6ptDCwgVI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MSDatabase_log.ldf" size="786432" writeableType="applicationData">
@@ -113,7 +113,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>y8fRIHh2GnzRpMVALApaQp+DxHQ=</dsig:DigestValue>
+      <dsig:DigestValue>L6mrnFIKqCaoB60wWGLDI9gXRMg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
